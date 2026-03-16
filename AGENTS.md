@@ -7,7 +7,7 @@
 3. `DOMAIN_KNOWHOW.md`
 4. `STYLE_GUIDE.md`
 
-默认不加载 `docs/EVIDENCE_INDEX.md` 与 `docs/sources/`；仅在出现争议或需要证据追溯时再读取。
+默认不加载 `docs/EVIDENCE_INDEX.md`；仅在出现争议或需要证据追溯时再读取。
 
 ## 检索路由
 

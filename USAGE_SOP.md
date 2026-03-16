@@ -27,11 +27,10 @@
 
 - `docs/EVIDENCE_INDEX.md`
 - `docs/MAINTENANCE.md`
-- `docs/sources/*.json`
 
 ## 2) 何时加载证据文件
 
-只有以下三类场景才加载 `docs/EVIDENCE_INDEX.md` 与 `docs/sources/`：
+只有以下三类场景才加载 `docs/EVIDENCE_INDEX.md`：
 
 1. 你质疑某条画像结论是否可靠；
 2. 需要"有据可查"的对外材料；

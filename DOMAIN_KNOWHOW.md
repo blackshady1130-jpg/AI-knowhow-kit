@@ -2,7 +2,7 @@
 
 版本：v0.3  
 更新日期：2026-03-13  
-证据基线：`docs/sources/v2_analysis_evidence.json` + `docs/sources/v2_analysis_theme_map.json` + blog 全文
+证据基线：基于 AIreview 分析表主题图谱与 blog 全文的结构化提炼（源文件未包含在公开版本中）
 
 ## 1) AIreview 认知地图（184 条有效记录）
 

@@ -5,7 +5,7 @@
 1. `PROFILE_CORE.md` 与 `WORKING_PREFERENCES.md`
 2. 涉及行业判断时，使用 `DOMAIN_KNOWHOW.md` 的框架
 3. 涉及写作改写时，使用 `STYLE_GUIDE.md` 的语气规则
-4. 对争议信息，可回查 `docs/EVIDENCE_INDEX.md` 与 `docs/sources/`
+4. 对争议信息，可回查 `docs/EVIDENCE_INDEX.md`
 
 ## 检索路由
 

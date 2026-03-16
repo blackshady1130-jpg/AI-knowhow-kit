@@ -3,20 +3,21 @@
 版本：v0.2  
 更新日期：2026-03-02
 
+> 注：本文档中引用的审计源文件（JSON）和运营底表（xlsx）属于隐私数据，不包含在公开版本中。以下信息仅供了解画像构建方法论。
+
 ## 1) 覆盖率说明
 
 - Blog：5/5 文件全文抽取。
-- Analysis：`AI行业扫描.xlsx` 第一张表全行读取，184 条有效记录。
-- Chat：`conversations-000~003.json` 全会话解析（371 个会话）。
-- `chat.html` 已做哈希与大小校验，确认其核心内容与 JSON 导出载荷一致。
+- Analysis：AI 行业扫描表第一张表全行读取，184 条有效记录。
+- Chat：全会话解析（371 个会话）。
 
-## 2) 核心审计文件
+## 2) 核心审计文件（维护者本地保管）
 
-- `docs/sources/full_pass_audit_v2.json`：全量覆盖审计与哈希。
-- `docs/sources/v2_chat_evidence.json`：聊天偏好、身份线索、任务标签。
-- `docs/sources/v2_analysis_evidence.json`：AIreview 结构与关键词。
-- `docs/sources/v2_analysis_theme_map.json`：AIreview 主题图谱。
-- `docs/sources/v2_blog_style_evidence.json`：博客文风特征。
+- 全量覆盖审计与哈希
+- 聊天偏好、身份线索、任务标签
+- AIreview 结构与关键词
+- AIreview 主题图谱
+- 博客文风特征
 
 ## 3) 关键统计（v0.2）
 

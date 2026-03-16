@@ -18,8 +18,7 @@
 
 - `bookmarks/bookmarks_keywords.jsonl`：主索引（唯一检索入口）
 - `bookmarks/bookmarks_md/*.md`：证据原文
-- `bookmarks/_source/AGI_bookmarks_WITH_NEW_SUMMARIES.xlsx`：原始运营底表（非默认检索入口）
-- `bookmarks/_source/AGI_bookmarks_WITH_NEW_SUMMARIES.llm.xlsx`：增强底表（含 LLM关键词/补标题）
+- 原始运营底表（xlsx）由维护者本地保管，非默认检索入口。
 
 ## 3) 检索顺序（必须遵守）
 

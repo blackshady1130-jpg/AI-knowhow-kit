@@ -2,7 +2,7 @@
 
 版本：v0.2  
 更新日期：2026-03-02  
-证据基线：`docs/sources/full_pass_audit_v2.json` + `docs/sources/v2_chat_evidence.json` + `docs/sources/v2_analysis_evidence.json`
+证据基线：基于全量 chat 历史、AIreview 分析表、blog 全文的结构化提炼（源文件为隐私数据，未包含在公开版本中）
 
 ## 1) 资料覆盖范围
 

@@ -7,8 +7,7 @@
 
 - `bookmarks_keywords.jsonl`：唯一主索引（检索入口）
 - `bookmarks_md/*.md`：原文证据
-- `_source/AGI_bookmarks_WITH_NEW_SUMMARIES.xlsx`：原始运营底表
-- `_source/AGI_bookmarks_WITH_NEW_SUMMARIES.llm.xlsx`：含 LLM关键词与补标题结果的增强底表
+- 原始运营底表（xlsx）由维护者本地保管，不包含在公开版本中
 
 ## 检索约定
 

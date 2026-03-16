@@ -8,10 +8,12 @@
 
 每月更新只涉及**知识库层**，不涉及核心画像文件。
 
-| 更新对象 | 索引文件 | 原文目录 | 运营底表 |
-|---|---|---|---|
-| AI 行业扫描 | `notes/AI行业扫描_keywords.jsonl` | `notes/AI行业扫描_md/` | `notes/_source/AI行业扫描.xlsx` |
-| Bookmarks | `bookmarks/bookmarks_keywords.jsonl` | `bookmarks/bookmarks_md/` | `bookmarks/_source/AGI_bookmarks_WITH_NEW_SUMMARIES.xlsx` |
+| 更新对象 | 索引文件 | 原文目录 |
+|---|---|---|
+| AI 行业扫描 | `notes/AI行业扫描_keywords.jsonl` | `notes/AI行业扫描_md/` |
+| Bookmarks | `bookmarks/bookmarks_keywords.jsonl` | `bookmarks/bookmarks_md/` |
+
+> 注：如果你习惯使用 xlsx 做运营视图，可在本地维护底表，但 xlsx 不纳入公开版本。
 
 核心画像文件（`PROFILE_CORE.md`、`WORKING_PREFERENCES.md`、`DOMAIN_KNOWHOW.md`、`STYLE_GUIDE.md`）仅在认知发生重大变化时更新，不纳入月度流程。
 
@@ -175,12 +177,9 @@ jsonl 中不得出现 `C:\`、`D:\`、`/Users/` 等硬编码绝对路径。
 
 ## 7) 运营底表同步（可选）
 
-如果你习惯先在 xlsx 中维护，更新完 jsonl 和 md 后，记得同步更新：
+如果你习惯先在 xlsx 中维护，更新完 jsonl 和 md 后，记得同步更新本地的 xlsx 底表。xlsx 是你的人工运营视图，jsonl 是 Agent 的检索入口，两者保持一致。
 
-- `notes/_source/AI行业扫描.xlsx`
-- `bookmarks/_source/AGI_bookmarks_WITH_NEW_SUMMARIES.xlsx`
-
-xlsx 是你的人工运营视图，jsonl 是 Agent 的检索入口，两者保持一致。
+> 注：xlsx 底表属于个人运营文件，不纳入公开仓库。
 
 ## 8) 可自动化环节
 

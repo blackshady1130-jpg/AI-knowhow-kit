@@ -37,15 +37,16 @@
 - `docs/EVIDENCE_INDEX.md`：证据索引
 - `docs/MAINTENANCE.md`：月度维护流程
 - `docs/WEB_PROMPT_SNIPPETS.md`：ChatGPT/Gemini 粘贴模版
-- `docs/sources/`：审计用 JSON 证据文件
-- `docs/scripts/`：部署辅助脚本
+- `docs/RETRIEVAL_QUALITY_GUIDE.md`：检索质量分与权重设计说明
+- `docs/MONTHLY_UPDATE_SOP.md`：月度更新流程
+
+> 注：审计用 JSON 源文件和运营底表（xlsx）属于隐私数据，不包含在公开版本中。
 
 ## 数据来源
 
-- 博客：5 篇（`md + docx`）
+- 博客：5 篇全文抽取
 - AI 分析表：184 条有效记录
 - ChatGPT 历史：371 个会话，1305 条用户消息
-- 审计文件：`docs/sources/*.json`
 
 ## 使用建议
 
