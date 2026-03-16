@@ -1,0 +1,82 @@
+---
+url: https://www.thealgorithmicbridge.com/p/the-state-of-generative-ai-2024?utm_source=tldrai
+title: "The State of Generative AI, 2024"
+description: "A nuanced analysis and a glimpse of the future"
+author: "Alberto Romero"
+published: "2025-08-21T18:55:31.198Z"
+captured_at: "2026-03-08T11:48:49.985Z"
+---
+
+# The State of Generative AI, 2024
+
+If you watch the news, it’s easy to miss the forest for the trees. The evidence is all scattered so let’s gather it in one place:
+
+-   Growth, revenue, and margins are underwhelming. Visits to AI sites [have stalled](https://substack.com/@exponentialview/note/c-52677620). Sequoia, a VC firm, estimates that in 2023 companies spent $50B on Nvidia hardware but [only brought in $3B in revenue](https://www.wsj.com/tech/ai/a-peter-thiel-backed-ai-startup-cognition-labs-seeks-2-billion-valuation-998fa39d). AI startup valuations have been [much higher than they should be](https://www.theinformation.com/articles/ai-agenda-openai-is-a-relative-steal). The low gross margins [raise questions about profits](https://www.theinformation.com/articles/anthropics-gross-margin-flags-long-term-ai-profit-questions) and cloud providers are [tamping down expectations](https://www.theinformation.com/articles/generative-ai-providers-quietly-tamp-down-expectations).
+
+-   High-profile startups are starting to fail. InflectionAI, a [well-funded](https://techcrunch.com/2023/06/29/inflection-ai-lands-1-3b-investment-to-build-more-personal-ai/) private model-building company, is [being dismantled](https://inflection.ai/the-new-inflection); Microsoft is picking up the pieces, including [ex-CEO Mustafa Suleyman](https://twitter.com/mustafasuleyman/status/1770123596121432351). StabilityAI’s future is unstable, to put it lightly, after founder [Emad Mostaque’s downfall](https://www.forbes.com/sites/kenrickcai/2024/03/29/how-stability-ais-founder-tanked-his-billion-dollar-startup/).
+
+-   Enterprises [have security doubts](https://diginomica.com/ai-two-reports-reveal-massive-enterprise-pause-over-security-and-ethics) and [deployment doubts](https://hbr.org/2024/03/why-adopting-genai-is-so-difficult). OpenAI’s GPT store [is an utter failure](https://www.ft.com/content/7ca691f9-e4c7-46e8-bbc2-fe95464934f8). After an initial spark of interest, people [are getting bored](https://www.spectator.com.au/2023/05/are-you-as-bored-with-ai-as-i-am/). NYT journalist Ezra Klein says he can’t figure out [how to use the tech in his day-to-day job](https://www.nytimes.com/2024/04/02/opinion/ezra-klein-podcast-ethan-mollick.html). Economist Tyler Cowen says the use of the tools among his fellow academics “[has plateaued](https://archive.is/5MhEo).” Experts consider AI tools a “[fun distraction](https://twitter.com/rbhar90/status/1772052483965153453)” but not useful or [productivity-enhancing](https://twitter.com/fchollet/status/1772069855912747406) (and when they are, it [doesn’t always go well](https://www.theregister.com/2024/03/28/ai_bots_hallucinate_software_packages/)).
+
+-   Finally, most people don’t really care. The general public [knows about ChatGPT but nothing else](https://twitter.com/apples_jimmy/status/1773480915928551478). Among those who do, the vast majority use the [obsolete GPT-3.5](https://twitter.com/abacaj/status/1773485186270814319), unwilling to [swap to better successors](https://twitter.com/Alber_RomGar/status/1772356302540259489), like GPT-4, Gemini, and Claude 3 for a few bucks. *Among those who do*, it’s the unscrupulous who are sadly getting the most value—to the detriment of [people](https://www.washingtonpost.com/technology/2024/03/28/ai-women-clone-ads/), [the internet](https://www.thealgorithmicbridge.com/p/generative-ai-bullshit-as-a-service), and our [culture](https://www.nytimes.com/2024/03/29/opinion/ai-internet-x-youtube.html).
+
+Does this mean generative AI is failing? Perhaps, but not necessarily.
+
+Let’s make a fair case:
+
+-   The mainstream’s interest in AI has decreased but AI bubbles [still share daily updates](https://twitter.com/rowancheung/status/1773196580767650222) read by hundreds of thousands (including this newsletter, which keeps growing [at a quick pace](https://www.thealgorithmicbridge.com/p/how-i-got-1000-paid-subscribers-on)). The overhype has slowed down as well, with big names like Google DeepMind’s CEO Demis Hassabis [calling it out](https://www.ft.com/content/774901e5-e831-4e0b-b0a1-e4b5b0032fb8). Valuations [are more reasonable now](https://www.theinformation.com/articles/ai-valuations-may-be-coming-down-to-earth-a-glimpse-of-openais-search-engine) according to revenue or expectations—both would be good news.
+
+-   [Task-specific productivity enhancements are real](https://www.cnbc.com/2023/04/25/stanford-and-mit-study-ai-boosted-worker-productivity-by-14percent.html). Most knowledge workers may not use ChatGPT anymore but, overall, more people [have tried it](https://www.pewresearch.org/short-reads/2024/03/26/americans-use-of-chatgpt-is-ticking-up-but-few-trust-its-election-information/) compared to a year ago and those who’ve found a way [to increase their productivity](https://twitter.com/abacaj/status/1772301394344648954)—[mostly coders](https://twitter.com/karpathy/status/1608895189078380544)—are reaping big rewards.
+
+-   We get a new state-of-the-art model every few months. Anthropic announced [Claude 3](https://www.anthropic.com/news/claude-3-family) in early March, recently topping GPT-4 in the [LMSys chatbot arena](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard) for the first time. Many more releases are [scheduled for summer](https://twitter.com/AndrewCurran_/status/1773732225563111776), including possibly [OpenAI’s GPT-5](https://www.businessinsider.com/openai-launch-better-gpt-5-chatbot-2024-3), [Apple’s new Siri](https://www.bloomberg.com/news/newsletters/2023-10-22/what-is-apple-doing-in-ai-revamping-siri-search-apple-music-and-other-apps-lo1ffr7p), [Meta’s Llama 3](https://www.reuters.com/technology/meta-plans-launch-new-ai-language-model-llama-3-july-information-reports-2024-02-28/), [Google’s Gemini 1.5 Ultra](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/), and [xAI’s Grok 2](https://twitter.com/elonmusk/status/1773655245769330757).
+
+-   Last week alone we saw three landmark announcements: [Databricks’ DBRX](https://twitter.com/jefrankle/status/1772961586497425683), the best open-source model to date, [AI21 labs’ Jamba](https://twitter.com/AI21Labs/status/1773350888427438424), the best production-grade SSM-transformer (with a novel architecture), and [OpenAI’s Voice Engine](https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices), a text-to-speech model that generates custom realistic voices with 15 seconds of audio.
+
+-   And let’s not forget the [constant influx of research](https://arxiv.org/list/cs.AI/recent) that makes AI models possible or the infrastructure projects (hardware and data centers) that enable their training and deployment, like [Nvidia’s Blackwell platform](https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing) or [Stargate](https://www.theinformation.com/articles/microsoft-and-openai-plot-100-billion-stargate-ai-supercomputer), a $100B supercomputer Microsoft and OpenAI plan to build in the coming years.
+
+How can these two contrasting pictures happen at the same time?
+
+Tyler Cowen reconciles the disparity with a prediction grounded in history: “[AI hype has subsided, but the revolution continues](https://www.bloomberg.com/opinion/articles/2023-09-04/ai-hype-has-subsided-but-technology-remains-as-powerful-as-ever).” The first picture is the dying hype, a natural development of any new technology that grabs more attention than it can feed and more investment than it can return. The second is the silent, hidden “lull”, as Cowen puts it, that relentlessly moves forward, indifferent to the number of eyes it may or not attract from the outer world, focused on outputs, not outcomes.
+
+Cowen doesn’t claim the AI revolution will continue out of baseless hope, though. He has reasons to assume it’ll follow the same steps—hype, calm (we’re entering this phase), and revolution—as other past technologies. Whether his optimism resonates is a different question but he’s not shy in drawing analogy precisely from the three innovations that are most commonly compared to generative AI: the printing press, electricity, and the internet. Here’s what he says:
+
+> Every revolutionary technology has a period when it feels not so exciting after all. The dot-com crash in came in 2000, but even before that online commerce was decidedly meh. Only two years earlier Paul Krugman had [observed that](https://archive.is/o/5MhEo/https://www.laphamsquarterly.org/revolutions/miscellany/paul-krugmans-poor-prediction) maybe the internet was overrated—and the thing is, in 1998, he wasn’t completely wrong.
+>
+> Reaching even further back, consider the introduction of electricity into factories in the 19th century, which had many fits and starts over a period of [decades](https://archive.is/o/5MhEo/https://www.powermag.com/history-of-power-the-evolution-of-the-electric-generation-industry/). The printing press had a much larger impact on Europe in the 17th century, due to cheaper technology and paper, than it did immediately after Gutenberg’s invention in the mid-15th century.
+
+Generative AI could unfold similarly: early turmoil mixed with enthusiasm, followed by indifference, and finally, eventually, a resurgence. Does it need the popular approval it’s been deservedly losing for a while? I don’t think so; it’s not hype or consensus that builds the new world but the work of people quietly watching over progress while everyone else has moved on (even if they only manage to reap the overhanging fruits two hundred years later thanks to an “unrelated” innovation they couldn’t foresee, like cheaper paper).
+
+Cowen provides evidence favoring this prospect and even claims that “generative AI and LLMs continue to advance by leaps and bounds.” He mentions [OpenAI’s enterprise services](https://www.zdnet.com/article/openai-finally-introduces-a-business-version-of-chatgpt/), [Google’s GPT-4 competitor](https://blog.google/technology/ai/google-gemini-ai/), and, most significantly, he says, that “open-source AI models are [advancing](https://archive.is/o/5MhEo/https://twitter.com/osanseviero/status/1697523619725820226) at a rapid pace, even if most casual users don’t realize it.”
+
+Well, although we can remain hopeful looking back at our distant history, Cowen’s selected examples may not be the most favorable evidence: [Enterprises aren’t sure about AI](https://diginomica.com/ai-two-reports-reveal-massive-enterprise-pause-over-security-and-ethics) and among those who are, many [are struggling to adopt the tech](https://archive.is/Ehktl) as I argued in the introduction. Google Gemini Advanced [was a fiasco](https://www.thealgorithmicbridge.com/p/google-gemini-anti-whiteness-disaster) and [not as good as it should have been](https://www.thealgorithmicbridge.com/p/the-gpt-4-generation-why-are-the). And Cowen already said why open source efforts don’t really matter for the world at large—due to technical entry barriers, users care about open source *much less* than they care for the best ready-to-use products like GPT-4 and Claude 3, which is already ~zero compared to the outdated GPT-3.5-based ChatGPT.
+
+Isn’t the repetitive deflation of hopes an undeniable sign that it’s not just hype that has subsided but also the revolution itself?
+
+Again, not necessarily.
+
+Cowen failed to provide evidence to keep our hopes up but that’s because his article is eight months old and the field—both successes and failures—goes just too fast. I provided my own “hopeful” evidence in the second big paragraph above; will we falsify that eight months from now as well? Yes, very possibly so. But then we will be able to provide a few more brushstrokes of updated hope, repeating the cycle. If this keeps happening, then Cowen’s thesis is partially right: We’re at a low-hype, “non-excitement” phase. Developments will go under most people’s radar but the field will still advance—slower than during the overhype stage, but advance nonetheless.
+
+We may simply be unable to either prove or falsify the revolutionary nature of generative AI from the limited view of the present moment. Only the neutral, rational picture provided by distant hindsight will reveal the truth. We can confidently claim that two hundred years separated the materialized usefulness of printing books at scale from the invention of the technology; Gutenberg couldn’t.
+
+The optimistic conclusion we can take away is that a calmer, non-hype stage will allow the much-needed adjacent work (technical, social, ethical work) to be done—just like it happened with the printing press, electricity, and the internet.
+
+A few relevant questions can help us reframe and understand the current and coming discussions about the state of generative AI in this new phase.
+
+How much harm the overhype phase—not yet left behind or completely overcome—has done to the industry and the underlying engineering and scientific efforts? Can the world ever receive generative AI with open arms when those enabling it have been so indifferent about the externalities? Is the world going to leave the promises of exponential growth with a positive vibe of “You need to attract first and deliver later—I get it” or with a bad taste of “you lied to me and hurt me and I won’t trust you again”?
+
+High expectations can help a lot in the short term but they entail a dangerous trade-off with trust; there’s a tipping point of saturation beyond which hype hinders—and may even taint forever—future efforts.
+
+There’s another question that should serve as a cautionary tale (although I’m afraid it won’t). It’s something I’ve been asking myself since GPT-3 (especially due to the over-the-top claims company executives have been sharing with the press, behavior that peaked post-ChatGPT):
+
+Wasn’t generative AI incredible enough on its own—it is—that they had to exaggerate its capabilities with wild promises and hyped narratives so much as to ensure that the field couldn’t ever deliver on them?
+
+If generative AI is so amazing and great, was it really necessary for Sam Altman to say OpenAI’s end goal is “[magic intelligence in the sky](https://archive.is/f7mwd)” and the beginning of [a post-scarcity world](https://moores.samaltman.com/)? Or for Sundar Pichai to say AI is “[more important than fire or electricity](https://www.cnbc.com/2018/02/01/google-ceo-sundar-pichai-ai-is-more-important-than-fire-electricity.html)”? Or for Satya Nadella to say that generative AI [feels as big as the internet felt in 1995](https://www.youtube.com/watch?v=GrYmcmVf2DI&ab_channel=BloombergTechnology)? Or for Elon Musk to say AI could become the “[most disruptive force in history](https://www.cnbc.com/2023/11/02/tesla-boss-elon-musk-says-ai-will-create-situation-where-no-job-is-needed.html)”? Or for Jensen Huang to say [it won’t be sensible to learn programming](https://www.youtube.com/watch?v=8Pm2xEViNIo&t=1094s)?
+
+If they *need* that discourse, doesn’t it mean the underlying reality isn’t as convincing as they claim so they’re forced to do the convincing themselves?
+
+Today, I still don’t have a satisfactory answer.
+
+Finally, setting aside the hype and other emotional reactions, the broader question we’ll eventually face is this: Can those building AI in the silence of their own conviction prove that it’s worth being called a revolution like the printing press, electricity, or the internet? Or will it pass to engross the pile of forgotten technologies that, after hype subsided, never surged again?
+
+Only time will tell.
+
+Let’s just hope we won’t have to wait two hundred years, like those poor medieval peasants, to find out. Back then, they didn’t have any information to react to the slowness, but we’re not that forgiving in the 21st century, and even less so are [the people paying for these would-be revolutions](https://www.ft.com/content/599a5c5b-dc59-4724-8248-2d4132ffdb7f). Thankfully, if the world advances as fast as AI evangelists claim it shouldn’t take long.

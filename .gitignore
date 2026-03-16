@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sensitive / operational files (should never be committed)
+**/sources/*.json
+**/_source/
+*.xlsx

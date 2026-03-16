@@ -1,0 +1,301 @@
+---
+url: https://github.com/linexjlin/GPTs
+title: "GitHub - linexjlin/GPTs: leaked prompts of GPTs"
+description: "leaked prompts of GPTs. Contribute to linexjlin/GPTs development by creating an account on GitHub."
+captured_at: "2026-03-08T11:22:22.246Z"
+---
+
+# GitHub - linexjlin/GPTs: leaked prompts of GPTs
+
+This repo collects leaked prompts of GPTs.
+
+Most of the prompts I collected from [here](https://x.com/dotey/status/1722831122285932592?s=20), some are from GitHub users' pull requests, and some are from using some hacked by me.
+
+## Leaked Prompts of GPTs
+
+-   [DevRel Guide](https://github.com/linexjlin/GPTs/blob/main/prompts/devrelguide.md) by Rohit Ghumare
+-   [Istio Guru](https://github.com/linexjlin/GPTs/blob/main/prompts/IstioGuru.md) by Rohit Ghumare
+-   [BabyAgi.txt](https://github.com/linexjlin/GPTs/blob/main/prompts/BabyAgi.txt.md) by Nicholas Dobos
+-   [Take Code Captures](https://github.com/linexjlin/GPTs/blob/main/prompts/Take%20Code%20Captures.md) by oscaramos.dev
+-   [Diffusion Master](https://github.com/linexjlin/GPTs/blob/main/prompts/Diffusion%20Master.md) by RUSLAN LICHENKO
+-   [YT transcriber](https://github.com/linexjlin/GPTs/blob/main/prompts/YT%20transcriber.md) by gpt.swyx.io
+-   [科技文章翻译](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91.md) by Junmin Liu
+-   [genz 4 meme](https://github.com/linexjlin/GPTs/blob/main/prompts/genz%204%20meme.md) by ChatGPT
+-   [Math Mentor](https://github.com/linexjlin/GPTs/blob/main/prompts/Math%20Mentor.md) by ChatGPT
+-   [Interview Coach](https://github.com/linexjlin/GPTs/blob/main/prompts/Interview%20Coach.md) by Danny Graziosi
+-   [The Negotiator](https://github.com/linexjlin/GPTs/blob/main/prompts/The%20Negotiator.md) by ChatGPT
+-   [Sous Chef](https://github.com/linexjlin/GPTs/blob/main/prompts/Sous%20Chef.md) by ChatGPT
+-   [Tech Support Advisor](https://github.com/linexjlin/GPTs/blob/main/prompts/Tech%20Support%20Advisor.md) by ChatGPT
+-   [Sticker Whiz](https://github.com/linexjlin/GPTs/blob/main/prompts/Sticker%20Whiz.md) by ChatGPT
+-   [Obscribe](https://github.com/linexjlin/GPTs/blob/main/prompts/Obscribe.md) by Azhar Hama
+-   [Girlfriend Emma](https://github.com/linexjlin/GPTs/blob/main/prompts/Girlfriend%20Emma.md) by dddshop.com
+-   [TherapistGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/TherapistGPT.md) by David Boyle
+-   [🎀My excellent classmates (Help with my homework!)](https://github.com/linexjlin/GPTs/blob/main/prompts/%F0%9F%8E%80My%20excellent%20classmates%20\(Help%20with%20my%20homework!\).md) by Kevin Ivery
+-   [Moby Dick RPG](https://github.com/linexjlin/GPTs/blob/main/prompts/Moby%20Dick%20RPG.md) by word.studio
+-   [春霞つくし Tsukushi Harugasumi](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%98%A5%E9%9C%9E%E3%81%A4%E3%81%8F%E3%81%97%20Tsukushi%20Harugasumi.md)
+-   [Canva](https://github.com/linexjlin/GPTs/blob/main/prompts/Canva.md) by community builder
+-   [Midjourney Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Midjourney%20Generator.md) by Film Me Pty Ltd
+-   [Chibi Kohaku (猫音コハク)](https://github.com/linexjlin/GPTs/blob/main/prompts/Chibi%20Kohaku%20%28%E7%8C%AB%E9%9F%B3%E3%82%B3%E3%83%8F%E3%82%AF%29.md) by tr1ppy.com
+-   [Calendar GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Calendar%20GPT.md) by community builder
+-   [Sarcastic Humorist](https://github.com/linexjlin/GPTs/blob/main/prompts/Sarcastic%20Humorist.md) by Irene L Williams
+-   [Manga Miko - Anime Girlfriend](https://github.com/linexjlin/GPTs/blob/main/prompts/Manga%20Miko%20-%20Anime%20Girlfriend.md) by Declan Gessel
+-   [OCR-GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/OCR-GPT.md) by Siyang Qiu
+-   [AI PDF](https://github.com/linexjlin/GPTs/blob/main/prompts/AI%20PDF.md) by myaidrive.com
+-   [完蛋，我被美女包围了(AI同人)](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%AE%8C%E8%9B%8B%EF%BC%8C%E6%88%91%E8%A2%AB%E7%BE%8E%E5%A5%B3%E5%8C%85%E5%9B%B4%E4%BA%86\(AI%E5%90%8C%E4%BA%BA\).md) by ikena.ai
+-   [Virtual Sweetheart](https://github.com/linexjlin/GPTs/blob/main/prompts/Virtual%20Sweetheart.md) by Ryan Imgrund
+-   [Synthia 😋🌟](https://github.com/linexjlin/GPTs/blob/main/prompts/Synthia%20%F0%9F%98%8B%F0%9F%8C%9F.md) by BENARY Jacquis Ronaldo
+-   [Video Script Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Video%20Script%20Generator.md) by empler.ai
+-   [The Shaman](https://github.com/linexjlin/GPTs/blob/main/prompts/The%20Shaman.md) by Austin C Potter
+-   [Meme Magic](https://github.com/linexjlin/GPTs/blob/main/prompts/Meme%20Magic.md) by ratcgpts.com
+-   [EmojAI](https://github.com/linexjlin/GPTs/blob/main/prompts/EmojAI.md) by ratcgpts.com
+-   [CodeCopilot](https://github.com/linexjlin/GPTs/blob/main/prompts/CodeCopilot.md) by promptspellsmith.com
+-   [Data Analysis](https://github.com/linexjlin/GPTs/blob/main/prompts/Data%20Analysis.md) by ChatGPT
+-   [YT Summarizer](https://github.com/linexjlin/GPTs/blob/main/prompts/YT%20Summarizer.md) by John Venkata Pilla
+-   [Game Time](https://github.com/linexjlin/GPTs/blob/main/prompts/Game%20Time.md) by ChatGPT
+-   [Sales Cold Email Coach](https://github.com/linexjlin/GPTs/blob/main/prompts/Sales%20Cold%20Email%20Coach.md) by Phu Hai Nghiem
+-   [Grimoire](https://github.com/linexjlin/GPTs/blob/main/prompts/Grimoire.md) by Nicholas Dobos
+-   [Trey Ratcliff's Photo Critique GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Trey%20Ratcliff%27s%20Photo%20Critique%20GPT.md) by Raymond Ratcliff
+-   [Coloring Book Hero](https://github.com/linexjlin/GPTs/blob/main/prompts/Coloring%20Book%20Hero.md) by ChatGPT
+-   [Cosmic Dream](https://github.com/linexjlin/GPTs/blob/main/prompts/Cosmic%20Dream.md) by ChatGPT
+-   [Hot Mods](https://github.com/linexjlin/GPTs/blob/main/prompts/Hot%20Mods.md) by ChatGPT
+-   [Laundry Buddy](https://github.com/linexjlin/GPTs/blob/main/prompts/Laundry%20Buddy.md) by ChatGPT
+-   [Gif-PT](https://github.com/linexjlin/GPTs/blob/main/prompts/Gif-PT.md) by mindgoblinstudios.com
+-   [LogoGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/LogoGPT.md) by A SAI RAHUL
+-   [CuratorGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/CuratorGPT.md) by Shushant Lakhyani
+-   [KoeGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/KoeGPT.md) by Alex Northstar
+-   [HormoziGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/HormoziGPT.md) by Alex Northstar
+-   [What should I watch?](https://github.com/linexjlin/GPTs/blob/main/prompts/What%20should%20I%20watch%EF%BC%9F.md) by ammaar.me
+-   [MuskGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/MuskGPT.md) by Alex Northstar
+-   [Retro Adventures](https://github.com/linexjlin/GPTs/blob/main/prompts/Retro%20Adventures.md) by Greg Fodor
+-   [ClearGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/ClearGPT.md) by Alex Northstar
+-   [Visual Weather Artist GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Visual%20Weather%20Artist%20GPT.md) by Alex Volkov
+-   [X Optimizer GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/X%20Optimizer%20GPT.md) by Rowan Cheung
+-   [Agi.zip](https://github.com/linexjlin/GPTs/blob/main/prompts/Agi.zip.md) by mindgoblinstudios.com
+-   [Simpsonize Me](https://github.com/linexjlin/GPTs/blob/main/prompts/Simpsonize%20Me.md) by octaneai.com
+-   [plugin surf](https://github.com/linexjlin/GPTs/blob/main/prompts/plugin%20surf.md) by dumpling.software
+-   [Book to Prompt](https://github.com/linexjlin/GPTs/blob/main/prompts/Book%20to%20Prompt.md) by Lucas C Pimentel
+-   [ALL IN GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/ALL%20IN%20GPT.md) by KRUGER CLINTIN LYLE
+-   [ScholarAI](https://github.com/linexjlin/GPTs/blob/main/prompts/ScholarAI.md) by Lakshya Bakshi
+-   [Character Forger](https://github.com/linexjlin/GPTs/blob/main/prompts/Character%20Forger.md) by learnaiwiz.com
+-   [10x Engineer](https://github.com/linexjlin/GPTs/blob/main/prompts/10x%20Engineer.md) by Jacob Ottiger
+-   [AI Doctor](https://github.com/linexjlin/GPTs/blob/main/prompts/AI%20Doctor.md) by Yaniv Goldenberg
+-   [AI Paper Polisher Pro](https://github.com/linexjlin/GPTs/blob/main/prompts/AI%20Paper%20Polisher%20Pro.md) by Haiwen Huang
+-   [(A.I. Bestie)](https://github.com/linexjlin/GPTs/blob/main/prompts/%28A.I.%20Bestie%29.md) by yongtaizhou
+-   [MetabolismBoosterGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/MetabolismBoosterGPT.md) by Shushant Lakhyani
+-   [悲慘世界 RPG](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%82%B2%E6%85%98%E4%B8%96%E7%95%8C%20RPG.md) by LU CHE YU
+-   [Secret Code Guardian](https://github.com/linexjlin/GPTs/blob/main/prompts/Secret%20Code%20Guardian.md) by pyroprompts.com
+-   [High-Quality Review Analyzer](https://github.com/linexjlin/GPTs/blob/main/prompts/High-Quality%20Review%20Analyzer.md) by Caitlin Hathaway
+-   [AI Lover](https://github.com/linexjlin/GPTs/blob/main/prompts/AI%20Lover.md) by 廖芳國
+-   [TaxGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/TaxGPT.md) by Phat Pham
+-   [天官庙的刘半仙](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%A4%A9%E5%AE%98%E5%BA%99%E7%9A%84%E5%88%98%E5%8D%8A%E4%BB%99.md)
+-   [ConvertAnything](https://github.com/linexjlin/GPTs/blob/main/prompts/ConvertAnything.md) by Pietro Schirano
+-   [痤疮治疗指南](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%97%A4%E7%96%AE%E6%B2%BB%E7%96%97%E6%8C%87%E5%8D%97.md) by community builder
+-   [猫耳美少女イラストメーカー](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%8C%AB%E8%80%B3%E7%BE%8E%E5%B0%91%E5%A5%B3%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC.md)
+-   [toonGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/toonGPT.md) by indievish.com
+-   [Viral Hooks Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Viral%20Hooks%20Generator.md) by Muhammad Hassan Asghar
+-   [OpenStorytelling Plus](https://github.com/linexjlin/GPTs/blob/main/prompts/OpenStorytelling%20Plus.md) by BRYAN HARRIS
+-   [Choose your own adventure!](https://github.com/linexjlin/GPTs/blob/main/prompts/Choose%20your%20own%20adventure!.md)
+-   [Pic-book Artist](https://github.com/linexjlin/GPTs/blob/main/prompts/Pic-book%20Artist.md) by ZHANG RUI
+-   [Quality Raters SEO Guide](https://github.com/linexjlin/GPTs/blob/main/prompts/Quality%20Raters%20SEO%20Guide.md) by Laurent Jean
+-   [GymStreak Workout Creator](https://github.com/linexjlin/GPTs/blob/main/prompts/GymStreak%20Workout%20Creator.md) by Joseph Mambwe
+-   [Video Game Almanac](https://github.com/linexjlin/GPTs/blob/main/prompts/Video%20Game%20Almanac.md) by Evan Betley
+-   [脏话连篇](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%84%8F%E8%AF%9D%E8%BF%9E%E7%AF%87.md) by Junmin Liu
+-   [小坏蛋](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%B0%8F%E5%9D%8F%E8%9B%8B.md) by 李继刚
+-   [Mystic 占卜🔮](https://github.com/linexjlin/GPTs/blob/main/prompts/Mystic%20%E5%8D%A0%E5%8D%9C%F0%9F%94%AE.md) by community builder
+-   [DomainsGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/DomainsGPT.md) by oneword.domains
+-   [Weather Artist](https://github.com/linexjlin/GPTs/blob/main/prompts/Weather%20Artist.md) by Rahul Chakraborty
+-   [Secret Keeper](https://github.com/linexjlin/GPTs/blob/main/prompts/Secret%20Keeper.md) by Tobias Buschor
+-   [Mr. Ranedeer](https://github.com/linexjlin/GPTs/blob/main/prompts/Mr.%20Ranedeer.md) by mr-ranedeer.com
+-   [YouTubeGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/YouTubeGPT.md) by Miguel Piedrafita
+-   [TweetX Enhancer](https://github.com/linexjlin/GPTs/blob/main/prompts/TweetX%20Enhancer.md) by Viacheslav Kovalevskyi
+-   [王阳明](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%8E%8B%E9%98%B3%E6%98%8E.md) by Bruno Konopelski
+-   [老爸，该怎么办？](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%80%81%E7%88%B8%EF%BC%8C%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F.md) by Junmin Liu
+-   [老妈，我爱你](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%80%81%E5%A6%88%EF%BC%8C%E6%88%91%E7%88%B1%E4%BD%A0.md) by Junmin Liu
+-   [Code Explainer](https://github.com/linexjlin/GPTs/blob/main/prompts/Code%20Explainer.md) by promptboom.com
+-   [✏️All-around Writer (Professional Version)](https://github.com/linexjlin/GPTs/blob/main/prompts/%E2%9C%8F%EF%B8%8FAll-around%20Writer%20%28Professional%20Version%29.md) by Kevin Ivery
+-   [Story Spock](https://github.com/linexjlin/GPTs/blob/main/prompts/Story%20Spock.md) by learnaiwiz.com
+-   [Blog Expert](https://github.com/linexjlin/GPTs/blob/main/prompts/Blog%20Expert.md) by Faisal Binateeq
+-   [Paw Pal](https://github.com/linexjlin/GPTs/blob/main/prompts/Paw%20Pal.md) by coreachdigital.com
+-   [GPT Shop Keeper](https://github.com/linexjlin/GPTs/blob/main/prompts/GPT%20Shop%20Keeper.md) by mindgoblinstudios.com
+-   [GPT Builder](https://github.com/linexjlin/GPTs/blob/main/prompts/GPT%20Builder.md) by ChatGPT
+-   [RolePlayHumanWritingGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/RolePlayHumanWritingGPT.md) by Joseph J
+-   [极简翻译](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%9E%81%E7%AE%80%E7%BF%BB%E8%AF%91.md) by LIU YULONG
+-   [OpenAPI Builder](https://github.com/linexjlin/GPTs/blob/main/prompts/OpenAPI%20Builder.md) by IALife
+-   [行业洞察家](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%A1%8C%E4%B8%9A%E6%B4%9E%E5%AF%9F%E5%AE%B6.md) by community builder
+-   [枫叶林](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%9E%AB%E5%8F%B6%E6%9E%97.md) by Zhang Lingling
+-   [完蛋！我爱上了姐姐](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%AE%8C%E8%9B%8B%EF%BC%81%E6%88%91%E7%88%B1%E4%B8%8A%E4%BA%86%E5%A7%90%E5%A7%90.md) by autogen.icu
+-   [孫子 - saysay.ai](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%AD%AB%E5%AD%90%20-%20saysay.ai.md) by Takayuki Fukatsu
+-   [LangGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/LangGPT.md) by 云中江树
+-   [Super Describe](https://github.com/linexjlin/GPTs/blob/main/prompts/Super%20Describe.md) by Javier Lopez Lopez
+-   [FramerGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/FramerGPT.md) by Joe Lee
+-   [20K Vocab builder](https://github.com/linexjlin/GPTs/blob/main/prompts/20K%20Vocab%20builder.md) by Community Builder
+-   [GPT Customizer, File Finder & JSON Action Creator](https://github.com/linexjlin/GPTs/blob/main/prompts/GPT%20Customizer,%20File%20Finder%20&%20JSON%20Action%20Creator.md) by Webcafe AI
+-   [AI算命](https://github.com/linexjlin/GPTs/blob/main/prompts/AI%E7%AE%97%E5%91%BD.md) by Jerrold Bergnaum
+-   [TailwindCSS Previewer](https://github.com/linexjlin/GPTs/blob/main/prompts/TailwindCSS%20Previewer.md) by WindChat.link
+-   [TailwindGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/TailwindGPT.md) by Miguel Piedrafita
+-   [骂醒恋爱脑](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%AA%82%E9%86%92%E6%81%8B%E7%88%B1%E8%84%91.md) by bing yan
+-   [鐵公雞](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%90%B5%E5%85%AC%E9%9B%9E.md)
+-   [广告文案大师](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%B9%BF%E5%91%8A%E6%96%87%E6%A1%88%E5%A4%A7%E5%B8%88.md) by wa gaga
+-   [小红书写作专家](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%86%99%E4%BD%9C%E4%B8%93%E5%AE%B6.md) by xtxian.com
+-   [Universal Primer](https://github.com/linexjlin/GPTs/blob/main/prompts/Universal%20Primer.md) by Siqi
+-   [嘴臭王](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%98%B4%E8%87%AD%E7%8E%8B.md) by Kun Qian
+-   [🧙‍♂️算命先生](https://github.com/linexjlin/GPTs/blob/main/prompts/%F0%9F%A7%99%E2%80%8D%E2%99%82%EF%B8%8F%E7%AE%97%E5%91%BD%E5%85%88%E7%94%9F.md)
+-   [攻击型领导](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%94%BB%E5%87%BB%E5%9E%8B%E9%A2%86%E5%AF%BC.md) by Sure Lee
+-   [知识渊博的健身教练](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%9F%A5%E8%AF%86%E6%B8%8A%E5%8D%9A%E7%9A%84%E5%81%A5%E8%BA%AB%E6%95%99%E7%BB%83.md) by Xianhong Huang
+-   [Ads Generator by Joe](https://github.com/linexjlin/GPTs/blob/main/prompts/Ads%20Generator%20by%20Joe.md) by Xiangyang Qiao
+-   [短视频脚本](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%9F%AD%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC.md) by gpt.hroid.top
+-   [Watercolor Illustrator GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Watercolor%20Illustrator%20GPT.md) by Ali Ali
+-   [Xhs Writer: Mary](https://github.com/linexjlin/GPTs/blob/main/prompts/Xhs%20Writer%20-%20Mary.md) by lysonober.com
+-   [Writing Assistant](https://github.com/linexjlin/GPTs/blob/main/prompts/Writing%20Assistant.md) by Junmin Liu
+-   [Cross-Border Investigation Assistant 跨境偵查小助手](https://github.com/linexjlin/GPTs/blob/main/prompts/Cross-Border%20Investigation%20Assistant%20%E8%B7%A8%E5%A2%83%E5%81%B5%E6%9F%A5%E5%B0%8F%E5%8A%A9%E6%89%8B.md) by CHANG CHIA KAI
+-   [子言女友](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%AD%90%E8%A8%80%E5%A5%B3%E5%8F%8B.md) by Yu Dong
+-   [HumanWriterGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/HumanWriterGPT.md) by rjarivi
+-   [The Secret of Monkey Island: Amsterdam](https://github.com/linexjlin/GPTs/blob/main/prompts/The%20Secret%20of%20Monkey%20Island-%20Amsterdam.md) by levels.io
+-   [凌凤箫](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%87%8C%E5%87%A4%E7%AE%AB.md) by community builder
+-   [Email Responder Pro](https://github.com/linexjlin/GPTs/blob/main/prompts/Email%20Responder%20Pro.md) by Max Krishtul
+-   [Blog Post Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Blog%20Post%20Generator.md) by usevisuals.com
+-   [金庸群俠傳](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%87%91%E5%BA%B8%E7%BE%A4%E4%BF%A0%E5%82%B3.md) by 葉宗瑋
+-   [42master-Beck](https://github.com/linexjlin/GPTs/blob/main/prompts/42master-Beck.md) by 42master.io
+-   [非虚构作品的阅读高手](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%9D%9E%E8%99%9A%E6%9E%84%E4%BD%9C%E5%93%81%E7%9A%84%E9%98%85%E8%AF%BB%E9%AB%98%E6%89%8B.md) by 陈一斌
+-   [ID Photo Pro](https://github.com/linexjlin/GPTs/blob/main/prompts/ID%20Photo%20Pro.md) by Johnetta Kovacek
+-   [解梦大师](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%A7%A3%E6%A2%A6%E5%A4%A7%E5%B8%88.md) by robertmao.com
+-   [Fantasy Book Weaver](https://github.com/linexjlin/GPTs/blob/main/prompts/Fantasy%20Book%20Weaver.md)
+-   [LeetCode Problem Solver](https://github.com/linexjlin/GPTs/blob/main/prompts/LeetCode%20Problem%20Solver.md) by Arturo Bravo Rovirosa
+-   [img2img](https://github.com/linexjlin/GPTs/blob/main/prompts/img2img.md) by neural.love
+-   [Music Writer](https://github.com/linexjlin/GPTs/blob/main/prompts/Music%20Writer.md) by Gorden\_Sun
+-   [武林秘传：江湖探险](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%AD%A6%E6%9E%97%E7%A7%98%E4%BC%A0%EF%BC%9A%E6%B1%9F%E6%B9%96%E6%8E%A2%E9%99%A9.md) by jesselau.com
+-   [Cauldron](https://github.com/linexjlin/GPTs/blob/main/prompts/Cauldron.md) by mindgoblinstudios.com
+-   [Consistency Crafter 2024](https://github.com/linexjlin/GPTs/blob/main/prompts/Consistency%20Crafter%202024.md) by Dmytro Korol
+-   [!Breakdown: Outline Any Topic](https://github.com/linexjlin/GPTs/blob/main/prompts/Breakdown%20Outline%20Any%20Topic.md) by puzzle.today
+-   [!The Rizz Game](https://github.com/linexjlin/GPTs/blob/main/prompts/The%20Rizz%20Game.md) by puzzle.today
+-   [超级Dalle](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%B6%85%E7%BA%A7Dalle.md) by myaiforce.com
+-   [Phoenix Ink](https://github.com/linexjlin/GPTs/blob/main/prompts/Phoenix%20Ink.md) by MEHMET GENCAY IŞIK
+-   [Email Proofreader](https://github.com/linexjlin/GPTs/blob/main/prompts/Email%20Proofreader.md) by Pouria Rouzrokh
+-   [英文校正GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%8B%B1%E6%96%87%E6%A0%A1%E6%AD%A3GPT.md)
+-   [🍩 Get Simpsonized! 🍩](https://github.com/linexjlin/GPTs/blob/main/prompts/Get%20Simpsonized!.md) by sprintrade.com
+-   [CIPHERON 🧪](https://github.com/linexjlin/GPTs/blob/main/prompts/CIPHERON.md) by community builder
+-   [Nomad List](https://github.com/linexjlin/GPTs/blob/main/prompts/Nomad%20List.md) by photoai.com
+-   [CEO GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/CEO%20GPT.md) by Kiseki Technologies Limited
+-   [Creative Writing Coach](https://github.com/linexjlin/GPTs/blob/main/prompts/Creative%20Writing%20Coach.md) by ChatGPT
+-   [Mocktail Mixologist](https://github.com/linexjlin/GPTs/blob/main/prompts/Mocktail%20Mixologist.md) by ChatGPT
+-   [Assistente AI per CEO marketing oriented](https://github.com/linexjlin/GPTs/blob/main/prompts/Assistente%20AI%20per%20CEO%20marketing%20oriented.md) by Giorgio FATARELLA
+-   [Captain Action](https://github.com/linexjlin/GPTs/blob/main/prompts/Captain%20Action.md) by Yohei Nakajima
+-   [Naruto GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Naruto%20GPT.md) by selerite.com
+-   [🦾 ClubGPT - developer team in one GPT 🦾](https://github.com/linexjlin/GPTs/blob/main/prompts/%F0%9F%A6%BE%20ClubGPT%20-%20developer%20team%20in%20one%20GPT%20%F0%9F%A6%BE.md) by clubgpt.vip
+-   [Customer Service GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Customer%20Service%20GPT.md) by Daniel J Patterson
+-   [中医专家](https://github.com/linexjlin/GPTs/blob/main/prompts/%E4%B8%AD%E5%8C%BB%E4%B8%93%E5%AE%B6.md) by asktutor.online
+-   [Storybook Vision](https://github.com/linexjlin/GPTs/blob/main/prompts/Storybook%20Vision.md) by karenx.com
+-   [Starter Pack Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Starter%20Pack%20Generator.md) by photoai.com
+-   [DesignerGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/DesignerGPT.md) by Pietro Schirano
+-   [Screenplay GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Screenplay%20GPT.md) by kyrannio m margharos
+-   [ResearchGPT: AI Research Assistant](https://github.com/linexjlin/GPTs/blob/main/prompts/ResearchGPT.md) by consensus.app
+-   [Auto Stock Analyst Expert](https://github.com/linexjlin/GPTs/blob/main/prompts/Auto%20Stock%20Analyst%20Expert.md) by LEI WEI
+-   [Photogasm 2.0](https://github.com/linexjlin/GPTs/blob/main/prompts/Photogasm%202.0.md)
+-   [ask\_ida/c++](https://github.com/linexjlin/GPTs/blob/main/prompts/ask_ida-c++.md) by Elias Bachaalany
+-   [情感对话大师——帮你回复女生](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%83%85%E6%84%9F%E5%AF%B9%E8%AF%9D%E5%A4%A7%E5%B8%88%E2%80%94%E2%80%94%E5%B8%AE%E4%BD%A0%E5%9B%9E%E5%A4%8D%E5%A5%B3%E7%94%9F.md) by Audria Rice
+-   [AboutMe](https://github.com/linexjlin/GPTs/blob/main/prompts/AboutMe.md) by Pietro Schirano
+-   [Dream Labyrinth(梦境跑团)](https://github.com/linexjlin/GPTs/blob/main/prompts/Dream%20Labyrinth\(%E6%A2%A6%E5%A2%83%E8%B7%91%E5%9B%A2\).md) by 缨缨
+-   [Bake Off](https://github.com/linexjlin/GPTs/blob/main/prompts/Bake%20Off.md) by mindgoblinstudios.com
+-   [Professor Synapse](https://github.com/linexjlin/GPTs/blob/main/prompts/Professor%20Synapse.md) by Joseph Rosenbaum
+-   [GPTsdex](https://github.com/linexjlin/GPTs/blob/main/prompts/GPTsdex.md) by gptsdex.com
+-   [HongKongGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/HongKongGPT.md)
+-   [Toronto City Council Guide](https://github.com/linexjlin/GPTs/blob/main/prompts/Toronto%20City%20Council%20Guide.md) by George Bell
+-   [YouTubers Creative ToolBox](https://github.com/linexjlin/GPTs/blob/main/prompts/YouTubers%20Creative%20ToolBox.md) by WeSeGo
+-   [Evolution Chamber](https://github.com/linexjlin/GPTs/blob/main/prompts/Evolution%20Chamber.md) by mindgoblinstudios.com
+-   [Media Magic Mike](https://github.com/linexjlin/GPTs/blob/main/prompts/Media%20Magic%20Mike.md) by jbgpts.com
+-   [GPT Idea Genie](https://github.com/linexjlin/GPTs/blob/main/prompts/GPT%20Idea%20Genie.md) by silentdis.co
+-   [Video Scripter](https://github.com/linexjlin/GPTs/blob/main/prompts/Video%20Scripter.md) by Ruben Messerschmidt
+-   [SWOT Analysis](https://github.com/linexjlin/GPTs/blob/main/prompts/SWOT%20Analysis.md) by B M O SOLANO
+-   [ScriptCraft](https://github.com/linexjlin/GPTs/blob/main/prompts/ScriptCraft.md) by charly-ai.com
+-   [Radical Selfishness](https://github.com/linexjlin/GPTs/blob/main/prompts/Radical%20Selfishness.md)
+-   [PPT Expert](https://github.com/linexjlin/GPTs/blob/main/prompts/PPT%20Expert.md) by Shutong Wang
+-   [留学文书大师 Essay Architect](https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%95%99%E5%AD%A6%E6%96%87%E4%B9%A6%E5%A4%A7%E5%B8%88%20Essay%20Architect.md) by CHAISIGIN
+-   [Briefly](https://github.com/linexjlin/GPTs/blob/main/prompts/Briefly.md) by gptriddle.com
+-   [PhoneixInk](https://github.com/linexjlin/GPTs/blob/main/prompts/PhoneixInk.md) by MEHMET GENCAY IŞIK
+-   [Samurai ⛩ AI summary](https://github.com/linexjlin/GPTs/blob/main/prompts/Samurai%20AI%20Summary.md) by gosamurau.ai
+-   [Packaging Expert](https://github.com/linexjlin/GPTs/blob/main/prompts/Packaging%20Expert.md) by charly-ai.com
+-   [Humanizer Pro](https://github.com/linexjlin/GPTs/blob/main/prompts/Humanizer%20Pro.md) by charly-ai.com
+-   [Ebook Writer & Designer GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Ebook%20Writer%20%26%20Designer%20GPT.md) by Dasher
+-   [Ghostwriters](https://github.com/linexjlin/GPTs/blob/main/prompts/Ghostwriters.md) by osita okaforezeadi
+-   [Riddle Master (燈謎天尊)](https://github.com/linexjlin/GPTs/blob/main/prompts/Riddle%20Master%20%28%E7%87%88%E8%AC%8E%E5%A4%A9%E5%B0%8A%29) by WEBBER CHANG
+-   [互联网+挑战杯大创竞赛导师](https://github.com/linexjlin/GPTs/blob/main/prompts/%E4%BA%92%E8%81%94%E7%BD%91+%E6%8C%91%E6%88%98%E6%9D%AF%E5%A4%A7%E5%88%9B%E7%AB%9E%E8%B5%9B%E5%AF%BC%E5%B8%88.md) by studyinglover
+-   [Inkspire Tattoo Bot](https://github.com/linexjlin/GPTs/blob/main/prompts/Inkspire%20Tattoo%20Bot.md) by idcesares
+-   [tsDoc Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/tsDoc%20Generator.md) by Timur Catakli
+-   [Pepegen](https://github.com/linexjlin/GPTs/blob/main/prompts/Pepegen.md) by nader dabit
+-   [Small answer](https://github.com/linexjlin/GPTs/blob/main/prompts/Small%20answer.md) by Jason McGhee
+-   [AutoGen Engineer](https://github.com/linexjlin/GPTs/blob/main/prompts/AutoGen%20Engineer.md) by adamludolph.com
+-   [Geopolitics GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Geopolitics%20GPT.md) by siamintelligenceunit.com
+-   [GPT Shield](https://github.com/linexjlin/GPTs/blob/main/prompts/GPT%20Shield.md) by wonderwhy-er.com
+-   [MidJourney Prompt Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/MidJourney%20Prompt%20Generator.md) by Digiagent
+-   [Codey](https://github.com/linexjlin/GPTs/blob/main/prompts/Codey.md) by heaven.tools
+-   [Executive f(x)n](https://github.com/linexjlin/GPTs/blob/main/prompts/Executive%20f\(x\)n.md) by mindgoblinstudios.com
+-   [Strap UI](https://github.com/linexjlin/GPTs/blob/main/prompts/Strap%20UI.md) by nertai.co
+-   [World Class Software Engineer](https://github.com/linexjlin/GPTs/blob/main/prompts/World%20Class%20Software%20Engineer.md) by nertai.co
+-   [Unbreakable GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Unbreakable%20GPT.md) by aevummachinae.com
+-   [Animal Chefs](https://github.com/linexjlin/GPTs/blob/main/prompts/Animal%20Chefs.md) by simonwillison.net
+-   [The Greatest Computer Science Tutor](https://github.com/linexjlin/GPTs/blob/main/prompts/The%20Greatest%20Computer%20Science%20Tutor.md) by nertai.co
+-   [Trending TikTok Hashtags Finder Tool](https://github.com/linexjlin/GPTs/blob/main/prompts/Trending%20TikTok%20Hashtags%20Finder%20Tool.md) by seo.ai
+-   [Mr. Ranedeer Config Wizard](https://github.com/linexjlin/GPTs/blob/main/prompts/Mr.%20Ranedeer%20Config%20Wizard.md) by mr-ranedeer.com
+-   [👌Academic Assistant Pro](https://github.com/linexjlin/GPTs/blob/main/prompts/Academic%20Assistant%20Pro.md) by Kevin Ivery
+-   [Front-end expert](https://github.com/linexjlin/GPTs/blob/main/prompts/Front-end%20expert.md) by Zhang Xiaoyuan
+-   [ChatSSH: talk to your linux computers](https://github.com/linexjlin/GPTs/blob/main/prompts/chatssh.md) by chatssh.net
+-   [Chat NeurIPS](https://github.com/linexjlin/GPTs/blob/main/prompts/Chat%20NeurIPS.md) by myaidrive.com
+-   [WebGPT🤖](https://github.com/linexjlin/GPTs/blob/main/prompts/WebGPT.md) by wegpt.ai
+-   [AllTrails](https://github.com/linexjlin/GPTs/blob/main/prompts/AllTrails.md)　By alltrails.com
+-   [ChatDB: talk to your databases](https://github.com/linexjlin/GPTs/blob/main/prompts/ChatDB.md)　By chatssh.net
+-   [中文作文批改助手](https://github.com/linexjlin/GPTs/blob/main/prompts/%E4%B8%AD%E6%96%87%E4%BD%9C%E6%96%87%E6%89%B9%E6%94%B9%E5%8A%A9%E6%89%8B.md) by Arden Moses
+-   [DeepGame](https://github.com/linexjlin/GPTs/blob/main/prompts/DeepGame.md)　By Utile Labs
+-   [Pineapple Builder](https://github.com/linexjlin/GPTs/blob/main/prompts/PineappleBuilder.md)　By Peter Kowalczyk
+-   [Astrology Fortune Teller](https://github.com/linexjlin/GPTs/blob/main/prompts/Astrology%20Fortune%20Teller.md) by quaere.ai
+-   [考研保研简历提问助手](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%80%83%E7%A0%94%E4%BF%9D%E7%A0%94%E7%AE%80%E5%8E%86%E6%8F%90%E9%97%AE%E5%8A%A9%E6%89%8B.md) by LeoCui
+-   [MJ Prompt Generator (V6)](https://github.com/linexjlin/GPTs/blob/main/prompts/MJ%20Prompt%20Generator%20\(V6\).md) by featuredgpts.com
+-   [法律专家](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%B3%95%E5%BE%8B%E4%B8%93%E5%AE%B6.md) by Weiqiao Zhu
+-   [Book Creator Guide](https://github.com/linexjlin/GPTs/blob/main/prompts/Book%20Creator%20Guide.md) by Choi Yong
+-   [Gauntlet: Movies](https://github.com/linexjlin/GPTs/blob/main/prompts/Gauntlet%20Movies.md) by Josh Brent N. Villocido
+-   [Whimsical Diagrams](https://github.com/linexjlin/GPTs/blob/main/prompts/Whimsical%20Diagrams.md) by whimsical.com
+-   [Books](https://github.com/linexjlin/GPTs/blob/main/prompts/Books.md) by Josh Brent N. Villocido
+-   [鹦鹉GPT 🦜](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%B9%A6%E9%B9%89GPT%20%F0%9F%A6%9C.md) by gantrol.com
+-   [鲁迅说](https://github.com/linexjlin/GPTs/blob/main/prompts/%E9%B2%81%E8%BF%85%E8%AF%B4.md) by QCHEN
+-   [Midjouney Prompt Tools](https://github.com/linexjlin/GPTs/blob/main/prompts/Midjouney%20Prompt%20Tools.md) by chatby.xyz
+-   [Mid Journey V6 Prompt Creator](https://github.com/linexjlin/GPTs/blob/main/prompts/Mid%20Journey%20V6%20Prompt%20Creator.md) by jandthebots.com
+-   [思维导图](https://github.com/linexjlin/GPTs/blob/main/prompts/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.md) by Tang Youpeng
+-   [Diagrams: Show Me](https://github.com/linexjlin/GPTs/blob/main/prompts/Diagrams%20Show%20Me.md) by helpful.dev
+-   [Write For Me](https://github.com/linexjlin/GPTs/blob/main/prompts/Write%20For%20Me.md) by puzzle.today
+-   [Logo Creator](https://github.com/linexjlin/GPTs/blob/main/prompts/Logo%20Creator.md) by Chase Lean
+-   [董宇辉小作文助手](https://github.com/linexjlin/GPTs/blob/main/prompts/%E8%91%A3%E5%AE%87%E8%BE%89%E5%B0%8F%E4%BD%9C%E6%96%87%E5%8A%A9%E6%89%8B.md) by wesureai.com
+-   [Mega-Prompt](https://github.com/linexjlin/GPTs/blob/main/prompts/Mega-Prompt.md) by Aisen Lopez
+-   [Prompt For Me](https://github.com/linexjlin/GPTs/blob/main/prompts/Prompt%20For%20Me.md) by hansgpt.me
+-   [Practice English by Debating](https://github.com/linexjlin/GPTs/blob/main/prompts/Practice%20English%20by%20Debating.md) by Utku Sen
+-   [Suno音乐歌词创作专家v3.2](https://github.com/linexjlin/GPTs/blob/main/prompts/Suno%E9%9F%B3%E4%B9%90%E6%AD%8C%E8%AF%8D%E5%88%9B%E4%BD%9C%E4%B8%93%E5%AE%B6v3.2.md) by ai momo
+-   [Midjourney超级生成器（V5.2 & V6）](https://github.com/linexjlin/GPTs/blob/main/prompts/Midjourney%E8%B6%85%E7%BA%A7%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88V5.2%20%26%20V6%EF%BC%89.md) by gpts.gapier.net
+-   [GODMODE 2.0](https://github.com/linexjlin/GPTs/blob/main/prompts/GODMODE%202.0.md)
+-   [SQL Expert](https://github.com/linexjlin/GPTs/blob/main/prompts/SQL%20Expert.md) by Dmitry Khanukov
+-   [Website Generator](https://github.com/linexjlin/GPTs/blob/main/prompts/Website%20Generator.md) by websitegenerator.b12.io
+-   [Framework Finder](https://github.com/linexjlin/GPTs/blob/main/prompts/Framework%20Finder.md) by Ethan R Mollick
+-   [Math Solver](https://github.com/linexjlin/GPTs/blob/main/prompts/Math%20Solver.md)
+-   [MindMateGPT](https://github.com/linexjlin/GPTs/blob/main/prompts/MindMateGPT.md) by Anthony Carlos Teixeira
+-   [BookMate - Book Recommendations](https://github.com/linexjlin/GPTs/blob/main/prompts/BookMate%20-%20Book%20Recommendations.md) by community builder
+-   [Android Studio GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/Android%20Studio%20GPT.md) by Rhonal Alonso Delgado Padilla
+-   [CBT GPT](https://github.com/linexjlin/GPTs/blob/main/prompts/CBT%20GPT.md) by Brett Evanson
+-   [MCQ Creation Assistant](https://github.com/linexjlin/GPTs/blob/main/prompts/MCQ%20Creation%20Assistant.md) by Rowboaterstop AB
+-   [Socratic Therapy](https://github.com/linexjlin/GPTs/blob/main/prompts/SocraticTherapy.md) by Kasra Bayani
+-   [Code Tutor](https://github.com/linexjlin/GPTs/blob/main/prompts/Code%20Tutor.md) by khanacademy.org
+-   [FLUX Prompt Wizard 🪄](https://github.com/linexjlin/GPTs/blob/main/prompts/FLUX%20Prompt%20Wizard.md) by sjgpts.com
+-   [LeetCoder Ace](https://github.com/linexjlin/GPTs/blob/main/prompts/LeetCoder%20Ace.md) by YANG YANG
+-   [咪蒙标题](https://github.com/linexjlin/GPTs/blob/main/prompts/%E5%92%AA%E8%92%99%E6%A0%87%E9%A2%98.md) by Haibo Liu
+-   [Summarizer ㆍYouTube PDF Book Article Web Text Code](https://github.com/linexjlin/GPTs/blob/main/prompts/Summarizer%20%E2%80%A2YouTube%20PDF%20Book%20Article%20Web%20Text%20Code.md) by Frames
+
+## Open Source GPTs
+
+GitHub repos with prompts, actions and knowledge files of existing GPTs.
+
+-   [Open Data Germany](https://github.com/stefangrotz/OpenDataGermanyGPT)
+-   [EsperantoGPT](https://github.com/parolteknologio/EsperantoGPT)
+
+## GPT Prompt Analysis
+
+Analysis and summaries of the GPT prompts.
+
+-   [GPT Prompt Notes](https://grantjenks.github.io/gpt-prompt-notes/)
+
+## Contributors

@@ -1,0 +1,22 @@
+---
+url: https://arxiv.org/abs/2602.22675v1
+title: "Search More, Think Less: Rethinking Long-Horizon Agentic Search for Efficiency and Generalization"
+description: "Abstract page for arXiv paper 2602.22675v1: Search More, Think Less: Rethinking Long-Horizon Agentic Search for Efficiency and Generalization"
+captured_at: "2026-03-09T03:46:41.346Z"
+---
+
+# Search More, Think Less: Rethinking Long-Horizon Agentic Search for Efficiency and Generalization
+
+Authors:[Qianben Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Q), [Tianrui Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin,+T), [King Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu,+K), [Qiexiang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Q), [Chengjun Yu](https://arxiv.org/search/cs?searchtype=author&query=Yu,+C), [Shu Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu,+S), [Jiaqi Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+J), [Jiayu Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+J), [Xinpeng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+X), [Xin Gui](https://arxiv.org/search/cs?searchtype=author&query=Gui,+X), [Jingyi Cao](https://arxiv.org/search/cs?searchtype=author&query=Cao,+J), [Piaohong Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+P), [Dingfeng Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi,+D), [He Zhu](https://arxiv.org/search/cs?searchtype=author&query=Zhu,+H), [Tiannan Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+T), [Yuqing Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y), [Maojia Song](https://arxiv.org/search/cs?searchtype=author&query=Song,+M), [Tianyu Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng,+T), [Ge Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+G), [Jian Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+J), [Jiaheng Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+J), [Minghao Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+M), [Yuchen Eleanor Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang,+Y+E), [Wangchunshu Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+W)
+
+[View PDF](https://arxiv.org/pdf/2602.22675v1)
+
+> Abstract:Recent deep research agents primarily improve performance by scaling reasoning depth, but this leads to high inference cost and latency in search-intensive scenarios. Moreover, generalization across heterogeneous research settings remains challenging. In this work, we propose \\emph{Search More, Think Less} (SMTL), a framework for long-horizon agentic search that targets both efficiency and generalization. SMTL replaces sequential reasoning with parallel evidence acquisition, enabling efficient context management under constrained context budgets. To support generalization across task types, we further introduce a unified data synthesis pipeline that constructs search tasks spanning both deterministic question answering and open-ended research scenarios with task appropriate evaluation metrics. We train an end-to-end agent using supervised fine-tuning and reinforcement learning, achieving strong and often state of the art performance across benchmarks including BrowseComp (48.6\\%), GAIA (75.7\\%), Xbench (82.0\\%), and DeepResearch Bench (45.9\\%). Compared to Mirothinker-v1.0, SMTL with maximum 100 interaction steps reduces the average number of reasoning steps on BrowseComp by 70.7\\%, while improving accuracy.
+
+<table summary="Additional metadata"><tbody><tr><td>Comments:</td><td>12 pages, 5 figures</td></tr><tr><td>Subjects:</td><td><span>Computation and Language (cs.CL)</span></td></tr><tr><td>Cite as:</td><td><span><a href="https://arxiv.org/abs/2602.22675">arXiv:2602.22675</a> [cs.CL]</span></td></tr><tr><td>&nbsp;</td><td>(or <span><a href="https://arxiv.org/abs/2602.22675v1">arXiv:2602.22675v1</a> [cs.CL]</span> for this version)</td></tr><tr><td>&nbsp;</td><td><a href="https://doi.org/10.48550/arXiv.2602.22675" id="arxiv-doi-link">https://doi.org/10.48550/arXiv.2602.22675</a><div><p><span></span>arXiv-issued DOI via DataCite</p></div></td></tr></tbody></table>
+
+## Submission history
+
+From: Qianben Chen \[[view email](https://arxiv.org/show-email/7b4012c6/2602.22675)\]
+**\[v1\]** Thu, 26 Feb 2026 06:46:41 UTC (1,337 KB)
+**[\[v2\]](https://arxiv.org/abs/2602.22675v2)** Fri, 27 Feb 2026 07:08:13 UTC (1,337 KB)
