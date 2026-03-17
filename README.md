@@ -46,11 +46,12 @@ AI_knowhow_kit/
 │
 │  # 参考文档
 └── docs/
-    ├── README.md                项目内部说明
-    ├── MONTHLY_UPDATE_SOP.md    月度更新流程
-    ├── MAINTENANCE.md           维护规范
-    ├── WEB_PROMPT_SNIPPETS.md   ChatGPT/Gemini 粘贴模板
-    └── EVIDENCE_INDEX.md        证据索引
+    ├── README.md                    项目内部说明
+    ├── MONTHLY_UPDATE_SOP.md        月度更新流程
+    ├── RETRIEVAL_QUALITY_GUIDE.md   检索质量分与权重设计说明
+    ├── MAINTENANCE.md               维护规范
+    ├── WEB_PROMPT_SNIPPETS.md       ChatGPT/Gemini 粘贴模板
+    └── EVIDENCE_INDEX.md            证据索引
 ```
 
 ## 快速开始
@@ -87,13 +88,14 @@ Read and follow:
 | `notes/`（AI 行业扫描） | 高信号精选 + 个人判读 | 187 条 |
 | `bookmarks/`（收藏资料） | 广覆盖 + 原文存档 | 684 条 |
 
-每个知识库采用**三层结构**：
+每个知识库采用**索引 + 原文**结构：
 
-1. **运营底表**（xlsx）：人工维护视图
-2. **主索引**（jsonl）：Agent 检索入口，含关键词、摘要、质量分级
-3. **原文**（md）：证据原文，按需调用
+1. **主索引**（jsonl）：Agent 检索入口，含关键词、摘要、质量分级
+2. **原文**（md）：证据原文，按需调用
 
-Agent 的检索流程是"先查索引 → 筛选候选 → 定向取证"，而非全量通读。
+> 维护者在本地可另行保留运营底表（xlsx），用于人工筛选和批量更新，但不包含在本仓库中。
+
+Agent 的检索流程是"先查索引 → 筛选候选 → 定向取证"，而非全量通读。质量分级与权重设计详见 `docs/RETRIEVAL_QUALITY_GUIDE.md`。
 
 ## 如何定制成你自己的
 
