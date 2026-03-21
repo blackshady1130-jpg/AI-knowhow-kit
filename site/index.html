@@ -4,83 +4,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 行业扫描 · 深度判读</title>
+<meta name="description" content="199 篇 AI 行业深度判读，覆盖 Agent 架构、模型推理、评测基准、AI Coding、产品交互、行业格局与 AI 安全 7 大主题。每条记录包含原始文章与个人深度评论。">
+<meta property="og:title" content="AI 行业扫描 · 深度判读">
+<meta property="og:description" content="持续跟踪 LLM/Agent 前沿，199 篇原创判读覆盖 7 大主题，近 8 万字深度评论。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blackshady1130-jpg.github.io/AI-knowhow-kit/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 行业扫描 · 深度判读">
+<meta name="twitter:description" content="持续跟踪 LLM/Agent 前沿，199 篇原创判读覆盖 7 大主题，近 8 万字深度评论。">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script>
-tailwind.config = { theme: { extend: { colors: {
-  brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
+tailwind.config={theme:{extend:{colors:{
+brand:{50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
 }}}}
 </script>
 <style>
-body { font-family: 'Noto Sans SC', system-ui, sans-serif; margin: 0; }
-code, pre { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; }
-
-/* Force heading styles over Tailwind preflight */
-.review-body h1 { font-size: 1.6rem !important; font-weight: 700 !important; color: #0f172a !important; margin-bottom: 0.75rem !important; line-height: 1.4 !important; letter-spacing: -0.01em; }
-.review-body h2 { font-size: 1.2rem !important; font-weight: 700 !important; color: #1e293b !important; margin-top: 2.25rem !important; margin-bottom: 0.75rem !important; padding-bottom: 0.5rem !important; border-bottom: 2px solid #c7d2fe !important; }
-.review-body h3 { font-size: 1rem !important; font-weight: 600 !important; color: #334155 !important; margin-top: 1.5rem !important; margin-bottom: 0.5rem !important; padding-left: 0.75rem !important; border-left: 3px solid #818cf8 !important; }
-.review-body p { margin-bottom: 0.8rem !important; line-height: 1.9 !important; color: #374151 !important; }
-.review-body strong { color: #0f172a !important; }
-.review-body blockquote { border-left: 3px solid #6366f1 !important; padding: 0.75rem 1rem !important; margin: 1rem 0 !important; color: #475569 !important; background: #f8fafc !important; border-radius: 0 0.5rem 0.5rem 0 !important; }
-.review-body ul, .review-body ol { margin: 0.5rem 0 0.75rem 1.5rem !important; color: #374151 !important; line-height: 1.8 !important; }
-.review-body li { margin-bottom: 0.3rem !important; }
-.review-body hr { border: none !important; border-top: 1px solid #e5e7eb !important; margin: 2rem 0 !important; }
-
-.note-ref { color: #4f46e5; font-weight: 600; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px; }
-.note-ref:hover { color: #4338ca; text-decoration-style: solid; }
-
-.ref-tooltip { position: fixed; z-index: 200; width: 360px; max-height: 280px; overflow-y: auto; background: white; border: 1px solid #e0e7ff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.15); padding: 16px; }
-.ref-tooltip .tt-title { font-weight: 600; font-size: 0.875rem; color: #1e293b; margin-bottom: 6px; line-height: 1.4; }
-.ref-tooltip .tt-meta { font-size: 0.75rem; color: #64748b; margin-bottom: 8px; }
-.ref-tooltip .tt-why { font-size: 0.8rem; color: #475569; line-height: 1.7; }
-
-.fade-in { animation: fadeIn 0.3s ease-out; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.topic-card { transition: all 0.25s cubic-bezier(0.4,0,0.2,1); }
-.topic-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(99,102,241,0.15); }
-.note-item { transition: all 0.2s ease; border-left: 3px solid transparent; }
-.note-item:hover { border-left-color: #6366f1; background: #fafbff; }
-.why-text { white-space: pre-wrap; }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+body{font-family:'Noto Sans SC',system-ui,sans-serif;margin:0}
+code,pre{font-family:'JetBrains Mono',monospace;font-size:.85em}
+.review-body h1{font-size:1.5rem!important;font-weight:700!important;color:#0f172a!important;margin-bottom:.75rem!important;line-height:1.4!important}
+.review-body h2{font-size:1.15rem!important;font-weight:700!important;color:#1e293b!important;margin-top:2rem!important;margin-bottom:.75rem!important;padding-bottom:.5rem!important;border-bottom:2px solid #c7d2fe!important}
+.review-body h3{font-size:1rem!important;font-weight:600!important;color:#334155!important;margin-top:1.5rem!important;margin-bottom:.5rem!important;padding-left:.75rem!important;border-left:3px solid #818cf8!important}
+.review-body p{margin-bottom:.8rem!important;line-height:1.9!important;color:#374151!important}
+.review-body strong{color:#0f172a!important}
+.review-body blockquote{border-left:3px solid #6366f1!important;padding:.75rem 1rem!important;margin:1rem 0!important;color:#475569!important;background:#f8fafc!important;border-radius:0 .5rem .5rem 0!important}
+.review-body ul,.review-body ol{margin:.5rem 0 .75rem 1.5rem!important;color:#374151!important;line-height:1.8!important}
+.review-body li{margin-bottom:.3rem!important}
+.review-body hr{border:none!important;border-top:1px solid #e5e7eb!important;margin:2rem 0!important}
+.note-ref{color:#4f46e5;font-weight:600;cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
+.note-ref:hover{color:#4338ca;text-decoration-style:solid}
+.ref-tooltip{position:fixed;z-index:200;width:340px;max-width:90vw;max-height:260px;overflow-y:auto;background:#fff;border:1px solid #e0e7ff;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.15);padding:14px}
+.ref-tooltip .tt-title{font-weight:600;font-size:.85rem;color:#1e293b;margin-bottom:5px;line-height:1.4}
+.ref-tooltip .tt-meta{font-size:.72rem;color:#64748b;margin-bottom:6px}
+.ref-tooltip .tt-why{font-size:.78rem;color:#475569;line-height:1.7}
+.fade-in{animation:fadeIn .3s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.topic-card{transition:all .25s cubic-bezier(.4,0,.2,1)}
+.topic-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(99,102,241,.15)}
+.note-item{transition:all .2s ease;border-left:3px solid transparent}
+.note-item:hover{border-left-color:#6366f1;background:#fafbff}
+.why-text{white-space:pre-wrap}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}
 </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<!-- ===== STICKY NAV ===== -->
-<nav id="navbar" class="bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
-  <div class="max-w-5xl mx-auto px-6 h-12 flex items-center justify-between">
-    <div id="navBreadcrumb" class="flex items-center gap-2 text-sm">
-      <a href="#home" class="font-semibold text-gray-900 hover:text-brand-600 transition">AI 行业扫描</a>
-    </div>
+<!-- NAV -->
+<nav class="bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 md:px-6 h-12 flex items-center justify-between">
+    <div id="navBC" class="flex items-center gap-2 text-sm"></div>
     <div class="text-xs text-gray-400" id="navMeta"></div>
   </div>
 </nav>
 
-<!-- ===== HOME VIEW ===== -->
+<!-- HOME -->
 <div id="homeView">
   <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
-    <div class="max-w-5xl mx-auto px-6 py-14 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">AI 行业扫描 · 深度判读</h1>
-      <p class="text-brand-200 text-lg mb-8">持续跟踪 LLM / Agent 前沿，记录观察与判断</p>
-      <div id="heroStats" class="flex justify-center gap-8 text-sm text-brand-200"></div>
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-14 text-center">
+      <h1 class="text-2xl md:text-4xl font-bold tracking-tight mb-3">AI 行业扫描 · 深度判读</h1>
+      <p class="text-brand-200 text-base md:text-lg mb-8">持续跟踪 LLM / Agent 前沿，记录观察与判断</p>
+      <div id="heroStats" class="flex justify-center gap-6 md:gap-8 text-sm text-brand-200"></div>
     </div>
   </div>
-  <div class="max-w-5xl mx-auto px-6 -mt-8">
-    <div id="topicGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12"></div>
+  <div class="max-w-5xl mx-auto px-4 md:px-6 -mt-8">
+    <p class="text-center text-sm text-gray-400 mb-5 mt-2">选择你感兴趣的主题，阅读综述与原始 notes。</p>
+    <div id="topicGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12"></div>
   </div>
-  <section class="max-w-5xl mx-auto px-6 pb-16">
-    <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+  <section class="max-w-5xl mx-auto px-4 md:px-6 pb-16">
+    <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 md:p-8">
       <h2 class="text-lg font-bold text-gray-900 mb-1">About Me</h2>
       <p class="text-base font-semibold text-gray-800 mb-1">Yantao Wang (Shady)</p>
       <p class="text-gray-600 mb-4">Business Analyst · AI Solution / AI × Agent Engineering / AI Evaluation</p>
-      <p class="text-gray-500 text-sm mb-5 leading-relaxed">
-        网页计划半年更新一次，分享个人对 AI 行业的持续观察与判断，每一条记录人工 review 后整理入库，原始信息会优先更新到在线文档：<a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" class="text-brand-600 hover:text-brand-800 underline">在线文档</a>。
-      </p>
+      <p class="text-gray-500 text-sm mb-5 leading-relaxed">网页计划半年更新一次，分享个人对 AI 行业的持续观察与判断，每一条记录人工 review 后整理入库，原始信息会优先更新到在线文档：<a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" class="text-brand-600 hover:text-brand-800 underline">在线文档</a>。</p>
       <div class="text-sm text-gray-500">
         <p class="font-medium text-gray-600 mb-2">Contact：</p>
-        <div class="flex flex-wrap gap-5">
+        <div class="flex flex-wrap gap-4">
           <span>💬 WeChat: black_shady1130</span>
           <span>📧 blackshady1130@gmail.com</span>
         </div>
@@ -89,280 +89,276 @@ code, pre { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; }
   </section>
 </div>
 
-<!-- ===== TOPIC VIEW ===== -->
+<!-- TOPIC VIEW -->
 <div id="topicView" class="hidden">
   <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
-    <div class="max-w-5xl mx-auto px-6 py-10">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-8 md:py-10">
       <div class="flex items-center gap-3">
-        <span id="tvIcon" class="text-4xl"></span>
+        <span id="tvIcon" class="text-3xl md:text-4xl"></span>
         <div>
-          <h1 id="tvTitle" class="text-2xl md:text-3xl font-bold"></h1>
-          <p id="tvMeta" class="text-brand-200 text-sm mt-1"></p>
+          <h1 id="tvTitle" class="text-xl md:text-3xl font-bold leading-snug"></h1>
+          <p id="tvMeta" class="text-brand-200 text-xs md:text-sm mt-1"></p>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="max-w-5xl mx-auto px-6 py-8">
-
-    <!-- Section: 综述 -->
-    <div class="mb-10 fade-in">
+  <div class="max-w-5xl mx-auto px-4 md:px-6 py-6 md:py-8">
+    <div class="mb-8 md:mb-10 fade-in">
       <div class="flex items-center gap-2 mb-4">
         <div class="w-1 h-5 bg-brand-500 rounded-full"></div>
         <h2 class="text-lg font-bold text-gray-900">综述</h2>
-        <span class="text-xs text-gray-400" id="reviewSubtitle"></span>
+        <span class="text-xs text-gray-400" id="reviewSub"></span>
       </div>
-      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-5 md:p-10">
         <div id="reviewContent" class="review-body"></div>
       </div>
     </div>
-
-    <!-- Section: 详细判读 -->
     <div class="fade-in">
       <div class="flex items-center justify-between mb-2">
         <div class="flex items-center gap-2">
           <div class="w-1 h-5 bg-brand-500 rounded-full"></div>
           <h2 class="text-lg font-bold text-gray-900">详细判读</h2>
         </div>
-        <select id="notesSortSelect" onchange="renderPreviewNotes()"
+        <select id="sortSel" onchange="renderPreview()"
           class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-brand-500">
           <option value="latest">最新 3 篇</option>
           <option value="earliest">最早 3 篇</option>
         </select>
       </div>
-      <p class="text-xs text-gray-400 mb-4 ml-3">综述基于以下判读记录提炼而成。每条记录包含文章标题、个人评论与原文链接。</p>
+      <p class="text-xs text-gray-400 mb-4 ml-3">综述基于以下判读记录提炼而成。每条包含文章标题、个人评论与原文链接。</p>
       <div id="previewNotes" class="space-y-3 mb-6"></div>
       <div id="expandWrap" class="text-center mb-6">
-        <button id="expandBtn" onclick="expandAllNotes()"
+        <button id="expandBtn" onclick="expandAll()"
           class="px-6 py-2.5 bg-brand-50 text-brand-700 rounded-xl text-sm font-medium hover:bg-brand-100 transition border border-brand-200"></button>
       </div>
-      <div id="allNotes" class="hidden space-y-3 mb-8 fade-in"></div>
+      <div id="allNotes" class="hidden space-y-3 mb-4 fade-in"></div>
+      <div id="collapseWrap" class="hidden text-center mb-8">
+        <button onclick="collapseAll()"
+          class="px-6 py-2.5 bg-gray-100 text-gray-600 rounded-xl text-sm font-medium hover:bg-gray-200 transition border border-gray-200">收起列表 ▲</button>
+      </div>
     </div>
-
   </div>
 </div>
 
-<!-- Footer -->
 <footer class="bg-gray-900 text-gray-500 text-xs text-center py-5">
   Built with structured thinking & continuous learning · Updated 2026.03
 </footer>
 
-<!-- Tooltip -->
-<div id="refTooltip" class="ref-tooltip hidden"></div>
+<div id="refTip" class="ref-tooltip hidden"></div>
 
 <script>
-let DATA = null;
-let currentTopic = null;
+let D=null,curTopic=null;
 
-async function init() {
-  const r = await fetch('data.json');
-  DATA = await r.json();
-  window.addEventListener('hashchange', route);
+/* Subtitles for topic hero (from review h1) */
+const SUBTITLES={
+  '架构与工程':'从 Prompt Engineering 到 Harness Engineering',
+  '模型推理与训练':'智能的来源到底是算法、数据还是计算？',
+  '评测与基准':'我们到底在测量什么？',
+  'AI Coding':'从效率幻觉到协作范式的重建',
+  'AI 产品与交互':'当模型越来越强，产品却没跟上',
+  '行业格局与企业战略':'当"造模型"变成"造生态"',
+  'AI 影响与安全':'当模型越能干，人越不爱动脑子'
+};
+
+async function init(){
+  const r=await fetch('data.json');
+  D=await r.json();
+  window.addEventListener('hashchange',route);
   route();
 }
 
-/* ===== ROUTING ===== */
-function route() {
-  const hash = decodeURIComponent(window.location.hash || '#home');
-  if (hash.startsWith('#topic/')) {
-    const name = hash.replace('#topic/', '');
-    const topic = DATA.topics.find(t => t.name === name);
-    if (topic) { showTopic(name); return; }
+function route(){
+  const h=decodeURIComponent(location.hash||'#home');
+  if(h.startsWith('#topic/')){
+    const n=h.replace('#topic/','');
+    const t=D.topics.find(x=>x.name===n);
+    if(t){showTopic(n);return}
   }
   showHome();
 }
 
-function navigate(hash) {
-  window.location.hash = hash;
-}
-
-/* ===== HOME ===== */
-function showHome() {
-  currentTopic = null;
-  document.getElementById('homeView').classList.remove('hidden');
-  document.getElementById('topicView').classList.add('hidden');
-  updateNav(null);
-  renderHome();
-  window.scrollTo(0, 0);
-}
-
-function renderHome() {
-  const m = DATA.meta;
-  document.getElementById('heroStats').innerHTML = `
+/* === HOME === */
+function showHome(){
+  curTopic=null;
+  $('homeView').classList.remove('hidden');
+  $('topicView').classList.add('hidden');
+  navUpdate(null);
+  const m=D.meta;
+  $('heroStats').innerHTML=`
     <div><span class="text-2xl font-bold text-white">${m.total_notes}</span><br>篇判读</div>
     <div><span class="text-2xl font-bold text-white">${m.total_topics}</span><br>个主题</div>
     <div><span class="text-2xl font-bold text-white">${(m.total_why_chars/10000).toFixed(1)}万</span><br>字评论</div>
-    <div><span class="text-2xl font-bold text-white">12</span><br>个月跟踪</div>
-  `;
-  document.getElementById('topicGrid').innerHTML = DATA.topics.map(t => `
-    <div class="topic-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm cursor-pointer"
-         onclick="navigate('#topic/${encodeURIComponent(t.name)}')">
+    <div><span class="text-2xl font-bold text-white">近一年</span><br>跟踪梳理</div>`;
+  $('topicGrid').innerHTML=D.topics.map(t=>`
+    <div class="topic-card bg-white rounded-2xl p-5 border border-gray-200 shadow-sm cursor-pointer"
+         onclick="location.hash='#topic/${encodeURIComponent(t.name)}'">
       <div class="flex items-center gap-3 mb-3">
-        <span class="text-3xl">${t.icon}</span>
-        <div>
-          <h3 class="text-base font-bold text-gray-900">${t.name}</h3>
-          <span class="text-xs text-gray-400">${t.count} 篇判读</span>
-        </div>
+        <span class="text-2xl md:text-3xl">${t.icon}</span>
+        <div><h3 class="text-sm md:text-base font-bold text-gray-900">${t.name}</h3>
+        <span class="text-xs text-gray-400">${t.count} 篇</span></div>
       </div>
-      <p class="text-sm text-gray-500 leading-relaxed">${t.description}</p>
-    </div>
-  `).join('');
-  document.getElementById('navMeta').textContent = `${m.total_notes} 篇 · ${m.date_range}`;
+      <p class="text-xs md:text-sm text-gray-500 leading-relaxed">${t.description}</p>
+    </div>`).join('');
+  $('navMeta').textContent=`${m.total_notes} 篇 · 2025.04 – 2026.03`;
+  scrollTo(0,0);
 }
 
-/* ===== TOPIC ===== */
-function showTopic(name) {
-  currentTopic = name;
-  const topic = DATA.topics.find(t => t.name === name);
-  if (!topic) return;
+/* === TOPIC === */
+function showTopic(name){
+  curTopic=name;
+  const t=D.topics.find(x=>x.name===name);
+  if(!t)return;
+  $('homeView').classList.add('hidden');
+  $('topicView').classList.remove('hidden');
+  $('topicView').classList.add('fade-in');
+  navUpdate(t);
+  scrollTo(0,0);
 
-  document.getElementById('homeView').classList.add('hidden');
-  document.getElementById('topicView').classList.remove('hidden');
-  document.getElementById('topicView').classList.add('fade-in');
-  updateNav(topic);
-  window.scrollTo(0, 0);
+  const sub=SUBTITLES[name]||'';
+  $('tvIcon').textContent=t.icon;
+  $('tvTitle').innerHTML=name+(sub?`<span class="block text-base md:text-lg font-normal text-brand-200 mt-1">${sub}</span>`:'');
+  $('tvMeta').textContent=`${t.count} 篇判读 · 2025.04 – 2026.03`;
+  $('reviewSub').textContent=`基于 ${t.count} 篇判读的系统性梳理`;
 
-  document.getElementById('tvIcon').textContent = topic.icon;
-  document.getElementById('tvTitle').textContent = topic.name;
-  document.getElementById('tvMeta').textContent = `${topic.count} 篇判读 · ${DATA.meta.date_range}`;
-  document.getElementById('reviewSubtitle').textContent = `基于 ${topic.count} 篇判读的系统性梳理`;
+  // Render review, skip first h1 line
+  let md=t.review;
+  const firstH2=md.indexOf('\n## ');
+  if(firstH2>0) md=md.substring(firstH2);
+  let html=marked.parse(md);
+  html=linkRefs(html);
+  $('reviewContent').innerHTML=html;
 
-  let html = marked.parse(topic.review);
-  html = linkifyRefs(html);
-  document.getElementById('reviewContent').innerHTML = html;
-
-  document.getElementById('notesSortSelect').value = 'latest';
-  renderPreviewNotes();
-
-  document.getElementById('allNotes').classList.add('hidden');
-  document.getElementById('allNotes').innerHTML = '';
-  document.getElementById('expandWrap').classList.remove('hidden');
-  const notes = getTopicNotes(name);
-  document.getElementById('expandBtn').textContent = `查看全部 ${notes.length} 篇判读 ▼`;
-
-  document.getElementById('navMeta').textContent = `${topic.count} 篇`;
-  setTimeout(setupTooltips, 100);
+  $('sortSel').value='latest';
+  renderPreview();
+  $('allNotes').classList.add('hidden');
+  $('allNotes').innerHTML='';
+  $('expandWrap').classList.remove('hidden');
+  $('collapseWrap').classList.add('hidden');
+  const notes=topicNotes(name);
+  $('expandBtn').textContent=`查看全部 ${notes.length} 篇判读 ▼`;
+  $('navMeta').textContent=`${t.count} 篇`;
+  setTimeout(setupTips,100);
 }
 
-function renderPreviewNotes() {
-  const sort = document.getElementById('notesSortSelect').value;
-  const notes = getTopicNotes(currentTopic);
-  const sorted = sort === 'latest'
-    ? notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||''))
-    : notes.slice().sort((a,b) => (a.date||'').localeCompare(b.date||''));
-  renderCards(sorted.slice(0, 3), 'previewNotes');
+function renderPreview(){
+  const s=$('sortSel').value;
+  const n=topicNotes(curTopic);
+  const sorted=s==='latest'?n.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')):n.slice().sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  cards(sorted.slice(0,3),'previewNotes');
 }
 
-function expandAllNotes() {
-  const notes = getTopicNotes(currentTopic);
-  const sorted = notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
-  renderCards(sorted, 'allNotes');
-  document.getElementById('allNotes').classList.remove('hidden');
-  document.getElementById('expandWrap').classList.add('hidden');
+function expandAll(){
+  const n=topicNotes(curTopic).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  cards(n,'allNotes');
+  $('allNotes').classList.remove('hidden');
+  $('expandWrap').classList.add('hidden');
+  $('collapseWrap').classList.remove('hidden');
 }
 
-function getTopicNotes(name) {
-  return DATA.notes.filter(n => n.topics.includes(name));
+function collapseAll(){
+  $('allNotes').classList.add('hidden');
+  $('allNotes').innerHTML='';
+  $('expandWrap').classList.remove('hidden');
+  $('collapseWrap').classList.add('hidden');
 }
 
-/* ===== NAV ===== */
-function updateNav(topic) {
-  const bc = document.getElementById('navBreadcrumb');
-  if (!topic) {
-    bc.innerHTML = `<a href="#home" class="font-semibold text-gray-900 hover:text-brand-600">AI 行业扫描</a>`;
-  } else {
-    bc.innerHTML = `
-      <a href="#home" class="text-gray-500 hover:text-brand-600 transition">首页</a>
-      <svg class="w-3.5 h-3.5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-      <span class="font-semibold text-gray-900">${topic.icon} ${topic.name}</span>
-    `;
-  }
+function topicNotes(name){return D.notes.filter(n=>n.topics.includes(name))}
+
+/* === NAV === */
+function navUpdate(t){
+  const bc=$('navBC');
+  if(!t) bc.innerHTML=`<a href="#home" class="font-semibold text-gray-900 hover:text-brand-600">AI 行业扫描</a>`;
+  else bc.innerHTML=`<a href="#home" class="text-gray-500 hover:text-brand-600">首页</a>
+    <svg class="w-3.5 h-3.5 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    <span class="font-semibold text-gray-900 truncate">${t.icon} ${t.name}</span>`;
 }
 
-/* ===== NOTE CARDS ===== */
-function renderCards(notes, id) {
-  const c = document.getElementById(id);
-  c.innerHTML = notes.map(n => {
-    const badges = n.topics.map(t => {
-      const tp = DATA.topics.find(x => x.name === t);
-      return `<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-medium">${tp?.icon||''} ${t}</span>`;
-    }).join(' ');
-    const kws = (n.keywords||[]).slice(0,4).map(k =>
-      `<span class="inline-block text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">${k}</span>`
-    ).join(' ');
-    const icons = {'solid paper':'🔬','行业动态/评价':'📰','观点/文章':'💡'};
-    const ws = esc(n.why_short||'');
-    const wf = esc(n.why||'');
-    const more = (n.why||'').length > 200;
-    return `
-      <div class="note-item bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
-        <div class="flex items-center gap-2 mb-2 text-xs text-gray-400">
-          <span class="font-mono text-brand-400">#${n.id}</span>
-          <span>${icons[n.type]||'📌'} ${n.type||''}</span>
-          <span>${n.date||''}</span>
-        </div>
-        <h4 class="text-sm font-semibold text-gray-900 mb-2 leading-snug">
-          ${n.url?`<a href="${n.url}" target="_blank" class="hover:text-brand-600 transition">${esc(n.title)}</a>`:esc(n.title)}
-        </h4>
-        <div class="flex flex-wrap gap-1 mb-3">${badges} ${kws}</div>
-        <div class="text-sm text-gray-600 leading-relaxed">
-          <div class="ws">${ws}</div>
-          ${more?`<button class="text-brand-600 text-xs mt-1.5 hover:text-brand-800 font-medium" onclick="toggleW(this)">展开全文 ▼</button>
-          <div class="wf hidden mt-2 why-text bg-gray-50 rounded-lg p-4 text-sm leading-relaxed text-gray-700">${wf}</div>`:''}
-        </div>
-      </div>`;
-  }).join('');
+/* === CARDS === */
+function cards(notes,id){
+  $(id).innerHTML=notes.map(n=>{
+    const badges=n.topics.map(t=>{const tp=D.topics.find(x=>x.name===t);return`<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-medium">${tp?.icon||''} ${t}</span>`}).join(' ');
+    const kws=(n.keywords||[]).slice(0,4).map(k=>`<span class="inline-block text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">${k}</span>`).join(' ');
+    const ic={'solid paper':'🔬','行业动态/评价':'📰','观点/文章':'💡'};
+    const ws=esc(n.why_short||'');
+    const wf=esc(n.why||'');
+    const more=(n.why||'').length>200;
+    const dateStr=fmtDate(n.date);
+    return`<div class="note-item bg-white rounded-xl border border-gray-200 p-4 md:p-5 shadow-sm">
+      <div class="flex items-center gap-2 mb-2 text-xs text-gray-400">
+        <span class="font-mono text-brand-400">#${n.id}</span>
+        <span>${ic[n.type]||'📌'} ${n.type||''}</span>
+        <span>${dateStr}</span>
+      </div>
+      <h4 class="text-sm font-semibold text-gray-900 mb-2 leading-snug">
+        ${n.url?`<a href="${n.url}" target="_blank" class="hover:text-brand-600 transition">${esc(n.title)}</a>`:esc(n.title)}
+      </h4>
+      <div class="flex flex-wrap gap-1 mb-3">${badges} ${kws}</div>
+      <div class="text-sm text-gray-600 leading-relaxed">
+        <div class="ws">${ws}</div>
+        ${more?`<button class="text-brand-600 text-xs mt-1.5 hover:text-brand-800 font-medium" onclick="toggleW(this)">展开全文 ▼</button>
+        <div class="wf hidden mt-2 why-text bg-gray-50 rounded-lg p-3 md:p-4 text-sm leading-relaxed text-gray-700">${wf}</div>`:''}
+      </div>
+    </div>`}).join('');
 }
 
-function toggleW(btn) {
-  const f = btn.nextElementSibling, s = btn.previousElementSibling;
-  if (f.classList.contains('hidden')) { f.classList.remove('hidden'); s.classList.add('hidden'); btn.textContent='收起 ▲'; }
-  else { f.classList.add('hidden'); s.classList.remove('hidden'); btn.textContent='展开全文 ▼'; }
+function toggleW(btn){
+  const f=btn.nextElementSibling,s=btn.previousElementSibling;
+  if(f.classList.contains('hidden')){f.classList.remove('hidden');s.classList.add('hidden');btn.textContent='收起 ▲'}
+  else{f.classList.add('hidden');s.classList.remove('hidden');btn.textContent='展开全文 ▼'}
 }
 
-/* ===== NOTE REF LINKS + TOOLTIPS ===== */
-function linkifyRefs(html) {
-  return html.replace(/#(\d+)/g, (m, id) => {
-    const n = DATA.notes.find(x => x.id === parseInt(id));
-    return n ? `<span class="note-ref" data-nid="${id}">${m}</span>` : m;
+function fmtDate(d){
+  if(!d)return'';
+  return d.length>=7?d.substring(0,7):d;
+}
+
+/* === NOTE REFS + TOOLTIPS === */
+function linkRefs(html){
+  return html.replace(/#(\d+)/g,(m,id)=>{
+    const n=D.notes.find(x=>x.id===parseInt(id));
+    return n?`<span class="note-ref" data-nid="${id}">${m}</span>`:m;
   });
 }
 
-function setupTooltips() {
-  const tip = document.getElementById('refTooltip');
+function setupTips(){
+  const tip=$('refTip');
   let timer;
-  document.querySelectorAll('.note-ref').forEach(el => {
-    el.addEventListener('mouseenter', e => {
-      clearTimeout(timer);
-      const n = DATA.notes.find(x => x.id === parseInt(el.dataset.nid));
-      if (!n) return;
-      const wp = (n.why||'').substring(0,150) + ((n.why||'').length>150?'...':'');
-      tip.innerHTML = `
-        <div class="tt-title">${esc(n.title)}</div>
-        <div class="tt-meta">#${n.id} · ${n.date||''} · ${n.type||''}</div>
-        <div class="tt-why">${esc(wp)}</div>
-        ${n.url?`<a href="${n.url}" target="_blank" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>`:''}
-      `;
-      const r = el.getBoundingClientRect();
-      let top = r.bottom+8, left = r.left;
-      if (left+360>window.innerWidth) left=window.innerWidth-380;
-      if (left<10) left=10;
-      if (top+280>window.innerHeight) top=r.top-288;
-      tip.style.top=top+'px'; tip.style.left=left+'px';
-      tip.classList.remove('hidden');
+  const hide=()=>{timer=setTimeout(()=>tip.classList.add('hidden'),200)};
+  const show=(el)=>{
+    clearTimeout(timer);
+    const n=D.notes.find(x=>x.id===parseInt(el.dataset.nid));
+    if(!n)return;
+    const wp=(n.why||'').substring(0,150)+((n.why||'').length>150?'...':'');
+    tip.innerHTML=`<div class="tt-title">${esc(n.title)}</div>
+      <div class="tt-meta">#${n.id} · ${fmtDate(n.date)} · ${n.type||''}</div>
+      <div class="tt-why">${esc(wp)}</div>
+      ${n.url?`<a href="${n.url}" target="_blank" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>`:''}`;
+    const r=el.getBoundingClientRect();
+    let top=r.bottom+8,left=r.left;
+    if(left+340>innerWidth)left=innerWidth-350;
+    if(left<8)left=8;
+    if(top+260>innerHeight)top=r.top-268;
+    tip.style.top=top+'px';tip.style.left=left+'px';
+    tip.classList.remove('hidden');
+  };
+
+  document.querySelectorAll('.note-ref').forEach(el=>{
+    el.addEventListener('mouseenter',()=>show(el));
+    el.addEventListener('mouseleave',hide);
+    el.addEventListener('click',(e)=>{
+      e.stopPropagation();
+      if(tip.classList.contains('hidden')) show(el);
+      else tip.classList.add('hidden');
     });
-    el.addEventListener('mouseleave', () => { timer=setTimeout(()=>tip.classList.add('hidden'),200); });
   });
-  tip.addEventListener('mouseenter', ()=>clearTimeout(timer));
-  tip.addEventListener('mouseleave', ()=>{ timer=setTimeout(()=>tip.classList.add('hidden'),200); });
+  tip.addEventListener('mouseenter',()=>clearTimeout(timer));
+  tip.addEventListener('mouseleave',hide);
+  document.addEventListener('click',()=>tip.classList.add('hidden'));
 }
 
-/* ===== UTILS ===== */
-function esc(s) {
-  if (!s) return '';
-  const d=document.createElement('div'); d.textContent=s;
-  return d.innerHTML.replace(/\n/g,'<br>');
-}
+/* === UTILS === */
+function $(id){return document.getElementById(id)}
+function esc(s){if(!s)return'';const d=document.createElement('div');d.textContent=s;return d.innerHTML.replace(/\n/g,'<br>')}
 
 init();
 </script>
