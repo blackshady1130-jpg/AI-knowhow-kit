@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 行业扫描 · 深度判读</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+  code, pre { font-family: 'JetBrains Mono', monospace; }
+  .note-ref { color: #6366f1; font-weight: 500; cursor: pointer; }
+  .note-ref:hover { text-decoration: underline; }
+  .review-body h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
+  .review-body p { margin-bottom: 0.75rem; line-height: 1.8; }
+  .review-body strong { color: #0f172a; }
+  .review-body blockquote { border-left: 3px solid #6366f1; padding-left: 1rem; margin: 1rem 0; color: #475569; }
+  .topic-card { transition: all 0.2s ease; }
+  .topic-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+  .topic-card.active { ring: 2px; box-shadow: 0 0 0 2px #6366f1; }
+  .fade-in { animation: fadeIn 0.3s ease-in; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .note-item { border-left: 3px solid transparent; transition: border-color 0.2s; }
+  .note-item:hover { border-left-color: #6366f1; }
+  .why-text { white-space: pre-wrap; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div>
+      <h1 class="text-xl font-bold text-gray-900">AI 行业扫描 · 深度判读</h1>
+      <p class="text-sm text-gray-500 mt-0.5">持续跟踪 LLM/Agent 前沿，记录观察与判断</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="relative">
+        <input id="searchInput" type="text" placeholder="搜索标题、关键词、评论..."
+          class="w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </div>
+      <a href="#about" class="text-sm text-gray-600 hover:text-indigo-600">关于</a>
+    </div>
+  </div>
+</header>
+
+<!-- Stats Bar -->
+<div id="statsBar" class="bg-white border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex gap-8 text-sm text-gray-500">
+    <span id="statNotes"></span>
+    <span id="statTopics"></span>
+    <span id="statDateRange"></span>
+    <span id="statChars"></span>
+  </div>
+</div>
+
+<!-- Main Content -->
+<main class="max-w-6xl mx-auto px-6 py-8">
+
+  <!-- Topic Cards -->
+  <div id="topicCards" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-8"></div>
+
+  <!-- Active Topic Section -->
+  <div id="topicSection" class="hidden fade-in">
+    <!-- Review -->
+    <div id="reviewPanel" class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-6">
+      <div id="reviewContent" class="review-body prose prose-sm max-w-none text-gray-700"></div>
+      <button id="toggleReview" class="mt-4 text-sm text-indigo-600 hover:text-indigo-800 font-medium">
+        收起综述 ▲
+      </button>
+    </div>
+
+    <!-- Notes List -->
+    <div class="flex items-center justify-between mb-4">
+      <h3 id="notesListTitle" class="text-lg font-semibold text-gray-800"></h3>
+      <select id="sortSelect" class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <option value="date-desc">最新优先</option>
+        <option value="date-asc">最早优先</option>
+      </select>
+    </div>
+    <div id="notesList" class="space-y-3"></div>
+  </div>
+
+  <!-- All Notes (when no topic selected) -->
+  <div id="allNotesSection">
+    <h2 class="text-lg font-semibold text-gray-800 mb-4">全部判读</h2>
+    <div id="allNotesList" class="space-y-3"></div>
+  </div>
+
+</main>
+
+<!-- About Section -->
+<section id="about" class="bg-white border-t border-gray-200 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-xl font-bold text-gray-900 mb-4">About</h2>
+    <p class="text-gray-600 mb-2"><strong>Business Analyst</strong> · AI Solution / AI × Agent Engineering / AI Evaluation</p>
+    <p class="text-gray-600 mb-6">
+      这里是我对 AI 行业的持续观察与判断。每一条记录不是信息搬运，而是基于原文的独立思考——核心发现是什么、对我们的启发在哪、适用边界在哪里。
+    </p>
+    <div class="flex gap-6 text-sm text-gray-500">
+      <span>💬 WeChat: black_shady1130</span>
+      <span>📧 Email: blackshady1130@gmail.com</span>
+      <a href="https://github.com/blackshady1130-jpg/AI-knowhow-kit" target="_blank" class="text-indigo-600 hover:text-indigo-800">
+        GitHub: AI-knowhow-kit →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 text-sm text-center py-6">
+  <p>Built with structured thinking & continuous learning · Updated 2026.03</p>
+</footer>
+
+<script>
+let DATA = null;
+let activeTopic = null;
+let searchQuery = '';
+
+async function init() {
+  const resp = await fetch('data.json');
+  DATA = await resp.json();
+  renderStats();
+  renderTopicCards();
+  renderAllNotes();
+  setupSearch();
+  setupSort();
+}
+
+function renderStats() {
+  const m = DATA.meta;
+  document.getElementById('statNotes').textContent = `📝 ${m.total_notes} 篇判读`;
+  document.getElementById('statTopics').textContent = `📂 ${m.total_topics} 个主题`;
+  document.getElementById('statDateRange').textContent = `📅 ${m.date_range}`;
+  document.getElementById('statChars').textContent = `✍️ ${(m.total_why_chars / 10000).toFixed(1)} 万字评论`;
+}
+
+function renderTopicCards() {
+  const container = document.getElementById('topicCards');
+  container.innerHTML = DATA.topics.map((t, i) => `
+    <div class="topic-card bg-white rounded-xl p-4 border border-gray-200 cursor-pointer shadow-sm"
+         data-topic="${t.name}" onclick="selectTopic('${t.name}')">
+      <div class="text-2xl mb-2">${t.icon}</div>
+      <div class="text-sm font-semibold text-gray-800 mb-1">${t.name}</div>
+      <div class="text-xs text-gray-500">${t.count} 篇</div>
+    </div>
+  `).join('');
+}
+
+function selectTopic(name) {
+  if (activeTopic === name) {
+    activeTopic = null;
+    document.getElementById('topicSection').classList.add('hidden');
+    document.getElementById('allNotesSection').classList.remove('hidden');
+    document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('active'));
+    return;
+  }
+
+  activeTopic = name;
+  document.getElementById('allNotesSection').classList.add('hidden');
+  document.getElementById('topicSection').classList.remove('hidden');
+  document.getElementById('topicSection').classList.add('fade-in');
+
+  document.querySelectorAll('.topic-card').forEach(c => {
+    c.classList.toggle('active', c.dataset.topic === name);
+  });
+
+  const topic = DATA.topics.find(t => t.name === name);
+
+  const reviewHtml = marked.parse(topic.review);
+  document.getElementById('reviewContent').innerHTML = reviewHtml;
+
+  const notes = DATA.notes.filter(n => n.topics.includes(name));
+  renderNotesList(notes, 'notesList');
+  document.getElementById('notesListTitle').textContent = `${topic.icon} ${name} · ${notes.length} 篇判读`;
+
+  const btn = document.getElementById('toggleReview');
+  const panel = document.getElementById('reviewPanel');
+  btn.onclick = () => {
+    const hidden = panel.querySelector('.review-body').classList.toggle('hidden');
+    btn.textContent = hidden ? '展开综述 ▼' : '收起综述 ▲';
+  };
+}
+
+function renderAllNotes() {
+  const notes = searchQuery
+    ? DATA.notes.filter(n => matchSearch(n, searchQuery))
+    : DATA.notes;
+  renderNotesList(notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||'')), 'allNotesList');
+}
+
+function renderNotesList(notes, containerId) {
+  const sortVal = document.getElementById('sortSelect')?.value || 'date-desc';
+  const sorted = notes.slice().sort((a,b) => {
+    return sortVal === 'date-desc'
+      ? (b.date||'').localeCompare(a.date||'')
+      : (a.date||'').localeCompare(b.date||'');
+  });
+
+  const container = document.getElementById(containerId);
+  container.innerHTML = sorted.map(n => {
+    const topicBadges = n.topics.map(t => {
+      const topic = DATA.topics.find(tt => tt.name === t);
+      return `<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700">${topic?.icon || ''} ${t}</span>`;
+    }).join(' ');
+
+    const kwBadges = (n.keywords || []).slice(0, 5).map(k =>
+      `<span class="inline-block text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-600">${k}</span>`
+    ).join(' ');
+
+    const typeColor = n.type === 'solid paper' ? 'text-green-600' : n.type === '行业动态/评价' ? 'text-blue-600' : 'text-amber-600';
+
+    return `
+      <div class="note-item bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-xs text-gray-400">#${n.id}</span>
+              <span class="text-xs ${typeColor} font-medium">${n.type || ''}</span>
+              <span class="text-xs text-gray-400">${n.date || ''}</span>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-900 mb-2 leading-snug">
+              ${n.url ? `<a href="${n.url}" target="_blank" class="hover:text-indigo-600">${escHtml(n.title)}</a>` : escHtml(n.title)}
+            </h4>
+            <div class="flex flex-wrap gap-1 mb-3">${topicBadges} ${kwBadges}</div>
+          </div>
+        </div>
+        <div class="text-sm text-gray-600 leading-relaxed">
+          <div class="why-short">${escHtml(n.why_short)}</div>
+          ${n.why.length > 200 ? `
+            <button class="text-indigo-600 text-xs mt-1 hover:text-indigo-800 font-medium"
+              onclick="toggleWhy(this, ${n.id})">展开全文 ▼</button>
+            <div class="why-full hidden mt-2 why-text text-gray-700 bg-gray-50 rounded-lg p-4 text-sm leading-relaxed">${escHtml(n.why)}</div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function toggleWhy(btn, noteId) {
+  const full = btn.nextElementSibling;
+  const shortEl = btn.previousElementSibling;
+  if (full.classList.contains('hidden')) {
+    full.classList.remove('hidden');
+    shortEl.classList.add('hidden');
+    btn.textContent = '收起 ▲';
+  } else {
+    full.classList.add('hidden');
+    shortEl.classList.remove('hidden');
+    btn.textContent = '展开全文 ▼';
+  }
+}
+
+function matchSearch(note, query) {
+  const q = query.toLowerCase();
+  const text = [note.title, note.why, ...(note.keywords || [])].join(' ').toLowerCase();
+  return text.includes(q);
+}
+
+function setupSearch() {
+  const input = document.getElementById('searchInput');
+  let timer;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      searchQuery = input.value.trim();
+      if (activeTopic) {
+        const notes = DATA.notes.filter(n => n.topics.includes(activeTopic) && (!searchQuery || matchSearch(n, searchQuery)));
+        renderNotesList(notes, 'notesList');
+      } else {
+        renderAllNotes();
+      }
+    }, 300);
+  });
+}
+
+function setupSort() {
+  document.getElementById('sortSelect')?.addEventListener('change', () => {
+    if (activeTopic) {
+      const notes = DATA.notes.filter(n => n.topics.includes(activeTopic));
+      renderNotesList(notes, 'notesList');
+    }
+  });
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\n/g,'<br>');
+}
+
+init();
+</script>
+</body>
+</html>
