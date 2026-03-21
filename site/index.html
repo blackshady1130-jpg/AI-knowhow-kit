@@ -6,237 +6,278 @@
 <title>AI 行业扫描 · 深度判读</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: { 50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81' }
+      }
+    }
+  }
+}
+</script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
-  body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
-  code, pre { font-family: 'JetBrains Mono', monospace; }
-  .note-ref { color: #6366f1; font-weight: 500; cursor: pointer; }
-  .note-ref:hover { text-decoration: underline; }
-  .review-body h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
-  .review-body p { margin-bottom: 0.75rem; line-height: 1.8; }
-  .review-body strong { color: #0f172a; }
-  .review-body blockquote { border-left: 3px solid #6366f1; padding-left: 1rem; margin: 1rem 0; color: #475569; }
-  .topic-card { transition: all 0.2s ease; }
-  .topic-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-  .topic-card.active { ring: 2px; box-shadow: 0 0 0 2px #6366f1; }
-  .fade-in { animation: fadeIn 0.3s ease-in; }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  .note-item { border-left: 3px solid transparent; transition: border-color 0.2s; }
-  .note-item:hover { border-left-color: #6366f1; }
-  .why-text { white-space: pre-wrap; }
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+code, pre { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; }
+
+/* Review article typography */
+.review-body h1 { font-size: 1.5rem; font-weight: 700; color: #1e293b; margin-bottom: 0.5rem; line-height: 1.4; }
+.review-body h2 { font-size: 1.2rem; font-weight: 700; color: #1e293b; margin-top: 2rem; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e7ff; }
+.review-body h3 { font-size: 1.05rem; font-weight: 600; color: #334155; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+.review-body p { margin-bottom: 0.75rem; line-height: 1.9; color: #374151; }
+.review-body strong { color: #0f172a; }
+.review-body blockquote { border-left: 3px solid #6366f1; padding-left: 1rem; margin: 1rem 0; color: #475569; background: #f8fafc; padding: 0.75rem 1rem; border-radius: 0 0.5rem 0.5rem 0; }
+.review-body ul, .review-body ol { margin: 0.5rem 0 0.75rem 1.5rem; color: #374151; line-height: 1.8; }
+.review-body li { margin-bottom: 0.25rem; }
+.review-body hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
+
+/* Note reference links */
+.note-ref { color: #4f46e5; font-weight: 600; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px; position: relative; }
+.note-ref:hover { color: #4338ca; text-decoration-style: solid; }
+
+/* Note ref tooltip */
+.ref-tooltip { position: fixed; z-index: 100; width: 360px; max-height: 280px; overflow-y: auto; background: white; border: 1px solid #e0e7ff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.15); padding: 16px; pointer-events: auto; }
+.ref-tooltip .tt-title { font-weight: 600; font-size: 0.875rem; color: #1e293b; margin-bottom: 6px; line-height: 1.4; }
+.ref-tooltip .tt-meta { font-size: 0.75rem; color: #64748b; margin-bottom: 8px; }
+.ref-tooltip .tt-why { font-size: 0.8rem; color: #475569; line-height: 1.7; }
+
+/* Animations */
+.fade-in { animation: fadeIn 0.35s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Topic card hover */
+.topic-card { transition: all 0.25s cubic-bezier(0.4,0,0.2,1); }
+.topic-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(99,102,241,0.15); }
+
+/* Note item */
+.note-item { transition: all 0.2s ease; border-left: 3px solid transparent; }
+.note-item:hover { border-left-color: #6366f1; background: #fafbff; }
+
+.why-text { white-space: pre-wrap; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
 </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<!-- Header -->
-<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <div>
-      <h1 class="text-xl font-bold text-gray-900">AI 行业扫描 · 深度判读</h1>
-      <p class="text-sm text-gray-500 mt-0.5">持续跟踪 LLM/Agent 前沿，记录观察与判断</p>
-    </div>
-    <div class="flex items-center gap-4">
-      <div class="relative">
-        <input id="searchInput" type="text" placeholder="搜索标题、关键词、评论..."
-          class="w-64 pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
-        <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-        </svg>
-      </div>
-      <a href="#about" class="text-sm text-gray-600 hover:text-indigo-600">关于</a>
+<!-- ==================== HOME VIEW ==================== -->
+<div id="homeView">
+
+  <!-- Hero -->
+  <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">AI 行业扫描 · 深度判读</h1>
+      <p class="text-brand-200 text-lg mb-8">持续跟踪 LLM / Agent 前沿，记录观察与判断</p>
+      <div id="heroStats" class="flex justify-center gap-8 text-sm text-brand-200"></div>
     </div>
   </div>
-</header>
 
-<!-- Stats Bar -->
-<div id="statsBar" class="bg-white border-b border-gray-100">
-  <div class="max-w-6xl mx-auto px-6 py-3 flex gap-8 text-sm text-gray-500">
-    <span id="statNotes"></span>
-    <span id="statTopics"></span>
-    <span id="statDateRange"></span>
-    <span id="statChars"></span>
+  <!-- Topic Cards -->
+  <div class="max-w-5xl mx-auto px-6 -mt-8">
+    <div id="topicGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12"></div>
+  </div>
+
+  <!-- About -->
+  <section class="max-w-5xl mx-auto px-6 pb-16">
+    <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+      <h2 class="text-lg font-bold text-gray-900 mb-3">About</h2>
+      <p class="text-gray-600 mb-2"><strong>Business Analyst</strong> · AI Solution / AI × Agent Engineering / AI Evaluation</p>
+      <p class="text-gray-500 text-sm mb-5 leading-relaxed">
+        这里是我对 AI 行业的持续观察与判断。每一条记录不是信息搬运，而是基于原文的独立思考——核心发现是什么、对我们的启发在哪、适用边界在哪里。
+      </p>
+      <div class="flex flex-wrap gap-5 text-sm text-gray-500">
+        <span>💬 WeChat: black_shady1130</span>
+        <span>📧 blackshady1130@gmail.com</span>
+        <a href="https://github.com/blackshady1130-jpg/AI-knowhow-kit" target="_blank" class="text-brand-600 hover:text-brand-800 font-medium">GitHub →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== TOPIC DETAIL VIEW ==================== -->
+<div id="topicView" class="hidden">
+
+  <!-- Topic Header -->
+  <div id="topicHeader" class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
+    <div class="max-w-5xl mx-auto px-6 py-10">
+      <button onclick="goHome()" class="text-brand-300 hover:text-white text-sm mb-4 inline-flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        返回主页
+      </button>
+      <div class="flex items-center gap-3">
+        <span id="topicIcon" class="text-4xl"></span>
+        <div>
+          <h1 id="topicTitle" class="text-2xl md:text-3xl font-bold"></h1>
+          <p id="topicCount" class="text-brand-200 text-sm mt-1"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-6 py-8">
+
+    <!-- Review Article -->
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-10 mb-8 fade-in">
+      <div id="reviewContent" class="review-body"></div>
+    </div>
+
+    <!-- Recent Notes Preview -->
+    <div class="mb-6">
+      <h3 class="text-lg font-bold text-gray-800 mb-4">最新判读</h3>
+      <div id="recentNotes" class="space-y-3"></div>
+    </div>
+
+    <div class="mb-6">
+      <h3 class="text-lg font-bold text-gray-800 mb-4">最早判读</h3>
+      <div id="earliestNotes" class="space-y-3"></div>
+    </div>
+
+    <!-- Expand All -->
+    <div id="expandAllWrap" class="text-center mb-8">
+      <button id="expandAllBtn" onclick="expandAll()"
+        class="px-6 py-2.5 bg-brand-50 text-brand-700 rounded-xl text-sm font-medium hover:bg-brand-100 transition border border-brand-200">
+        查看全部判读 ▼
+      </button>
+    </div>
+    <div id="allTopicNotes" class="hidden space-y-3 mb-8 fade-in"></div>
+
   </div>
 </div>
 
-<!-- Main Content -->
-<main class="max-w-6xl mx-auto px-6 py-8">
-
-  <!-- Topic Cards -->
-  <div id="topicCards" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 mb-8"></div>
-
-  <!-- Active Topic Section -->
-  <div id="topicSection" class="hidden fade-in">
-    <!-- Review -->
-    <div id="reviewPanel" class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-6">
-      <div id="reviewContent" class="review-body prose prose-sm max-w-none text-gray-700"></div>
-      <button id="toggleReview" class="mt-4 text-sm text-indigo-600 hover:text-indigo-800 font-medium">
-        收起综述 ▲
-      </button>
-    </div>
-
-    <!-- Notes List -->
-    <div class="flex items-center justify-between mb-4">
-      <h3 id="notesListTitle" class="text-lg font-semibold text-gray-800"></h3>
-      <select id="sortSelect" class="text-sm border border-gray-300 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-        <option value="date-desc">最新优先</option>
-        <option value="date-asc">最早优先</option>
-      </select>
-    </div>
-    <div id="notesList" class="space-y-3"></div>
-  </div>
-
-  <!-- All Notes (when no topic selected) -->
-  <div id="allNotesSection">
-    <h2 class="text-lg font-semibold text-gray-800 mb-4">全部判读</h2>
-    <div id="allNotesList" class="space-y-3"></div>
-  </div>
-
-</main>
-
-<!-- About Section -->
-<section id="about" class="bg-white border-t border-gray-200 mt-16">
-  <div class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-xl font-bold text-gray-900 mb-4">About</h2>
-    <p class="text-gray-600 mb-2"><strong>Business Analyst</strong> · AI Solution / AI × Agent Engineering / AI Evaluation</p>
-    <p class="text-gray-600 mb-6">
-      这里是我对 AI 行业的持续观察与判断。每一条记录不是信息搬运，而是基于原文的独立思考——核心发现是什么、对我们的启发在哪、适用边界在哪里。
-    </p>
-    <div class="flex gap-6 text-sm text-gray-500">
-      <span>💬 WeChat: black_shady1130</span>
-      <span>📧 Email: blackshady1130@gmail.com</span>
-      <a href="https://github.com/blackshady1130-jpg/AI-knowhow-kit" target="_blank" class="text-indigo-600 hover:text-indigo-800">
-        GitHub: AI-knowhow-kit →
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-400 text-sm text-center py-6">
-  <p>Built with structured thinking & continuous learning · Updated 2026.03</p>
+<footer class="bg-gray-900 text-gray-500 text-xs text-center py-5">
+  Built with structured thinking & continuous learning · Updated 2026.03
 </footer>
+
+<!-- Note Ref Tooltip -->
+<div id="refTooltip" class="ref-tooltip hidden"></div>
 
 <script>
 let DATA = null;
-let activeTopic = null;
-let searchQuery = '';
+let currentTopic = null;
 
 async function init() {
   const resp = await fetch('data.json');
   DATA = await resp.json();
-  renderStats();
-  renderTopicCards();
-  renderAllNotes();
-  setupSearch();
-  setupSort();
+  renderHome();
 }
 
-function renderStats() {
+/* ==================== HOME ==================== */
+function renderHome() {
   const m = DATA.meta;
-  document.getElementById('statNotes').textContent = `📝 ${m.total_notes} 篇判读`;
-  document.getElementById('statTopics').textContent = `📂 ${m.total_topics} 个主题`;
-  document.getElementById('statDateRange').textContent = `📅 ${m.date_range}`;
-  document.getElementById('statChars').textContent = `✍️ ${(m.total_why_chars / 10000).toFixed(1)} 万字评论`;
-}
+  document.getElementById('heroStats').innerHTML = `
+    <div><span class="text-2xl font-bold text-white">${m.total_notes}</span><br>篇判读</div>
+    <div><span class="text-2xl font-bold text-white">${m.total_topics}</span><br>个主题</div>
+    <div><span class="text-2xl font-bold text-white">${(m.total_why_chars/10000).toFixed(1)}万</span><br>字评论</div>
+    <div><span class="text-2xl font-bold text-white">12</span><br>个月跟踪</div>
+  `;
 
-function renderTopicCards() {
-  const container = document.getElementById('topicCards');
-  container.innerHTML = DATA.topics.map((t, i) => `
-    <div class="topic-card bg-white rounded-xl p-4 border border-gray-200 cursor-pointer shadow-sm"
-         data-topic="${t.name}" onclick="selectTopic('${t.name}')">
-      <div class="text-2xl mb-2">${t.icon}</div>
-      <div class="text-sm font-semibold text-gray-800 mb-1">${t.name}</div>
-      <div class="text-xs text-gray-500">${t.count} 篇</div>
+  const grid = document.getElementById('topicGrid');
+  grid.innerHTML = DATA.topics.map(t => `
+    <div class="topic-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm cursor-pointer"
+         onclick="openTopic('${t.name}')">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-3xl">${t.icon}</span>
+        <div>
+          <h3 class="text-base font-bold text-gray-900">${t.name}</h3>
+          <span class="text-xs text-gray-400">${t.count} 篇判读</span>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 leading-relaxed">${t.description}</p>
     </div>
   `).join('');
 }
 
-function selectTopic(name) {
-  if (activeTopic === name) {
-    activeTopic = null;
-    document.getElementById('topicSection').classList.add('hidden');
-    document.getElementById('allNotesSection').classList.remove('hidden');
-    document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('active'));
-    return;
-  }
-
-  activeTopic = name;
-  document.getElementById('allNotesSection').classList.add('hidden');
-  document.getElementById('topicSection').classList.remove('hidden');
-  document.getElementById('topicSection').classList.add('fade-in');
-
-  document.querySelectorAll('.topic-card').forEach(c => {
-    c.classList.toggle('active', c.dataset.topic === name);
-  });
-
+/* ==================== TOPIC DETAIL ==================== */
+function openTopic(name) {
+  currentTopic = name;
   const topic = DATA.topics.find(t => t.name === name);
+  const notes = DATA.notes.filter(n => n.topics.includes(name));
 
-  const reviewHtml = marked.parse(topic.review);
+  document.getElementById('homeView').classList.add('hidden');
+  document.getElementById('topicView').classList.remove('hidden');
+  document.getElementById('topicView').classList.add('fade-in');
+  window.scrollTo(0, 0);
+
+  document.getElementById('topicIcon').textContent = topic.icon;
+  document.getElementById('topicTitle').textContent = topic.name;
+  document.getElementById('topicCount').textContent = `${topic.count} 篇判读 · ${DATA.meta.date_range}`;
+
+  // Render review with note refs
+  let reviewHtml = marked.parse(topic.review);
+  reviewHtml = linkifyNoteRefs(reviewHtml);
   document.getElementById('reviewContent').innerHTML = reviewHtml;
 
-  const notes = DATA.notes.filter(n => n.topics.includes(name));
-  renderNotesList(notes, 'notesList');
-  document.getElementById('notesListTitle').textContent = `${topic.icon} ${name} · ${notes.length} 篇判读`;
+  // Recent 3 + earliest 3
+  const sorted = notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  const earliest = notes.slice().sort((a,b) => (a.date||'').localeCompare(b.date||''));
 
-  const btn = document.getElementById('toggleReview');
-  const panel = document.getElementById('reviewPanel');
-  btn.onclick = () => {
-    const hidden = panel.querySelector('.review-body').classList.toggle('hidden');
-    btn.textContent = hidden ? '展开综述 ▼' : '收起综述 ▲';
-  };
+  renderNoteCards(sorted.slice(0, 3), 'recentNotes');
+  renderNoteCards(earliest.slice(0, 3), 'earliestNotes');
+
+  // Reset expand
+  document.getElementById('allTopicNotes').classList.add('hidden');
+  document.getElementById('allTopicNotes').innerHTML = '';
+  const btn = document.getElementById('expandAllBtn');
+  btn.textContent = `查看全部 ${notes.length} 篇判读 ▼`;
+  document.getElementById('expandAllWrap').classList.remove('hidden');
+
+  setupRefTooltips();
 }
 
-function renderAllNotes() {
-  const notes = searchQuery
-    ? DATA.notes.filter(n => matchSearch(n, searchQuery))
-    : DATA.notes;
-  renderNotesList(notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||'')), 'allNotesList');
+function expandAll() {
+  const notes = DATA.notes.filter(n => n.topics.includes(currentTopic));
+  const sorted = notes.slice().sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  renderNoteCards(sorted, 'allTopicNotes');
+  document.getElementById('allTopicNotes').classList.remove('hidden');
+  document.getElementById('expandAllWrap').classList.add('hidden');
 }
 
-function renderNotesList(notes, containerId) {
-  const sortVal = document.getElementById('sortSelect')?.value || 'date-desc';
-  const sorted = notes.slice().sort((a,b) => {
-    return sortVal === 'date-desc'
-      ? (b.date||'').localeCompare(a.date||'')
-      : (a.date||'').localeCompare(b.date||'');
-  });
+function goHome() {
+  document.getElementById('topicView').classList.add('hidden');
+  document.getElementById('homeView').classList.remove('hidden');
+  currentTopic = null;
+  window.scrollTo(0, 0);
+}
 
+/* ==================== NOTE CARDS ==================== */
+function renderNoteCards(notes, containerId) {
   const container = document.getElementById(containerId);
-  container.innerHTML = sorted.map(n => {
+  container.innerHTML = notes.map(n => {
     const topicBadges = n.topics.map(t => {
-      const topic = DATA.topics.find(tt => tt.name === t);
-      return `<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700">${topic?.icon || ''} ${t}</span>`;
+      const tp = DATA.topics.find(x => x.name === t);
+      return `<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-medium">${tp?.icon||''} ${t}</span>`;
     }).join(' ');
 
-    const kwBadges = (n.keywords || []).slice(0, 5).map(k =>
-      `<span class="inline-block text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-600">${k}</span>`
+    const kwBadges = (n.keywords||[]).slice(0,4).map(k =>
+      `<span class="inline-block text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">${k}</span>`
     ).join(' ');
 
-    const typeColor = n.type === 'solid paper' ? 'text-green-600' : n.type === '行业动态/评价' ? 'text-blue-600' : 'text-amber-600';
+    const typeMap = { 'solid paper':'🔬','行业动态/评价':'📰','观点/文章':'💡' };
+    const typeIcon = typeMap[n.type] || '📌';
+
+    const whyShort = esc(n.why_short || '');
+    const whyFull = esc(n.why || '');
+    const hasMore = (n.why||'').length > 200;
 
     return `
-      <div class="note-item bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
-        <div class="flex items-start justify-between gap-4">
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center gap-2 mb-1.5">
-              <span class="text-xs text-gray-400">#${n.id}</span>
-              <span class="text-xs ${typeColor} font-medium">${n.type || ''}</span>
-              <span class="text-xs text-gray-400">${n.date || ''}</span>
-            </div>
-            <h4 class="text-sm font-semibold text-gray-900 mb-2 leading-snug">
-              ${n.url ? `<a href="${n.url}" target="_blank" class="hover:text-indigo-600">${escHtml(n.title)}</a>` : escHtml(n.title)}
-            </h4>
-            <div class="flex flex-wrap gap-1 mb-3">${topicBadges} ${kwBadges}</div>
-          </div>
+      <div class="note-item bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
+        <div class="flex items-center gap-2 mb-2 text-xs text-gray-400">
+          <span class="font-mono text-brand-400">#${n.id}</span>
+          <span>${typeIcon} ${n.type||''}</span>
+          <span>${n.date||''}</span>
         </div>
+        <h4 class="text-sm font-semibold text-gray-900 mb-2 leading-snug">
+          ${n.url ? `<a href="${n.url}" target="_blank" class="hover:text-brand-600 transition">${esc(n.title)}</a>` : esc(n.title)}
+        </h4>
+        <div class="flex flex-wrap gap-1 mb-3">${topicBadges} ${kwBadges}</div>
         <div class="text-sm text-gray-600 leading-relaxed">
-          <div class="why-short">${escHtml(n.why_short)}</div>
-          ${n.why.length > 200 ? `
-            <button class="text-indigo-600 text-xs mt-1 hover:text-indigo-800 font-medium"
-              onclick="toggleWhy(this, ${n.id})">展开全文 ▼</button>
-            <div class="why-full hidden mt-2 why-text text-gray-700 bg-gray-50 rounded-lg p-4 text-sm leading-relaxed">${escHtml(n.why)}</div>
+          <div class="why-short">${whyShort}</div>
+          ${hasMore ? `
+            <button class="text-brand-600 text-xs mt-1.5 hover:text-brand-800 font-medium" onclick="toggleWhy(this)">展开全文 ▼</button>
+            <div class="why-full hidden mt-2 why-text bg-gray-50 rounded-lg p-4 text-sm leading-relaxed text-gray-700">${whyFull}</div>
           ` : ''}
         </div>
       </div>
@@ -244,55 +285,78 @@ function renderNotesList(notes, containerId) {
   }).join('');
 }
 
-function toggleWhy(btn, noteId) {
+function toggleWhy(btn) {
   const full = btn.nextElementSibling;
-  const shortEl = btn.previousElementSibling;
+  const short = btn.previousElementSibling;
   if (full.classList.contains('hidden')) {
     full.classList.remove('hidden');
-    shortEl.classList.add('hidden');
+    short.classList.add('hidden');
     btn.textContent = '收起 ▲';
   } else {
     full.classList.add('hidden');
-    shortEl.classList.remove('hidden');
+    short.classList.remove('hidden');
     btn.textContent = '展开全文 ▼';
   }
 }
 
-function matchSearch(note, query) {
-  const q = query.toLowerCase();
-  const text = [note.title, note.why, ...(note.keywords || [])].join(' ').toLowerCase();
-  return text.includes(q);
-}
-
-function setupSearch() {
-  const input = document.getElementById('searchInput');
-  let timer;
-  input.addEventListener('input', () => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      searchQuery = input.value.trim();
-      if (activeTopic) {
-        const notes = DATA.notes.filter(n => n.topics.includes(activeTopic) && (!searchQuery || matchSearch(n, searchQuery)));
-        renderNotesList(notes, 'notesList');
-      } else {
-        renderAllNotes();
-      }
-    }, 300);
+/* ==================== NOTE REF LINKING ==================== */
+function linkifyNoteRefs(html) {
+  return html.replace(/#(\d+)/g, (match, id) => {
+    const note = DATA.notes.find(n => n.id === parseInt(id));
+    if (!note) return match;
+    return `<span class="note-ref" data-note-id="${id}">${match}</span>`;
   });
 }
 
-function setupSort() {
-  document.getElementById('sortSelect')?.addEventListener('change', () => {
-    if (activeTopic) {
-      const notes = DATA.notes.filter(n => n.topics.includes(activeTopic));
-      renderNotesList(notes, 'notesList');
-    }
+function setupRefTooltips() {
+  const tooltip = document.getElementById('refTooltip');
+  let hideTimer;
+
+  document.querySelectorAll('.note-ref').forEach(el => {
+    el.addEventListener('mouseenter', (e) => {
+      clearTimeout(hideTimer);
+      const id = parseInt(el.dataset.noteId);
+      const note = DATA.notes.find(n => n.id === id);
+      if (!note) return;
+
+      const whyPreview = (note.why||'').substring(0, 150) + ((note.why||'').length > 150 ? '...' : '');
+
+      tooltip.innerHTML = `
+        <div class="tt-title">${esc(note.title)}</div>
+        <div class="tt-meta">#${note.id} · ${note.date||''} · ${note.type||''}</div>
+        <div class="tt-why">${esc(whyPreview)}</div>
+        ${note.url ? `<a href="${note.url}" target="_blank" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>` : ''}
+      `;
+
+      const rect = el.getBoundingClientRect();
+      let top = rect.bottom + 8;
+      let left = rect.left;
+      if (left + 360 > window.innerWidth) left = window.innerWidth - 380;
+      if (left < 10) left = 10;
+      if (top + 280 > window.innerHeight) top = rect.top - 288;
+
+      tooltip.style.top = top + 'px';
+      tooltip.style.left = left + 'px';
+      tooltip.classList.remove('hidden');
+    });
+
+    el.addEventListener('mouseleave', () => {
+      hideTimer = setTimeout(() => tooltip.classList.add('hidden'), 200);
+    });
+  });
+
+  tooltip.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+  tooltip.addEventListener('mouseleave', () => {
+    hideTimer = setTimeout(() => tooltip.classList.add('hidden'), 200);
   });
 }
 
-function escHtml(str) {
+/* ==================== UTILS ==================== */
+function esc(str) {
   if (!str) return '';
-  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\n/g,'<br>');
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML.replace(/\n/g, '<br>');
 }
 
 init();
