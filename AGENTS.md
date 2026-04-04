@@ -13,7 +13,8 @@
 
 - AI 行业问题（公司/模型/评测/Agent/SaaS/策略判断）：先读 `AI_SCAN_RETRIEVAL.md` 并按其流程执行。
 - 资料补充/案例扩展问题：先读 `BOOKMARKS_RETRIEVAL.md` 并按其流程执行。
-- 两者都需要时：按 `AI_SCAN_RETRIEVAL.md` 第 7 节"双库协同"执行。
+- 两者都需要时：按 `AI_SCAN_RETRIEVAL.md` 第 8 节"双库协同"执行。
+- AI 行业问题默认先用内库形成初步判断，再按需外网补充，不直接跳到纯 web 搜索。
 
 禁止先无差别通读全部 `notes/AI行业扫描_md/*.md` 或 `bookmarks/bookmarks_md/*.md` 再回答。
 
