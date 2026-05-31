@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 行业扫描 · 深度判读</title>
-<meta name="description" content="224 篇 AI 行业深度判读，覆盖 Agent 架构、模型推理、评测基准、AI Coding、产品交互、行业格局与 AI 安全 7 大主题。每条记录包含原始文章与个人深度评论。">
+<meta name="description" content="289 篇 AI 行业深度判读，覆盖 Agent 架构、模型推理、评测基准、AI Coding、产品交互、行业格局与 AI 安全 7 大主题。每条记录包含原始文章与个人深度评论。">
 <meta property="og:title" content="AI 行业扫描 · 深度判读">
-<meta property="og:description" content="持续跟踪 LLM/Agent 前沿，224 篇原创判读覆盖 7 大主题，超 9 万字深度评论。">
+<meta property="og:description" content="持续跟踪 LLM/Agent 前沿，289 篇原创判读覆盖 7 大主题，超 13 万字深度评论。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://blackshady1130-jpg.github.io/AI-knowhow-kit/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AI 行业扫描 · 深度判读">
-<meta name="twitter:description" content="持续跟踪 LLM/Agent 前沿，224 篇原创判读覆盖 7 大主题，超 9 万字深度评论。">
+<meta name="twitter:description" content="持续跟踪 LLM/Agent 前沿，289 篇原创判读覆盖 7 大主题，超 13 万字深度评论。">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@ code,pre{font-family:'JetBrains Mono',monospace;font-size:.85em}
       <h2 class="text-lg font-bold text-gray-900 mb-1">About Me</h2>
       <p class="text-base font-semibold text-gray-800 mb-1">Yantao Wang (Shady)</p>
       <p class="text-gray-600 mb-4">Business Analyst · AI Solution / AI × Agent Engineering / AI Evaluation</p>
-      <p class="text-gray-500 text-sm mb-5 leading-relaxed">网页计划半年更新一次，分享个人对 AI 行业的持续观察与判断，每一条记录人工 review 后整理入库，原始信息会优先更新到在线文档：<a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" class="text-brand-600 hover:text-brand-800 underline">在线文档</a>。</p>
+      <p class="text-gray-500 text-sm mb-5 leading-relaxed">网页阶段性更新，通常每 1-2 个月同步一次，分享个人对 AI 行业的持续观察与判断。每一条记录人工 review 后整理入库，原始信息会优先更新到在线文档：<a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" class="text-brand-600 hover:text-brand-800 underline">在线文档</a>。</p>
       <div class="text-sm text-gray-500">
         <p class="font-medium text-gray-600 mb-2">Contact：</p>
         <div class="flex flex-wrap gap-4">
@@ -188,7 +188,7 @@ function showHome(){
     <div><span class="text-2xl font-bold text-white">${m.total_notes}</span><br>篇判读</div>
     <div><span class="text-2xl font-bold text-white">${m.total_topics}</span><br>个主题</div>
     <div><span class="text-2xl font-bold text-white">${(m.total_why_chars/10000).toFixed(1)}万</span><br>字评论</div>
-    <div><span class="text-2xl font-bold text-white">近一年</span><br>跟踪梳理</div>`;
+    <div><span class="text-2xl font-bold text-white">1-2月</span><br>同步节奏</div>`;
   $('topicGrid').innerHTML=D.topics.map(t=>`
     <div class="topic-card bg-white rounded-2xl p-5 border border-gray-200 shadow-sm cursor-pointer"
          onclick="location.hash='#topic/${encodeURIComponent(t.name)}'">
@@ -199,7 +199,7 @@ function showHome(){
       </div>
       <p class="text-xs md:text-sm text-gray-500 leading-relaxed">${t.description}</p>
     </div>`).join('');
-  $('navMeta').textContent=`${m.total_notes} 篇 · 2024.11 – 2026.04`;
+  $('navMeta').textContent=`${m.total_notes} 篇 · ${rangeText(m.date_range)}`;
   scrollTo(0,0);
 }
 
@@ -217,7 +217,7 @@ function showTopic(name){
   const sub=SUBTITLES[name]||'';
   $('tvIcon').textContent=t.icon;
   $('tvTitle').innerHTML=name+(sub?`<span class="block text-base md:text-lg font-normal text-brand-200 mt-1">${sub}</span>`:'');
-  $('tvMeta').textContent=`${t.count} 篇判读 · 2025.04 – 2026.03`;
+  $('tvMeta').textContent=`${t.count} 篇判读 · ${rangeText(t.date_range||D.meta.date_range)}`;
   $('reviewSub').textContent=`基于 ${t.count} 篇判读的系统性梳理`;
 
   // Render review, skip first h1 line
@@ -358,6 +358,7 @@ function setupTips(){
 
 /* === UTILS === */
 function $(id){return document.getElementById(id)}
+function rangeText(s){return (s||'').replace(' ~ ',' – ')}
 function esc(s){if(!s)return'';const d=document.createElement('div');d.textContent=s;return d.innerHTML.replace(/\n/g,'<br>')}
 
 init();
