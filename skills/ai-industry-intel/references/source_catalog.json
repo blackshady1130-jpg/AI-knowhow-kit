@@ -1,0 +1,201 @@
+{
+  "version": "0.1",
+  "updated_at": "2026-06-05",
+  "notes": [
+    "Initial catalog for a runnable AI industry intelligence prototype.",
+    "RSS/Atom sources are fetched automatically. Manual/API-only sources are kept visible but skipped by the first collector."
+  ],
+  "sources": [
+    {
+      "id": "openai_news",
+      "name": "OpenAI News",
+      "kind": "rss",
+      "feed_url": "https://openai.com/news/rss.xml",
+      "homepage": "https://openai.com/news/",
+      "trust_tier": "primary",
+      "priority": 2.2,
+      "topics": ["model_training", "product", "agent", "safety", "business"]
+    },
+    {
+      "id": "github_blog",
+      "name": "GitHub Blog",
+      "kind": "rss",
+      "feed_url": "https://github.blog/feed/",
+      "homepage": "https://github.blog/",
+      "trust_tier": "primary",
+      "priority": 1.5,
+      "topics": ["ai_coding", "developer_tools", "agent"]
+    },
+    {
+      "id": "arxiv_cs_ai",
+      "name": "arXiv cs.AI",
+      "kind": "rss",
+      "feed_url": "https://export.arxiv.org/rss/cs.AI",
+      "homepage": "https://arxiv.org/list/cs.AI/recent",
+      "trust_tier": "research",
+      "priority": 1.4,
+      "topics": ["research", "agent", "eval", "model_training"]
+    },
+    {
+      "id": "arxiv_cs_cl",
+      "name": "arXiv cs.CL",
+      "kind": "rss",
+      "feed_url": "https://export.arxiv.org/rss/cs.CL",
+      "homepage": "https://arxiv.org/list/cs.CL/recent",
+      "trust_tier": "research",
+      "priority": 1.3,
+      "topics": ["model_training", "eval", "language_models"]
+    },
+    {
+      "id": "arxiv_cs_lg",
+      "name": "arXiv cs.LG",
+      "kind": "rss",
+      "feed_url": "https://export.arxiv.org/rss/cs.LG",
+      "homepage": "https://arxiv.org/list/cs.LG/recent",
+      "trust_tier": "research",
+      "priority": 1.2,
+      "topics": ["model_training", "eval", "rl"]
+    },
+    {
+      "id": "import_ai",
+      "name": "Import AI",
+      "kind": "rss",
+      "feed_url": "https://importai.substack.com/feed",
+      "homepage": "https://importai.substack.com/",
+      "trust_tier": "curated_newsletter",
+      "priority": 1.3,
+      "topics": ["industry", "safety", "policy", "research"]
+    },
+    {
+      "id": "sebastian_raschka",
+      "name": "Ahead of AI",
+      "kind": "rss",
+      "feed_url": "https://magazine.sebastianraschka.com/feed",
+      "homepage": "https://magazine.sebastianraschka.com/",
+      "trust_tier": "expert_blog",
+      "priority": 1.4,
+      "topics": ["model_training", "llm", "research"]
+    },
+    {
+      "id": "interconnects",
+      "name": "Interconnects",
+      "kind": "rss",
+      "feed_url": "https://www.interconnects.ai/feed",
+      "homepage": "https://www.interconnects.ai/",
+      "trust_tier": "expert_blog",
+      "priority": 1.5,
+      "topics": ["model_training", "open_models", "industry"]
+    },
+    {
+      "id": "latent_space",
+      "name": "Latent Space",
+      "kind": "rss",
+      "feed_url": "https://www.latent.space/feed",
+      "homepage": "https://www.latent.space/",
+      "trust_tier": "curated_newsletter",
+      "priority": 1.3,
+      "topics": ["agent", "developer_tools", "industry"]
+    },
+    {
+      "id": "huyen_chip",
+      "name": "Chip Huyen",
+      "kind": "rss",
+      "feed_url": "https://huyenchip.com/feed.xml",
+      "homepage": "https://huyenchip.com/",
+      "trust_tier": "expert_blog",
+      "priority": 1.3,
+      "topics": ["ml_systems", "agent", "product"]
+    },
+    {
+      "id": "gradient_flow",
+      "name": "Gradient Flow",
+      "kind": "rss",
+      "feed_url": "https://gradientflow.substack.com/feed",
+      "homepage": "https://gradientflow.substack.com/",
+      "trust_tier": "curated_newsletter",
+      "priority": 1.1,
+      "topics": ["enterprise_ai", "mlops", "data"]
+    },
+    {
+      "id": "elad_gil",
+      "name": "Elad Gil",
+      "kind": "rss",
+      "feed_url": "https://blog.eladgil.com/feed",
+      "homepage": "https://blog.eladgil.com/",
+      "trust_tier": "expert_blog",
+      "priority": 1.4,
+      "topics": ["startup", "strategy", "ai_business", "industry"]
+    },
+    {
+      "id": "yage_manual",
+      "name": "Yage / Computing Life",
+      "kind": "manual_or_html",
+      "homepage": "https://yage.ai/",
+      "trust_tier": "expert_blog",
+      "priority": 1.7,
+      "topics": ["agent", "ai_coding", "context", "workflow", "product"],
+      "skip_reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "id": "baai_hub_manual",
+      "name": "BAAI Hub",
+      "kind": "manual_or_html",
+      "homepage": "https://hub.baai.ac.cn/",
+      "trust_tier": "research",
+      "priority": 1.4,
+      "topics": ["research", "china_ai", "model_training"],
+      "skip_reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "id": "a16z_manual",
+      "name": "a16z AI",
+      "kind": "manual_or_html",
+      "homepage": "https://a16z.com/ai/",
+      "trust_tier": "expert_blog",
+      "priority": 1.3,
+      "topics": ["business", "startup", "market", "infrastructure"],
+      "skip_reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "id": "huggingface_manual",
+      "name": "Hugging Face",
+      "kind": "manual_or_html",
+      "homepage": "https://huggingface.co/",
+      "trust_tier": "research",
+      "priority": 1.2,
+      "topics": ["open_models", "research", "datasets", "tools"],
+      "skip_reason": "High-frequency bookmark domain; the tested papers RSS endpoint required auth or was not public."
+    },
+    {
+      "id": "anthropic_manual",
+      "name": "Anthropic News / Engineering / Research",
+      "kind": "manual_or_html",
+      "homepage": "https://www.anthropic.com/news",
+      "trust_tier": "primary",
+      "priority": 2.1,
+      "topics": ["agent", "safety", "model_training", "product"],
+      "skip_reason": "No stable public RSS feed was verified in the initial pass."
+    },
+    {
+      "id": "wechat_manual",
+      "name": "WeChat public-account articles",
+      "kind": "manual_only",
+      "homepage": "https://mp.weixin.qq.com/",
+      "trust_tier": "curated_manual",
+      "priority": 1.0,
+      "topics": ["industry", "china_ai", "commentary"],
+      "skip_reason": "High-value historical source, but not a reliable public automation target."
+    },
+    {
+      "id": "x_curated_accounts",
+      "name": "Curated X/Twitter accounts",
+      "kind": "x_api_optional",
+      "homepage": "https://x.com/",
+      "trust_tier": "signal_source",
+      "priority": 1.0,
+      "topics": ["agent", "model_training", "industry", "founder_signals"],
+      "handles": ["sama", "karpathy", "ylecun", "natolambert", "swyx", "sh_reya", "GrantSlatton", "nearcyan", "DarioAmodei", "gdb", "GregBrockman"],
+      "skip_reason": "Official API requires paid credits. Without X_BEARER_TOKEN, use existing bookmarks or manual URL ingestion."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "XHS WeChat AI Note"
+  short_description: "Create public AI industry note covers and platform copy."
+  default_prompt: "Create a Xiaohongshu/WeChat AI industry judgment note cover and copy from the provided material."

@@ -1,0 +1,847 @@
+{
+  "run_meta": {
+    "generated_at": "2026-06-05T02:46:06.014897+00:00",
+    "days": 30,
+    "raw_items": 2131,
+    "rss_sources_attempted": 12,
+    "rss_sources_ok": 12,
+    "rss_sources_failed": 0,
+    "source_status": [
+      {
+        "id": "openai_news",
+        "status": "ok",
+        "items": 992,
+        "kept": 59
+      },
+      {
+        "id": "github_blog",
+        "status": "ok",
+        "items": 10,
+        "kept": 5
+      },
+      {
+        "id": "arxiv_cs_ai",
+        "status": "ok",
+        "items": 381,
+        "kept": 354
+      },
+      {
+        "id": "arxiv_cs_cl",
+        "status": "ok",
+        "items": 223,
+        "kept": 216
+      },
+      {
+        "id": "arxiv_cs_lg",
+        "status": "ok",
+        "items": 395,
+        "kept": 334
+      },
+      {
+        "id": "import_ai",
+        "status": "ok",
+        "items": 20,
+        "kept": 3
+      },
+      {
+        "id": "sebastian_raschka",
+        "status": "ok",
+        "items": 20,
+        "kept": 1
+      },
+      {
+        "id": "interconnects",
+        "status": "ok",
+        "items": 20,
+        "kept": 4
+      },
+      {
+        "id": "latent_space",
+        "status": "ok",
+        "items": 20,
+        "kept": 13
+      },
+      {
+        "id": "huyen_chip",
+        "status": "ok",
+        "items": 10,
+        "kept": 0
+      },
+      {
+        "id": "gradient_flow",
+        "status": "ok",
+        "items": 20,
+        "kept": 2
+      },
+      {
+        "id": "elad_gil",
+        "status": "ok",
+        "items": 20,
+        "kept": 0
+      },
+      {
+        "id": "yage_manual",
+        "status": "skipped",
+        "kind": "manual_or_html"
+      },
+      {
+        "id": "baai_hub_manual",
+        "status": "skipped",
+        "kind": "manual_or_html"
+      },
+      {
+        "id": "a16z_manual",
+        "status": "skipped",
+        "kind": "manual_or_html"
+      },
+      {
+        "id": "huggingface_manual",
+        "status": "skipped",
+        "kind": "manual_or_html"
+      },
+      {
+        "id": "anthropic_manual",
+        "status": "skipped",
+        "kind": "manual_or_html"
+      },
+      {
+        "id": "wechat_manual",
+        "status": "skipped",
+        "kind": "manual_only"
+      },
+      {
+        "id": "x_curated_accounts",
+        "status": "skipped",
+        "kind": "x_api_optional"
+      }
+    ]
+  },
+  "source_map": {
+    "bookmarks_count": 861,
+    "notes_count": 289,
+    "top_bookmark_domains": [
+      [
+        "mp.weixin.qq.com",
+        384
+      ],
+      [
+        "yage.ai",
+        31
+      ],
+      [
+        "hub.baai.ac.cn",
+        28
+      ],
+      [
+        "arxiv.org",
+        19
+      ],
+      [
+        "www.anthropic.com",
+        13
+      ],
+      [
+        "x.com",
+        13
+      ],
+      [
+        "github.com",
+        11
+      ],
+      [
+        "yaofu.notion.site",
+        8
+      ],
+      [
+        "a16z.com",
+        8
+      ],
+      [
+        "blog.eladgil.com",
+        6
+      ],
+      [
+        "huggingface.co",
+        6
+      ],
+      [
+        "openai.com",
+        6
+      ],
+      [
+        "36kr.com",
+        6
+      ],
+      [
+        "bytedance.feishu.cn",
+        5
+      ],
+      [
+        "co926i0b3r.feishu.cn",
+        5
+      ],
+      [
+        "www.sequoiacap.com",
+        4
+      ],
+      [
+        "zhuanlan.zhihu.com",
+        4
+      ],
+      [
+        "quail.ink",
+        4
+      ],
+      [
+        "baoyu.io",
+        4
+      ],
+      [
+        "importai.substack.com",
+        3
+      ],
+      [
+        "twitter.com",
+        3
+      ],
+      [
+        "magazine.sebastianraschka.com",
+        3
+      ],
+      [
+        "learnprompting.org",
+        3
+      ],
+      [
+        "www.nickgu.me",
+        3
+      ],
+      [
+        "media-studies.com",
+        2
+      ],
+      [
+        "www.zhihu.com",
+        2
+      ],
+      [
+        "lmsys.org",
+        2
+      ],
+      [
+        "www.aminer.cn",
+        2
+      ],
+      [
+        "platform.openai.com",
+        2
+      ],
+      [
+        "shermwong.com",
+        2
+      ]
+    ],
+    "top_bookmark_tags": [
+      [
+        "LLM",
+        460
+      ],
+      [
+        "微信公众号",
+        384
+      ],
+      [
+        "Multimodal",
+        348
+      ],
+      [
+        "Investment",
+        191
+      ],
+      [
+        "ChatGPT",
+        180
+      ],
+      [
+        "AI-Tool",
+        155
+      ],
+      [
+        "AI-Agent",
+        151
+      ],
+      [
+        "Startup",
+        137
+      ],
+      [
+        "Open-Source",
+        127
+      ],
+      [
+        "Research-Paper",
+        119
+      ],
+      [
+        "GPT-4",
+        107
+      ],
+      [
+        "Prompt-Engineering",
+        99
+      ],
+      [
+        "AI-Safety",
+        99
+      ],
+      [
+        "Tutorial",
+        52
+      ],
+      [
+        "AI-Coding",
+        43
+      ],
+      [
+        "RLHF",
+        27
+      ],
+      [
+        "GitHub",
+        18
+      ],
+      [
+        "Yage",
+        17
+      ],
+      [
+        "Benchmark",
+        16
+      ],
+      [
+        "Harness",
+        16
+      ],
+      [
+        "AI-General",
+        12
+      ],
+      [
+        "Notion",
+        12
+      ],
+      [
+        "X/Twitter",
+        11
+      ],
+      [
+        "RAG",
+        9
+      ],
+      [
+        "Newsletter",
+        7
+      ],
+      [
+        "知乎",
+        6
+      ],
+      [
+        "arXiv",
+        6
+      ],
+      [
+        "Memory",
+        5
+      ],
+      [
+        "Anthropic",
+        4
+      ],
+      [
+        "Multi-Agent",
+        4
+      ]
+    ],
+    "top_note_domains": [
+      [
+        "mp.weixin.qq.com",
+        103
+      ],
+      [
+        "arxiv.org",
+        30
+      ],
+      [
+        "x.com",
+        25
+      ],
+      [
+        "www.anthropic.com",
+        14
+      ],
+      [
+        "openai.com",
+        13
+      ],
+      [
+        "yage.ai",
+        10
+      ],
+      [
+        "docs.qq.com",
+        6
+      ],
+      [
+        "metaso.cn",
+        4
+      ],
+      [
+        "thinkingmachines.ai",
+        3
+      ],
+      [
+        "cursor.com",
+        3
+      ],
+      [
+        "a16z.com",
+        2
+      ],
+      [
+        "www.xiaoyuzhoufm.com",
+        2
+      ],
+      [
+        "bigeagle.me",
+        2
+      ],
+      [
+        "github.com",
+        2
+      ],
+      [
+        "flo.host",
+        2
+      ],
+      [
+        "magazine.sebastianraschka.com",
+        2
+      ],
+      [
+        "cognition.ai",
+        2
+      ],
+      [
+        "42chapter.substack.com",
+        2
+      ],
+      [
+        "zhuanlan.zhihu.com",
+        2
+      ],
+      [
+        "huggingface.co",
+        2
+      ],
+      [
+        "fomosoc.substack.com",
+        2
+      ],
+      [
+        "www.interconnects.ai",
+        2
+      ],
+      [
+        "yousali.com",
+        2
+      ],
+      [
+        "ysymyth.github.io",
+        1
+      ],
+      [
+        "mem0.ai",
+        1
+      ],
+      [
+        "snap-research.github.io",
+        1
+      ],
+      [
+        "www.jasonwei.net",
+        1
+      ],
+      [
+        "alperenkeles.com",
+        1
+      ],
+      [
+        "medium.com",
+        1
+      ],
+      [
+        "cookbook.openai.com",
+        1
+      ]
+    ]
+  },
+  "items": [
+    {
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "published": "2026-06-01T10:00:00+00:00",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move...",
+      "topics": [
+        "Agent/Harness",
+        "Eval/Benchmark",
+        "AI Coding",
+        "Product/SaaS/Business"
+      ],
+      "score": 10.95,
+      "why": "命中主题：Agent/Harness、Eval/Benchmark、AI Coding；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "published": "2026-06-04T12:00:00+00:00",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "topics": [
+        "Agent/Harness",
+        "AI Coding",
+        "Product/SaaS/Business"
+      ],
+      "score": 10.9,
+      "why": "命中主题：Agent/Harness、AI Coding、Product/SaaS/Business；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "Codex is becoming a productivity tool for everyone",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "published": "2026-06-02T02:00:00+00:00",
+      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "topics": [
+        "Agent/Harness",
+        "Context/Memory/RAG",
+        "AI Coding",
+        "Product/SaaS/Business"
+      ],
+      "score": 10.9,
+      "why": "命中主题：Agent/Harness、Context/Memory/RAG、AI Coding；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "arxiv_cs_ai",
+      "source_name": "arXiv cs.AI",
+      "source_kind": "rss",
+      "source_trust_tier": "research",
+      "title": "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification",
+      "url": "https://arxiv.org/abs/2606.04037",
+      "published": "2026-06-04T04:00:00+00:00",
+      "summary": "arXiv:2606.04037v1 Announce Type: new Abstract: Pre-deployment verification of enterprise artificial intelligence (AI) agents remains a critical gap between large language model (LLM) capability benchmarking and production deployment. Post-deployment...",
+      "topics": [
+        "Agent/Harness",
+        "Eval/Benchmark",
+        "Context/Memory/RAG",
+        "AI Coding",
+        "Product/SaaS/Business",
+        "Safety/Governance"
+      ],
+      "score": 10.06,
+      "why": "命中主题：Agent/Harness、Eval/Benchmark、Context/Memory/RAG；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "arxiv_cs_ai",
+      "source_name": "arXiv cs.AI",
+      "source_kind": "rss",
+      "source_trust_tier": "research",
+      "title": "SMAC-Talk: A Natural Language Extension of the StarCraft Multi-Agent Challenge for Large Language Models",
+      "url": "https://arxiv.org/abs/2606.04202",
+      "published": "2026-06-04T04:00:00+00:00",
+      "summary": "arXiv:2606.04202v1 Announce Type: new Abstract: As LLMs become more widely deployed, they are increasingly expected to work alongside other AI agents rather than operating in isolation. Effective coordination in these settings requires agents to...",
+      "topics": [
+        "Agent/Harness",
+        "Eval/Benchmark",
+        "Model Training",
+        "Context/Memory/RAG",
+        "AI Coding"
+      ],
+      "score": 10.06,
+      "why": "命中主题：Agent/Harness、Eval/Benchmark、Model Training；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "arxiv_cs_ai",
+      "source_name": "arXiv cs.AI",
+      "source_kind": "rss",
+      "source_trust_tier": "research",
+      "title": "StepPRM-RTL: Stepwise Process-Reward Guided LLM Fine-Tuning for Enhanced RTL Synthesis",
+      "url": "https://arxiv.org/abs/2606.04246",
+      "published": "2026-06-04T04:00:00+00:00",
+      "summary": "arXiv:2606.04246v1 Announce Type: new Abstract: Automatic generation of RTL code for digital hardware designs remains challenging due to long-horizon reasoning, multi-step dependencies, and strict correctness constraints in Verilog and VHDL. We present...",
+      "topics": [
+        "Agent/Harness",
+        "Eval/Benchmark",
+        "Model Training",
+        "Context/Memory/RAG",
+        "AI Coding"
+      ],
+      "score": 10.06,
+      "why": "命中主题：Agent/Harness、Eval/Benchmark、Model Training；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "arxiv_cs_ai",
+      "source_name": "arXiv cs.AI",
+      "source_kind": "rss",
+      "source_trust_tier": "research",
+      "title": "Can Generalist Agents Automate Data Curation?",
+      "url": "https://arxiv.org/abs/2606.04261",
+      "published": "2026-06-04T04:00:00+00:00",
+      "summary": "arXiv:2606.04261v1 Announce Type: new Abstract: Curating training data is among the most consequential yet labor-intensive parts of modern AI development: practitioners iteratively propose, implement, evaluate, and revise data policies against noisy...",
+      "topics": [
+        "Agent/Harness",
+        "Eval/Benchmark",
+        "Model Training",
+        "AI Coding",
+        "Safety/Governance"
+      ],
+      "score": 10.06,
+      "why": "命中主题：Agent/Harness、Eval/Benchmark、Model Training；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "arxiv_cs_cl",
+      "source_name": "arXiv cs.CL",
+      "source_kind": "rss",
+      "source_trust_tier": "research",
+      "title": "Discourse-Role Labels as Presentation-Time Variables for Context Use in Language Models",
+      "url": "https://arxiv.org/abs/2606.04109",
+      "published": "2026-06-04T04:00:00+00:00",
+      "summary": "arXiv:2606.04109v1 Announce Type: new Abstract: Context-augmented language model systems often wrap supplied content with labels such as Reference:, Evidence:, Instruction:, Note:, or Example:, but the effect of these labels on reader-model behavior remains...",
+      "topics": [
+        "Eval/Benchmark",
+        "Context/Memory/RAG",
+        "AI Coding"
+      ],
+      "score": 9.96,
+      "why": "命中主题：Eval/Benchmark、Context/Memory/RAG、AI Coding；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "openai_news",
+      "source_name": "OpenAI News",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "published": "2026-06-03T10:00:00+00:00",
+      "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
+      "topics": [
+        "AI Coding",
+        "Safety/Governance"
+      ],
+      "score": 9.55,
+      "why": "命中主题：AI Coding、Safety/Governance；一手或研究型来源；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "latent_space",
+      "source_name": "Latent Space",
+      "source_kind": "rss",
+      "source_trust_tier": "curated_newsletter",
+      "title": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+      "url": "https://www.latent.space/p/github",
+      "published": "2026-06-02T16:48:21+00:00",
+      "summary": "GitHub pioneered the modern AI coding era with Copilot, and the resulting explosion in agentic coding has led to notable strains on the most popular developer platform in the world. Here's the plan.",
+      "topics": [
+        "Agent/Harness",
+        "AI Coding"
+      ],
+      "score": 7.61,
+      "why": "命中主题：Agent/Harness、AI Coding；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "github_blog",
+      "source_name": "GitHub Blog",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "GitHub Copilot app: The agent-native desktop experience",
+      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+      "published": "2026-06-02T17:30:03+00:00",
+      "summary": "At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. The post GitHub Copilot app: The agent-native desktop experience appeared first on The GitHub Blog .",
+      "topics": [
+        "Agent/Harness",
+        "AI Coding"
+      ],
+      "score": 7.5,
+      "why": "命中主题：Agent/Harness、AI Coding；一手或研究型来源；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "latent_space",
+      "source_name": "Latent Space",
+      "source_kind": "rss",
+      "source_trust_tier": "curated_newsletter",
+      "title": "The Age of Async Agents — Cognition's Walden Yan & OpenInspect's Cole Murray",
+      "url": "https://www.latent.space/p/cognition",
+      "published": "2026-05-28T18:41:24+00:00",
+      "summary": "80% Devin Commits, Spec-to-PR Workflows, Full VMs, Agent Memory, and PMs Shipping Code",
+      "topics": [
+        "Agent/Harness",
+        "Context/Memory/RAG",
+        "AI Coding"
+      ],
+      "score": 7.21,
+      "why": "命中主题：Agent/Harness、Context/Memory/RAG、AI Coding；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "github_blog",
+      "source_name": "GitHub Blog",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "GitHub Universe is back: All together now, in the agentic era",
+      "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era/",
+      "published": "2026-06-04T16:00:00+00:00",
+      "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
+      "topics": [
+        "Agent/Harness",
+        "AI Coding"
+      ],
+      "score": 7.05,
+      "why": "命中主题：Agent/Harness、AI Coding；一手或研究型来源；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "import_ai",
+      "source_name": "Import AI",
+      "source_kind": "rss",
+      "source_trust_tier": "curated_newsletter",
+      "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
+      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
+      "published": "2026-06-01T13:31:56+00:00",
+      "summary": "Do you feel as though you are living in a revolution?",
+      "topics": [
+        "Model Training",
+        "AI Coding",
+        "Product/SaaS/Business",
+        "Safety/Governance"
+      ],
+      "score": 7.02,
+      "why": "命中主题：Model Training、AI Coding、Product/SaaS/Business；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "interconnects",
+      "source_name": "Interconnects",
+      "source_kind": "rss",
+      "source_trust_tier": "expert_blog",
+      "title": "Farewell Ai2",
+      "url": "https://www.interconnects.ai/p/farewell-ai2",
+      "published": "2026-06-02T14:15:59+00:00",
+      "summary": "This was my last week at the Allen Institute for AI (Ai2), where I got the great privilege to work on the Olmo models, to grow, to learn, and to have broad lasting impacts.",
+      "topics": [
+        "AI Coding"
+      ],
+      "score": 6.07,
+      "why": "命中主题：AI Coding；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "latent_space",
+      "source_name": "Latent Space",
+      "source_kind": "rss",
+      "source_trust_tier": "curated_newsletter",
+      "title": "Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs",
+      "url": "https://www.latent.space/p/andon",
+      "published": "2026-06-04T20:39:18+00:00",
+      "summary": "We talk with the VendingBench authors on evaling Claudes from Haiku to Mythos, and how they build leading, and lasting, frontier evals from scratch.",
+      "topics": [
+        "Eval/Benchmark"
+      ],
+      "score": 5.81,
+      "why": "命中主题：Eval/Benchmark；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "latent_space",
+      "source_name": "Latent Space",
+      "source_kind": "rss",
+      "source_trust_tier": "curated_newsletter",
+      "title": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
+      "url": "https://www.latent.space/p/axiom",
+      "published": "2026-06-03T19:27:49+00:00",
+      "summary": "Verified Generation and Compounding Intelligence",
+      "topics": [
+        "Eval/Benchmark",
+        "Model Training"
+      ],
+      "score": 5.81,
+      "why": "命中主题：Eval/Benchmark、Model Training；该域名已在本地高质量库中多次出现；近期更新",
+      "known_in_library": false
+    },
+    {
+      "source_id": "github_blog",
+      "source_name": "GitHub Blog",
+      "source_kind": "rss",
+      "source_trust_tier": "primary",
+      "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+      "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
+      "published": "2026-05-15T16:00:00+00:00",
+      "summary": "Learn about the experimental general-purpose accessibility agent that GitHub is piloting. The post Building a general-purpose accessibility agent—and what we learned in the process appeared first on The GitHub Blog .",
+      "topics": [
+        "Agent/Harness",
+        "AI Coding"
+      ],
+      "score": 5.65,
+      "why": "命中主题：Agent/Harness、AI Coding；一手或研究型来源",
+      "known_in_library": false
+    }
+  ],
+  "skipped_sources": [
+    {
+      "name": "Yage / Computing Life",
+      "reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "name": "BAAI Hub",
+      "reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "name": "a16z AI",
+      "reason": "High-frequency bookmark domain, but no stable public feed was verified in the initial pass."
+    },
+    {
+      "name": "Hugging Face",
+      "reason": "High-frequency bookmark domain; the tested papers RSS endpoint required auth or was not public."
+    },
+    {
+      "name": "Anthropic News / Engineering / Research",
+      "reason": "No stable public RSS feed was verified in the initial pass."
+    },
+    {
+      "name": "WeChat public-account articles",
+      "reason": "High-value historical source, but not a reliable public automation target."
+    },
+    {
+      "name": "Curated X/Twitter accounts",
+      "reason": "Official API requires paid credits. Without X_BEARER_TOKEN, use existing bookmarks or manual URL ingestion."
+    }
+  ]
+}

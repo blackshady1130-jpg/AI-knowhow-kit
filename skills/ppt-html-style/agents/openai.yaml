@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT HTML Style"
+  short_description: "Build strategy-style HTML slide decks."
+  default_prompt: "Create a browser-playable HTML slide deck from the provided material using the PPT HTML style."
