@@ -5,7 +5,8 @@
     "chapter": "01",
     "role": "能力供给层",
     "question": "模型能力来自哪里，哪些提升能迁移到真实任务？",
-    "thesis": "能力差距越来越不只是 checkpoint 差距，而是数据、训练栈、reward、推理预算和任务环境共同形成的系统差距。",
+    "thesis": "模型分数是数据、训练 recipe、reward、解码策略和任务环境共同产生的结果；离开这些条件，能力比较很容易失真。",
+    "article_title": "模型能力不是一个分数：数据、训练信号与环境如何共同定界",
     "description": "从数据、Scaling、RL、蒸馏与推理效率出发，判断模型变强的机制、代价和可迁移边界。",
     "review_file": "model-training.md"
   },
@@ -15,7 +16,8 @@
     "chapter": "02",
     "role": "运行系统层",
     "question": "Context、Harness、工具、状态和恢复机制如何接住模型？",
-    "thesis": "模型能力只有进入可管理的运行环境，才能成为稳定能力；Harness 的价值在于外化约束、状态、验证和错误恢复。",
+    "thesis": "Harness 把状态、权限、工具、验证和恢复变成可检查的运行结构；同一个模型因此可能表现为完全不同的系统。",
+    "article_title": "Harness 不是提示词外壳：长程 Agent 的状态、约束与恢复",
     "description": "追踪 Context、Memory、Skill、工具、缓存、sandbox 与长时 Agent 的运行机制。",
     "review_file": "architecture-engineering.md"
   },
@@ -25,7 +27,8 @@
     "chapter": "03",
     "role": "验证与治理层",
     "question": "谁定义成功，怎样避免 verifier 和环境噪声制造假进步？",
-    "thesis": "Agent 评测正在从裸模型分数转向任务、Harness、成本、环境、恢复与连续可靠性的系统审计。",
+    "thesis": "Agent 评测首先要审计任务、环境和验证器，再比较模型、Harness、预算与连续可靠性。",
+    "article_title": "先审计尺子，再比较模型：Agent 评测的任务、环境与验证器",
     "description": "拆解 benchmark、LLM-as-a-judge、verifier、reward hacking 与真实工作流评测。",
     "review_file": "eval-benchmark.md"
   },
@@ -35,7 +38,8 @@
     "chapter": "CASE",
     "role": "高反馈验证场",
     "question": "为什么 Coding Agent 先跑出来，它能为其他场景提供什么？",
-    "thesis": "Coding 的优势不只在模型会写代码，而在代码库、测试、Git、review 和回滚构成了高密度反馈环境。",
+    "thesis": "代码生成降价后，验证、任务路由、review、维护和责任成为新成本；Coding 的价值在于它把这些成本暴露得足够早。",
+    "article_title": "代码生成变便宜以后：验证、路由与维护成为新成本",
     "description": "把 AI Coding 当作 Agent 训练、产品、评测与组织协作的先行实验，而不只看代码生成速度。",
     "review_file": "ai-coding.md"
   },
@@ -45,7 +49,8 @@
     "chapter": "04",
     "role": "工作流入口层",
     "question": "模型能力如何变成可授权、可接管、可持续使用的产品？",
-    "thesis": "产品真正要补的是协作带宽、Context、权限、状态、人工接管和责任链，而不只是更漂亮的聊天框。",
+    "thesis": "AI 产品要设计的是状态、权限、委派与接管协议；交互界面只是这套运行关系的可见部分。",
+    "article_title": "模型进入工作流之前：状态、权限与接管如何被设计",
     "description": "观察模型与产品错位、Agent-native 交互、SaaS 重构、记忆与工作流入口。",
     "review_file": "product-interaction.md"
   },
@@ -55,7 +60,8 @@
     "chapter": "05",
     "role": "部署与价值捕获层",
     "question": "谁掌握算力、运行时、客户反馈、预算和 ROI？",
-    "thesis": "AI 竞争正在从模型榜单进入工业系统与部署学习竞争；最终要看谁能把算力和调用转成可验收、可续费的结果。",
+    "thesis": "模型 API 更易替换后，价值向运行时效率、工作流入口、客户反馈和部署学习迁移；毛利最终由可验收结果守住。",
+    "article_title": "模型毛利承压之后：价值为何向运行时与部署学习迁移",
     "description": "连接模型、MaaS、云、FDE、Token Economics、capex 与企业结果，判断价值如何分配。",
     "review_file": "industry-strategy.md"
   },
@@ -65,7 +71,8 @@
     "chapter": "06",
     "role": "结果与责任层",
     "question": "当 AI 进入真实生活和组织，谁承担长期后果？",
-    "thesis": "安全越来越是 model × user × product × organization 的部署结果，用户满意、使用增长和长期赋权并不总是一致。",
+    "thesis": "能力提升不会自动带来赋权；判断权、权限、隐性劳动和责任如何分配，决定部署的长期结果。",
+    "article_title": "能力提升不会自动带来赋权：AI 部署中的判断权与责任",
     "description": "追踪就业分化、认知卸载、personal guidance、权限治理、公众反弹与高责任场景。",
     "review_file": "impact-safety.md"
   }
