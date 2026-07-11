@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -67,6 +68,18 @@ def format_date_range(values: list[str]) -> str:
     return f"{months[0]} ~ {months[-1]}"
 
 
+def extract_review_note_ids(markdown: str) -> list[int]:
+    """Return unique #id references in first-appearance order."""
+    seen: set[int] = set()
+    result: list[int] = []
+    for match in re.finditer(r"#(\d+)", markdown):
+        note_id = int(match.group(1))
+        if note_id not in seen:
+            seen.add(note_id)
+            result.append(note_id)
+    return result
+
+
 def main() -> None:
     topics = load_json(TOPICS_FILE)
     assignments_raw = load_json(ASSIGNMENTS_FILE)
@@ -111,9 +124,17 @@ def main() -> None:
         if not review_path.exists():
             raise SystemExit(f"Missing review file: {review_path}")
         topic_notes = [note for note in site_notes if topic["name"] in note["topics"]]
+        review = review_path.read_text(encoding="utf-8-sig")
+        review_note_ids = extract_review_note_ids(review)
+        unknown_review_ids = sorted(set(review_note_ids) - note_ids)
+        if unknown_review_ids:
+            raise SystemExit(
+                f"Review {review_path.name} references unknown note ids: {unknown_review_ids}"
+            )
         topic["count"] = len(topic_notes)
         topic["date_range"] = format_date_range([note.get("date") for note in topic_notes])
-        topic["review"] = review_path.read_text(encoding="utf-8-sig")
+        topic["review"] = review
+        topic["review_note_ids"] = review_note_ids
 
     data = {
         "meta": {
