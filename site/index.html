@@ -3,165 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yantao Wang · AI Deployment & Learning Loop</title>
-<meta name="description" content="研究模型如何进入真实组织，并把使用过程变成可验证、可持续改进的学习闭环。350 条 AI 行业判读，覆盖模型、Harness、Eval、产品、部署与治理。">
-<meta property="og:title" content="AI Deployment & Learning Loop · Yantao Wang">
-<meta property="og:description" content="从模型能力到真实组织：七个研究章节与 350 条可追溯判读。">
+<title>Yantao Wang · AI Deployment &amp; Learning Loop</title>
+<meta name="description" content="研究模型如何进入真实组织，以及组织如何把任务执行、人工修正与失败经验变成可验证的学习闭环。七篇深度文章与 360 条可追溯 AI notes。">
+<meta property="og:title" content="AI Deployment &amp; Learning Loop · Yantao Wang">
+<meta property="og:description" content="从模型能力到部署结果：七篇深度文章与 360 条可追溯 AI notes。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://blackshady1130-jpg.github.io/AI-knowhow-kit/">
 <meta name="twitter:card" content="summary">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script>
-tailwind.config={theme:{extend:{colors:{
-brand:{50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
-}}}}
+tailwind.config={theme:{extend:{colors:{brand:{50:'#f2f5ff',100:'#e5ebff',200:'#cbd7ff',300:'#9eb4ff',400:'#6f8ff5',500:'#496cdf',600:'#3453c5',700:'#2c43a0',800:'#283a7f',900:'#243363'}}}}}
 </script>
 <style>
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans SC',system-ui,sans-serif;margin:0}
-code,pre{font-family:'JetBrains Mono',monospace;font-size:.85em}
-.review-body h2{font-size:1.2rem!important;font-weight:700!important;color:#1e293b!important;margin-top:2.4rem!important;margin-bottom:.9rem!important;padding-bottom:.55rem!important;border-bottom:2px solid #c7d2fe!important}
+button,a,input,select{outline-offset:3px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #496cdf}
+.review-body{font-size:1rem}
+.review-body h2{font-size:1.35rem!important;font-weight:700!important;color:#0f172a!important;margin-top:3rem!important;margin-bottom:1rem!important;padding-top:.25rem!important}
 .review-body h2:first-child{margin-top:0!important}
-.review-body h3{font-size:1rem!important;font-weight:650!important;color:#334155!important;margin-top:1.6rem!important;margin-bottom:.55rem!important;padding-left:.75rem!important;border-left:3px solid #818cf8!important}
-.review-body p{margin-bottom:.9rem!important;line-height:1.9!important;color:#374151!important}
+.review-body h3{font-size:1.05rem!important;font-weight:650!important;color:#1e293b!important;margin-top:2rem!important;margin-bottom:.7rem!important}
+.review-body p{margin-bottom:1rem!important;line-height:1.95!important;color:#334155!important}
 .review-body strong{color:#0f172a!important}
-.review-body blockquote{border-left:3px solid #6366f1!important;padding:.9rem 1.1rem!important;margin:1rem 0!important;color:#334155!important;background:#f8fafc!important;border-radius:0 .6rem .6rem 0!important}
-.review-body ul,.review-body ol{margin:.5rem 0 1rem 1.5rem!important;color:#374151!important;line-height:1.85!important}
-.review-body li{margin-bottom:.35rem!important}
-.review-body hr{border:none!important;border-top:1px solid #e5e7eb!important;margin:2.2rem 0!important}
-.note-ref{color:#4f46e5;font-weight:600;cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
-.note-ref:hover{color:#4338ca;text-decoration-style:solid}
-.ref-tooltip{position:fixed;z-index:200;width:340px;max-width:90vw;max-height:280px;overflow-y:auto;background:#fff;border:1px solid #e0e7ff;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.15);padding:14px}
-.ref-tooltip .tt-title{font-weight:600;font-size:.85rem;color:#1e293b;margin-bottom:5px;line-height:1.4}
-.ref-tooltip .tt-meta{font-size:.72rem;color:#64748b;margin-bottom:6px}
-.ref-tooltip .tt-why{font-size:.78rem;color:#475569;line-height:1.7}
-.fade-in{animation:fadeIn .28s ease-out}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.topic-card,.question-card,.arc-step{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.topic-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(49,46,129,.1);border-color:#a5b4fc}
-.note-item{transition:border-color .2s ease,box-shadow .2s ease;border-left:3px solid transparent}
-.note-item:hover{border-left-color:#6366f1;box-shadow:0 7px 22px rgba(15,23,42,.06)}
+.review-body blockquote{border-left:3px solid #496cdf!important;padding:.85rem 1.1rem!important;margin:1.25rem 0 1.75rem!important;color:#1e293b!important;background:#f8fafc!important}
+.review-body ul,.review-body ol{margin:.6rem 0 1.15rem 1.45rem!important;color:#334155!important;line-height:1.9!important}
+.review-body li{margin-bottom:.4rem!important}
+.review-body hr{border:none!important;border-top:1px solid #e2e8f0!important;margin:2.5rem 0!important}
+.review-body table{display:block;width:100%;overflow-x:auto;border-collapse:collapse;margin:1rem 0 1.5rem;color:#334155;font-size:.9rem}
+.review-body th,.review-body td{border:1px solid #dbe2ec;padding:.65rem .75rem;min-width:9rem;text-align:left;vertical-align:top;line-height:1.65}
+.review-body th{background:#f8fafc;color:#0f172a;font-weight:600}
+.note-ref{display:inline;border:0;background:transparent;padding:0;color:#3453c5;font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.note-ref:hover,.note-ref[aria-expanded="true"]{color:#243363;text-decoration-style:solid}
+.ref-tooltip{position:fixed;z-index:200;width:360px;max-width:calc(100vw - 2rem);max-height:320px;overflow-y:auto;background:#fff;border:1px solid #cbd5e1;padding:16px;box-shadow:0 8px 24px rgba(15,23,42,.14)}
+.ref-tooltip .tt-title{font-weight:600;font-size:.9rem;color:#0f172a;margin-bottom:6px;line-height:1.5}
+.ref-tooltip .tt-meta{font-size:.75rem;color:#64748b;margin-bottom:8px}
+.ref-tooltip .tt-why{font-size:.82rem;color:#475569;line-height:1.75}
+.chapter-row{transition:background-color .18s ease}
+.chapter-row:hover{background:#f8fafc}
+.note-item{border-top:1px solid #e2e8f0}
+.note-item:last-child{border-bottom:1px solid #e2e8f0}
 .why-text{white-space:pre-wrap}
-.note-view-btn[aria-pressed="true"]{background:#312e81;color:#fff;border-color:#312e81}
-.arc-line{background:linear-gradient(90deg,#818cf8,#6366f1,#4338ca)}
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}
-@media(max-width:640px){.ref-tooltip{left:5vw!important;right:5vw!important;width:90vw!important;top:auto!important;bottom:1rem!important}}
+.note-view-btn[aria-pressed="true"]{background:#0f172a;color:#fff;border-color:#0f172a}
+::-webkit-scrollbar{width:7px}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}
+@media(max-width:640px){
+  .ref-tooltip{left:1rem!important;right:1rem!important;width:auto!important;top:auto!important;bottom:1rem!important;max-height:55vh}
+  .review-body h2{font-size:1.2rem!important;margin-top:2.5rem!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chapter-row{transition:none}}
 </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-white text-slate-800 overflow-x-hidden">
 
-<nav class="bg-white/95 backdrop-blur border-b border-slate-200 sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-4 md:px-6 h-13 py-3 flex items-center justify-between gap-4">
-    <div id="navBC" class="flex items-center gap-2 text-sm min-w-0"></div>
-    <div class="text-xs text-slate-400 whitespace-nowrap" id="navMeta"></div>
+<nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 min-h-14 py-3 flex items-center justify-between gap-4">
+    <div id="navBC" class="flex items-center gap-2 text-sm min-w-0 overflow-hidden"></div>
+    <div class="hidden md:flex text-xs text-slate-500 whitespace-nowrap" id="navMeta"></div>
   </div>
 </nav>
 
 <main id="homeView">
-  <section class="bg-gradient-to-br from-brand-900 via-slate-900 to-brand-800 text-white overflow-hidden">
+  <section id="home-hero" class="bg-slate-950 text-white">
     <div class="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-24">
-      <div class="max-w-4xl">
-        <p class="font-mono text-xs md:text-sm tracking-[.2em] text-brand-300 mb-5">AI DEPLOYMENT &amp; LEARNING LOOP</p>
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.18] mb-6">研究模型如何进入真实组织，<br class="hidden md:block">并把使用过程变成可验证、可持续改进的学习闭环</h1>
-        <p class="text-brand-100/90 text-base md:text-xl leading-relaxed max-w-3xl mb-8">我持续跟踪模型训练、Context、Harness、Eval、AI 产品与企业部署。关注的不只是模型又强了多少，也包括谁定义任务、谁验收结果、失败如何回流，以及组织是否真的获得了可复用能力。</p>
+      <div class="max-w-4xl border-l border-brand-400 pl-5 md:pl-8">
+        <p class="text-sm text-brand-200 mb-5">Yantao Wang · AI Deployment &amp; Learning Loop</p>
+        <h1 class="text-3xl md:text-5xl lg:text-[3.4rem] font-bold tracking-tight leading-[1.2] mb-6">我研究模型如何进入真实组织，<br class="hidden md:block">以及组织如何从每次使用中学习</h1>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mb-8">这里不追逐一个孤立的模型分数。我关心任务怎样被定义，Harness 如何保存状态，结果由谁验收，失败怎样写回 Eval、Skill、产品与训练数据，以及这些系统最终把能力和责任交给了谁。</p>
         <div class="flex flex-wrap gap-3 mb-10">
-          <a href="#research-arc" onclick="scrollHomeTo('research-arc');return false" class="rounded-lg bg-white text-brand-900 px-5 py-3 text-sm font-semibold hover:bg-brand-50 transition">沿研究主线阅读</a>
-          <a href="#chapters" onclick="scrollHomeTo('chapters');return false" class="rounded-lg border border-brand-300/50 bg-white/5 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 transition">浏览 <span id="heroNoteCount">350</span> 条判读</a>
-          <a href="#collaborate" onclick="scrollHomeTo('collaborate');return false" class="rounded-lg border border-brand-300/50 px-5 py-3 text-sm font-semibold text-brand-100 hover:bg-white/10 transition">交流真实工作流</a>
+          <a href="#chapters" onclick="scrollHomeTo('chapters');return false" class="bg-white text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-slate-100">阅读七章</a>
+          <a href="#collaborate" onclick="scrollHomeTo('collaborate');return false" class="border border-slate-600 px-5 py-3 text-sm font-semibold text-white hover:border-slate-300">讨论真实工作流</a>
         </div>
-        <div id="heroStats" class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-brand-200"></div>
+        <div id="heroStats" class="flex flex-wrap gap-x-7 gap-y-2 text-sm text-slate-400"></div>
       </div>
     </div>
   </section>
 
-  <section class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-18">
-    <div class="mb-8 max-w-3xl">
-      <p class="text-xs font-mono tracking-widest text-brand-600 mb-2">MY LENS</p>
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">我持续追问的三个问题</h2>
-      <p class="text-slate-500 leading-relaxed">单个模型分数、一次 demo 或 token 用量都不足以解释真实价值。我的笔记围绕下面三个控制点展开。</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-4">
-      <article class="question-card rounded-2xl bg-white border border-slate-200 p-6">
-        <span class="font-mono text-xs text-brand-500">01 / CAPABILITY</span>
-        <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">能力如何形成？</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">模型变强来自数据、训练、推理预算，还是 Harness 与环境？哪些提升能迁移到真实任务？</p>
-      </article>
-      <article class="question-card rounded-2xl bg-white border border-slate-200 p-6">
-        <span class="font-mono text-xs text-brand-500">02 / VERIFICATION</span>
-        <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">结果如何验证？</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">谁定义成功、谁设计 verifier、谁处理环境噪声，最后谁愿意为结果买单？</p>
-      </article>
-      <article class="question-card rounded-2xl bg-white border border-slate-200 p-6">
-        <span class="font-mono text-xs text-brand-500">03 / LEARNING</span>
-        <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">经验如何回流？</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">badcase、人工修正和客户反馈，能否变成下一轮可测的 Skill、Eval、数据或产品改进？</p>
-      </article>
+  <section id="research-path" class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20 scroll-mt-20">
+    <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 lg:gap-16">
+      <div>
+        <p class="text-sm text-brand-700 mb-2">研究路径</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">一条链路，三个检查点</h2>
+        <p class="text-slate-600 leading-relaxed">七篇文章围绕同一个部署问题展开。AI Coding 是目前反馈最密集的案例，但它提供的是方法：可执行、可测试、可追踪、可回滚；它不代表其他知识工作已经具备同样条件。</p>
+      </div>
+      <ol class="grid md:grid-cols-3 border-t border-slate-300">
+        <li class="pt-5 pb-4 md:pr-6 md:border-r border-slate-200">
+          <span class="text-sm text-brand-700">01</span>
+          <h3 class="font-semibold text-slate-950 mt-2 mb-2">能力从哪里来</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">区分数据、训练信号、推理设置与环境带来的提升。</p>
+        </li>
+        <li class="pt-5 pb-4 md:px-6 md:border-r border-slate-200">
+          <span class="text-sm text-brand-700">02</span>
+          <h3 class="font-semibold text-slate-950 mt-2 mb-2">系统怎样接住</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">检查 Context、状态、权限、Verifier 和错误恢复。</p>
+        </li>
+        <li class="pt-5 pb-4 md:pl-6">
+          <span class="text-sm text-brand-700">03</span>
+          <h3 class="font-semibold text-slate-950 mt-2 mb-2">结果回到哪里</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">追踪 ROI、人工修正、能力积累与责任分配。</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section id="research-arc" class="bg-white border-y border-slate-200 scroll-mt-20">
-    <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-18">
-      <div class="mb-8 max-w-3xl">
-        <p class="text-xs font-mono tracking-widest text-brand-600 mb-2">RESEARCH ARC</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">从模型能力到真实结果</h2>
-        <p class="text-slate-500 leading-relaxed">七篇文章不是七座孤岛。它们共同回答一条链路：能力怎样被系统接住、被验证、进入工作流，再接受商业和社会结果的检验。</p>
-      </div>
-      <div id="arcGrid" class="grid sm:grid-cols-2 lg:grid-cols-6 gap-3"></div>
-      <div class="mt-6 rounded-xl bg-brand-50 border border-brand-100 px-5 py-4 flex flex-col md:flex-row md:items-center gap-2 md:gap-5">
-        <span class="font-mono text-xs font-semibold text-brand-700">CASE / AI CODING</span>
-        <p class="text-sm text-brand-900 leading-relaxed">AI Coding 是这条链路目前反馈最密集的验证场：任务可执行、结果可测试、过程可追踪、错误可回滚。它提供方法，但不能直接代表所有知识工作。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="chapters" class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-18 scroll-mt-20">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
-      <div class="max-w-3xl">
-        <p class="text-xs font-mono tracking-widest text-brand-600 mb-2">SEVEN CHAPTERS</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">七个研究章节</h2>
-        <p class="text-slate-500 leading-relaxed">每章先给当前判断，再展开证据、边界和仍待验证的问题。</p>
-      </div>
-      <span id="chapterMeta" class="text-sm text-slate-400"></span>
-    </div>
-    <div id="topicGrid" class="grid md:grid-cols-2 gap-4"></div>
-  </section>
-
-  <section class="bg-slate-900 text-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-18">
+  <section id="chapters" class="border-y border-slate-200 bg-slate-50 scroll-mt-20">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
         <div class="max-w-3xl">
-          <p class="text-xs font-mono tracking-widest text-brand-300 mb-2">LATEST NOTES</p>
-          <h2 class="text-2xl md:text-3xl font-bold mb-3">最近更新的判断</h2>
-          <p class="text-slate-300 leading-relaxed">先看最近发生了什么，再进入对应章节理解它改变了哪一段判断。</p>
+          <p class="text-sm text-brand-700 mb-2">七篇深读</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">从能力供给，到结果与责任</h2>
+          <p class="text-slate-600 leading-relaxed">每篇文章给出当前判断、证据边界、一个可直接使用的工作工具，以及会迫使观点改变的证伪条件。</p>
         </div>
-        <a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" rel="noopener" class="text-sm text-brand-300 hover:text-white">查看持续更新的在线文档 →</a>
+        <span id="chapterMeta" class="text-sm text-slate-500"></span>
       </div>
-      <div id="latestNotes" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      <div id="topicGrid" class="border-t border-slate-300"></div>
     </div>
   </section>
 
-  <section id="collaborate" class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20 scroll-mt-20">
-    <div class="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
-      <div class="grid lg:grid-cols-[1.15fr_.85fr]">
-        <div class="p-7 md:p-10">
-          <p class="text-xs font-mono tracking-widest text-brand-600 mb-2">ABOUT &amp; COLLABORATION</p>
+  <section class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
+    <div class="grid lg:grid-cols-[.7fr_1.3fr] gap-8 lg:gap-16">
+      <div>
+        <p class="text-sm text-brand-700 mb-2">最近加入证据库</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">新 notes 如何进入旧问题</h2>
+        <p class="text-slate-600 leading-relaxed mb-5">新材料不会单独堆成月度更新。它们会进入相应章节，修改原有论证、补充边界或留下新的证伪条件。</p>
+        <a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" rel="noopener" class="text-sm font-medium text-brand-700 hover:text-brand-900">查看持续更新的在线文档 →</a>
+      </div>
+      <div id="latestNotes" class="border-t border-slate-300"></div>
+    </div>
+  </section>
+
+  <section id="collaborate" class="border-t border-slate-200 scroll-mt-20">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div>
+          <p class="text-sm text-brand-700 mb-2">关于这套笔记</p>
           <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">Yantao Wang (Shady)</h2>
-          <p class="text-slate-700 leading-relaxed mb-4">AI 战略、行业研究与业务分析背景，长期跟踪基础模型、MaaS、Agent Infra、评测、数据闭环和企业 AI 落地。我更关注模型能力与真实组织之间的接缝：任务怎样被定义、结果怎样被验收、经验怎样被沉淀。</p>
-          <p class="text-sm text-slate-500 leading-relaxed">这个网页每 1—2 个月阶段性同步。所有 notes 均经过人工 review；公开内容只保留可公开、可追溯的判断与资料。</p>
+          <p class="text-slate-700 leading-relaxed mb-4">我有 AI 战略、行业研究与业务分析背景，长期跟踪基础模型、MaaS、Agent Infra、评测、数据闭环和企业 AI 部署。关注重点是模型能力与真实组织之间的接缝：任务怎样定义，结果怎样验收，经验怎样沉淀。</p>
+          <p class="text-sm text-slate-500 leading-relaxed">网站阶段性同步 notes 索引。条目中存在 <code>why</code> 时展示我的原始评论；缺少评论时只展示标题、关键词与来源，不把索引信息写成个人判断。</p>
         </div>
-        <div class="bg-brand-900 text-white p-7 md:p-10">
-          <h3 class="text-lg font-bold mb-4">适合交流的真实问题</h3>
-          <ul class="space-y-3 text-sm text-brand-100 leading-relaxed mb-7">
-            <li>01 · Agent / AI 工作流为什么在真实组织里失败</li>
-            <li>02 · 如何定义 Context、Eval、Verifier、人工接管与结果验收</li>
-            <li>03 · 如何把 badcase 与专家修正写回产品、Skill、评测或训练数据</li>
+        <div class="lg:border-l lg:border-slate-200 lg:pl-10">
+          <h3 class="text-lg font-semibold text-slate-950 mb-4">适合一起拆解的问题</h3>
+          <ul class="border-t border-slate-200 text-sm text-slate-700 leading-relaxed mb-6">
+            <li class="py-3 border-b border-slate-200">Agent / AI 工作流为什么在真实组织里失败</li>
+            <li class="py-3 border-b border-slate-200">怎样定义 Context、Eval、Verifier、人工接管与结果验收</li>
+            <li class="py-3 border-b border-slate-200">怎样把 badcase 与专家修正写回产品、Skill、评测或训练数据</li>
           </ul>
-          <div class="border-t border-brand-700 pt-5 space-y-2 text-sm">
-            <p>💬 WeChat: <span class="font-mono">black_shady1130</span></p>
-            <p>📧 <a class="hover:text-brand-200" href="mailto:blackshady1130@gmail.com">blackshady1130@gmail.com</a></p>
+          <div class="space-y-2 text-sm text-slate-600">
+            <p>WeChat: <span>black_shady1130</span></p>
+            <p>Email: <a class="text-brand-700 hover:text-brand-900" href="mailto:blackshady1130@gmail.com">blackshady1130@gmail.com</a></p>
           </div>
         </div>
       </div>
@@ -170,56 +160,53 @@ code,pre{font-family:'JetBrains Mono',monospace;font-size:.85em}
 </main>
 
 <main id="topicView" class="hidden">
-  <section class="bg-gradient-to-br from-brand-900 via-slate-900 to-brand-800 text-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-14">
-      <div class="flex items-start gap-4">
-        <span id="tvIcon" class="text-3xl md:text-4xl mt-1"></span>
-        <div class="max-w-4xl">
-          <p id="tvRole" class="font-mono text-xs tracking-widest text-brand-300 mb-2"></p>
-          <h1 id="tvTitle" class="text-2xl md:text-4xl font-bold leading-snug mb-3"></h1>
-          <p id="tvQuestion" class="text-brand-100 text-base md:text-lg leading-relaxed mb-3"></p>
-          <p id="tvThesis" class="text-sm md:text-base text-brand-200/90 leading-relaxed max-w-3xl"></p>
-          <p id="tvMeta" class="text-brand-300 text-xs mt-4"></p>
-        </div>
+  <header class="bg-slate-950 text-white">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16">
+      <div class="max-w-4xl">
+        <p id="tvRole" class="text-sm text-brand-200 mb-3"></p>
+        <h1 id="tvTitle" class="text-2xl md:text-4xl font-bold leading-snug mb-4"></h1>
+        <p id="tvQuestion" class="text-slate-200 text-base md:text-lg leading-relaxed mb-3"></p>
+        <p id="tvThesis" class="text-sm md:text-base text-slate-400 leading-relaxed max-w-3xl"></p>
+        <p id="tvMeta" class="text-slate-500 text-xs mt-5"></p>
       </div>
     </div>
-  </section>
+  </header>
 
-  <div class="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
-    <section class="mb-10 md:mb-14 fade-in">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-4">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-16">
+    <section class="mb-14 md:mb-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-7 pb-4 border-b border-slate-200">
         <div>
-          <p class="text-xs font-mono tracking-widest text-brand-600 mb-1">DEEP READ</p>
-          <h2 class="text-xl font-bold text-slate-950">主题综述</h2>
+          <p class="text-sm text-brand-700 mb-1">主题文章</p>
+          <h2 class="text-xl font-bold text-slate-950">完整论述</h2>
         </div>
-        <span class="text-xs text-slate-400" id="reviewSub"></span>
+        <span class="text-xs text-slate-500" id="reviewSub"></span>
       </div>
-      <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 md:p-10">
-        <div id="reviewContent" class="review-body max-w-4xl"></div>
+      <article class="max-w-4xl">
+        <div id="reviewContent" class="review-body"></div>
       </article>
     </section>
 
-    <section class="fade-in">
-      <div class="mb-5">
-        <p class="text-xs font-mono tracking-widest text-brand-600 mb-1">EVIDENCE LAYER</p>
-        <h2 class="text-xl font-bold text-slate-950 mb-2">支撑这篇综述的判读</h2>
-        <p class="text-sm text-slate-500 leading-relaxed">默认只看综述实际引用的证据；也可以检查最近更新，或在全部判读中搜索。卡片主体保留我的原始判断，不用机器摘要替代。</p>
+    <section class="border-t border-slate-300 pt-10">
+      <div class="max-w-3xl mb-6">
+        <p class="text-sm text-brand-700 mb-1">证据浏览器</p>
+        <h2 class="text-xl font-bold text-slate-950 mb-2">检查文章引用的 notes</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">默认显示正文实际引用的条目；也可以检查本主题最近更新或搜索全部条目。卡片保留原始 <code>why</code>，不以机器摘要替换。</p>
       </div>
 
-      <div class="bg-white rounded-2xl border border-slate-200 p-4 md:p-5 mb-5">
+      <div class="border-y border-slate-200 py-4 mb-5">
         <div class="flex flex-wrap gap-2 mb-4" role="group" aria-label="判读视图">
-          <button type="button" class="note-view-btn px-3.5 py-2 rounded-lg border border-slate-200 text-sm font-medium text-slate-600" data-note-view="cited" aria-pressed="true" onclick="setNoteView('cited')">综述引用</button>
-          <button type="button" class="note-view-btn px-3.5 py-2 rounded-lg border border-slate-200 text-sm font-medium text-slate-600" data-note-view="recent" aria-pressed="false" onclick="setNoteView('recent')">最近更新</button>
-          <button type="button" class="note-view-btn px-3.5 py-2 rounded-lg border border-slate-200 text-sm font-medium text-slate-600" data-note-view="all" aria-pressed="false" onclick="setNoteView('all')">全部判读</button>
+          <button type="button" class="note-view-btn px-3.5 py-2 border border-slate-300 text-sm font-medium text-slate-700" data-note-view="cited" aria-pressed="true" onclick="setNoteView('cited')">文章引用</button>
+          <button type="button" class="note-view-btn px-3.5 py-2 border border-slate-300 text-sm font-medium text-slate-700" data-note-view="recent" aria-pressed="false" onclick="setNoteView('recent')">最近更新</button>
+          <button type="button" class="note-view-btn px-3.5 py-2 border border-slate-300 text-sm font-medium text-slate-700" data-note-view="all" aria-pressed="false" onclick="setNoteView('all')">全部 notes</button>
         </div>
         <div class="grid md:grid-cols-[1fr_220px] gap-3">
           <label class="block">
-            <span class="sr-only">搜索判读</span>
-            <input id="noteSearch" type="search" placeholder="搜索标题、我的判断或关键词" oninput="updateNoteFilters()" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <span class="sr-only">搜索 notes</span>
+            <input id="noteSearch" type="search" placeholder="搜索标题、我的评论或关键词" oninput="updateNoteFilters()" class="w-full border border-slate-300 px-3.5 py-2.5 text-sm bg-white">
           </label>
           <label class="block">
             <span class="sr-only">按资料类型筛选</span>
-            <select id="noteType" onchange="updateNoteFilters()" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <select id="noteType" onchange="updateNoteFilters()" class="w-full border border-slate-300 px-3.5 py-2.5 text-sm bg-white">
               <option value="">全部资料类型</option>
               <option value="solid paper">Solid paper</option>
               <option value="行业动态/评价">行业动态 / 评价</option>
@@ -229,23 +216,23 @@ code,pre{font-family:'JetBrains Mono',monospace;font-size:.85em}
         </div>
       </div>
 
-      <div id="notesStatus" class="text-xs text-slate-400 mb-3"></div>
-      <div id="noteList" class="space-y-3 mb-6"></div>
-      <div id="emptyNotes" class="hidden rounded-xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 mb-6">没有找到匹配的判读。</div>
+      <div id="notesStatus" class="text-xs text-slate-500 mb-2" aria-live="polite"></div>
+      <div id="noteList" class="mb-6"></div>
+      <div id="emptyNotes" class="hidden border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 mb-6">没有找到匹配的 note。</div>
       <div id="loadMoreWrap" class="text-center mb-10">
-        <button id="loadMoreBtn" type="button" onclick="loadMoreNotes()" class="px-5 py-2.5 bg-brand-50 text-brand-700 rounded-xl text-sm font-medium hover:bg-brand-100 transition border border-brand-200">继续加载</button>
+        <button id="loadMoreBtn" type="button" onclick="loadMoreNotes()" class="px-5 py-2.5 border border-slate-300 text-slate-800 text-sm font-medium hover:border-slate-500">继续加载</button>
       </div>
     </section>
   </div>
 </main>
 
 <footer class="bg-slate-950 text-slate-500 text-xs text-center py-6 px-4">
-  <span>Structured notes on AI deployment &amp; learning loops</span>
+  <span>Yantao Wang · AI Deployment &amp; Learning Loop</span>
   <span class="mx-2">·</span>
   <span id="footerUpdated"></span>
 </footer>
 
-<div id="refTip" class="ref-tooltip hidden"></div>
+<aside id="refTip" class="ref-tooltip hidden" role="dialog" aria-label="引用 note"></aside>
 
 <script>
 let D=null;
@@ -254,25 +241,21 @@ let curNoteView='cited';
 let curQuery='';
 let curType='';
 let visibleNoteCount=12;
-
-const ARC=[
-  ['01','模型能力','数据、训练、推理预算'],
-  ['02','运行系统','Context、Harness、状态'],
-  ['03','验证治理','Eval、Verifier、恢复'],
-  ['04','产品工作流','权限、协作、接管'],
-  ['05','部署与 ROI','预算、交付、价值回收'],
-  ['06','人与治理','责任、赋权、社会反馈']
-];
+let activeReference=null;
+let hideReferenceTimer=null;
 
 async function init(){
-  const response=await fetch('data.json');
+  const response=await fetch('data.json',{cache:'no-store'});
+  if(!response.ok)throw new Error(`Unable to load data.json: ${response.status}`);
   D=await response.json();
   window.addEventListener('hashchange',route);
-  $('footerUpdated').textContent=`Updated ${D.meta.generated_at}`;
+  window.addEventListener('resize',closeReference);
+  $('footerUpdated').textContent=`更新于 ${D.meta.generated_at}`;
   route();
 }
 
 function route(){
+  closeReference();
   const hash=decodeURIComponent(location.hash||'#home');
   if(hash.startsWith('#topic/')){
     const name=hash.replace('#topic/','');
@@ -287,56 +270,39 @@ function showHome(){
   $('topicView').classList.add('hidden');
   navUpdate(null);
   renderHome();
-  if(location.hash==='#home'||!location.hash) scrollTo(0,0);
+  if(location.hash==='#home'||!location.hash)scrollTo(0,0);
 }
 
 function renderHome(){
   const meta=D.meta;
-  $('heroNoteCount').textContent=meta.total_notes;
   $('heroStats').innerHTML=`
-    <span><strong class="text-white">${meta.total_notes}</strong> 篇人工判读</span>
-    <span><strong class="text-white">${meta.total_topics}</strong> 个研究章节</span>
-    <span><strong class="text-white">${(meta.total_why_chars/10000).toFixed(1)} 万</strong>字个人评论</span>
+    <span>${meta.total_notes} 条公开 notes</span>
+    <span>${meta.total_topics} 篇主题文章</span>
     <span>${rangeText(meta.date_range)}</span>`;
-  $('chapterMeta').textContent=`${meta.total_notes} 篇 · ${rangeText(meta.date_range)}`;
-
-  $('arcGrid').innerHTML=ARC.map((step,index)=>`
-    <div class="arc-step relative rounded-xl border border-slate-200 p-4 bg-slate-50">
-      <div class="font-mono text-xs text-brand-500 mb-2">${step[0]}</div>
-      <h3 class="font-semibold text-slate-900 text-sm mb-1">${step[1]}</h3>
-      <p class="text-xs text-slate-500 leading-relaxed">${step[2]}</p>
-      ${index<ARC.length-1?'<div class="hidden lg:block absolute top-1/2 -right-2.5 w-5 h-[2px] arc-line z-10"></div>':''}
-    </div>`).join('');
+  $('chapterMeta').textContent=`${meta.total_notes} 条 notes · ${rangeText(meta.date_range)}`;
 
   $('topicGrid').innerHTML=D.topics.map(topic=>`
-    <a class="topic-card block bg-white rounded-2xl p-6 border border-slate-200" href="#topic/${encodeURIComponent(topic.name)}">
-      <div class="flex items-start justify-between gap-4 mb-4">
-        <div class="flex items-center gap-3">
-          <span class="text-2xl">${topic.icon}</span>
-          <div>
-            <span class="font-mono text-[11px] text-brand-500">${topic.chapter} · ${topic.role}</span>
-            <h3 class="text-lg font-bold text-slate-950">${esc(topic.name)}</h3>
-          </div>
-        </div>
-        <span class="text-xs text-slate-400 whitespace-nowrap">${topic.count} 篇</span>
+    <a class="chapter-row grid md:grid-cols-[90px_1fr_180px] gap-3 md:gap-7 py-6 border-b border-slate-300 text-left" href="#topic/${encodeURIComponent(topic.name)}">
+      <div class="text-sm text-brand-700">${topic.chapter} · ${esc(topic.role)}</div>
+      <div>
+        <h3 class="text-lg md:text-xl font-semibold text-slate-950 mb-2">${esc(topic.article_title||topic.name)}</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">${esc(topic.thesis)}</p>
       </div>
-      <p class="text-sm font-medium text-slate-700 leading-relaxed mb-3">${esc(topic.question)}</p>
-      <p class="text-sm text-slate-500 leading-relaxed">${esc(topic.thesis)}</p>
-      <div class="mt-5 text-sm text-brand-600 font-medium">阅读本章 →</div>
+      <div class="md:text-right text-sm text-slate-500">${topic.count} 条 notes<br><span class="text-brand-700">进入文章 →</span></div>
     </a>`).join('');
 
-  const latest=D.notes.slice().sort((a,b)=>((b.date||'')+(String(b.id).padStart(4,'0'))).localeCompare((a.date||'')+(String(a.id).padStart(4,'0')))).slice(0,6);
+  const latest=D.notes.slice().sort((a,b)=>((b.date||'')+String(b.id).padStart(4,'0')).localeCompare((a.date||'')+String(a.id).padStart(4,'0'))).slice(0,4);
   $('latestNotes').innerHTML=latest.map(note=>`
-    <article class="rounded-xl bg-slate-800 border border-slate-700 p-5">
-      <div class="flex items-center justify-between gap-3 text-xs text-slate-400 mb-3"><span class="font-mono">#${note.id}</span><span>${fmtDate(note.date)}</span></div>
-      <h3 class="text-sm font-semibold leading-relaxed mb-3">${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="hover:text-brand-300">${esc(note.title)}</a>`:esc(note.title)}</h3>
-      <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">${esc(note.why_short||'')}</p>
-      <button class="mt-4 text-xs text-brand-300 hover:text-white" onclick="location.hash='#topic/${encodeURIComponent(note.topics[0])}'">进入 ${esc(note.topics[0])} →</button>
-    </article>`).join('');
+    <a class="recent-note-link block py-5 border-b border-slate-200" href="#topic/${encodeURIComponent(note.topics[0])}">
+      <div class="flex items-center justify-between gap-4 text-xs text-slate-500 mb-2"><span>#${note.id} · ${esc(typeLabel(note.type))}</span><span>${fmtDate(note.date)}</span></div>
+      <h3 class="text-base font-semibold text-slate-950 leading-relaxed mb-2">${esc(note.title)}</h3>
+      <p class="text-sm text-slate-600 leading-relaxed line-clamp-2">${esc(note.why_short||keywordsText(note))}</p>
+      <span class="inline-block mt-2 text-xs text-brand-700">进入 ${esc(note.topics[0])} →</span>
+    </a>`).join('');
 }
 
 function scrollHomeTo(id){
-  if(curTopic) showHome();
+  if(curTopic)showHome();
   requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'}));
 }
 
@@ -349,17 +315,16 @@ function showTopic(name){
   navUpdate(topic);
   scrollTo(0,0);
 
-  $('tvIcon').textContent=topic.icon;
-  $('tvRole').textContent=`${topic.chapter} / ${topic.role}`;
-  $('tvTitle').textContent=topic.name;
+  $('tvRole').textContent=`${topic.chapter} · ${topic.role} · ${topic.name}`;
+  $('tvTitle').textContent=topic.article_title||topic.name;
   $('tvQuestion').textContent=topic.question;
   $('tvThesis').textContent=topic.thesis;
-  $('tvMeta').textContent=`${topic.count} 篇判读 · ${rangeText(topic.date_range||D.meta.date_range)}`;
-  $('reviewSub').textContent=`引用 ${topic.review_note_ids.length} 条证据`;
+  $('tvMeta').textContent=`${topic.count} 条相关 notes · ${rangeText(topic.date_range||D.meta.date_range)}`;
+  $('reviewSub').textContent=`正文引用 ${topic.review_note_ids.length} 条证据`;
 
   let markdown=topic.review;
   const firstH2=markdown.indexOf('\n## ');
-  if(firstH2>0) markdown=markdown.substring(firstH2);
+  if(firstH2>0)markdown=markdown.substring(firstH2);
   $('reviewContent').innerHTML=linkRefs(marked.parse(markdown));
 
   curNoteView='cited';
@@ -369,7 +334,7 @@ function showTopic(name){
   $('noteSearch').value='';
   $('noteType').value='';
   renderNoteBrowser();
-  setTimeout(setupTips,50);
+  setupReferenceControls();
 }
 
 function currentTopic(){return D.topics.find(topic=>topic.name===curTopic)}
@@ -396,12 +361,10 @@ function noteViewItems(){
     notes=topic.review_note_ids.map(id=>byId.get(id)).filter(Boolean);
   }else{
     notes=topicNotes(curTopic).slice().sort((a,b)=>((b.date||'')+String(b.id).padStart(4,'0')).localeCompare((a.date||'')+String(a.id).padStart(4,'0')));
-    if(curNoteView==='recent') notes=notes.slice(0,18);
+    if(curNoteView==='recent')notes=notes.slice(0,18);
   }
-  if(curType) notes=notes.filter(note=>note.type===curType);
-  if(curQuery){
-    notes=notes.filter(note=>[note.title,note.why,(note.keywords||[]).join(' ')].join(' ').toLowerCase().includes(curQuery));
-  }
+  if(curType)notes=notes.filter(note=>note.type===curType);
+  if(curQuery)notes=notes.filter(note=>[note.title,note.why,(note.keywords||[]).join(' ')].join(' ').toLowerCase().includes(curQuery));
   return notes;
 }
 
@@ -410,7 +373,7 @@ function renderNoteBrowser(){
   const notes=noteViewItems();
   const visible=notes.slice(0,visibleNoteCount);
   renderCards(visible,'noteList');
-  const labels={cited:'综述引用',recent:'最近更新',all:'全部判读'};
+  const labels={cited:'文章引用',recent:'最近更新',all:'全部 notes'};
   $('notesStatus').textContent=`${labels[curNoteView]} · 显示 ${visible.length} / ${notes.length} 条`;
   $('emptyNotes').classList.toggle('hidden',notes.length!==0);
   $('loadMoreWrap').classList.toggle('hidden',visible.length>=notes.length||notes.length===0);
@@ -424,24 +387,22 @@ function loadMoreNotes(){
 function renderCards(notes,id){
   const citedIds=new Set(currentTopic()?.review_note_ids||[]);
   $(id).innerHTML=notes.map(note=>{
-    const keywords=(note.keywords||[]).slice(0,4).map(keyword=>`<span class="inline-block text-[11px] px-2 py-1 rounded bg-slate-100 text-slate-500">${esc(keyword)}</span>`).join(' ');
     const full=esc(note.why||'');
     const more=(note.why||'').length>220;
-    const judgmentLabel=note.why?'我的判断':'索引关键词（原条目无评论）';
-    return`<article class="note-item bg-white rounded-xl border border-slate-200 p-5 md:p-6">
-      <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-3">
-        <span class="font-mono text-brand-500">#${note.id}</span>
-        <span>${typeLabel(note.type)}</span>
+    const judgmentLabel=note.why?'我的评论':'索引关键词（原条目无评论）';
+    const summary=note.why_short||keywordsText(note);
+    return`<article class="note-item py-5 md:py-6">
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 mb-3">
+        <span>#${note.id}</span>
+        <span>${esc(typeLabel(note.type))}</span>
         <span>${fmtDate(note.date)}</span>
-        ${citedIds.has(note.id)?'<span class="rounded-full bg-brand-50 text-brand-700 px-2 py-0.5 font-medium">综述引用</span>':''}
+        ${citedIds.has(note.id)?'<span class="font-medium text-brand-700">正文引用</span>':''}
       </div>
-      <h3 class="text-base font-semibold text-slate-950 mb-3 leading-relaxed">${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="hover:text-brand-600">${esc(note.title)}</a>`:esc(note.title)}</h3>
-      <div class="rounded-lg bg-slate-50 border border-slate-100 p-4 mb-3">
-        <div class="text-[11px] font-mono tracking-wider text-brand-600 mb-2">${judgmentLabel}</div>
-        <div class="text-sm text-slate-700 leading-relaxed why-summary">${esc(note.why_short||'')}</div>
-        ${more?`<button type="button" class="text-brand-600 text-xs mt-2.5 hover:text-brand-800 font-medium" onclick="toggleWhy(this)">展开完整判断 ↓</button><div class="hidden mt-3 pt-3 border-t border-slate-200 why-text text-sm leading-relaxed text-slate-700">${full}</div>`:''}
-      </div>
-      <div class="flex flex-wrap gap-1.5">${keywords}</div>
+      <h3 class="text-base font-semibold text-slate-950 mb-3 leading-relaxed">${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="hover:text-brand-700">${esc(note.title)}</a>`:esc(note.title)}</h3>
+      <p class="text-xs font-medium text-slate-500 mb-2">${judgmentLabel}</p>
+      <div class="text-sm text-slate-700 leading-relaxed why-summary">${esc(summary)}</div>
+      ${more?`<button type="button" class="text-brand-700 text-xs mt-3 hover:text-brand-900 font-medium" onclick="toggleWhy(this)">展开完整评论 ↓</button><div class="hidden mt-3 pt-3 border-t border-slate-200 why-text text-sm leading-relaxed text-slate-700">${full}</div>`:''}
+      <p class="text-xs text-slate-500 mt-3">${esc(keywordsText(note))}</p>
     </article>`;
   }).join('');
 }
@@ -452,58 +413,88 @@ function toggleWhy(button){
   const opening=full.classList.contains('hidden');
   full.classList.toggle('hidden',!opening);
   summary.classList.toggle('hidden',opening);
-  button.textContent=opening?'收起完整判断 ↑':'展开完整判断 ↓';
+  button.textContent=opening?'收起完整评论 ↑':'展开完整评论 ↓';
 }
 
 function navUpdate(topic){
   if(!topic){
-    $('navBC').innerHTML='<a href="#home" class="font-semibold text-slate-900 hover:text-brand-600">Yantao · Deployment Learning Notes</a>';
+    $('navBC').innerHTML='<a href="#home" class="font-semibold text-slate-950 hover:text-brand-700 truncate">Yantao · AI Deployment Notes</a>';
   }else{
-    $('navBC').innerHTML=`<a href="#home" class="text-slate-500 hover:text-brand-600">首页</a><span class="text-slate-300">/</span><span class="font-semibold text-slate-900 truncate">${topic.icon} ${esc(topic.name)}</span>`;
+    $('navBC').innerHTML=`<a href="#home" class="text-slate-500 hover:text-brand-700 shrink-0">首页</a><span class="text-slate-300">/</span><span class="font-semibold text-slate-950 truncate">${esc(topic.name)}</span>`;
   }
-  $('navMeta').textContent=topic?`${topic.count} 篇`:`${D.meta.total_notes} 篇 · ${rangeText(D.meta.date_range)}`;
+  $('navMeta').textContent=topic?`${topic.count} 条 notes`:`${D.meta.total_notes} 条 notes · ${rangeText(D.meta.date_range)}`;
 }
 
 function linkRefs(html){
-  return html.replace(/#(\d+)/g,(match,id)=>D.notes.some(note=>note.id===parseInt(id))?`<span class="note-ref" data-nid="${id}">${match}</span>`:match);
+  return html.replace(/#(\d+)/g,(match,id)=>D.notes.some(note=>note.id===parseInt(id))?`<button type="button" class="note-ref" data-nid="${id}" aria-label="查看证据 #${id}" aria-expanded="false">${match}</button>`:match);
 }
 
-function setupTips(){
-  const tip=$('refTip');
-  let timer;
-  const hide=()=>{timer=setTimeout(()=>tip.classList.add('hidden'),150)};
-  document.querySelectorAll('.note-ref').forEach(element=>{
-    const show=()=>{
-      clearTimeout(timer);
-      const note=D.notes.find(item=>item.id===parseInt(element.dataset.nid));
-      if(!note)return;
-      const preview=(note.why||'').substring(0,170)+((note.why||'').length>170?'...':'');
-      tip.innerHTML=`<div class="tt-title">${esc(note.title)}</div><div class="tt-meta">#${note.id} · ${fmtDate(note.date)} · ${esc(note.type||'')}</div><div class="tt-why">${esc(preview)}</div>${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>`:''}`;
-      const rect=element.getBoundingClientRect();
-      let top=rect.bottom+8,left=rect.left;
-      if(left+340>innerWidth)left=innerWidth-350;
-      if(left<8)left=8;
-      if(top+280>innerHeight)top=rect.top-288;
-      tip.style.top=top+'px';
-      tip.style.left=left+'px';
-      tip.classList.remove('hidden');
-    };
-    element.addEventListener('mouseenter',show);
-    element.addEventListener('mouseleave',hide);
-    element.addEventListener('click',event=>{event.stopPropagation();tip.classList.contains('hidden')?show():tip.classList.add('hidden')});
+function setupReferenceControls(){
+  document.querySelectorAll('.note-ref').forEach(button=>{
+    button.addEventListener('mouseenter',()=>showReference(button));
+    button.addEventListener('mouseleave',scheduleReferenceClose);
+    button.addEventListener('focus',()=>showReference(button));
+    button.addEventListener('blur',scheduleReferenceClose);
+    button.addEventListener('click',event=>{
+      event.stopPropagation();
+      if(activeReference===button&&!$('refTip').classList.contains('hidden'))closeReference();
+      else showReference(button);
+    });
   });
-  tip.onmouseenter=()=>clearTimeout(timer);
-  tip.onmouseleave=hide;
+  $('refTip').onmouseenter=()=>clearTimeout(hideReferenceTimer);
+  $('refTip').onmouseleave=scheduleReferenceClose;
 }
 
-function typeLabel(type){return {'solid paper':'🔬 Solid paper','行业动态/评价':'📰 行业动态 / 评价','观点/文章':'💡 观点 / 文章'}[type]||'📌 资料'}
+function showReference(button){
+  clearTimeout(hideReferenceTimer);
+  if(activeReference&&activeReference!==button)activeReference.setAttribute('aria-expanded','false');
+  activeReference=button;
+  button.setAttribute('aria-expanded','true');
+  const note=D.notes.find(item=>item.id===parseInt(button.dataset.nid));
+  if(!note)return;
+  const preview=(note.why||keywordsText(note)).substring(0,220)+((note.why||'').length>220?'…':'');
+  $('refTip').innerHTML=`<div class="tt-title">${esc(note.title)}</div><div class="tt-meta">#${note.id} · ${fmtDate(note.date)} · ${esc(typeLabel(note.type))}</div><div class="tt-why">${esc(preview)}</div>${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="text-xs text-brand-700 hover:text-brand-900 mt-3 inline-block font-medium">查看原文 →</a>`:''}`;
+  positionReference(button);
+  $('refTip').classList.remove('hidden');
+}
+
+function positionReference(button){
+  if(innerWidth<=640)return;
+  const rect=button.getBoundingClientRect();
+  let top=rect.bottom+9;
+  let left=rect.left;
+  if(left+360>innerWidth-12)left=innerWidth-372;
+  if(left<12)left=12;
+  if(top+320>innerHeight)top=Math.max(12,rect.top-329);
+  $('refTip').style.top=`${top}px`;
+  $('refTip').style.left=`${left}px`;
+}
+
+function scheduleReferenceClose(){
+  clearTimeout(hideReferenceTimer);
+  hideReferenceTimer=setTimeout(closeReference,180);
+}
+
+function closeReference(){
+  clearTimeout(hideReferenceTimer);
+  $('refTip')?.classList.add('hidden');
+  if(activeReference)activeReference.setAttribute('aria-expanded','false');
+  activeReference=null;
+}
+
+function typeLabel(type){return {'solid paper':'Solid paper','行业动态/评价':'行业动态 / 评价','观点/文章':'观点 / 文章'}[type]||'资料'}
+function keywordsText(note){return (note.keywords||[]).slice(0,5).join(' · ')}
 function fmtDate(value){return value?(value.length>=7?value.substring(0,7):value):''}
 function rangeText(value){return (value||'').replace(' ~ ',' – ')}
 function $(id){return document.getElementById(id)}
 function esc(value){if(value===null||value===undefined)return'';const div=document.createElement('div');div.textContent=String(value);return div.innerHTML.replace(/\n/g,'<br>')}
 
-document.addEventListener('click',()=>document.getElementById('refTip')?.classList.add('hidden'));
-init();
+document.addEventListener('click',event=>{if(!$('refTip')?.contains(event.target))closeReference()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeReference()});
+init().catch(error=>{
+  console.error(error);
+  document.body.innerHTML='<main class="max-w-2xl mx-auto px-6 py-20"><h1 class="text-xl font-bold mb-3">页面数据加载失败</h1><p class="text-slate-600">请刷新页面，或稍后重试。</p></main>';
+});
 </script>
 </body>
 </html>

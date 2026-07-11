@@ -217,6 +217,9 @@ class SitePageContractTests(unittest.TestCase):
         ):
             self.assertIn(symbol, self.html)
 
+    def test_data_bundle_is_requested_without_stale_browser_cache(self):
+        self.assertIn("fetch('data.json',{cache:'no-store'})", self.html)
+
     def test_mobile_navigation_and_calls_to_action_can_wrap(self):
         self.assertIn('class="hidden md:flex', self.html)
         self.assertIn("flex-wrap", self.html)
