@@ -88,4 +88,3 @@ For each essay:
 6. Capture desktop and 390px mobile renders; verify `scrollWidth === clientWidth`, CTA visibility, focusable citations, and no clipped navigation.
 7. Re-read this plan and check every requirement against the final diff.
 8. Commit only verified fixes. Stop with a clean feature worktree and provide the user a local preview plus commit summary. Do not merge.
-

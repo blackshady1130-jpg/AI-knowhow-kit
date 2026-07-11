@@ -1,6 +1,6 @@
 # AI Knowhow Blog Content Redesign
 
-日期：2026-07-11  
+日期：2026-07-11
 分支：`codex/blog-content-redesign`
 
 ## 1. 目标

@@ -1,7 +1,7 @@
 # AI Knowhow Kit：文章与 UI 降噪审计
 
-日期：2026-07-12  
-范围：`site/reviews/*.md`、`site/index.html`  
+日期：2026-07-12
+范围：`site/reviews/*.md`、`site/index.html`
 方法：按 `removing-ai-slop` 的 writing / development 两套 ledger 分开检查，再用同一研究主张校准首页与文章。
 
 ## 修改前的主要问题
@@ -60,4 +60,3 @@
 - 单一蓝色 accent：用于链接、引用和 focus，承担交互语义。
 - 少量表格：七篇文章中的工具本身需要逐字段比较，表格比 prose 更清楚；移动端允许表格内部横向滚动，不让整页溢出。
 - notes 的中英文混排：模型名、benchmark、Harness、Eval、Skill、why 等是材料中的真实术语，不为“统一中文感”强行改写。
-
