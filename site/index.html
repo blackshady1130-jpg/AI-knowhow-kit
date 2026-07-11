@@ -329,7 +329,7 @@ function renderHome(){
   $('latestNotes').innerHTML=latest.map(note=>`
     <article class="rounded-xl bg-slate-800 border border-slate-700 p-5">
       <div class="flex items-center justify-between gap-3 text-xs text-slate-400 mb-3"><span class="font-mono">#${note.id}</span><span>${fmtDate(note.date)}</span></div>
-      <h3 class="text-sm font-semibold leading-relaxed mb-3">${note.url?`<a href="${note.url}" target="_blank" rel="noopener" class="hover:text-brand-300">${esc(note.title)}</a>`:esc(note.title)}</h3>
+      <h3 class="text-sm font-semibold leading-relaxed mb-3">${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="hover:text-brand-300">${esc(note.title)}</a>`:esc(note.title)}</h3>
       <p class="text-xs text-slate-300 leading-relaxed line-clamp-5">${esc(note.why_short||'')}</p>
       <button class="mt-4 text-xs text-brand-300 hover:text-white" onclick="location.hash='#topic/${encodeURIComponent(note.topics[0])}'">进入 ${esc(note.topics[0])} →</button>
     </article>`).join('');
@@ -435,7 +435,7 @@ function renderCards(notes,id){
         <span>${fmtDate(note.date)}</span>
         ${citedIds.has(note.id)?'<span class="rounded-full bg-brand-50 text-brand-700 px-2 py-0.5 font-medium">综述引用</span>':''}
       </div>
-      <h3 class="text-base font-semibold text-slate-950 mb-3 leading-relaxed">${note.url?`<a href="${note.url}" target="_blank" rel="noopener" class="hover:text-brand-600">${esc(note.title)}</a>`:esc(note.title)}</h3>
+      <h3 class="text-base font-semibold text-slate-950 mb-3 leading-relaxed">${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="hover:text-brand-600">${esc(note.title)}</a>`:esc(note.title)}</h3>
       <div class="rounded-lg bg-slate-50 border border-slate-100 p-4 mb-3">
         <div class="text-[11px] font-mono tracking-wider text-brand-600 mb-2">${judgmentLabel}</div>
         <div class="text-sm text-slate-700 leading-relaxed why-summary">${esc(note.why_short||'')}</div>
@@ -478,7 +478,7 @@ function setupTips(){
       const note=D.notes.find(item=>item.id===parseInt(element.dataset.nid));
       if(!note)return;
       const preview=(note.why||'').substring(0,170)+((note.why||'').length>170?'...':'');
-      tip.innerHTML=`<div class="tt-title">${esc(note.title)}</div><div class="tt-meta">#${note.id} · ${fmtDate(note.date)} · ${esc(note.type||'')}</div><div class="tt-why">${esc(preview)}</div>${note.url?`<a href="${note.url}" target="_blank" rel="noopener" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>`:''}`;
+      tip.innerHTML=`<div class="tt-title">${esc(note.title)}</div><div class="tt-meta">#${note.id} · ${fmtDate(note.date)} · ${esc(note.type||'')}</div><div class="tt-why">${esc(preview)}</div>${note.source_url?`<a href="${note.source_url}" target="_blank" rel="noopener" class="text-xs text-brand-600 hover:text-brand-800 mt-2 inline-block font-medium">查看原文 →</a>`:''}`;
       const rect=element.getBoundingClientRect();
       let top=rect.bottom+8,left=rect.left;
       if(left+340>innerWidth)left=innerWidth-350;

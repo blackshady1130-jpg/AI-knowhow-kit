@@ -53,6 +53,18 @@ def fallback_why(note: dict) -> str:
     return note.get("title") or ""
 
 
+def primary_source_url(value: str | None) -> str:
+    """Extract a browser-safe primary link while preserving the raw source field."""
+    text = str(value or "").strip()
+    match = re.search(r"https?://[^\s]+", text)
+    if match:
+        return match.group(0).rstrip(".,;:!?，。；：！？)]}）】》>\"'")
+    bare_x = re.search(r"(?<![\w.])x\.com/[^\s]+", text)
+    if bare_x:
+        return ("https://" + bare_x.group(0)).rstrip(".,;:!?，。；：！？)]}）】》>\"'")
+    return ""
+
+
 def month_key(value: str | None) -> str:
     if not value:
         return ""
@@ -112,6 +124,7 @@ def main() -> None:
                 "date": note.get("date"),
                 "type": note.get("type") or "",
                 "url": note.get("url") or "",
+                "source_url": primary_source_url(note.get("url")),
                 "keywords": note.get("keywords") or [],
                 "topics": note_topics,
                 "why": why,

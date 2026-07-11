@@ -61,6 +61,21 @@ class SiteDataContractTests(unittest.TestCase):
             self.assertTrue(review_ids, topic["name"])
             self.assertTrue(set(review_ids) <= note_ids, topic["name"])
 
+    def test_source_links_extract_a_safe_primary_http_url(self):
+        notes = {int(note["id"]): note for note in self.bundle["notes"]}
+        for note in notes.values():
+            source_url = note.get("source_url")
+            self.assertIsNotNone(source_url, note["id"])
+            self.assertTrue(
+                not source_url or source_url.startswith(("http://", "https://")),
+                f"unsafe source_url for {note['id']}: {source_url}",
+            )
+        self.assertEqual(
+            "https://mp.weixin.qq.com/s/iBVj-bcEtVbOGWEqwWp6EA",
+            notes[1]["source_url"],
+        )
+        self.assertEqual("https://x.com/ivanhzhao/status/2003192654545539400", notes[111]["source_url"])
+
 
 class TopicMetadataContractTests(unittest.TestCase):
     def test_seven_topics_define_their_role_in_one_research_arc(self):

@@ -441,6 +441,7 @@
       "date": "2025-04",
       "type": "观点/文章",
       "url": "不错的翻译版本：\nhttps://mp.weixin.qq.com/s/iBVj-bcEtVbOGWEqwWp6EA\n原文：\nhttps://ysymyth.github.io/The-Second-Half",
+      "source_url": "https://mp.weixin.qq.com/s/iBVj-bcEtVbOGWEqwWp6EA",
       "keywords": [
         "强化学习",
         "评估",
@@ -463,6 +464,7 @@
       "date": "2025-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/0X58GZqPHbN9Sw5begW__w",
+      "source_url": "https://mp.weixin.qq.com/s/0X58GZqPHbN9Sw5begW__w",
       "keywords": [
         "Agent",
         "LLM",
@@ -486,6 +488,7 @@
       "date": "2025-05",
       "type": "观点/文章",
       "url": "https://yage.ai/ai-products.html",
+      "source_url": "https://yage.ai/ai-products.html",
       "keywords": [
         "AI产品错位",
         "用户体验滞后",
@@ -508,6 +511,7 @@
       "date": "2025-05",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/mEY1-m2Cx61Jvv0XF8ajyA",
+      "source_url": "https://mp.weixin.qq.com/s/mEY1-m2Cx61Jvv0XF8ajyA",
       "keywords": [
         "OpenAI o3",
         "幻觉",
@@ -530,6 +534,7 @@
       "date": "2025-05",
       "type": "solid paper",
       "url": "文章：https://mp.weixin.qq.com/s/ZJNgGwGL06bGkcffutvejg\n秘塔解读：https://metaso.cn/s/CGFjNG9",
+      "source_url": "https://mp.weixin.qq.com/s/ZJNgGwGL06bGkcffutvejg",
       "keywords": [
         "虚假奖励",
         "Qwen-Math",
@@ -551,6 +556,7 @@
       "date": "2025-05",
       "type": "solid paper",
       "url": "翻译版：https://mp.weixin.qq.com/s/qXYiYwQUrTEKA4vhii93QA\n原文：https://arxiv.org/abs/2505.06120\n秘塔课堂总结：https://metaso.cn/s/E5SjKmQ",
+      "source_url": "https://mp.weixin.qq.com/s/qXYiYwQUrTEKA4vhii93QA",
       "keywords": [
         "多轮对话",
         "性能下降",
@@ -572,6 +578,7 @@
       "date": "2024-11",
       "type": "solid paper",
       "url": "paper原文：https://arxiv.org/abs/2410.12788\n秘塔课堂总结：https://metaso.cn/search/8616361733152718848?q=https%3A%2F%2Farxiv.org%2Fabs%2F2410.12788&chapterId=8616361823471280128&level=2&scene=默认&voiceLanguage=cn&pptLanguage=cn&ttsTimbre=uk_woman16&voiceSpeed=120&showCaptions=true",
+      "source_url": "https://arxiv.org/abs/2410.12788",
       "keywords": [
         "Meta-Chunking",
         "RAG",
@@ -593,6 +600,7 @@
       "date": "2025-05",
       "type": "solid paper",
       "url": "paper原文：https://arxiv.org/abs/2411.06037v3\n国内解读版本：https://mp.weixin.qq.com/s/z3V73Pw0GnxWUkL7sX1rTw",
+      "source_url": "https://arxiv.org/abs/2411.06037v3",
       "keywords": [
         "Sufficient Context",
         "RAG系统",
@@ -614,6 +622,7 @@
       "date": "2025-05",
       "type": "行业动态/评价",
       "url": "原文：https://a16z.com/geo-over-seo/\n国内解读版本：https://mp.weixin.qq.com/s/PyDm3ND1tW2AGUBU6CPNWw",
+      "source_url": "https://a16z.com/geo-over-seo/",
       "keywords": [
         "GEO",
         "生成式引擎优化",
@@ -635,6 +644,7 @@
       "date": "2025-06",
       "type": "行业动态/评价",
       "url": "",
+      "source_url": "",
       "keywords": [
         "Agentic RAG",
         "GPT O3",
@@ -656,6 +666,7 @@
       "date": "2025-05",
       "type": "solid paper",
       "url": "官方网站：https://mem0.ai/research\n秘塔通俗易懂讲解：https://metaso.cn/s/kC4GZIw",
+      "source_url": "https://mem0.ai/research",
       "keywords": [
         "Mem0",
         "长记忆",
@@ -678,6 +689,7 @@
       "date": null,
       "type": "solid paper",
       "url": "https://snap-research.github.io/locomo/",
+      "source_url": "https://snap-research.github.io/locomo/",
       "keywords": [
         "LoCoMo",
         "长记忆评测",
@@ -699,6 +711,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/kzI_vukQ9GFUfCEMjcX7RQ",
+      "source_url": "https://mp.weixin.qq.com/s/kzI_vukQ9GFUfCEMjcX7RQ",
       "keywords": [
         "长上下文",
         "上下文工程",
@@ -721,6 +734,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://x.com/karpathy/status/1937902205765607626",
+      "source_url": "https://x.com/karpathy/status/1937902205765607626",
       "keywords": [
         "上下文工程",
         "Andrej Karpathy",
@@ -742,6 +756,7 @@
       "date": "2025-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/T_tvo-kYWXfk-AvbkdEWHA",
+      "source_url": "https://mp.weixin.qq.com/s/T_tvo-kYWXfk-AvbkdEWHA",
       "keywords": [
         "Vibe ARR",
         "年经常性收入",
@@ -764,6 +779,7 @@
       "date": "2025-06",
       "type": "行业动态/评价",
       "url": "https://www.xiaoyuzhoufm.com/episode/686543abfe5b544ef3ac856e?s=eyJ1IjogIjYzMzI5OWFhZWRjZTY3MTA0YTgwYTJlMiJ9",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/686543abfe5b544ef3ac856e?s=eyJ1IjogIjYzMzI5OWFhZWRjZTY3MTA0YTgwYTJlMiJ9",
       "keywords": [
         "Scale AI",
         "数据标注",
@@ -784,6 +800,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/m28FDAReEJ8BixfvbFfjzA",
+      "source_url": "https://mp.weixin.qq.com/s/m28FDAReEJ8BixfvbFfjzA",
       "keywords": [
         "ACL审稿",
         "RAG",
@@ -806,6 +823,7 @@
       "date": "2025-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/uTXVXcU-C0KKTwjaqGsW9g",
+      "source_url": "https://mp.weixin.qq.com/s/uTXVXcU-C0KKTwjaqGsW9g",
       "keywords": [
         "消费级AI",
         "用户行为调研",
@@ -826,6 +844,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/1tyZ0InFjNDf58QYr-Ljqw",
+      "source_url": "https://mp.weixin.qq.com/s/1tyZ0InFjNDf58QYr-Ljqw",
       "keywords": [
         "Mid-training",
         "推理范式",
@@ -848,6 +867,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://x.com/_jasonwei/status/1935418236872335397",
+      "source_url": "https://x.com/_jasonwei/status/1935418236872335397",
       "keywords": [
         "描述-执行鸿沟",
         "任务自动化",
@@ -868,6 +888,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://x.com/_jasonwei/status/1939762496757539297",
+      "source_url": "https://x.com/_jasonwei/status/1939762496757539297",
       "keywords": [
         "AI自我改进",
         "快速起飞",
@@ -888,6 +909,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/9fq779y5z6Te32oiTQGgyA",
+      "source_url": "https://mp.weixin.qq.com/s/9fq779y5z6Te32oiTQGgyA",
       "keywords": [
         "AI Scientist",
         "Agentic System",
@@ -910,6 +932,7 @@
       "date": "2025-06",
       "type": "solid paper",
       "url": "https://x.com/XinyiWu98/status/1935408301434421693",
+      "source_url": "https://x.com/XinyiWu98/status/1935408301434421693",
       "keywords": [
         "LLM-as-a-judge",
         "位置偏差",
@@ -931,6 +954,7 @@
       "date": "2025-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/892QuRPH9uP6zN6dS-HZMw",
+      "source_url": "https://mp.weixin.qq.com/s/892QuRPH9uP6zN6dS-HZMw",
       "keywords": [
         "多模态推理",
         "自主学习",
@@ -952,6 +976,7 @@
       "date": "2025-07",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2507.10532",
+      "source_url": "https://arxiv.org/abs/2507.10532",
       "keywords": [
         "数据污染",
         "强化学习",
@@ -974,6 +999,7 @@
       "date": "2025-07",
       "type": "观点/文章",
       "url": "https://www.jasonwei.net/blog/asymmetry-of-verification-and-verifiers-law",
+      "source_url": "https://www.jasonwei.net/blog/asymmetry-of-verification-and-verifiers-law",
       "keywords": [
         "验证不对称性",
         "验证者定律",
@@ -994,6 +1020,7 @@
       "date": "2025-07",
       "type": "观点/文章",
       "url": "https://alperenkeles.com/posts/verifiability-is-the-limit/",
+      "source_url": "https://alperenkeles.com/posts/verifiability-is-the-limit/",
       "keywords": [
         "可验证性",
         "LLM",
@@ -1017,6 +1044,7 @@
       "date": "2025-07",
       "type": "观点/文章",
       "url": "https://bigeagle.me/2025/07/kimi-k2/",
+      "source_url": "https://bigeagle.me/2025/07/kimi-k2/",
       "keywords": [
         "Kimi K2",
         "产物优先",
@@ -1039,6 +1067,7 @@
       "date": "2025-07",
       "type": "观点/文章",
       "url": "https://medium.com/@peakji/context-engineering-for-ai-agents-lessons-from-building-manus-71883f0a67f2",
+      "source_url": "https://medium.com/@peakji/context-engineering-for-ai-agents-lessons-from-building-manus-71883f0a67f2",
       "keywords": [
         "Context Engineering",
         "KV-Cache",
@@ -1059,6 +1088,7 @@
       "date": "2025-07",
       "type": "solid paper",
       "url": "https://openai.com/index/healthbench/",
+      "source_url": "https://openai.com/index/healthbench/",
       "keywords": [
         "HealthBench",
         "医疗AI",
@@ -1082,6 +1112,7 @@
       "date": null,
       "type": "行业动态/评价",
       "url": "https://openai.com/index/ai-clinical-copilot-penda-health/",
+      "source_url": "https://openai.com/index/ai-clinical-copilot-penda-health/",
       "keywords": [
         "AI临床助手",
         "Penda Health",
@@ -1103,6 +1134,7 @@
       "date": "2025-07",
       "type": "行业动态/评价",
       "url": "Artificial-Analysis-AI-Adoption-Survey-H1-2025",
+      "source_url": "",
       "keywords": [
         "Artificial Analysis",
         "AI行业调研",
@@ -1122,6 +1154,7 @@
       "date": "2025-07",
       "type": "观点/文章",
       "url": "",
+      "source_url": "",
       "keywords": [
         "vibe coding",
         "Cursor",
@@ -1143,6 +1176,7 @@
       "date": "2025-08",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/Wado9SgyTDM4R7y0V1tlxQ",
+      "source_url": "https://mp.weixin.qq.com/s/Wado9SgyTDM4R7y0V1tlxQ",
       "keywords": [
         "企业知识库",
         "SECI模型",
@@ -1164,6 +1198,7 @@
       "date": "2025-08",
       "type": "行业动态/评价",
       "url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide#appendix",
+      "source_url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide#appendix",
       "keywords": [
         "GPT-5",
         "Agentic任务",
@@ -1186,6 +1221,7 @@
       "date": "2025-08",
       "type": "solid paper",
       "url": "https://nlp.elvissaravia.com/i/170476642/is-chain-of-thought-reasoning-a-mirage",
+      "source_url": "https://nlp.elvissaravia.com/i/170476642/is-chain-of-thought-reasoning-a-mirage",
       "keywords": [
         "Chain-of-Thought",
         "DataAlchemy",
@@ -1205,6 +1241,7 @@
       "date": "2025-08",
       "type": "solid paper",
       "url": "https://github.com/HanMeng2004/Mental-Health-Stigma-Interview-Corpus",
+      "source_url": "https://github.com/HanMeng2004/Mental-Health-Stigma-Interview-Corpus",
       "keywords": [
         "心理健康污名化",
         "访谈数据集",
@@ -1226,6 +1263,7 @@
       "date": "2025-08",
       "type": "行业动态/评价",
       "url": "https://x.com/btibor91/status/1955241562486763962",
+      "source_url": "https://x.com/btibor91/status/1955241562486763962",
       "keywords": [
         "GPT-5",
         "路由机制",
@@ -1247,6 +1285,7 @@
       "date": "2025-08",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/uqUGwJLO30mRKXAtOauJGA?poc_token=HEipr2ijyCBin3iZVmsEY2-lquVwEMAmSUrQfk8m",
+      "source_url": "https://mp.weixin.qq.com/s/uqUGwJLO30mRKXAtOauJGA?poc_token=HEipr2ijyCBin3iZVmsEY2-lquVwEMAmSUrQfk8m",
       "keywords": [
         "杨植麟",
         "Kimi K2",
@@ -1270,6 +1309,7 @@
       "date": "2025-08",
       "type": "观点/文章",
       "url": "https://x.com/fi56622380/status/1951176482136662211",
+      "source_url": "https://x.com/fi56622380/status/1951176482136662211",
       "keywords": [
         "意图经济",
         "价值付费",
@@ -1290,6 +1330,7 @@
       "date": "2025-08",
       "type": "solid paper",
       "url": "https://openai.com/index/openai-anthropic-safety-evaluation/",
+      "source_url": "https://openai.com/index/openai-anthropic-safety-evaluation/",
       "keywords": [
         "OpenAI",
         "Anthropic",
@@ -1312,6 +1353,7 @@
       "date": "2025-08",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
+      "source_url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
       "keywords": [
         "教育从业者",
         "课程开发",
@@ -1332,6 +1374,7 @@
       "date": "2025-08",
       "type": "观点/文章",
       "url": "原书地址：https://www.symbioism.com/\nflowith总结： https://flo.host/fTyfANl/",
+      "source_url": "https://www.symbioism.com/",
       "keywords": [
         "后稀缺时代",
         "共生主义",
@@ -1354,6 +1397,7 @@
       "date": "2025-08",
       "type": "观点/文章",
       "url": "https://flo.host/fTyfANl/",
+      "source_url": "https://flo.host/fTyfANl/",
       "keywords": [
         "MIND模型",
         "物质资本",
@@ -1375,6 +1419,7 @@
       "date": "2025-09",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
+      "source_url": "https://openai.com/index/building-more-helpful-chatgpt-experiences-for-everyone/",
       "keywords": [
         "心理健康",
         "青少年保护",
@@ -1397,6 +1442,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf",
+      "source_url": "https://cdn.openai.com/pdf/d04913be-3f6f-4d2b-b283-ff432ef4aaa5/why-language-models-hallucinate.pdf",
       "keywords": [
         "语言模型",
         "幻觉",
@@ -1420,6 +1466,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2409.14664",
+      "source_url": "https://arxiv.org/abs/2409.14664",
       "keywords": [
         "Auto-evaluation",
         "Preference Optimization",
@@ -1440,6 +1487,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://arxiv.org/pdf/2509.06160",
+      "source_url": "https://arxiv.org/pdf/2509.06160",
       "keywords": [
         "逆向工程",
         "开放式生成",
@@ -1459,6 +1507,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+      "source_url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
       "keywords": [
         "LLM推理",
         "非确定性",
@@ -1482,6 +1531,7 @@
       "date": "2025-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/2sNq-AMGP3CODOvkqxrb8w",
+      "source_url": "https://mp.weixin.qq.com/s/2sNq-AMGP3CODOvkqxrb8w",
       "keywords": [
         "姚顺雨",
         "Language Agent",
@@ -1505,6 +1555,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2509.10414",
+      "source_url": "https://arxiv.org/abs/2509.10414",
       "keywords": [
         "In-Context Learning",
         "泛化能力",
@@ -1525,6 +1576,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/3t4PjpZcMVU1wCO0ThUs2A",
+      "source_url": "https://mp.weixin.qq.com/s/3t4PjpZcMVU1wCO0ThUs2A",
       "keywords": [
         "上下文工程",
         "Agent",
@@ -1547,6 +1599,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "Agency,notautonomous",
+      "source_url": "",
       "keywords": [
         "Agent评估",
         "Agency",
@@ -1567,6 +1620,7 @@
       "date": "2025-09",
       "type": "行业动态/评价",
       "url": "https://lmsys.org/blog/2025-09-22-sglang-deterministic/",
+      "source_url": "https://lmsys.org/blog/2025-09-22-sglang-deterministic/",
       "keywords": [
         "SGLang",
         "确定性推理",
@@ -1589,6 +1643,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/DhmvWFm6z0UqfHmObJ73mQ",
+      "source_url": "https://mp.weixin.qq.com/s/DhmvWFm6z0UqfHmObJ73mQ",
       "keywords": [
         "人类注意力",
         "C端AI",
@@ -1610,6 +1665,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/Fa15GoM3_2CUnjdHQ3I7Nw",
+      "source_url": "https://mp.weixin.qq.com/s/Fa15GoM3_2CUnjdHQ3I7Nw",
       "keywords": [
         "Claude Code",
         "无状态设计",
@@ -1632,6 +1688,7 @@
       "date": "2025-09",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/gdpval/",
+      "source_url": "https://openai.com/index/gdpval/",
       "keywords": [
         "GDPval",
         "经济价值评估",
@@ -1652,6 +1709,7 @@
       "date": "2025-09",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2509.18234",
+      "source_url": "https://arxiv.org/abs/2509.18234",
       "keywords": [
         "多模态医学基准",
         "对抗性压力测试",
@@ -1673,6 +1731,7 @@
       "date": "2025-09",
       "type": "行业动态/评价",
       "url": "https://x.com/xw33bttv/status/1971883482839465994",
+      "source_url": "https://x.com/xw33bttv/status/1971883482839465994",
       "keywords": [
         "GPT-5-Chat-Safety",
         "GPT-4o",
@@ -1694,6 +1753,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/FpKYbo3ptY0NiI1GoXpAyA",
+      "source_url": "https://mp.weixin.qq.com/s/FpKYbo3ptY0NiI1GoXpAyA",
       "keywords": [
         "AI Native",
         "组织能力",
@@ -1716,6 +1776,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/aH-URZ4PyGYuOWCPf1qXEQ",
+      "source_url": "https://mp.weixin.qq.com/s/aH-URZ4PyGYuOWCPf1qXEQ",
       "keywords": [
         "Sora",
         "视频生成",
@@ -1738,6 +1799,7 @@
       "date": "2025-09",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/I-ho6wbdWx92ksMVJWfL_g",
+      "source_url": "https://mp.weixin.qq.com/s/I-ho6wbdWx92ksMVJWfL_g",
       "keywords": [
         "AI产品收入",
         "出海",
@@ -1760,6 +1822,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "source_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
       "keywords": [
         "上下文工程",
         "AI Agent",
@@ -1781,6 +1844,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://x.com/karpathy/status/1973435013875314729",
+      "source_url": "https://x.com/karpathy/status/1973435013875314729",
       "keywords": [
         "Sutton",
         "Dwarkesh",
@@ -1802,6 +1866,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
+      "source_url": "https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches",
       "keywords": [
         "LLM评测",
         "MMLU",
@@ -1822,6 +1887,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges",
+      "source_url": "https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges",
       "keywords": [
         "Claude Sonnet 4.5",
         "Devin",
@@ -1844,6 +1910,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://yage.ai/mcp-revisited.html",
+      "source_url": "https://yage.ai/mcp-revisited.html",
       "keywords": [
         "MCP",
         "OpenAI Apps SDK",
@@ -1866,6 +1933,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/VxAcMzA9wVgWOJVb3_-72g",
+      "source_url": "https://mp.weixin.qq.com/s/VxAcMzA9wVgWOJVb3_-72g",
       "keywords": [
         "AI原生初创公司",
         "Mercury",
@@ -1889,6 +1957,7 @@
       "date": "2025-09",
       "type": "观点/文章",
       "url": "https://weibo.com/2453509265/Q5tWXl4Ky?pagetype=profilefeed",
+      "source_url": "https://weibo.com/2453509265/Q5tWXl4Ky?pagetype=profilefeed",
       "keywords": [
         "初级岗位招聘",
         "美联储加息",
@@ -1910,6 +1979,7 @@
       "date": "2025-10",
       "type": "solid paper",
       "url": "https://research.nvidia.com/labs/adlr/Synergy/",
+      "source_url": "https://research.nvidia.com/labs/adlr/Synergy/",
       "keywords": [
         "Front-Loading Reasoning",
         "预训练",
@@ -1931,6 +2001,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://docs.google.com/presentation/d/1xiLl0VdrlNMAei8pmaX4ojIOfej6lhvZbOIK7Z6C-Go/edit?slide=id.g376435918bd_0_54#slide=id.g376435918bd_0_54",
+      "source_url": "https://docs.google.com/presentation/d/1xiLl0VdrlNMAei8pmaX4ojIOfej6lhvZbOIK7Z6C-Go/edit?slide=id.g376435918bd_0_54#slide=id.g376435918bd_0_54",
       "keywords": [
         "State of AI Report",
         "Air Street Capital",
@@ -1952,6 +2023,7 @@
       "date": "2025-10",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2510.04618",
+      "source_url": "https://arxiv.org/abs/2510.04618",
       "keywords": [
         "Agentic Context Engineering",
         "ACE框架",
@@ -1974,6 +2046,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/Z7G6f4QJ0XCzzXCreGT84g",
+      "source_url": "https://mp.weixin.qq.com/s/Z7G6f4QJ0XCzzXCreGT84g",
       "keywords": [
         "FDE",
         "Palantir",
@@ -1996,6 +2069,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://www.youtube.com/watch?v=6_BcCthVvb8&referrer=luma",
+      "source_url": "https://www.youtube.com/watch?v=6_BcCthVvb8&referrer=luma",
       "keywords": [
         "Context Engineering",
         "AI Agents",
@@ -2017,6 +2091,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/20kfP4iflxqL9CwTmlgtwQ",
+      "source_url": "https://mp.weixin.qq.com/s/20kfP4iflxqL9CwTmlgtwQ",
       "keywords": [
         "AGI",
         "AI Agent",
@@ -2040,6 +2115,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "source_url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
       "keywords": [
         "Agent Skills",
         "Claude",
@@ -2061,6 +2137,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/dGSQpmkcpuTZ3vCpjHjxxA",
+      "source_url": "https://mp.weixin.qq.com/s/dGSQpmkcpuTZ3vCpjHjxxA",
       "keywords": [
         "GPT-5",
         "强化学习",
@@ -2083,6 +2160,7 @@
       "date": "2025-10",
       "type": "solid paper",
       "url": "https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf",
+      "source_url": "https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf",
       "keywords": [
         "DeepSeek-OCR",
         "VLM",
@@ -2104,6 +2182,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/fiJTQ988bfaYUNwf1mLYOQ",
+      "source_url": "https://mp.weixin.qq.com/s/fiJTQ988bfaYUNwf1mLYOQ",
       "keywords": [
         "Jason Wei",
         "验证者定律",
@@ -2125,6 +2204,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/asHSBQYW3edXFCQtkwNbgA?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/asHSBQYW3edXFCQtkwNbgA?scene=1",
       "keywords": [
         "LiblibAI",
         "B轮融资",
@@ -2146,6 +2226,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/muwkgMxUlX_v4i4nFOTbXA",
+      "source_url": "https://mp.weixin.qq.com/s/muwkgMxUlX_v4i4nFOTbXA",
       "keywords": [
         "Ground Truth",
         "隐性世界模型",
@@ -2167,6 +2248,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/SruQ8dRP1HdyRwJGD0fG7w",
+      "source_url": "https://mp.weixin.qq.com/s/SruQ8dRP1HdyRwJGD0fG7w",
       "keywords": [
         "任务长度",
         "世界模型",
@@ -2190,6 +2272,7 @@
       "date": "2025-10",
       "type": "solid paper",
       "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+      "source_url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
       "keywords": [
         "On-Policy Distillation",
         "模型对齐",
@@ -2212,6 +2295,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
+      "source_url": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
       "keywords": [
         "ChatGPT",
         "敏感对话",
@@ -2234,6 +2318,7 @@
       "date": "2025-10",
       "type": "solid paper",
       "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+      "source_url": "https://transformer-circuits.pub/2025/introspection/index.html",
       "keywords": [
         "内省能力",
         "概念注入",
@@ -2256,6 +2341,7 @@
       "date": "2025-10",
       "type": "行业动态/评价",
       "url": "https://www.remotelabor.ai/",
+      "source_url": "https://www.remotelabor.ai/",
       "keywords": [
         "Remote Labor Index",
         "AI自动化",
@@ -2276,6 +2362,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://bloomberry.com/blog/i-analyzed-180m-jobs-to-see-what-jobs-ai-is-actually-replacing-today",
+      "source_url": "https://bloomberry.com/blog/i-analyzed-180m-jobs-to-see-what-jobs-ai-is-actually-replacing-today",
       "keywords": [
         "招聘岗位",
         "机器学习工程师",
@@ -2297,6 +2384,7 @@
       "date": "2025-10",
       "type": "观点/文章",
       "url": "https://www.zhihu.com/question/1959576625730543794/answer/1960926977759371721",
+      "source_url": "https://www.zhihu.com/question/1959576625730543794/answer/1960926977759371721",
       "keywords": [
         "DeepSeek",
         "GPT-5-mini",
@@ -2319,6 +2407,7 @@
       "date": "2025-11",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "source_url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
       "keywords": [
         "Model Context Protocol",
         "代码执行",
@@ -2341,6 +2430,7 @@
       "date": "2025-11",
       "type": "观点/文章",
       "url": "https://windowsontheory.org/2025/11/04/thoughts-by-a-non-economist-on-ai-and-economics/",
+      "source_url": "https://windowsontheory.org/2025/11/04/thoughts-by-a-non-economist-on-ai-and-economics/",
       "keywords": [
         "AI与经济",
         "非线性系统",
@@ -2363,6 +2453,7 @@
       "date": "2025-11",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/5Q-bNc7lAmEuJn23q0_ZzQ?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/5Q-bNc7lAmEuJn23q0_ZzQ?scene=1",
       "keywords": [
         "MiniMax M2",
         "Agent泛化",
@@ -2384,6 +2475,7 @@
       "date": "2025-11",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/y_C5nx8RY19AKxZP_AUTHQ?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/y_C5nx8RY19AKxZP_AUTHQ?scene=1",
       "keywords": [
         "Reasoning数据",
         "CoT质量",
@@ -2405,6 +2497,7 @@
       "date": "2025-11",
       "type": "行业动态/评价",
       "url": "https://42chapter.substack.com/p/online-rl-42-ai-newsletter",
+      "source_url": "https://42chapter.substack.com/p/online-rl-42-ai-newsletter",
       "keywords": [
         "Online RL",
         "Figma",
@@ -2426,6 +2519,7 @@
       "date": "2025-11",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/sO8ugAx-ZGIoaBX0FRa_rg",
+      "source_url": "https://mp.weixin.qq.com/s/sO8ugAx-ZGIoaBX0FRa_rg",
       "keywords": [
         "AI泡沫",
         "CapEx",
@@ -2448,6 +2542,7 @@
       "date": "2025-11",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/7ftV2hK9HgpS7d2LhVrgAw",
+      "source_url": "https://mp.weixin.qq.com/s/7ftV2hK9HgpS7d2LhVrgAw",
       "keywords": [
         "微软AI战略",
         "OpenAI合约",
@@ -2471,6 +2566,7 @@
       "date": "2025-11",
       "type": "solid paper",
       "url": "https://www.anthropic.com/news/political-even-handedness",
+      "source_url": "https://www.anthropic.com/news/political-even-handedness",
       "keywords": [
         "Claude",
         "政治公正性",
@@ -2494,6 +2590,7 @@
       "date": "2025-11",
       "type": "观点/文章",
       "url": "https://yage.ai/ai-software-engineering.html",
+      "source_url": "https://yage.ai/ai-software-engineering.html",
       "keywords": [
         "AI原生软件工程",
         "用户生成软件",
@@ -2516,6 +2613,7 @@
       "date": "2025-11",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/auBa76ghfIC9g6RmNE04GQ",
+      "source_url": "https://mp.weixin.qq.com/s/auBa76ghfIC9g6RmNE04GQ",
       "keywords": [
         "Vibe Coding",
         "PMF",
@@ -2539,6 +2637,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://x.com/yan5xu/status/1995301557538361698",
+      "source_url": "https://x.com/yan5xu/status/1995301557538361698",
       "keywords": [
         "Agent认知工程",
         "文件系统",
@@ -2560,6 +2659,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://42chapter.substack.com/i/179705805/三-读完集装箱的历史我对-ai-非常乐观",
+      "source_url": "https://42chapter.substack.com/i/179705805/三-读完集装箱的历史我对-ai-非常乐观",
       "keywords": [
         "Unbundle",
         "Rebundle",
@@ -2582,6 +2682,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://openrouter.ai/state-of-ai",
+      "source_url": "https://openrouter.ai/state-of-ai",
       "keywords": [
         "OpenRouter",
         "推理模型",
@@ -2604,6 +2705,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://youtu.be/dduQeaqmpnI",
+      "source_url": "https://youtu.be/dduQeaqmpnI",
       "keywords": [
         "Surge AI",
         "Edwin Chen",
@@ -2625,6 +2727,7 @@
       "date": "2025-12",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+      "source_url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
       "keywords": [
         "Anthropic",
         "Claude",
@@ -2647,6 +2750,7 @@
       "date": "2025-12",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2512.04124v1",
+      "source_url": "https://arxiv.org/html/2512.04124v1",
       "keywords": [
         "Psychometric Jailbreaks",
         "PsAIch",
@@ -2668,6 +2772,7 @@
       "date": "2025-12",
       "type": "solid paper",
       "url": "https://arxiv.org/pdf/2512.00344",
+      "source_url": "https://arxiv.org/pdf/2512.00344",
       "keywords": [
         "情感强化学习",
         "主观对话",
@@ -2690,6 +2795,7 @@
       "date": "2025-12",
       "type": "行业动态/评价",
       "url": "https://manthanguptaa.in/posts/chatgpt_memory/",
+      "source_url": "https://manthanguptaa.in/posts/chatgpt_memory/",
       "keywords": [
         "ChatGPT",
         "记忆策略",
@@ -2713,6 +2819,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/niFkL-2BdkLlbexMZOQwsw",
+      "source_url": "https://mp.weixin.qq.com/s/niFkL-2BdkLlbexMZOQwsw",
       "keywords": [
         "Palantir",
         "数据熵",
@@ -2733,6 +2840,7 @@
       "date": "2025-12",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
+      "source_url": "https://www.anthropic.com/news/protecting-well-being-of-users",
       "keywords": [
         "Anthropic",
         "安全增训",
@@ -2754,6 +2862,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://01.me/files/user-memory-talk-slides/dist/1",
+      "source_url": "https://01.me/files/user-memory-talk-slides/dist/1",
       "keywords": [
         "Agent",
         "记忆模块",
@@ -2775,6 +2884,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://www.weibo.com/2126427211/QjIYhCmfq?pagetype=profilefeed",
+      "source_url": "https://www.weibo.com/2126427211/QjIYhCmfq?pagetype=profilefeed",
       "keywords": [
         "智谱",
         "唐老师",
@@ -2797,6 +2907,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "x.com/ivanhzhao/status/2003192654545539400",
+      "source_url": "https://x.com/ivanhzhao/status/2003192654545539400",
       "keywords": [
         "AI native",
         "上下文碎片化",
@@ -2817,6 +2928,7 @@
       "date": "2025-12",
       "type": "观点/文章",
       "url": "https://www.xiaoyuzhoufm.com/episode/695331cb2db086f897b50ea9?s=eyJ1IjogIjYyMDViYTk0MmNiZDdjMDE3NjVkZWY0OSJ9",
+      "source_url": "https://www.xiaoyuzhoufm.com/episode/695331cb2db086f897b50ea9?s=eyJ1IjogIjYyMDViYTk0MmNiZDdjMDE3NjVkZWY0OSJ9",
       "keywords": [
         "PeakJi",
         "播客访谈",
@@ -2835,6 +2947,7 @@
       "date": "2025-12",
       "type": "solid paper",
       "url": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
+      "source_url": "https://magazine.sebastianraschka.com/p/state-of-llms-2025",
       "keywords": [
         "DeepSeek R1",
         "RLVR",
@@ -2856,6 +2969,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://zhuanlan.zhihu.com/p/1991073922217709984",
+      "source_url": "https://zhuanlan.zhihu.com/p/1991073922217709984",
       "keywords": [
         "人机协作",
         "费米能级",
@@ -2878,6 +2992,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://cursor.com/cn/blog/dynamic-context-discovery",
+      "source_url": "https://cursor.com/cn/blog/dynamic-context-discovery",
       "keywords": [
         "动态上下文发现",
         "文件系统",
@@ -2898,6 +3013,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/introducing-chatgpt-health/",
+      "source_url": "https://openai.com/index/introducing-chatgpt-health/",
       "keywords": [
         "ChatGPT健康",
         "HealthBench",
@@ -2919,6 +3035,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/tolan/",
+      "source_url": "https://openai.com/index/tolan/",
       "keywords": [
         "Tolan",
         "GPT-5.1",
@@ -2941,6 +3058,7 @@
       "date": "2025-08",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2507.17746v1",
+      "source_url": "https://arxiv.org/html/2507.17746v1",
       "keywords": [
         "Rubrics as Rewards",
         "GRPO",
@@ -2963,6 +3081,7 @@
       "date": "2026-01",
       "type": "solid paper",
       "url": "https://mp.weixin.qq.com/s/F27OCy8TsvJhJxVo5QxESw",
+      "source_url": "https://mp.weixin.qq.com/s/F27OCy8TsvJhJxVo5QxESw",
       "keywords": [
         "Agent Context Engineering",
         "Monadic Context Engineering",
@@ -2986,6 +3105,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "source_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
       "keywords": [
         "Agent评测",
         "评测方法论",
@@ -3008,6 +3128,7 @@
       "date": "2026-01",
       "type": "solid paper",
       "url": "https://mp.weixin.qq.com/s/G1uE4FH9C71ceBnBDlacHQ",
+      "source_url": "https://mp.weixin.qq.com/s/G1uE4FH9C71ceBnBDlacHQ",
       "keywords": [
         "DeepSeek-R1",
         "强化学习",
@@ -3029,6 +3150,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/bfTbsnItuyr_k-w3XlejOg",
+      "source_url": "https://mp.weixin.qq.com/s/bfTbsnItuyr_k-w3XlejOg",
       "keywords": [
         "AGI-Next",
         "智谱GLM",
@@ -3050,6 +3172,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://xbench.org/agi/babyVision",
+      "source_url": "https://xbench.org/agi/babyVision",
       "keywords": [
         "BabyVision",
         "多模态理解评测",
@@ -3072,6 +3195,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://huggingface.co/datasets/MiniMaxAI/OctoCodingBench",
+      "source_url": "https://huggingface.co/datasets/MiniMaxAI/OctoCodingBench",
       "keywords": [
         "OctoCodingBench",
         "过程监督",
@@ -3094,6 +3218,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/bG9Ks6TmgsFSYcVvEZnVFw",
+      "source_url": "https://mp.weixin.qq.com/s/bG9Ks6TmgsFSYcVvEZnVFw",
       "keywords": [
         "AI Overviews",
         "生成式引擎优化",
@@ -3117,6 +3242,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/8OmbKZa3coQtN9XvUAZQCg",
+      "source_url": "https://mp.weixin.qq.com/s/8OmbKZa3coQtN9XvUAZQCg",
       "keywords": [
         "Claude Skills",
         "组织变革",
@@ -3138,6 +3264,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/economic-index-primitives",
+      "source_url": "https://www.anthropic.com/research/economic-index-primitives",
       "keywords": [
         "Economic Index",
         "economic primitives",
@@ -3159,6 +3286,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/JAWEUFAW3v49XGGaz5TfWg",
+      "source_url": "https://mp.weixin.qq.com/s/JAWEUFAW3v49XGGaz5TfWg",
       "keywords": [
         "AgentIF-OneDay",
         "长程任务",
@@ -3180,6 +3308,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/fzM7a6a5ejvFvvBK5xUaqg",
+      "source_url": "https://mp.weixin.qq.com/s/fzM7a6a5ejvFvvBK5xUaqg",
       "keywords": [
         "FDE",
         "智能体",
@@ -3202,6 +3331,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/y3Ze2jHdsZzYHRQALjJ3sQ?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/y3Ze2jHdsZzYHRQALjJ3sQ?scene=1",
       "keywords": [
         "Palantir化",
         "FDE",
@@ -3224,6 +3354,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/8xgKUybdmEO21QX8K1lAXw",
+      "source_url": "https://mp.weixin.qq.com/s/8xgKUybdmEO21QX8K1lAXw",
       "keywords": [
         "Codex CLI",
         "Agent Loop",
@@ -3246,6 +3377,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/K50US5vL5BGVhRXKXYO8VA",
+      "source_url": "https://mp.weixin.qq.com/s/K50US5vL5BGVhRXKXYO8VA",
       "keywords": [
         "Agent Infra",
         "Runtime层",
@@ -3267,6 +3399,7 @@
       "date": "2026-01",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/W4Oec49yU8KslLDinbnh3g",
+      "source_url": "https://mp.weixin.qq.com/s/W4Oec49yU8KslLDinbnh3g",
       "keywords": [
         "Lex Fridman",
         "Sebastian Raschka",
@@ -3290,6 +3423,7 @@
       "date": "2026-01",
       "type": "solid paper",
       "url": "https://www.arxiv.org/pdf/2601.21459",
+      "source_url": "https://www.arxiv.org/pdf/2601.21459",
       "keywords": [
         "HER",
         "LLM角色扮演",
@@ -3311,6 +3445,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://www.clbench.com/",
+      "source_url": "https://www.clbench.com/",
       "keywords": [
         "CL-bench",
         "上下文学习",
@@ -3334,6 +3469,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://www.palantir.com/q4-2025-letter/en/",
+      "source_url": "https://www.palantir.com/q4-2025-letter/en/",
       "keywords": [
         "Palantir",
         "Q4财报",
@@ -3355,6 +3491,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/introducing-openai-frontier/",
+      "source_url": "https://openai.com/index/introducing-openai-frontier/",
       "keywords": [
         "OpenAI Frontier",
         "AI智能体",
@@ -3376,6 +3513,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://fomosoc.substack.com/p/ai-reinvent-nvidia-24?utm_source=substack&utm_medium=email",
+      "source_url": "https://fomosoc.substack.com/p/ai-reinvent-nvidia-24?utm_source=substack&utm_medium=email",
       "keywords": [
         "AWS",
         "Bedrock",
@@ -3398,6 +3536,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/qLtUG7mXpoAfWC8xpknyfA",
+      "source_url": "https://mp.weixin.qq.com/s/qLtUG7mXpoAfWC8xpknyfA",
       "keywords": [
         "谷歌",
         "Gemini",
@@ -3418,6 +3557,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/pdf/2602.05447",
+      "source_url": "https://arxiv.org/pdf/2602.05447",
       "keywords": [
         "上下文工程",
         "文件原生架构",
@@ -3439,6 +3579,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://leonisnewsletter.substack.com/p/openclaw-aka-clawdbot-and-the-ai",
+      "source_url": "https://leonisnewsletter.substack.com/p/openclaw-aka-clawdbot-and-the-ai",
       "keywords": [
         "OpenClaw",
         "AI阈值效应",
@@ -3460,6 +3601,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2602.03837v1",
+      "source_url": "https://arxiv.org/abs/2602.03837v1",
       "keywords": [
         "Gemini",
         "科学发现",
@@ -3481,6 +3623,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://x.com/frxiaobei/status/2021434243717660968",
+      "source_url": "https://x.com/frxiaobei/status/2021434243717660968",
       "keywords": [
         "SaaS",
         "Agent",
@@ -3503,6 +3646,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://fomosoc.substack.com/p/ai-saas-34palantir",
+      "source_url": "https://fomosoc.substack.com/p/ai-saas-34palantir",
       "keywords": [
         "Palantir",
         "本体论",
@@ -3525,6 +3669,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2601.19062v1",
+      "source_url": "https://arxiv.org/html/2601.19062v1",
       "keywords": [
         "情境性赋权剥夺",
         "人类自主性",
@@ -3546,6 +3691,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/YQ0TvD7N9mfLsBDfPPfPhA",
+      "source_url": "https://mp.weixin.qq.com/s/YQ0TvD7N9mfLsBDfPPfPhA",
       "keywords": [
         "数字雇员",
         "雇佣逻辑",
@@ -3569,6 +3715,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf?hsLang=en",
+      "source_url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf?hsLang=en",
       "keywords": [
         "Agent编程",
         "软件开发生命周期",
@@ -3590,6 +3737,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://x.com/yan5xu/status/2021162107170095186",
+      "source_url": "https://x.com/yan5xu/status/2021162107170095186",
       "keywords": [
         "Agentic Engineering",
         "AI Coding Agent",
@@ -3612,6 +3760,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://x.com/servasyy_ai/status/2021752366165586152",
+      "source_url": "https://x.com/servasyy_ai/status/2021752366165586152",
       "keywords": [
         "三层记忆架构",
         "上下文窗口",
@@ -3635,6 +3784,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://a16z.com/state-of-markets/",
+      "source_url": "https://a16z.com/state-of-markets/",
       "keywords": [
         "a16z",
         "独角兽",
@@ -3657,6 +3807,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://openai.com/index/harness-engineering/",
+      "source_url": "https://openai.com/index/harness-engineering/",
       "keywords": [
         "Harness Engineering",
         "Codex",
@@ -3680,6 +3831,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://x.com/Hx1u0/status/2022603500191133727",
+      "source_url": "https://x.com/Hx1u0/status/2022603500191133727",
       "keywords": [
         "Kimi团队",
         "上下文工程",
@@ -3701,6 +3853,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://developer.chrome.com/blog/webmcp-epp",
+      "source_url": "https://developer.chrome.com/blog/webmcp-epp",
       "keywords": [
         "WebMCP",
         "AI智能体",
@@ -3722,6 +3875,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://blog.cloudflare.com/markdown-for-agents",
+      "source_url": "https://blog.cloudflare.com/markdown-for-agents",
       "keywords": [
         "Markdown for Agents",
         "HTML转Markdown",
@@ -3742,6 +3896,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://yage.ai/openclaw.html",
+      "source_url": "https://yage.ai/openclaw.html",
       "keywords": [
         "OpenClaw",
         "Agentic AI",
@@ -3765,6 +3920,7 @@
       "date": "2026-01",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/CTq03t9_F3lkMwLS4Qu_7Q",
+      "source_url": "https://mp.weixin.qq.com/s/CTq03t9_F3lkMwLS4Qu_7Q",
       "keywords": [
         "OpenAI API",
         "软件工程",
@@ -3788,6 +3944,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/ry6U57c7UJNAteEeXIdOuw",
+      "source_url": "https://mp.weixin.qq.com/s/ry6U57c7UJNAteEeXIdOuw",
       "keywords": [
         "Codex",
         "OpenAI",
@@ -3810,6 +3967,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/7pTKZ9SasXKQJj53JgbHrQ?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/7pTKZ9SasXKQJj53JgbHrQ?scene=1",
       "keywords": [
         "Coding Agent",
         "后Coding Agent时代",
@@ -3833,6 +3991,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/OTw_xce9ij2QH8N3BAzUdQ",
+      "source_url": "https://mp.weixin.qq.com/s/OTw_xce9ij2QH8N3BAzUdQ",
       "keywords": [
         "垂直软件",
         "流程工程",
@@ -3855,6 +4014,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/_wfY4NCbWyM20iz1jGHzag",
+      "source_url": "https://mp.weixin.qq.com/s/_wfY4NCbWyM20iz1jGHzag",
       "keywords": [
         "AI指数级进步",
         "免费版与付费版差距",
@@ -3876,6 +4036,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/p31UG_qaKxf3clgDfvjxog",
+      "source_url": "https://mp.weixin.qq.com/s/p31UG_qaKxf3clgDfvjxog",
       "keywords": [
         "智力富足",
         "Agent",
@@ -3898,6 +4059,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "国产模型春节大考_拾象 Best Ideas_Feb 2026",
+      "source_url": "",
       "keywords": [
         "数据精细化处理",
         "Agent内生化",
@@ -3919,6 +4081,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://boristane.com/blog/how-i-use-claude-code/",
+      "source_url": "https://boristane.com/blog/how-i-use-claude-code/",
       "keywords": [
         "Claude Code",
         "标注循环",
@@ -3940,6 +4103,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/uhM-teLeGULXrpNgMO-xmQ",
+      "source_url": "https://mp.weixin.qq.com/s/uhM-teLeGULXrpNgMO-xmQ",
       "keywords": [
         "Palantir",
         "Ontology",
@@ -3961,6 +4125,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/qRsEzH-ohyknteZHdoLj3g",
+      "source_url": "https://mp.weixin.qq.com/s/qRsEzH-ohyknteZHdoLj3g",
       "keywords": [
         "AI+Office",
         "智能化杠杆",
@@ -3983,6 +4148,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "source_url": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "keywords": [
         "AI Agent",
         "自主程度",
@@ -4004,6 +4170,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2601.06002v2",
+      "source_url": "https://arxiv.org/html/2601.06002v2",
       "keywords": [
         "长思维链",
         "分子结构",
@@ -4026,6 +4193,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://www.interconnects.ai/p/how-much-does-distillation-really",
+      "source_url": "https://www.interconnects.ai/p/how-much-does-distillation-really",
       "keywords": [
         "蒸馏",
         "合成数据",
@@ -4048,6 +4216,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://zhuanlan.zhihu.com/p/2001741987360023159",
+      "source_url": "https://zhuanlan.zhihu.com/p/2001741987360023159",
       "keywords": [
         "Step 3.5 Flash",
         "基模结构",
@@ -4071,6 +4240,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/disrupting-malicious-ai-uses/",
+      "source_url": "https://openai.com/index/disrupting-malicious-ai-uses/",
       "keywords": [
         "OpenAI",
         "威胁报告",
@@ -4091,6 +4261,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/AI-fluency-index",
+      "source_url": "https://www.anthropic.com/research/AI-fluency-index",
       "keywords": [
         "AI Fluency",
         "迭代与优化",
@@ -4113,6 +4284,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://petergpt.github.io/bullshit-benchmark/viewer/index.html",
+      "source_url": "https://petergpt.github.io/bullshit-benchmark/viewer/index.html",
       "keywords": [
         "BullshitBench",
         "错误前提",
@@ -4133,6 +4305,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/xqhKK-Su8k6sGopwch40xg",
+      "source_url": "https://mp.weixin.qq.com/s/xqhKK-Su8k6sGopwch40xg",
       "keywords": [
         "SaaS",
         "Vibe Coding",
@@ -4155,6 +4328,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "source_url": "https://www.anthropic.com/news/statement-department-of-war",
       "keywords": [
         "Anthropic",
         "Department of War",
@@ -4176,6 +4350,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://open.substack.com/pub/fomosoc/p/35saas?utm_campaign=post-expanded-share&utm_medium=web",
+      "source_url": "https://open.substack.com/pub/fomosoc/p/35saas?utm_campaign=post-expanded-share&utm_medium=web",
       "keywords": [
         "SaaS",
         "AI Agent",
@@ -4198,6 +4373,7 @@
       "date": "2026-02",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/dgKD35Xk2wMVE64QyKHrpA",
+      "source_url": "https://mp.weixin.qq.com/s/dgKD35Xk2wMVE64QyKHrpA",
       "keywords": [
         "OpenClaw",
         "Agent",
@@ -4220,6 +4396,7 @@
       "date": "2026-02",
       "type": "观点/文章",
       "url": "https://yousali.com/posts/20260228-ai-coding-sdlc-status-discussion/",
+      "source_url": "https://yousali.com/posts/20260228-ai-coding-sdlc-status-discussion/",
       "keywords": [
         "AI Coding",
         "SDLC",
@@ -4243,6 +4420,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://yousali.com/posts/20260303-ai-coding-efficiency-to-evolution/",
+      "source_url": "https://yousali.com/posts/20260303-ai-coding-efficiency-to-evolution/",
       "keywords": [
         "AI Coding",
         "约束理论",
@@ -4265,6 +4443,7 @@
       "date": "2026-01",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2601.20404",
+      "source_url": "https://arxiv.org/abs/2601.20404",
       "keywords": [
         "AGENTS.md",
         "AI coding agents",
@@ -4286,6 +4465,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2602.11988v1",
+      "source_url": "https://arxiv.org/html/2602.11988v1",
       "keywords": [
         "AGENTS.md",
         "Coding Agents",
@@ -4309,6 +4489,7 @@
       "date": "2026-03",
       "type": "solid paper",
       "url": "https://arxiv.org/abs/2602.22675v1",
+      "source_url": "https://arxiv.org/abs/2602.22675v1",
       "keywords": [
         "SMTL",
         "并行证据采集",
@@ -4330,6 +4511,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://x.com/Kangwook_Lee/status/2028955292025962534",
+      "source_url": "https://x.com/Kangwook_Lee/status/2028955292025962534",
       "keywords": [
         "Codex CLI",
         "上下文压缩",
@@ -4351,6 +4533,7 @@
       "date": "2026-02",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2602.13964v3",
+      "source_url": "https://arxiv.org/html/2602.13964v3",
       "keywords": [
         "HLE-Verified",
         "Humanity’s Last Exam",
@@ -4371,6 +4554,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/_h3DJRFoC7k61T1KO83dng",
+      "source_url": "https://mp.weixin.qq.com/s/_h3DJRFoC7k61T1KO83dng",
       "keywords": [
         "Agent Infra",
         "Effect Log",
@@ -4393,6 +4577,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://x.com/trq212/status/2027463795355095314",
+      "source_url": "https://x.com/trq212/status/2027463795355095314",
       "keywords": [
         "Claude Code",
         "Action Space",
@@ -4415,6 +4600,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://nadh.in/blog/code-is-cheap/",
+      "source_url": "https://nadh.in/blog/code-is-cheap/",
       "keywords": [
         "LLM",
         "软件开发",
@@ -4437,6 +4623,7 @@
       "date": "2026-03",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2602.12670v1",
+      "source_url": "https://arxiv.org/html/2602.12670v1",
       "keywords": [
         "Agent Skills",
         "benchmark",
@@ -4459,6 +4646,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/IISIthpTuztCT5uCGI9KdQ?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/IISIthpTuztCT5uCGI9KdQ?scene=1",
       "keywords": [
         "Harness Engineering",
         "控制论",
@@ -4481,6 +4669,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/8TYMn2DVE6vTo4xL64CkJA?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/8TYMn2DVE6vTo4xL64CkJA?scene=1",
       "keywords": [
         "Jeff Dean",
         "Agent Infra",
@@ -4502,6 +4691,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://yage.ai/share/long-context-benchmark-20260315.html",
+      "source_url": "https://yage.ai/share/long-context-benchmark-20260315.html",
       "keywords": [
         "Long Context",
         "1M context window",
@@ -4524,6 +4714,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://cursor.com/cn/blog/cursorbench",
+      "source_url": "https://cursor.com/cn/blog/cursorbench",
       "keywords": [
         "CursorBench",
         "模型评测",
@@ -4546,6 +4737,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/DtOIDSGRTdHAXSkL57-NZg",
+      "source_url": "https://mp.weixin.qq.com/s/DtOIDSGRTdHAXSkL57-NZg",
       "keywords": [
         "评测排行榜",
         "资源配置",
@@ -4567,6 +4759,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/965pZIIf8vHeht0GV2yt-w",
+      "source_url": "https://mp.weixin.qq.com/s/965pZIIf8vHeht0GV2yt-w",
       "keywords": [
         "Dario Amodei",
         "Anthropic",
@@ -4589,6 +4782,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/C3_UavQb85DZwFENBSjpvA",
+      "source_url": "https://mp.weixin.qq.com/s/C3_UavQb85DZwFENBSjpvA",
       "keywords": [
         "Karpathy",
         "AI职业暴露",
@@ -4611,6 +4805,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://x.com/yanhua1010/status/2033374635883192735",
+      "source_url": "https://x.com/yanhua1010/status/2033374635883192735",
       "keywords": [
         "田渊栋",
         "AI护城河",
@@ -4633,6 +4828,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://x.com/yan5xu/status/2033721014413402303",
+      "source_url": "https://x.com/yan5xu/status/2033721014413402303",
       "keywords": [
         "Agent OS",
         "Agent-native Application",
@@ -4655,6 +4851,7 @@
       "date": "2026-03",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2603.03329v1",
+      "source_url": "https://arxiv.org/html/2603.03329v1",
       "keywords": [
         "AutoHarness",
         "DeepMind",
@@ -4676,6 +4873,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://huggingface.co/datasets/stepfun-ai/Step-3.5-Flash-SFT",
+      "source_url": "https://huggingface.co/datasets/stepfun-ai/Step-3.5-Flash-SFT",
       "keywords": [
         "Step-3.5-Flash",
         "SFT数据集",
@@ -4698,6 +4896,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://x.com/trq212/status/2033949937936085378",
+      "source_url": "https://x.com/trq212/status/2033949937936085378",
       "keywords": [
         "Claude Code",
         "Skills",
@@ -4720,6 +4919,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://x.com/i/grok/share/c152d0cd13b94e3c904142a8786a6fc6",
+      "source_url": "https://x.com/i/grok/share/c152d0cd13b94e3c904142a8786a6fc6",
       "keywords": [
         "Vibe Coding",
         "编程范式",
@@ -4741,6 +4941,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://x.com/JustinLin610/status/2037116325210829168",
+      "source_url": "https://x.com/JustinLin610/status/2037116325210829168",
       "keywords": [
         "Agentic Thinking",
         "Reasoning",
@@ -4762,6 +4963,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/U_FXuSlwF5O2FlT4g5h2yw",
+      "source_url": "https://mp.weixin.qq.com/s/U_FXuSlwF5O2FlT4g5h2yw",
       "keywords": [
         "Agentic RL",
         "训练圈vs系统圈",
@@ -4782,6 +4984,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://docs.qq.com/markdown/DYXBGV0xUaGNUZm52",
+      "source_url": "https://docs.qq.com/markdown/DYXBGV0xUaGNUZm52",
       "keywords": [
         "训练侧",
         "应用侧",
@@ -4803,6 +5006,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/7HqZn8E0LU2DFBfFtMpVxA",
+      "source_url": "https://mp.weixin.qq.com/s/7HqZn8E0LU2DFBfFtMpVxA",
       "keywords": [
         "Agent应用层",
         "Auto Research",
@@ -4824,6 +5028,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/BKJq0HIe7TpsUUaT6mzSKA?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/BKJq0HIe7TpsUUaT6mzSKA?scene=1",
       "keywords": [
         "Pi框架",
         "OpenClaw",
@@ -4845,6 +5050,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/oRgwsF5TRJAZ-knedzGbuA",
+      "source_url": "https://mp.weixin.qq.com/s/oRgwsF5TRJAZ-knedzGbuA",
       "keywords": [
         "Anthropic",
         "Harness设计",
@@ -4865,6 +5071,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/9qI83Ne-Ac_R9y-yJ6SVnQ",
+      "source_url": "https://mp.weixin.qq.com/s/9qI83Ne-Ac_R9y-yJ6SVnQ",
       "keywords": [
         "Harness Engineering",
         "数据飞轮",
@@ -4884,6 +5091,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/SvtMSyzoV5txVLYNvzWm-w",
+      "source_url": "https://mp.weixin.qq.com/s/SvtMSyzoV5txVLYNvzWm-w",
       "keywords": [
         "云厂商涨价",
         "算力供给",
@@ -4904,6 +5112,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/84env3dtQovG_6IGHRkA8w",
+      "source_url": "https://mp.weixin.qq.com/s/84env3dtQovG_6IGHRkA8w",
       "keywords": [
         "AI芯片",
         "短缺",
@@ -4923,6 +5132,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+      "source_url": "https://www.anthropic.com/research/economic-index-march-2026-report",
       "keywords": [
         "Anthropic",
         "经济指数",
@@ -4944,6 +5154,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/NZSPWSvQoonU0XK7t2Jt6w",
+      "source_url": "https://mp.weixin.qq.com/s/NZSPWSvQoonU0XK7t2Jt6w",
       "keywords": [
         "GUI vs CLI",
         "VC视角",
@@ -4964,6 +5175,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/oZWegLAXfdOpdC8iev94Lw",
+      "source_url": "https://mp.weixin.qq.com/s/oZWegLAXfdOpdC8iev94Lw",
       "keywords": [
         "CLI Anything",
         "Harness",
@@ -4985,6 +5197,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/JWv_XjD6MU1di0zuS5tcxA",
+      "source_url": "https://mp.weixin.qq.com/s/JWv_XjD6MU1di0zuS5tcxA",
       "keywords": [
         "Mike Krieger",
         "Instagram",
@@ -5006,6 +5219,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/sHL6k9vf8UNgYkfaj2qmbA",
+      "source_url": "https://mp.weixin.qq.com/s/sHL6k9vf8UNgYkfaj2qmbA",
       "keywords": [
         "火山引擎",
         "豆包",
@@ -5026,6 +5240,7 @@
       "date": "2026-03",
       "type": "solid paper",
       "url": "https://mp.weixin.qq.com/s/9QhnusvE82v563JRRvqVRA?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/9QhnusvE82v563JRRvqVRA?scene=1",
       "keywords": [
         "Anthropic",
         "用户研究",
@@ -5047,6 +5262,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/PEPC6C_ir_nMQypvIFw5Dg",
+      "source_url": "https://mp.weixin.qq.com/s/PEPC6C_ir_nMQypvIFw5Dg",
       "keywords": [
         "黄仁勋",
         "NVIDIA",
@@ -5067,6 +5283,7 @@
       "date": "2026-03",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/g-S_iFa2TLsG_7Xypib-yQ",
+      "source_url": "https://mp.weixin.qq.com/s/g-S_iFa2TLsG_7Xypib-yQ",
       "keywords": [
         "ICONIQ",
         "GTM",
@@ -5088,6 +5305,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://yage.ai/share/rag-reinvented-search-engine-20260326.html",
+      "source_url": "https://yage.ai/share/rag-reinvented-search-engine-20260326.html",
       "keywords": [
         "RAG",
         "信息检索",
@@ -5109,6 +5327,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://block.xyz/inside/from-hierarchy-to-intelligence",
+      "source_url": "https://block.xyz/inside/from-hierarchy-to-intelligence",
       "keywords": [
         "组织变革",
         "层级到智能",
@@ -5128,6 +5347,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://yage.ai/share/claude-code-engineering-cost-20260331.html",
+      "source_url": "https://yage.ai/share/claude-code-engineering-cost-20260331.html",
       "keywords": [
         "Claude Code",
         "tool schema",
@@ -5150,6 +5370,7 @@
       "date": "2026-04",
       "type": "solid paper",
       "url": "https://yoonholee.com/meta-harness/paper.pdf ",
+      "source_url": "https://yoonholee.com/meta-harness/paper.pdf",
       "keywords": [
         "Meta-Harness",
         "AutoHarness",
@@ -5172,6 +5393,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/DE0hc3Mz6zwoSCgL0k4SgQ",
+      "source_url": "https://mp.weixin.qq.com/s/DE0hc3Mz6zwoSCgL0k4SgQ",
       "keywords": [
         "Harness Engineering",
         "控制论",
@@ -5193,6 +5415,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://afraw.substack.com/p/china-os-vs-america-os-2026-version",
+      "source_url": "https://afraw.substack.com/p/china-os-vs-america-os-2026-version",
       "keywords": [
         "中美AI",
         "地方政府GP",
@@ -5216,6 +5439,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/oq897-F3rc9wn3dR47vTIQ",
+      "source_url": "https://mp.weixin.qq.com/s/oq897-F3rc9wn3dR47vTIQ",
       "keywords": [
         "Greg Brockman",
         "OpenAI",
@@ -5238,6 +5462,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://bigeagle.me/2026/04/800-days-at-kimi/",
+      "source_url": "https://bigeagle.me/2026/04/800-days-at-kimi/",
       "keywords": [
         "Kimi",
         "Moonshot",
@@ -5258,6 +5483,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://x.com/HiTw93/status/2040047268221608281",
+      "source_url": "https://x.com/HiTw93/status/2040047268221608281",
       "keywords": [
         "大模型训练",
         "预训练",
@@ -5282,6 +5508,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://yage.ai/share/sequoia-autopilot-organizational-interface-20260405.html",
+      "source_url": "https://yage.ai/share/sequoia-autopilot-organizational-interface-20260405.html",
       "keywords": [
         "context infrastructure",
         "组织接口",
@@ -5304,6 +5531,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/doc/DYU5TTHhjYXJyUGpE",
+      "source_url": "https://docs.qq.com/doc/DYU5TTHhjYXJyUGpE",
       "keywords": [
         "Harness Engineering",
         "runtime",
@@ -5326,6 +5554,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://docs.qq.com/doc/DYW9nU1J0RUp0UWdi",
+      "source_url": "https://docs.qq.com/doc/DYW9nU1J0RUp0UWdi",
       "keywords": [
         "Claude Managed Agents",
         "agent runtime",
@@ -5349,6 +5578,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/zQBBjFsylyD6hc6nWgvWZg",
+      "source_url": "https://mp.weixin.qq.com/s/zQBBjFsylyD6hc6nWgvWZg",
       "keywords": [
         "中国算力",
         "AI芯片",
@@ -5370,6 +5600,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/2WbL0x7fQQZ24xQflCiP7Q?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/2WbL0x7fQQZ24xQflCiP7Q?scene=1",
       "keywords": [
         "LangChain",
         "Manus",
@@ -5392,6 +5623,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://claude.com/blog/seeing-like-an-agent",
+      "source_url": "https://claude.com/blog/seeing-like-an-agent",
       "keywords": [
         "Anthropic",
         "Agent工具设计",
@@ -5414,6 +5646,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/sbV_-9zu8I2l84-hksG6UQ",
+      "source_url": "https://mp.weixin.qq.com/s/sbV_-9zu8I2l84-hksG6UQ",
       "keywords": [
         "AI失业",
         "技术革命",
@@ -5433,6 +5666,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://x.com/intuitiveml/status/2043545596699750791",
+      "source_url": "https://x.com/intuitiveml/status/2043545596699750791",
       "keywords": [
         "AI-First",
         "流程重设计",
@@ -5455,6 +5689,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYW5tenNhT2NWdnhW?",
+      "source_url": "https://docs.qq.com/markdown/DYW5tenNhT2NWdnhW",
       "keywords": [
         "全球大模型季报",
         "Coding",
@@ -5478,6 +5713,7 @@
       "date": "2026-04",
       "type": "solid paper",
       "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "source_url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
       "keywords": [
         "Stanford AI Index",
         "透明度崩塌",
@@ -5500,6 +5736,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://x.com/fxtrader/status/2044663892530622477",
+      "source_url": "https://x.com/fxtrader/status/2044663892530622477",
       "keywords": [
         "黄仁勋",
         "NVIDIA",
@@ -5520,6 +5757,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/mk8SIFMwEaUxNUaAtPKteg?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/mk8SIFMwEaUxNUaAtPKteg?scene=1",
       "keywords": [
         "AI民粹主义",
         "社会情绪",
@@ -5541,6 +5779,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://paretoinvestor.substack.com/p/it-feels-like-1999",
+      "source_url": "https://paretoinvestor.substack.com/p/it-feels-like-1999",
       "keywords": [
         "1999",
         "AI泡沫",
@@ -5561,6 +5800,7 @@
       "date": "2026-04",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2604.15873v1",
+      "source_url": "https://arxiv.org/html/2604.15873v1",
       "keywords": [
         "LLM judge",
         "speaker-listener asymmetry",
@@ -5581,6 +5821,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://blog.eladgil.com/p/random-thoughts-while-gazing-at-the",
+      "source_url": "https://blog.eladgil.com/p/random-thoughts-while-gazing-at-the",
       "keywords": [
         "Elad Gil",
         "token economy",
@@ -5602,6 +5843,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/9R4CknPNtq3-TsBf94tk8A",
+      "source_url": "https://mp.weixin.qq.com/s/9R4CknPNtq3-TsBf94tk8A",
       "keywords": [
         "Agent",
         "To Human",
@@ -5623,6 +5865,7 @@
       "date": "2026-04",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2604.17609v1",
+      "source_url": "https://arxiv.org/html/2604.17609v1",
       "keywords": [
         "environmental curiosity",
         "agent eval",
@@ -5645,6 +5888,7 @@
       "date": "2026-04",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2604.17308v1",
+      "source_url": "https://arxiv.org/html/2604.17308v1",
       "keywords": [
         "lifelong skill",
         "skill discovery",
@@ -5666,6 +5910,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/diwEZHMP1zZKeYCA_oHDDw",
+      "source_url": "https://mp.weixin.qq.com/s/diwEZHMP1zZKeYCA_oHDDw",
       "keywords": [
         "SpaceX",
         "Cursor",
@@ -5689,6 +5934,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://cognition.ai/blog/multi-agents-working",
+      "source_url": "https://cognition.ai/blog/multi-agents-working",
       "keywords": [
         "multi-agent",
         "Cognition",
@@ -5710,6 +5956,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
+      "source_url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
       "keywords": [
         "vibe coding",
         "coding agent",
@@ -5731,6 +5978,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/kwErGjX231e2efVWhERzTw",
+      "source_url": "https://mp.weixin.qq.com/s/kwErGjX231e2efVWhERzTw",
       "keywords": [
         "token-maxxing",
         "AI组织",
@@ -5752,6 +6000,7 @@
       "date": "2026-04",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/oCccFe7u_QGZ1VugqLZ45Q",
+      "source_url": "https://mp.weixin.qq.com/s/oCccFe7u_QGZ1VugqLZ45Q",
       "keywords": [
         "AI经济",
         "token economics",
@@ -5774,6 +6023,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/2Qs5gRlhe7qSVYCd9r8t1g",
+      "source_url": "https://mp.weixin.qq.com/s/2Qs5gRlhe7qSVYCd9r8t1g",
       "keywords": [
         "Prompt Caching",
         "Claude Code",
@@ -5796,6 +6046,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://www.anthropic.com/research/claude-personal-guidance",
+      "source_url": "https://www.anthropic.com/research/claude-personal-guidance",
       "keywords": [
         "personal guidance",
         "sycophancy",
@@ -5818,6 +6069,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://hy.tencent.com/research/100039",
+      "source_url": "https://hy.tencent.com/research/100039",
       "keywords": [
         "context learning",
         "CL-bench",
@@ -5839,6 +6091,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/d1aBQMx-JwLh4H8xlyV0OA",
+      "source_url": "https://mp.weixin.qq.com/s/d1aBQMx-JwLh4H8xlyV0OA",
       "keywords": [
         "harness engineering",
         "自动生成",
@@ -5860,6 +6113,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYXBZcWRqQWNDaXNa?",
+      "source_url": "https://docs.qq.com/markdown/DYXBZcWRqQWNDaXNa",
       "keywords": [
         "DeepSeek V4",
         "长上下文",
@@ -5882,6 +6136,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/MxF41OvA4vUFK_3Lp8iIbQ",
+      "source_url": "https://mp.weixin.qq.com/s/MxF41OvA4vUFK_3Lp8iIbQ",
       "keywords": [
         "财报",
         "谷歌",
@@ -5902,6 +6157,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://clausaasholm.substack.com/p/lunacy-in-the-cloud-with-diamonds",
+      "source_url": "https://clausaasholm.substack.com/p/lunacy-in-the-cloud-with-diamonds",
       "keywords": [
         "AI capex",
         "云计算",
@@ -5922,6 +6178,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://www.fomosoc.com/p/5-kp40",
+      "source_url": "https://www.fomosoc.com/p/5-kp40",
       "keywords": [
         "科技巨头财报",
         "AI capex",
@@ -5942,6 +6199,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
+      "source_url": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
       "keywords": [
         "中国AI实验室",
         "Nathan Lambert",
@@ -5963,6 +6221,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://trinkle23897.github.io/learning-beyond-gradients/#zh",
+      "source_url": "https://trinkle23897.github.io/learning-beyond-gradients/#zh",
       "keywords": [
         "Heuristic Learning",
         "持续学习",
@@ -5985,6 +6244,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://cursor.com/cn/blog/continually-improving-agent-harness",
+      "source_url": "https://cursor.com/cn/blog/continually-improving-agent-harness",
       "keywords": [
         "Cursor",
         "agent harness",
@@ -6007,6 +6267,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://arxiv.org/html/2510.18554v2",
+      "source_url": "https://arxiv.org/html/2510.18554v2",
       "keywords": [
         "alignment data extraction",
         "DeepSeek",
@@ -6028,6 +6289,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://yage.ai/share/anthropic-computer-use-training-patent-20260510.html",
+      "source_url": "https://yage.ai/share/anthropic-computer-use-training-patent-20260510.html",
       "keywords": [
         "Anthropic",
         "Computer Use",
@@ -6050,6 +6312,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://developers.openai.com/api/docs/deprecations#update-to-openais-self-serve-fine-tuning",
+      "source_url": "https://developers.openai.com/api/docs/deprecations#update-to-openais-self-serve-fine-tuning",
       "keywords": [
         "OpenAI",
         "self-serve fine-tuning",
@@ -6072,6 +6335,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/",
       "keywords": [
         "OpenAI",
         "Deployment Company",
@@ -6093,6 +6357,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/Vy4IINteDQFrdr9cffKMhA",
+      "source_url": "https://mp.weixin.qq.com/s/Vy4IINteDQFrdr9cffKMhA",
       "keywords": [
         "姚顺宇",
         "Agentic coding",
@@ -6115,6 +6380,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://artificialanalysis.ai/agents/coding-agents",
+      "source_url": "https://artificialanalysis.ai/agents/coding-agents",
       "keywords": [
         "Coding Agent Index",
         "Artificial Analysis",
@@ -6137,6 +6403,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/_cn9aULfE9PFQ4LJQZOa0A",
+      "source_url": "https://mp.weixin.qq.com/s/_cn9aULfE9PFQ4LJQZOa0A",
       "keywords": [
         "AI SaaS",
         "Ramp",
@@ -6159,6 +6426,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://www.superlinear.academy/c/share-your-insights/engels-pause-ai",
+      "source_url": "https://www.superlinear.academy/c/share-your-insights/engels-pause-ai",
       "keywords": [
         "Engels Pause",
         "AI就业",
@@ -6179,6 +6447,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/G3m2xksI2jHAROhNdP7x2Q",
+      "source_url": "https://mp.weixin.qq.com/s/G3m2xksI2jHAROhNdP7x2Q",
       "keywords": [
         "MiniMax",
         "10x Team",
@@ -6202,6 +6471,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://x.com/jietang/status/2054222017566855508",
+      "source_url": "https://x.com/jietang/status/2054222017566855508",
       "keywords": [
         "long-horizon task",
         "智谱",
@@ -6224,6 +6494,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2605.10938v1",
+      "source_url": "https://arxiv.org/html/2605.10938v1",
       "keywords": [
         "ELF",
         "diffusion language model",
@@ -6244,6 +6515,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://thinkingmachines.ai/blog/interaction-models/",
+      "source_url": "https://thinkingmachines.ai/blog/interaction-models/",
       "keywords": [
         "Thinking Machines",
         "interaction models",
@@ -6265,6 +6537,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2603.25158v4",
+      "source_url": "https://arxiv.org/html/2603.25158v4",
       "keywords": [
         "Trace2Skill",
         "agent skill",
@@ -6286,6 +6559,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2605.12474v1",
+      "source_url": "https://arxiv.org/html/2605.12474v1",
       "keywords": [
         "rubric-based RL",
         "reward hacking",
@@ -6307,6 +6581,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://x.com/zhuokaiz/status/2055042099674796118",
+      "source_url": "https://x.com/zhuokaiz/status/2055042099674796118",
       "keywords": [
         "on-policy distillation",
         "OPD",
@@ -6327,6 +6602,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://wanglun1996.github.io/blog/your-evals-will-break.html",
+      "source_url": "https://wanglun1996.github.io/blog/your-evals-will-break.html",
       "keywords": [
         "Eval fragility",
         "benchmark drift",
@@ -6349,6 +6625,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://dylanzsz.github.io/faulty-memory/",
+      "source_url": "https://dylanzsz.github.io/faulty-memory/",
       "keywords": [
         "Memory",
         "memory consolidation",
@@ -6371,6 +6648,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/sA20Zc74FYWxKOu9Nu-T1Q",
+      "source_url": "https://mp.weixin.qq.com/s/sA20Zc74FYWxKOu9Nu-T1Q",
       "keywords": [
         "Anthropic",
         "AI组织",
@@ -6393,6 +6671,7 @@
       "date": "2026-03",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/PIOh_aXVuNUT27G5UoKCkw",
+      "source_url": "https://mp.weixin.qq.com/s/PIOh_aXVuNUT27G5UoKCkw",
       "keywords": [
         "Benchmark",
         "AMI",
@@ -6417,6 +6696,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/oqJ8yueAL7FL1uVIy8BRNg",
+      "source_url": "https://mp.weixin.qq.com/s/oqJ8yueAL7FL1uVIy8BRNg",
       "keywords": [
         "FDE",
         "企业交付",
@@ -6438,6 +6718,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://openai.com/business/guaranteed-capacity/",
+      "source_url": "https://openai.com/business/guaranteed-capacity/",
       "keywords": [
         "OpenAI",
         "Guaranteed Capacity",
@@ -6459,6 +6740,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/fbpWu1674pwB260FBrIsWw",
+      "source_url": "https://mp.weixin.qq.com/s/fbpWu1674pwB260FBrIsWw",
       "keywords": [
         "AI抢人",
         "frontier talent",
@@ -6480,6 +6762,7 @@
       "date": "2026-04",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/4FddhhxiBzrD2WfG8YhPmA",
+      "source_url": "https://mp.weixin.qq.com/s/4FddhhxiBzrD2WfG8YhPmA",
       "keywords": [
         "机器人泡沫",
         "embodied AI",
@@ -6503,6 +6786,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/R3_8kTt2glRsaJg_-YUkng",
+      "source_url": "https://mp.weixin.qq.com/s/R3_8kTt2glRsaJg_-YUkng",
       "keywords": [
         "Agent商业化",
         "三道门",
@@ -6525,6 +6809,7 @@
       "date": "2026-05",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2605.15777v1",
+      "source_url": "https://arxiv.org/html/2605.15777v1",
       "keywords": [
         "SaaS-Bench",
         "Computer-Use Agent",
@@ -6548,6 +6833,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://newsletter.semianalysis.com/p/anthropic-growth-and-bedrock-mix",
+      "source_url": "https://newsletter.semianalysis.com/p/anthropic-growth-and-bedrock-mix",
       "keywords": [
         "Anthropic",
         "AWS",
@@ -6570,6 +6856,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/doc/DYVFYYXZGbWR1ZU13",
+      "source_url": "https://docs.qq.com/doc/DYVFYYXZGbWR1ZU13",
       "keywords": [
         "OpenAI",
         "post-training",
@@ -6594,6 +6881,7 @@
       "date": "2026-05",
       "type": "观点/文章",
       "url": "https://yage.ai/skill-first.html",
+      "source_url": "https://yage.ai/skill-first.html",
       "keywords": [
         "Context Infra",
         "Skill",
@@ -6616,6 +6904,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/CZxwlhWg6PxwDmsIY0YXuw",
+      "source_url": "https://mp.weixin.qq.com/s/CZxwlhWg6PxwDmsIY0YXuw",
       "keywords": [
         "Agent产品",
         "责任链",
@@ -6639,6 +6928,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/",
+      "source_url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/",
       "keywords": [
         "third-party eval",
         "Agent eval",
@@ -6662,6 +6952,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+      "source_url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
       "keywords": [
         "AI adoption",
         "prototype vs production",
@@ -6683,6 +6974,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://cursor.com/cn/insights",
+      "source_url": "https://cursor.com/cn/insights",
       "keywords": [
         "Cursor",
         "developer workflow",
@@ -6706,6 +6998,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/eoV8oahnLcUcqHTNe_IyUw",
+      "source_url": "https://mp.weixin.qq.com/s/eoV8oahnLcUcqHTNe_IyUw",
       "keywords": [
         "tokenmaxxing",
         "token成本",
@@ -6728,6 +7021,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/JbjyiXI0kP2Wlqbd-q0www",
+      "source_url": "https://mp.weixin.qq.com/s/JbjyiXI0kP2Wlqbd-q0www",
       "keywords": [
         "MiniMax M3",
         "1M context",
@@ -6751,6 +7045,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
       "keywords": [
         "Codex",
         "knowledge-work system",
@@ -6773,6 +7068,7 @@
       "date": "2026-05",
       "type": "行业动态/评价",
       "url": "https://2026.stateofai.dev/zh-Hans/",
+      "source_url": "https://2026.stateofai.dev/zh-Hans/",
       "keywords": [
         "State of AI Web",
         "developer survey",
@@ -6796,6 +7092,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
+      "source_url": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
       "keywords": [
         "Claude Code",
         "dynamic workflows",
@@ -6819,6 +7116,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.youtube.com/watch?v=BD3vLtWhT5A",
+      "source_url": "https://www.youtube.com/watch?v=BD3vLtWhT5A",
       "keywords": [
         "Benedict Evans",
         "AI adoption",
@@ -6842,6 +7140,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://www.bilibili.com/video/BV178VV6TEJr/",
+      "source_url": "https://www.bilibili.com/video/BV178VV6TEJr/",
       "keywords": [
         "专家数据",
         "RLVR",
@@ -6866,6 +7165,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.bilibili.com/video/BV178VV6TEat",
+      "source_url": "https://www.bilibili.com/video/BV178VV6TEat",
       "keywords": [
         "命题能力",
         "专家数据",
@@ -6889,6 +7189,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "source_url": "https://openai.com/index/chatgpt-memory-dreaming/",
       "keywords": [
         "Dreaming",
         "ChatGPT Memory",
@@ -6911,6 +7212,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://yage.ai/share/mai-thinking-1-hill-climbing-20260603.html",
+      "source_url": "https://yage.ai/share/mai-thinking-1-hill-climbing-20260603.html",
       "keywords": [
         "MAI-Thinking-1",
         "Microsoft AI",
@@ -6933,6 +7235,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/PzqG2T4zkKcyz2g8EMokzQ",
+      "source_url": "https://mp.weixin.qq.com/s/PzqG2T4zkKcyz2g8EMokzQ",
       "keywords": [
         "Skill",
         "know-how产品化",
@@ -6956,6 +7259,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/7xojGo-W7COYmWP3mxghOA",
+      "source_url": "https://mp.weixin.qq.com/s/7xojGo-W7COYmWP3mxghOA",
       "keywords": [
         "Boris Cherny",
         "Claude Code",
@@ -6979,6 +7283,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://yage.ai/share/vision-banana-generative-vision-20260608.html",
+      "source_url": "https://yage.ai/share/vision-banana-generative-vision-20260608.html",
       "keywords": [
         "Vision Banana",
         "autoregressive image generation",
@@ -7001,6 +7306,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/agents-in-biology",
+      "source_url": "https://www.anthropic.com/research/agents-in-biology",
       "keywords": [
         "Biology agents",
         "VirBench",
@@ -7024,6 +7330,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://x.com/polynoamial/status/2064210146558136827",
+      "source_url": "https://x.com/polynoamial/status/2064210146558136827",
       "keywords": [
         "test-time compute",
         "performance curve",
@@ -7047,6 +7354,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://youtu.be/mR-WAvEPRwE",
+      "source_url": "https://youtu.be/mR-WAvEPRwE",
       "keywords": [
         "long-running agent",
         "Harness",
@@ -7070,6 +7378,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+      "source_url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
       "keywords": [
         "Fable 5",
         "Mythos",
@@ -7093,6 +7402,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://x.com/SemiAnalysis_/status/2064815042374074396",
+      "source_url": "https://x.com/SemiAnalysis_/status/2064815042374074396",
       "keywords": [
         "subscription economics",
         "token economics",
@@ -7116,6 +7426,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
+      "source_url": "https://www.businessinsider.com/botsitting-ai-hidden-human-labor-at-work-2026-6",
       "keywords": [
         "Botsitting",
         "隐形人力成本",
@@ -7139,6 +7450,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/vJegO13eO0c4BumeWb6kxQ",
+      "source_url": "https://mp.weixin.qq.com/s/vJegO13eO0c4BumeWb6kxQ",
       "keywords": [
         "public benchmark",
         "private benchmark",
@@ -7162,6 +7474,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://mp.weixin.qq.com/s/aEzT0PRIg3zGYH5fCZHw0g?scene=1",
+      "source_url": "https://mp.weixin.qq.com/s/aEzT0PRIg3zGYH5fCZHw0g?scene=1",
       "keywords": [
         "Scaling Law",
         "参数冗余",
@@ -7184,6 +7497,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://x.com/hiiinternet/status/2065117819948437765",
+      "source_url": "https://x.com/hiiinternet/status/2065117819948437765",
       "keywords": [
         "Anthropic",
         "招聘",
@@ -7207,6 +7521,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://nrehiew.github.io/blog/sft_rl_opd/",
+      "source_url": "https://nrehiew.github.io/blog/sft_rl_opd/",
       "keywords": [
         "SFT",
         "RL",
@@ -7229,6 +7544,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://x.com/AndrewCurran_/status/2066332670817456584",
+      "source_url": "https://x.com/AndrewCurran_/status/2066332670817456584",
       "keywords": [
         "sovereign AI",
         "trusted access",
@@ -7251,6 +7567,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://x.com/antirez/status/2066516853497684342",
+      "source_url": "https://x.com/antirez/status/2066516853497684342",
       "keywords": [
         "Distillation",
         "中国模型",
@@ -7274,6 +7591,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "source_url": "https://www.anthropic.com/research/claude-code-expertise",
       "keywords": [
         "Claude Code",
         "Anthropic",
@@ -7297,6 +7615,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/uJWEgcnrgKqXdzOUIPcuCw",
+      "source_url": "https://mp.weixin.qq.com/s/uJWEgcnrgKqXdzOUIPcuCw",
       "keywords": [
         "Loop Engineering",
         "DeepSeek V4",
@@ -7320,6 +7639,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/1hKVfcORm8PYsQIZfubTXQ",
+      "source_url": "https://mp.weixin.qq.com/s/1hKVfcORm8PYsQIZfubTXQ",
       "keywords": [
         "合成数据",
         "SETA",
@@ -7343,6 +7663,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://jifjkgchrie.feishu.cn/wiki/JyjLwvPo3ieVU4kxcFzcTMjWncf",
+      "source_url": "https://jifjkgchrie.feishu.cn/wiki/JyjLwvPo3ieVU4kxcFzcTMjWncf",
       "keywords": [
         "非Coding Agent",
         "结果买单",
@@ -7367,6 +7688,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole",
+      "source_url": "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole",
       "keywords": [
         "RL",
         "SFT",
@@ -7389,6 +7711,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/IFWU6zaABYeviBwcptsiOw",
+      "source_url": "https://mp.weixin.qq.com/s/IFWU6zaABYeviBwcptsiOw",
       "keywords": [
         "Agent",
         "Coding",
@@ -7413,6 +7736,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://mp.weixin.qq.com/s/p2LlSubxzHwu-IzIGNPFyQ",
+      "source_url": "https://mp.weixin.qq.com/s/p2LlSubxzHwu-IzIGNPFyQ",
       "keywords": [
         "Agent",
         "GLM",
@@ -7436,6 +7760,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://zenmux.ai/blog/token-economics",
+      "source_url": "https://zenmux.ai/blog/token-economics",
       "keywords": [
         "Agent",
         "Coding",
@@ -7460,6 +7785,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://x.com/PatrickToulme/status/2069211575437627743",
+      "source_url": "https://x.com/PatrickToulme/status/2069211575437627743",
       "keywords": [
         "Agent",
         "Coding",
@@ -7481,6 +7807,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "source_url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
       "keywords": [
         "Agent",
         "Coding",
@@ -7505,6 +7832,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://mp.weixin.qq.com/s/X9EgaL2fNoCbfWQlAqXhSg",
+      "source_url": "https://mp.weixin.qq.com/s/X9EgaL2fNoCbfWQlAqXhSg",
       "keywords": [
         "Agent",
         "Coding",
@@ -7529,6 +7857,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/oZ6vLaJGh4hjBjVDLlM-gw",
+      "source_url": "https://mp.weixin.qq.com/s/oZ6vLaJGh4hjBjVDLlM-gw",
       "keywords": [
         "Coding",
         "AI",
@@ -7553,6 +7882,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+      "source_url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
       "keywords": [
         "Scaling",
         "Token",
@@ -7573,6 +7903,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2606.24775v1",
+      "source_url": "https://arxiv.org/html/2606.24775v1",
       "keywords": [
         "Agent",
         "Benchmark",
@@ -7597,6 +7928,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://openai.com/index/how-agents-are-transforming-work/",
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work/",
       "keywords": [
         "Agent",
         "OpenAI",
@@ -7620,6 +7952,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://cursor.com/cn/blog/reward-hacking-coding-benchmarks",
+      "source_url": "https://cursor.com/cn/blog/reward-hacking-coding-benchmarks",
       "keywords": [
         "Agent",
         "Coding",
@@ -7644,6 +7977,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+      "source_url": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
       "keywords": [
         "Agent",
         "Coding",
@@ -7668,6 +8002,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "source_url": "https://www.anthropic.com/research/economic-index-june-2026-report",
       "keywords": [
         "OpenAI",
         "Anthropic",
@@ -7689,6 +8024,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://www.dwarkesh.com/p/the-next-paradigm",
+      "source_url": "https://www.dwarkesh.com/p/the-next-paradigm",
       "keywords": [
         "Agent",
         "Coding",
@@ -7713,6 +8049,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/Arb28WC8mb2SqXko9H380A",
+      "source_url": "https://mp.weixin.qq.com/s/Arb28WC8mb2SqXko9H380A",
       "keywords": [
         "Agent",
         "Memory",
@@ -7736,6 +8073,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://x.com/SemiAnalysis_/status/2070915302058041450",
+      "source_url": "https://x.com/SemiAnalysis_/status/2070915302058041450",
       "keywords": [
         "Agent",
         "DeepSeek",
@@ -7760,6 +8098,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://mp.weixin.qq.com/s/tq8p0HYD_2n-JMMKVL6Hsg",
+      "source_url": "https://mp.weixin.qq.com/s/tq8p0HYD_2n-JMMKVL6Hsg",
       "keywords": [
         "具身智能",
         "机器人",
@@ -7784,6 +8123,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://pengandy.com/blog/2026/speculativedecoding/#training-libs",
+      "source_url": "https://pengandy.com/blog/2026/speculativedecoding/#training-libs",
       "keywords": [
         "Speculative Decoding",
         "投机解码",
@@ -7807,6 +8147,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYVRsSnJkS2F0eE15",
+      "source_url": "https://docs.qq.com/markdown/DYVRsSnJkS2F0eE15",
       "keywords": [
         "Noam Brown",
         "OpenAI",
@@ -7830,6 +8171,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYUJkUnhwdEdVcmZK",
+      "source_url": "https://docs.qq.com/markdown/DYUJkUnhwdEdVcmZK",
       "keywords": [
         "Cloudflare",
         "Matthew Prince",
@@ -7851,6 +8193,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2606.26300v2",
+      "source_url": "https://arxiv.org/html/2606.26300v2",
       "keywords": [
         "Coding Agent",
         "Verifier",
@@ -7875,6 +8218,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYUR3TWZQd2Vwdmdh",
+      "source_url": "https://docs.qq.com/markdown/DYUR3TWZQd2Vwdmdh",
       "keywords": [
         "OpenAI",
         "Codex",
@@ -7898,6 +8242,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYUtUUkNCWGdPdHBi",
+      "source_url": "https://docs.qq.com/markdown/DYUtUUkNCWGdPdHBi",
       "keywords": [
         "SemiAnalysis",
         "Dylan Patel",
@@ -7921,6 +8266,7 @@
       "date": "2026-06",
       "type": "行业动态/评价",
       "url": "https://docs.qq.com/markdown/DYUZUYUZWYmJDTXN4",
+      "source_url": "https://docs.qq.com/markdown/DYUZUYUZWYmJDTXN4",
       "keywords": [
         "Tensor Mesh",
         "KV cache",
@@ -7943,6 +8289,7 @@
       "date": "2026-06",
       "type": "观点/文章",
       "url": "https://docs.qq.com/markdown/DYXpHRVhVSnB1V1BG",
+      "source_url": "https://docs.qq.com/markdown/DYXpHRVhVSnB1V1BG",
       "keywords": [
         "Engram",
         "记忆",
@@ -7966,6 +8313,7 @@
       "date": "2026-07",
       "type": "行业动态/评价",
       "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+      "source_url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
       "keywords": [
         "Cloudflare",
         "Publisher",
@@ -7988,6 +8336,7 @@
       "date": "2026-07",
       "type": "solid paper",
       "url": "https://intelligence.exponentialview.co/assets/ev-state-of-ai-economy-2026.pdf",
+      "source_url": "https://intelligence.exponentialview.co/assets/ev-state-of-ai-economy-2026.pdf",
       "keywords": [
         "AI Economy",
         "CapEx",
@@ -8011,6 +8360,7 @@
       "date": "2026-06",
       "type": "solid paper",
       "url": "https://arxiv.org/html/2606.15971v1",
+      "source_url": "https://arxiv.org/html/2606.15971v1",
       "keywords": [
         "SAG",
         "SQL-RAG",
