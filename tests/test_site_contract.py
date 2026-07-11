@@ -161,6 +161,10 @@ class SitePageContractTests(unittest.TestCase):
         ):
             self.assertIn(symbol, self.html)
 
+    def test_topic_cards_render_as_native_links(self):
+        self.assertIn('<a class="topic-card', self.html)
+        self.assertNotIn('<article class="topic-card', self.html)
+
     def test_inline_javascript_parses(self):
         script = """
 const fs=require('fs');

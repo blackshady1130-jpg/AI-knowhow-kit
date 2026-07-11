@@ -309,7 +309,7 @@ function renderHome(){
     </div>`).join('');
 
   $('topicGrid').innerHTML=D.topics.map(topic=>`
-    <article class="topic-card bg-white rounded-2xl p-6 border border-slate-200 cursor-pointer" onclick="location.hash='#topic/${encodeURIComponent(topic.name)}'" tabindex="0" onkeydown="if(event.key==='Enter')location.hash='#topic/${encodeURIComponent(topic.name)}'">
+    <a class="topic-card block bg-white rounded-2xl p-6 border border-slate-200" href="#topic/${encodeURIComponent(topic.name)}">
       <div class="flex items-start justify-between gap-4 mb-4">
         <div class="flex items-center gap-3">
           <span class="text-2xl">${topic.icon}</span>
@@ -323,7 +323,7 @@ function renderHome(){
       <p class="text-sm font-medium text-slate-700 leading-relaxed mb-3">${esc(topic.question)}</p>
       <p class="text-sm text-slate-500 leading-relaxed">${esc(topic.thesis)}</p>
       <div class="mt-5 text-sm text-brand-600 font-medium">阅读本章 →</div>
-    </article>`).join('');
+    </a>`).join('');
 
   const latest=D.notes.slice().sort((a,b)=>((b.date||'')+(String(b.id).padStart(4,'0'))).localeCompare((a.date||'')+(String(a.id).padStart(4,'0')))).slice(0,6);
   $('latestNotes').innerHTML=latest.map(note=>`
