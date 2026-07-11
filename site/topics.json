@@ -1,44 +1,72 @@
 [
   {
-    "name": "架构与工程",
-    "icon": "🏗️",
-    "description": "从 Prompt Engineering 到 Context Engineering 再到 Harness Engineering，Agent 架构的重心正在继续上移：上下文、工具、缓存、sandbox、observability 和责任链共同构成新的运行时竞争层。真正的护城河不再只是写一个好 prompt，而是持续生成、验证和替换适配模型的 harness。",
-    "review_file": "architecture-engineering.md"
-  },
-  {
     "name": "模型推理与训练",
     "icon": "🧠",
-    "description": "强化学习、Scaling Law、推理模型、长上下文与训练数据质量共同构成模型能力的底层逻辑。新增材料进一步显示，能力差距越来越不只是 checkpoint 差距，而是训练栈、eval/reward、后训练稳定性、agent 环境和 deployment loop 的系统差距。",
+    "chapter": "01",
+    "role": "能力供给层",
+    "question": "模型能力来自哪里，哪些提升能迁移到真实任务？",
+    "thesis": "能力差距越来越不只是 checkpoint 差距，而是数据、训练栈、reward、推理预算和任务环境共同形成的系统差距。",
+    "description": "从数据、Scaling、RL、蒸馏与推理效率出发，判断模型变强的机制、代价和可迁移边界。",
     "review_file": "model-training.md"
+  },
+  {
+    "name": "架构与工程",
+    "icon": "🏗️",
+    "chapter": "02",
+    "role": "运行系统层",
+    "question": "Context、Harness、工具、状态和恢复机制如何接住模型？",
+    "thesis": "模型能力只有进入可管理的运行环境，才能成为稳定能力；Harness 的价值在于外化约束、状态、验证和错误恢复。",
+    "description": "追踪 Context、Memory、Skill、工具、缓存、sandbox 与长时 Agent 的运行机制。",
+    "review_file": "architecture-engineering.md"
   },
   {
     "name": "评测与基准",
     "icon": "📊",
-    "description": "当评测本身成为最大的噪声源，行业正在从静态 benchmark 走向系统级监控。LLM-as-a-judge、rubric reward、Agent runtime、成本延迟、Keep Rate 和真实工作流完成率共同决定评测可信度。真正的问题是：我们到底在测模型、工程，还是一整套产品系统。",
+    "chapter": "03",
+    "role": "验证与治理层",
+    "question": "谁定义成功，怎样避免 verifier 和环境噪声制造假进步？",
+    "thesis": "Agent 评测正在从裸模型分数转向任务、Harness、成本、环境、恢复与连续可靠性的系统审计。",
+    "description": "拆解 benchmark、LLM-as-a-judge、verifier、reward hacking 与真实工作流评测。",
     "review_file": "eval-benchmark.md"
   },
   {
     "name": "AI Coding",
     "icon": "💻",
-    "description": "从 Copilot 式补全到 Claude Code/Cursor 式自主 Agent，AI 编程正在成为 agent 训练、产品体验和商业化的高反馈闭环。竞争焦点从代码生成转向模型 + harness + cache + 工具可靠性 + 成本延迟 + 线上反馈的系统能力，人类角色更像架构师、审计者和责任链设计者。",
+    "chapter": "CASE",
+    "role": "高反馈验证场",
+    "question": "为什么 Coding Agent 先跑出来，它能为其他场景提供什么？",
+    "thesis": "Coding 的优势不只在模型会写代码，而在代码库、测试、Git、review 和回滚构成了高密度反馈环境。",
+    "description": "把 AI Coding 当作 Agent 训练、产品、评测与组织协作的先行实验，而不只看代码生成速度。",
     "review_file": "ai-coding.md"
   },
   {
     "name": "AI 产品与交互",
     "icon": "🎯",
-    "description": "模型在变强，但产品真正要补的是协作带宽、上下文、权限、状态和责任链。AI 产品正在从聊天框走向可治理的协作环境，SaaS 从 record 走向 action，Agent 产品的核心问题也从界面变成谁授权、谁执行、谁验收、谁负责。",
+    "chapter": "04",
+    "role": "工作流入口层",
+    "question": "模型能力如何变成可授权、可接管、可持续使用的产品？",
+    "thesis": "产品真正要补的是协作带宽、Context、权限、状态、人工接管和责任链，而不只是更漂亮的聊天框。",
+    "description": "观察模型与产品错位、Agent-native 交互、SaaS 重构、记忆与工作流入口。",
     "review_file": "product-interaction.md"
   },
   {
     "name": "行业格局与企业战略",
     "icon": "🌐",
-    "description": "AI 行业正在从模型竞赛进入工业系统竞赛：算力保障、云分发、Deployment/FDE、托管运行时、capex、电力、HBM 和现金流共同决定格局。真正的问题不是 AI 有没有价值，而是谁能把巨额投入转成可持续、可解释 ROI 的产品收入。",
+    "chapter": "05",
+    "role": "部署与价值捕获层",
+    "question": "谁掌握算力、运行时、客户反馈、预算和 ROI？",
+    "thesis": "AI 竞争正在从模型榜单进入工业系统与部署学习竞争；最终要看谁能把算力和调用转成可验收、可续费的结果。",
+    "description": "连接模型、MaaS、云、FDE、Token Economics、capex 与企业结果，判断价值如何分配。",
     "review_file": "industry-strategy.md"
   },
   {
     "name": "AI 影响与安全",
     "icon": "⚖️",
-    "description": "AI 影响正在从理论推演变成日常现实：就业结构、认知卸载、personal guidance、谄媚、alignment data extraction、数据中心和公众反弹都在同时发生。真正的安全问题不只在模型内部，也在部署治理、用户自主性和社会接受度里。",
+    "chapter": "06",
+    "role": "结果与责任层",
+    "question": "当 AI 进入真实生活和组织，谁承担长期后果？",
+    "thesis": "安全越来越是 model × user × product × organization 的部署结果，用户满意、使用增长和长期赋权并不总是一致。",
+    "description": "追踪就业分化、认知卸载、personal guidance、权限治理、公众反弹与高责任场景。",
     "review_file": "impact-safety.md"
   }
 ]
