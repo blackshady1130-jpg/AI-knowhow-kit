@@ -427,6 +427,7 @@ function renderCards(notes,id){
     const keywords=(note.keywords||[]).slice(0,4).map(keyword=>`<span class="inline-block text-[11px] px-2 py-1 rounded bg-slate-100 text-slate-500">${esc(keyword)}</span>`).join(' ');
     const full=esc(note.why||'');
     const more=(note.why||'').length>220;
+    const judgmentLabel=note.why?'我的判断':'索引关键词（原条目无评论）';
     return`<article class="note-item bg-white rounded-xl border border-slate-200 p-5 md:p-6">
       <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 mb-3">
         <span class="font-mono text-brand-500">#${note.id}</span>
@@ -436,7 +437,7 @@ function renderCards(notes,id){
       </div>
       <h3 class="text-base font-semibold text-slate-950 mb-3 leading-relaxed">${note.url?`<a href="${note.url}" target="_blank" rel="noopener" class="hover:text-brand-600">${esc(note.title)}</a>`:esc(note.title)}</h3>
       <div class="rounded-lg bg-slate-50 border border-slate-100 p-4 mb-3">
-        <div class="text-[11px] font-mono tracking-wider text-brand-600 mb-2">我的判断</div>
+        <div class="text-[11px] font-mono tracking-wider text-brand-600 mb-2">${judgmentLabel}</div>
         <div class="text-sm text-slate-700 leading-relaxed why-summary">${esc(note.why_short||'')}</div>
         ${more?`<button type="button" class="text-brand-600 text-xs mt-2.5 hover:text-brand-800 font-medium" onclick="toggleWhy(this)">展开完整判断 ↓</button><div class="hidden mt-3 pt-3 border-t border-slate-200 why-text text-sm leading-relaxed text-slate-700">${full}</div>`:''}
       </div>

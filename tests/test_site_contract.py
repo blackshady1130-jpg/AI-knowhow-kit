@@ -132,6 +132,9 @@ class SitePageContractTests(unittest.TestCase):
         ):
             self.assertIn(marker, self.html)
 
+    def test_notes_without_authored_why_are_not_labeled_as_personal_judgment(self):
+        self.assertIn("索引关键词（原条目无评论）", self.html)
+
     def test_page_logic_supports_search_filter_and_incremental_loading(self):
         for symbol in (
             "curNoteView",
