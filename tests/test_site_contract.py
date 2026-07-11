@@ -1,5 +1,6 @@
 import json
 import re
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -141,6 +142,22 @@ class SitePageContractTests(unittest.TestCase):
             "loadMoreNotes",
         ):
             self.assertIn(symbol, self.html)
+
+    def test_inline_javascript_parses(self):
+        script = """
+const fs=require('fs');
+const html=fs.readFileSync(process.argv[1],'utf8');
+const blocks=[...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/g)]
+  .map(match=>match[1]).filter(source=>source.trim());
+for(const source of blocks)new Function(source);
+"""
+        result = subprocess.run(
+            ["node", "-e", script, str(INDEX)],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
 
 
 if __name__ == "__main__":
