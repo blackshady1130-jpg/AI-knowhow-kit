@@ -218,7 +218,7 @@ class SitePageContractTests(unittest.TestCase):
         cls.html = INDEX.read_text(encoding="utf-8-sig")
 
     def test_homepage_leads_with_personal_thesis_and_collaboration_entry(self):
-        self.assertIn("我关注 AI 如何用于真实工作", self.html)
+        self.assertIn("关注 AI 如何用于真实工作", self.html)
         self.assertIn('id="research-path"', self.html)
         self.assertIn('id="collaborate"', self.html)
         self.assertIn("阅读七个主题", self.html)
