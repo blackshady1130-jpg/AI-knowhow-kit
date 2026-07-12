@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yantao Wang · AI Deployment &amp; Learning Loop</title>
-<meta name="description" content="研究模型如何进入真实组织，以及组织如何把任务执行、人工修正与失败经验变成可验证的学习闭环。七篇深度文章与 360 条可追溯 AI notes。">
-<meta property="og:title" content="AI Deployment &amp; Learning Loop · Yantao Wang">
-<meta property="og:description" content="从模型能力到部署结果：七篇深度文章与 360 条可追溯 AI notes。">
+<title>AI 行业扫描 Notes</title>
+<meta name="description" content="围绕模型训练、Agent 工程、评测、AI Coding、产品、行业与安全的七篇文章和 360 条可追溯笔记。">
+<meta property="og:title" content="AI 行业扫描 Notes">
+<meta property="og:description" content="七个清晰主题，七篇深度文章，360 条可追溯 AI 笔记。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://blackshady1130-jpg.github.io/AI-knowhow-kit/">
 <meta name="twitter:card" content="summary">
@@ -68,12 +68,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <section id="home-hero" class="bg-slate-950 text-white">
     <div class="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-24">
       <div class="max-w-4xl border-l border-brand-400 pl-5 md:pl-8">
-        <p class="text-sm text-brand-200 mb-5">Yantao Wang · AI Deployment &amp; Learning Loop</p>
-        <h1 class="text-3xl md:text-5xl lg:text-[3.4rem] font-bold tracking-tight leading-[1.2] mb-6">我研究模型如何进入真实组织，<br class="hidden md:block">以及组织如何从每次使用中学习</h1>
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mb-8">这里不追逐一个孤立的模型分数。我关心任务怎样被定义，Harness 如何保存状态，结果由谁验收，失败怎样写回 Eval、Skill、产品与训练数据，以及这些系统最终把能力和责任交给了谁。</p>
+        <p class="text-sm text-brand-200 mb-5">AI 行业扫描 Notes</p>
+        <h1 class="text-3xl md:text-5xl lg:text-[3.4rem] font-bold tracking-tight leading-[1.2] mb-6">我关注 AI 如何用于真实工作，<br class="hidden md:block">以及实际效果如何</h1>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mb-8">这里收录我对模型、Agent、评测、AI Coding、产品、行业和安全问题的长期笔记。除了模型分数，我还会看任务怎么定义、系统怎么运行、结果由谁验收、失败后怎么改，以及成本和责任最终落在谁身上。</p>
         <div class="flex flex-wrap gap-3 mb-10">
-          <a href="#chapters" onclick="scrollHomeTo('chapters');return false" class="bg-white text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-slate-100">阅读七章</a>
-          <a href="#collaborate" onclick="scrollHomeTo('collaborate');return false" class="border border-slate-600 px-5 py-3 text-sm font-semibold text-white hover:border-slate-300">讨论真实工作流</a>
+          <a href="#chapters" onclick="scrollHomeTo('chapters');return false" class="bg-white text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-slate-100">阅读七个主题</a>
+          <a href="#collaborate" onclick="scrollHomeTo('collaborate');return false" class="border border-slate-600 px-5 py-3 text-sm font-semibold text-white hover:border-slate-300">联系与合作</a>
         </div>
         <div id="heroStats" class="flex flex-wrap gap-x-7 gap-y-2 text-sm text-slate-400"></div>
       </div>
@@ -83,9 +83,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <section id="research-path" class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20 scroll-mt-20">
     <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 lg:gap-16">
       <div>
-        <p class="text-sm text-brand-700 mb-2">研究路径</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">一条链路，三个检查点</h2>
-        <p class="text-slate-600 leading-relaxed">七篇文章围绕同一个部署问题展开。AI Coding 是目前反馈最密集的案例，但它提供的是方法：可执行、可测试、可追踪、可回滚；它不代表其他知识工作已经具备同样条件。</p>
+        <p class="text-sm text-brand-700 mb-2">我的关注重点</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">我主要看三个问题</h2>
+        <p class="text-slate-600 leading-relaxed">七篇文章覆盖模型、系统、评测、产品、行业和安全。AI Coding 是目前反馈最充分的案例，但其他知识工作未必具备同样清楚的测试、版本记录和回滚机制。</p>
       </div>
       <ol class="grid md:grid-cols-3 border-t border-slate-300">
         <li class="pt-5 pb-4 md:pr-6 md:border-r border-slate-200">
@@ -95,13 +95,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
         </li>
         <li class="pt-5 pb-4 md:px-6 md:border-r border-slate-200">
           <span class="text-sm text-brand-700">02</span>
-          <h3 class="font-semibold text-slate-950 mt-2 mb-2">系统怎样接住</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">检查 Context、状态、权限、Verifier 和错误恢复。</p>
+          <h3 class="font-semibold text-slate-950 mt-2 mb-2">系统如何运作</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">检查 Context、状态、权限、评分方法和错误恢复。</p>
         </li>
         <li class="pt-5 pb-4 md:pl-6">
           <span class="text-sm text-brand-700">03</span>
-          <h3 class="font-semibold text-slate-950 mt-2 mb-2">结果回到哪里</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">追踪 ROI、人工修正、能力积累与责任分配。</p>
+          <h3 class="font-semibold text-slate-950 mt-2 mb-2">结果如何验证和改进</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">追踪业务结果、人工修正、成本变化和责任分配。</p>
         </li>
       </ol>
     </div>
@@ -111,9 +111,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 mb-8">
         <div class="max-w-3xl">
-          <p class="text-sm text-brand-700 mb-2">七篇深读</p>
-          <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">从能力供给，到结果与责任</h2>
-          <p class="text-slate-600 leading-relaxed">每篇文章给出当前判断、证据边界、一个可直接使用的工作工具，以及会迫使观点改变的证伪条件。</p>
+          <p class="text-sm text-brand-700 mb-2">七个主题</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-3">从模型训练到产品、行业与安全</h2>
+          <p class="text-slate-600 leading-relaxed">每篇文章说明一个具体问题，列出主要证据、适用范围、可直接使用的检查表，以及可能改变当前判断的新证据。</p>
         </div>
         <span id="chapterMeta" class="text-sm text-slate-500"></span>
       </div>
@@ -124,9 +124,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
   <section class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
     <div class="grid lg:grid-cols-[.7fr_1.3fr] gap-8 lg:gap-16">
       <div>
-        <p class="text-sm text-brand-700 mb-2">最近加入证据库</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">新 notes 如何进入旧问题</h2>
-        <p class="text-slate-600 leading-relaxed mb-5">新材料不会单独堆成月度更新。它们会进入相应章节，修改原有论证、补充边界或留下新的证伪条件。</p>
+        <p class="text-sm text-brand-700 mb-2">最近新增</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">最近更新的 Notes</h2>
+        <p class="text-slate-600 leading-relaxed mb-5">新材料会归入对应主题，用来补充证据、修正原有判断或说明目前还不能确定的问题。</p>
         <a href="https://docs.qq.com/sheet/DYVFybXVvTk1YZm5B" target="_blank" rel="noopener" class="text-sm font-medium text-brand-700 hover:text-brand-900">查看持续更新的在线文档 →</a>
       </div>
       <div id="latestNotes" class="border-t border-slate-300"></div>
@@ -137,17 +137,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-20">
       <div class="grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div>
-          <p class="text-sm text-brand-700 mb-2">关于这套笔记</p>
+          <p class="text-sm text-brand-700 mb-2">关于作者</p>
           <h2 class="text-2xl md:text-3xl font-bold text-slate-950 mb-4">Yantao Wang (Shady)</h2>
-          <p class="text-slate-700 leading-relaxed mb-4">我有 AI 战略、行业研究与业务分析背景，长期跟踪基础模型、MaaS、Agent Infra、评测、数据闭环和企业 AI 部署。关注重点是模型能力与真实组织之间的接缝：任务怎样定义，结果怎样验收，经验怎样沉淀。</p>
+          <p class="text-slate-700 leading-relaxed mb-4">我有 AI 战略、行业研究与业务分析背景，长期跟踪基础模型、MaaS、Agent 工程、评测和企业 AI 部署。我主要研究模型能力如何用于实际工作，包括任务定义、评测、产品设计、成本、组织流程和责任。</p>
           <p class="text-sm text-slate-500 leading-relaxed">网站阶段性同步 notes 索引。条目中存在 <code>why</code> 时展示我的原始评论；缺少评论时只展示标题、关键词与来源，不把索引信息写成个人判断。</p>
         </div>
         <div class="lg:border-l lg:border-slate-200 lg:pl-10">
-          <h3 class="text-lg font-semibold text-slate-950 mb-4">适合一起拆解的问题</h3>
+          <h3 class="text-lg font-semibold text-slate-950 mb-4">可以一起讨论的问题</h3>
           <ul class="border-t border-slate-200 text-sm text-slate-700 leading-relaxed mb-6">
-            <li class="py-3 border-b border-slate-200">Agent / AI 工作流为什么在真实组织里失败</li>
-            <li class="py-3 border-b border-slate-200">怎样定义 Context、Eval、Verifier、人工接管与结果验收</li>
-            <li class="py-3 border-b border-slate-200">怎样把 badcase 与专家修正写回产品、Skill、评测或训练数据</li>
+            <li class="py-3 border-b border-slate-200">Agent 在企业工作流中为什么经常失败</li>
+            <li class="py-3 border-b border-slate-200">如何设计 Context、评测、人工接管和结果验收</li>
+            <li class="py-3 border-b border-slate-200">如何把失败案例和专家修正用于改进产品、Skill、评测或训练数据</li>
           </ul>
           <div class="space-y-2 text-sm text-slate-600">
             <p>WeChat: <span>black_shady1130</span></p>
@@ -227,7 +227,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 </main>
 
 <footer class="bg-slate-950 text-slate-500 text-xs text-center py-6 px-4">
-  <span>Yantao Wang · AI Deployment &amp; Learning Loop</span>
+  <span>AI 行业扫描 Notes</span>
   <span class="mx-2">·</span>
   <span id="footerUpdated"></span>
 </footer>
@@ -243,6 +243,7 @@ let curType='';
 let visibleNoteCount=12;
 let activeReference=null;
 let hideReferenceTimer=null;
+const TOPIC_ALIASES={'AI 影响与安全':'AI 安全与影响'};
 
 async function init(){
   const response=await fetch('data.json',{cache:'no-store'});
@@ -259,7 +260,8 @@ function route(){
   const hash=decodeURIComponent(location.hash||'#home');
   if(hash.startsWith('#topic/')){
     const name=hash.replace('#topic/','');
-    if(D.topics.some(topic=>topic.name===name)){showTopic(name);return}
+    const resolvedName=TOPIC_ALIASES[name]||name;
+    if(D.topics.some(topic=>topic.name===resolvedName)){showTopic(resolvedName);return}
   }
   showHome();
 }
@@ -283,10 +285,11 @@ function renderHome(){
 
   $('topicGrid').innerHTML=D.topics.map(topic=>`
     <a class="chapter-row grid md:grid-cols-[90px_1fr_180px] gap-3 md:gap-7 py-6 border-b border-slate-300 text-left" href="#topic/${encodeURIComponent(topic.name)}">
-      <div class="text-sm text-brand-700">${topic.chapter} · ${esc(topic.role)}</div>
+      <div class="text-sm text-brand-700">${topic.chapter}</div>
       <div>
-        <h3 class="text-lg md:text-xl font-semibold text-slate-950 mb-2">${esc(topic.article_title||topic.name)}</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">${esc(topic.thesis)}</p>
+        <h3 class="text-lg md:text-xl font-semibold text-slate-950 mb-1">${esc(topic.name)}</h3>
+        <p class="text-sm font-medium text-brand-700 mb-2">${esc(topic.article_title||topic.name)}</p>
+        <p class="text-sm text-slate-600 leading-relaxed">${esc(topic.description||topic.thesis)}</p>
       </div>
       <div class="md:text-right text-sm text-slate-500">${topic.count} 条 notes<br><span class="text-brand-700">进入文章 →</span></div>
     </a>`).join('');
@@ -315,7 +318,7 @@ function showTopic(name){
   navUpdate(topic);
   scrollTo(0,0);
 
-  $('tvRole').textContent=`${topic.chapter} · ${topic.role} · ${topic.name}`;
+  $('tvRole').textContent=`${topic.chapter} · ${topic.name}`;
   $('tvTitle').textContent=topic.article_title||topic.name;
   $('tvQuestion').textContent=topic.question;
   $('tvThesis').textContent=topic.thesis;
@@ -418,7 +421,7 @@ function toggleWhy(button){
 
 function navUpdate(topic){
   if(!topic){
-    $('navBC').innerHTML='<a href="#home" class="font-semibold text-slate-950 hover:text-brand-700 truncate">Yantao · AI Deployment Notes</a>';
+    $('navBC').innerHTML='<a href="#home" class="font-semibold text-slate-950 hover:text-brand-700 truncate">AI 行业扫描 Notes</a>';
   }else{
     $('navBC').innerHTML=`<a href="#home" class="text-slate-500 hover:text-brand-700 shrink-0">首页</a><span class="text-slate-300">/</span><span class="font-semibold text-slate-950 truncate">${esc(topic.name)}</span>`;
   }

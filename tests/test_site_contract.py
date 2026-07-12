@@ -87,28 +87,48 @@ class SiteDataContractTests(unittest.TestCase):
 
 
 class TopicMetadataContractTests(unittest.TestCase):
+    PLAIN_TOPIC_NAMES = {
+        "评测与基准",
+        "架构与工程",
+        "模型推理与训练",
+        "AI Coding",
+        "AI 产品与交互",
+        "行业格局与企业战略",
+        "AI 安全与影响",
+    }
+
     def test_seven_topics_define_their_role_in_one_research_arc(self):
         topics = load_json(TOPICS)
         self.assertEqual(7, len(topics))
+        self.assertEqual(self.PLAIN_TOPIC_NAMES, {topic["name"] for topic in topics})
         for topic in topics:
             for field in ("chapter", "role", "question", "thesis", "article_title"):
                 self.assertTrue(topic.get(field), f"{topic['name']} missing {field}")
 
         coding = next(topic for topic in topics if topic["name"] == "AI Coding")
         strategy = next(topic for topic in topics if topic["name"] == "行业格局与企业战略")
-        self.assertIn("高反馈验证场", coding["role"])
-        self.assertIn("部署与价值捕获", strategy["role"])
+        self.assertEqual("代码开发案例", coding["role"])
+        self.assertEqual("市场与商业模式", strategy["role"])
 
 
 class ReviewContractTests(unittest.TestCase):
     INSTRUMENTS = {
-        "model-training.md": "模型比较合同",
-        "architecture-engineering.md": "Agent 运行合同",
-        "eval-benchmark.md": "评测审计表",
-        "ai-coding.md": "工作负载路由表",
-        "product-interaction.md": "授权与接管阶梯",
-        "industry-strategy.md": "价值捕获检查表",
-        "impact-safety.md": "隐性劳动与责任台账",
+        "model-training.md": "模型比较清单",
+        "architecture-engineering.md": "长程 Agent 运行清单",
+        "eval-benchmark.md": "评测检查表",
+        "ai-coding.md": "任务分级与成本记录表",
+        "product-interaction.md": "权限与人工接管分级表",
+        "industry-strategy.md": "AI 项目商业价值检查表",
+        "impact-safety.md": "责任与额外人工成本清单",
+    }
+    ARTICLE_TITLES = {
+        "model-training.md": "模型能力是怎样训练出来的",
+        "architecture-engineering.md": "长程 Agent 如何运行：Context、状态、权限与恢复",
+        "eval-benchmark.md": "如何判断一个 Agent 评测是否可信",
+        "ai-coding.md": "AI Coding 如何改变软件开发的成本",
+        "product-interaction.md": "AI 产品如何展示状态、管理权限和支持人工接管",
+        "industry-strategy.md": "模型降价之后，AI 企业靠什么赚钱",
+        "impact-safety.md": "AI 如何改变人的判断、工作和责任",
     }
     NEW_EVIDENCE = {
         "model-training.md": {351, 353, 354},
@@ -145,8 +165,10 @@ class ReviewContractTests(unittest.TestCase):
             self.assertIn("核心判断", text, name)
             self.assertIn("边界", text, name)
             self.assertIn(self.INSTRUMENTS[name], text, name)
-            self.assertRegex(text, r"## .*(证伪|修正)", name)
-            falsifier_section = re.split(r"^## .*(?:证伪|修正).*$", text, flags=re.MULTILINE)
+            self.assertRegex(text, r"## .*(证伪|修正|改变)", name)
+            falsifier_section = re.split(
+                r"^## .*(?:证伪|修正|改变).*$", text, flags=re.MULTILINE
+            )
             self.assertGreaterEqual(len(falsifier_section), 2, name)
             numbered_conditions = re.findall(r"^\d+\. ", falsifier_section[-1], flags=re.MULTILINE)
             self.assertGreaterEqual(len(numbered_conditions), 2, name)
@@ -168,6 +190,27 @@ class ReviewContractTests(unittest.TestCase):
         self.assertNotIn("证明了 Claude 有意识", all_reviews)
         self.assertNotIn("所有任务都", all_reviews)
 
+    def test_articles_use_plain_titles_and_avoid_packaged_headings(self):
+        all_reviews = "\n".join(self.review_text.values())
+        for name, expected_title in self.ARTICLE_TITLES.items():
+            self.assertTrue(
+                self.review_text[name].startswith(f"# {expected_title}\n"),
+                name,
+            )
+        for phrase in (
+            "共同定界",
+            "实验合同",
+            "推理空间",
+            "提示词外壳",
+            "持续运行的前台",
+            "状态可见性决定协作带宽",
+            "失败兜底",
+            "责任节点",
+            "价值捕获",
+            "自动带来赋权",
+        ):
+            self.assertNotIn(phrase, all_reviews, phrase)
+
 
 class SitePageContractTests(unittest.TestCase):
     @classmethod
@@ -175,11 +218,11 @@ class SitePageContractTests(unittest.TestCase):
         cls.html = INDEX.read_text(encoding="utf-8-sig")
 
     def test_homepage_leads_with_personal_thesis_and_collaboration_entry(self):
-        self.assertIn("研究模型如何进入真实组织", self.html)
+        self.assertIn("我关注 AI 如何用于真实工作", self.html)
         self.assertIn('id="research-path"', self.html)
         self.assertIn('id="collaborate"', self.html)
-        self.assertIn("阅读七章", self.html)
-        self.assertIn("讨论真实工作流", self.html)
+        self.assertIn("阅读七个主题", self.html)
+        self.assertIn("联系与合作", self.html)
 
     def test_homepage_uses_an_editorial_not_generic_ai_landing_page(self):
         self.assertIn('id="home-hero"', self.html)
@@ -189,6 +232,19 @@ class SitePageContractTests(unittest.TestCase):
         self.assertNotIn("17.8 万字", self.html)
         self.assertNotIn("所有 notes 均经过人工 review", self.html)
         self.assertNotIn("LATEST NOTES", self.html)
+
+    def test_site_uses_plain_topic_names_and_limits_personal_name_to_contact(self):
+        self.assertIn("AI 行业扫描 Notes", self.html)
+        self.assertEqual(1, self.html.count("Yantao"))
+        self.assertNotIn("系统怎样接住", self.html)
+        self.assertNotIn("能力供给层", self.html)
+        self.assertNotIn("运行系统层", self.html)
+        self.assertNotIn("部署与价值捕获层", self.html)
+        self.assertIn("${esc(topic.name)}", self.html)
+
+    def test_renamed_safety_topic_keeps_old_hash_compatible(self):
+        self.assertIn("'AI 影响与安全':'AI 安全与影响'", self.html)
+        self.assertIn("TOPIC_ALIASES[name]||name", self.html)
 
     def test_note_browser_exposes_cited_recent_and_all_views(self):
         for marker in (
