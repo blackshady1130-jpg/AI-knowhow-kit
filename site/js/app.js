@@ -119,11 +119,12 @@ function renderActivity() {
     m++; if (m > 12) { m = 1; y++; }
   }
   const max = Math.max(...seq.map(k => counts.get(k) || 0));
+  const latestMonth = months[months.length - 1];
   $('activityChart').innerHTML = seq.map(k => {
     const c = counts.get(k) || 0;
     const h = Math.max(3, Math.round(c / max * 100));
-    const peak = c === max ? ' peak' : '';
-    return '<div class="act-col' + peak + '">' +
+    const latest = k === latestMonth ? ' latest' : '';
+    return '<div class="act-col' + latest + '">' +
       '<span class="act-tip">' + k.replace('-', '.') + ' · ' + c + ' 条</span>' +
       '<div class="act-bar" style="height:' + h + '%"></div>' +
     '</div>';

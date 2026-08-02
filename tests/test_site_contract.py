@@ -300,6 +300,12 @@ class SitePageContractTests(unittest.TestCase):
         self.assertIn("overflow-x:hidden", compact)
         self.assertRegex(compact, r"@media\(max-width:640px\).*?\.act-tip\{display:none\}")
 
+    def test_activity_chart_highlights_latest_month_not_highest_count(self):
+        self.assertIn("const latestMonth = months[months.length - 1]", self.app_js)
+        self.assertIn("k === latestMonth ? ' latest' : ''", self.app_js)
+        self.assertNotIn("c === max ? ' peak' : ''", self.app_js)
+        self.assertIn(".act-col.latest .act-bar", self.css)
+
     def test_secondary_text_tokens_meet_readability_baseline(self):
         compact = re.sub(r"\s+", "", self.css).lower()
         self.assertIn("--ink-3:#5e6976", compact)
