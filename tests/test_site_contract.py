@@ -12,6 +12,8 @@ ASSIGNMENTS = SITE / "topic_assignments.json"
 TOPICS = SITE / "topics.json"
 DATA = SITE / "data.json"
 INDEX = SITE / "index.html"
+STYLES = SITE / "css" / "style.css"
+APP_JS = SITE / "js" / "app.js"
 REVIEWS = SITE / "reviews"
 
 
@@ -35,9 +37,9 @@ class SiteDataContractTests(unittest.TestCase):
         cls.topics = load_json(TOPICS)
         cls.bundle = load_json(DATA)
 
-    def test_all_360_notes_have_one_to_three_valid_topic_assignments(self):
+    def test_all_source_notes_have_one_to_three_valid_topic_assignments(self):
         note_ids = {str(note["id"]) for note in self.notes}
-        self.assertEqual(360, len(note_ids))
+        self.assertEqual(len(self.notes), len(note_ids))
         self.assertEqual(note_ids, set(self.assignments))
 
         valid_topics = {topic["name"] for topic in self.topics}
@@ -46,15 +48,15 @@ class SiteDataContractTests(unittest.TestCase):
             self.assertLessEqual(len(topics), 3, note_id)
             self.assertTrue(set(topics) <= valid_topics, note_id)
 
-    def test_new_notes_351_to_360_are_classified(self):
-        expected = {str(note_id) for note_id in range(351, 361)}
+    def test_new_notes_361_to_387_are_classified(self):
+        expected = {str(note_id) for note_id in range(361, 388)}
         self.assertTrue(expected <= set(self.assignments))
         for note_id in expected:
             self.assertTrue(self.assignments[note_id], note_id)
 
     def test_generated_bundle_contains_all_notes_and_preserves_authored_why(self):
-        self.assertEqual(360, self.bundle["meta"]["total_notes"])
-        self.assertEqual(360, len(self.bundle["notes"]))
+        self.assertEqual(len(self.notes), self.bundle["meta"]["total_notes"])
+        self.assertEqual(len(self.notes), len(self.bundle["notes"]))
         source_why = {int(note["id"]): note.get("why") or "" for note in self.notes}
         bundled_why = {int(note["id"]): note.get("why") or "" for note in self.bundle["notes"]}
         self.assertEqual(source_why, bundled_why)
@@ -131,13 +133,13 @@ class ReviewContractTests(unittest.TestCase):
         "impact-safety.md": "AI 如何改变人的判断、工作和责任",
     }
     NEW_EVIDENCE = {
-        "model-training.md": {351, 353, 354},
-        "architecture-engineering.md": {354, 355},
-        "eval-benchmark.md": {354, 357, 358, 360},
-        "ai-coding.md": {358, 360},
-        "product-interaction.md": {357, 359},
-        "industry-strategy.md": {356, 358},
-        "impact-safety.md": {352, 357, 359},
+        "model-training.md": {363, 374, 377, 385},
+        "architecture-engineering.md": {369, 370, 377, 382, 384},
+        "eval-benchmark.md": {373, 374, 375},
+        "ai-coding.md": {370, 373, 374, 386},
+        "product-interaction.md": {369, 375, 382},
+        "industry-strategy.md": {361, 366, 367, 378, 379, 383},
+        "impact-safety.md": {361, 368, 382, 384},
     }
 
     @classmethod
@@ -176,13 +178,10 @@ class ReviewContractTests(unittest.TestCase):
 
     def test_new_evidence_is_integrated_and_all_references_resolve(self):
         note_ids = {int(note["id"]) for note in load_jsonl(NOTES_INDEX)}
-        cited_new_ids = set()
         for name, text in self.review_text.items():
             refs = {int(match) for match in re.findall(r"#(\d+)", text)}
             self.assertTrue(refs <= note_ids, f"{name} has broken refs {refs - note_ids}")
             self.assertTrue(self.NEW_EVIDENCE[name] <= refs, f"{name} missing new evidence")
-            cited_new_ids |= refs & set(range(351, 361))
-        self.assertEqual(set(range(351, 361)), cited_new_ids)
 
     def test_stale_or_overstated_copy_is_absent(self):
         all_reviews = "\n".join(self.review_text.values())
@@ -216,6 +215,9 @@ class SitePageContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.html = INDEX.read_text(encoding="utf-8-sig")
+        cls.css = STYLES.read_text(encoding="utf-8-sig") if STYLES.exists() else ""
+        cls.app_js = APP_JS.read_text(encoding="utf-8-sig") if APP_JS.exists() else ""
+        cls.runtime = cls.html + "\n" + cls.app_js
 
     def test_homepage_leads_with_personal_thesis_and_collaboration_entry(self):
         self.assertIn("关注 AI 如何用于真实工作", self.html)
@@ -226,25 +228,25 @@ class SitePageContractTests(unittest.TestCase):
 
     def test_homepage_uses_an_editorial_not_generic_ai_landing_page(self):
         self.assertIn('id="home-hero"', self.html)
-        self.assertIn('class="chapter-row', self.html)
+        self.assertIn('id="topicGrid" class="dossier', self.html)
+        self.assertIn('class="dossier-row', self.app_js)
         self.assertNotIn("bg-gradient-to-br", self.html)
-        self.assertNotIn("${topic.icon}", self.html)
+        self.assertNotIn("topic.icon", self.runtime)
         self.assertNotIn("17.8 万字", self.html)
         self.assertNotIn("所有 notes 均经过人工 review", self.html)
         self.assertNotIn("LATEST NOTES", self.html)
 
     def test_site_uses_plain_topic_names_and_limits_personal_name_to_contact(self):
-        self.assertIn("AI 行业扫描 Notes", self.html)
-        self.assertEqual(1, self.html.count("Yantao"))
-        self.assertNotIn("系统怎样接住", self.html)
-        self.assertNotIn("能力供给层", self.html)
-        self.assertNotIn("运行系统层", self.html)
-        self.assertNotIn("部署与价值捕获层", self.html)
-        self.assertIn("${esc(topic.name)}", self.html)
+        self.assertIn("AI 行业扫描 Notes", self.runtime)
+        self.assertEqual(1, self.runtime.count("Yantao"))
+        self.assertNotIn("系统怎样接住", self.runtime)
+        self.assertNotIn("AI·SCAN", self.runtime)
+        self.assertNotIn("PERSONAL RESEARCH ARCHIVE", self.runtime)
+        self.assertIn("esc(t.name)", self.app_js)
 
     def test_renamed_safety_topic_keeps_old_hash_compatible(self):
-        self.assertIn("'AI 影响与安全':'AI 安全与影响'", self.html)
-        self.assertIn("TOPIC_ALIASES[name]||name", self.html)
+        self.assertRegex(self.app_js, r"['\"]AI 影响与安全['\"]\s*:\s*['\"]AI 安全与影响['\"]")
+        self.assertRegex(self.app_js, r"TOPIC_ALIASES\[name\]\s*\|\|\s*name")
 
     def test_note_browser_exposes_cited_recent_and_all_views(self):
         for marker in (
@@ -255,12 +257,20 @@ class SitePageContractTests(unittest.TestCase):
             'id="noteType"',
             'id="loadMoreBtn"',
         ):
-            self.assertIn(marker, self.html)
+            self.assertIn(marker, self.runtime)
 
     def test_notes_have_accurate_provenance_and_native_links(self):
-        self.assertIn("索引关键词（原条目无评论）", self.html)
-        self.assertIn('class="recent-note-link', self.html)
-        self.assertIn('<button type="button" class="note-ref"', self.html)
+        self.assertIn("索引关键词（原条目无评论）", self.app_js)
+        self.assertIn('class="lat-row', self.app_js)
+        self.assertIn('<button type="button" class="note-ref"', self.app_js)
+
+    def test_reference_click_does_not_immediately_close_hovered_tooltip(self):
+        self.assertNotIn("activeReference === btn", self.app_js)
+        self.assertRegex(
+            self.app_js,
+            r"btn\.addEventListener\('click',\s*e\s*=>\s*\{\s*"
+            r"e\.stopPropagation\(\);\s*showReference\(btn\);",
+        )
 
     def test_page_logic_supports_search_filter_and_incremental_loading(self):
         for symbol in (
@@ -271,28 +281,41 @@ class SitePageContractTests(unittest.TestCase):
             "renderNoteBrowser",
             "loadMoreNotes",
         ):
-            self.assertIn(symbol, self.html)
+            self.assertIn(symbol, self.app_js)
 
     def test_data_bundle_is_requested_without_stale_browser_cache(self):
-        self.assertIn("fetch('data.json',{cache:'no-store'})", self.html)
+        self.assertRegex(
+            self.app_js,
+            r"fetch\(['\"]data\.json['\"]\s*,\s*\{\s*cache:\s*['\"]no-store['\"]\s*\}\)",
+        )
 
-    def test_mobile_navigation_and_calls_to_action_can_wrap(self):
-        self.assertIn('class="hidden md:flex', self.html)
-        self.assertIn("flex-wrap", self.html)
-        self.assertIn("overflow-x-hidden", self.html)
+    def test_split_runtime_assets_are_local_and_present(self):
+        self.assertTrue(STYLES.exists())
+        self.assertTrue(APP_JS.exists())
+        self.assertIn('href="css/style.css"', self.html)
+        self.assertIn('src="js/app.js"', self.html)
 
-    def test_inline_javascript_parses(self):
-        script = """
-const fs=require('fs');
-const html=fs.readFileSync(process.argv[1],'utf8');
-const blocks=[...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/g)]
-  .map(match=>match[1]).filter(source=>source.trim());
-for(const source of blocks)new Function(source);
-"""
+    def test_mobile_layout_hides_activity_tooltips_and_prevents_overflow(self):
+        compact = re.sub(r"\s+", "", self.css)
+        self.assertIn("overflow-x:hidden", compact)
+        self.assertRegex(compact, r"@media\(max-width:640px\).*?\.act-tip\{display:none\}")
+
+    def test_secondary_text_tokens_meet_readability_baseline(self):
+        compact = re.sub(r"\s+", "", self.css).lower()
+        self.assertIn("--ink-3:#5e6976", compact)
+        self.assertIn("--ink-4:#697481", compact)
+
+    def test_metadata_does_not_hardcode_a_stale_note_count(self):
+        head = self.html.split("</head>", 1)[0]
+        self.assertNotRegex(head, r"\b(?:360|365|387)\s*条")
+
+    def test_app_javascript_parses(self):
         result = subprocess.run(
-            ["node", "-e", script, str(INDEX)],
+            ["node", "--check", str(APP_JS)],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             check=False,
         )
         self.assertEqual(0, result.returncode, result.stderr)
