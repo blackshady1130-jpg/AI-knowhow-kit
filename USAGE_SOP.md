@@ -1,7 +1,7 @@
 # USAGE_SOP
 
-版本：v0.2（精简版）  
-更新日期：2026-03-15
+版本：v0.3（精简版）
+更新日期：2026-08-02
 
 ## 1) 文件分层速查
 
@@ -53,8 +53,11 @@
 
 ## 4) 当前可用 Skills
 
-1. `skills/ppt-onepager-writer/SKILL.md`：汇报/PPT 一页文案生成
-2. `skills/eval-conclusion-builder/SKILL.md`：评测结论与对比分析
-3. `skills/model-collab-kickoff/SKILL.md`：业务-模型合作方案结构化输出
+1. `skills/ai-industry-intel/SKILL.md`：AI 行业情报摘要、来源地图和推荐清单
+2. `skills/ppt-html-style/SKILL.md`：16:9 浏览器可播放策略报告 HTML slide deck
+3. `skills/xhs-wechat-ai-note/SKILL.md`：小红书/公众号风格 AI 行业判断笔记
+4. `skills/ppt-onepager-writer/SKILL.md`：汇报/PPT 一页文案生成
+5. `skills/eval-conclusion-builder/SKILL.md`：评测结论与对比分析
+6. `skills/model-collab-kickoff/SKILL.md`：业务-模型合作方案结构化输出
 
 调用方式：在提问开头加 `请按 skill: <skill-name> 执行`。
