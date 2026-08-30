@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+README = ROOT / "README.md"
 SITE = ROOT / "site"
 NOTES_INDEX = ROOT / "notes" / "AI行业扫描_keywords.jsonl"
 ASSIGNMENTS = SITE / "topic_assignments.json"
@@ -29,6 +30,20 @@ def load_jsonl(path: Path):
     ]
 
 
+class SiteRepositoryStatusContractTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.readme = README.read_text(encoding="utf-8-sig")
+
+    def test_readme_reports_the_current_public_index(self):
+        self.assertIn("当前公开索引（更新至 2026-08）：", self.readme)
+        self.assertIn("https://blackshady1130-jpg.github.io/AI-knowhow-kit/#home", self.readme)
+        self.assertRegex(self.readme, r"\| `notes/` \|[^\n]+\| 424 条 \|")
+        self.assertRegex(self.readme, r"\| `bookmarks/` \|[^\n]+\| 861 条 \|")
+        self.assertRegex(self.readme, r"\| `skills/` \|[^\n]+\| 6 个 \|")
+        self.assertNotIn("截至 2026-08-02", self.readme)
+
+
 class SiteDataContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -50,6 +65,12 @@ class SiteDataContractTests(unittest.TestCase):
 
     def test_new_notes_361_to_387_are_classified(self):
         expected = {str(note_id) for note_id in range(361, 388)}
+        self.assertTrue(expected <= set(self.assignments))
+        for note_id in expected:
+            self.assertTrue(self.assignments[note_id], note_id)
+
+    def test_new_notes_415_to_424_are_classified(self):
+        expected = {str(note_id) for note_id in range(415, 425)}
         self.assertTrue(expected <= set(self.assignments))
         for note_id in expected:
             self.assertTrue(self.assignments[note_id], note_id)
@@ -111,6 +132,13 @@ class TopicMetadataContractTests(unittest.TestCase):
         strategy = next(topic for topic in topics if topic["name"] == "行业格局与企业战略")
         self.assertEqual("代码开发案例", coding["role"])
         self.assertEqual("市场与商业模式", strategy["role"])
+
+    def test_topics_record_article_review_date(self):
+        topics = load_json(TOPICS)
+        self.assertEqual(7, len(topics))
+        for topic in topics:
+            review_updated_at = topic.get("review_updated_at", "")
+            self.assertRegex(review_updated_at, r"^\d{4}-\d{2}-\d{2}$", topic["name"])
 
 
 class ReviewContractTests(unittest.TestCase):
@@ -314,6 +342,14 @@ class SitePageContractTests(unittest.TestCase):
     def test_metadata_does_not_hardcode_a_stale_note_count(self):
         head = self.html.split("</head>", 1)[0]
         self.assertNotRegex(head, r"\b(?:360|365|387)\s*条")
+
+    def test_page_distinguishes_review_and_notes_freshness(self):
+        self.assertIn("'Notes 更新于 ' + D.meta.generated_at", self.app_js)
+        self.assertRegex(
+            self.app_js,
+            r"tvMeta.*文章复核.*topic\.review_updated_at.*Notes 同步.*D\.meta\.generated_at",
+        )
+        self.assertNotIn(" · 更新至 ' + D.meta.generated_at", self.app_js)
 
     def test_app_javascript_parses(self):
         result = subprocess.run(

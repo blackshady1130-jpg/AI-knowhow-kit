@@ -22,7 +22,7 @@ async function init() {
   window.addEventListener('hashchange', route);
   window.addEventListener('resize', closeReference);
   window.addEventListener('scroll', updateProgress, { passive: true });
-  $('footerUpdated').textContent = '更新于 ' + D.meta.generated_at;
+  $('footerUpdated').textContent = 'Notes 更新于 ' + D.meta.generated_at;
   route();
 }
 
@@ -149,7 +149,7 @@ function showTopic(name) {
   $('tvTitle').textContent = topic.article_title || topic.name;
   $('tvQuestion').textContent = topic.question;
   $('tvThesis').textContent = topic.thesis;
-  $('tvMeta').textContent = topic.count + ' 条相关 NOTES · ' + rangeText(topic.date_range || D.meta.date_range) + ' · 更新至 ' + D.meta.generated_at;
+  $('tvMeta').textContent = topic.count + ' 条相关 NOTES · ' + rangeText(topic.date_range || D.meta.date_range) + ' · 文章复核 ' + topic.review_updated_at + ' · Notes 同步 ' + D.meta.generated_at;
   $('reviewSub').textContent = '正文引用 ' + topic.review_note_ids.length + ' 条证据';
 
   let markdown = topic.review;
