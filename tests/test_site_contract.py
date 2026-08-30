@@ -345,8 +345,10 @@ class SitePageContractTests(unittest.TestCase):
 
     def test_page_distinguishes_review_and_notes_freshness(self):
         self.assertIn("'Notes 更新于 ' + D.meta.generated_at", self.app_js)
-        self.assertIn("'文章复核 ' + topic.review_updated_at", self.app_js)
-        self.assertIn("'Notes 同步 ' + D.meta.generated_at", self.app_js)
+        self.assertRegex(
+            self.app_js,
+            r"tvMeta.*文章复核.*topic\.review_updated_at.*Notes 同步.*D\.meta\.generated_at",
+        )
         self.assertNotIn(" · 更新至 ' + D.meta.generated_at", self.app_js)
 
     def test_app_javascript_parses(self):
