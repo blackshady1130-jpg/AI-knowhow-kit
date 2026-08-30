@@ -83,4 +83,4 @@ Model × endpoint × effort × Harness × Environment × tools × budget × Veri
 
 1. 若多个公开 Agent benchmark 经独立逐项审计后，任务缺陷、环境噪声和 Verifier 漏洞长期低到不足以改变排名，数据点审计的优先级可以下降。
 2. 若跨 Harness、effort、预算和工具配置的排名高度稳定，且总成本差异很小，系统配置可以退回次要报告项。
-3. 若 Objective-only 分数能长期预测真实部署中的 Guardrail 违例、人工接管和业务损失，过程与副作用评测可以简化；当前材料不支持这一点。本轮不外推。
+3. 若 Objective-only 分数能长期预测真实部署中的 Guardrail 违例、人工接管和业务损失，过程与副作用评测可以简化；当前材料不支持这一点，因此本篇不把它外推到其他场景。
