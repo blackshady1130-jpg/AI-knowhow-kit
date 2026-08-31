@@ -161,13 +161,13 @@ class ReviewContractTests(unittest.TestCase):
         "impact-safety.md": "AI 如何改变人的判断、工作和责任",
     }
     NEW_EVIDENCE = {
-        "model-training.md": {363, 374, 377, 385},
-        "architecture-engineering.md": {369, 370, 377, 382, 384},
-        "eval-benchmark.md": {373, 374, 375},
-        "ai-coding.md": {370, 373, 374, 386},
-        "product-interaction.md": {369, 375, 382},
-        "industry-strategy.md": {361, 366, 367, 378, 379, 383},
-        "impact-safety.md": {361, 368, 382, 384},
+        "model-training.md": {407, 416, 418},
+        "architecture-engineering.md": {388, 403, 414, 415, 417},
+        "eval-benchmark.md": {395, 399, 410, 419, 423},
+        "ai-coding.md": {396, 413, 415},
+        "product-interaction.md": {390, 396, 403, 410, 413},
+        "industry-strategy.md": {389, 397, 406, 421, 424},
+        "impact-safety.md": {396, 403, 420},
     }
 
     @classmethod
