@@ -142,21 +142,12 @@ class TopicMetadataContractTests(unittest.TestCase):
 
 
 class ReviewContractTests(unittest.TestCase):
-    INSTRUMENTS = {
-        "model-training.md": "模型比较清单",
-        "architecture-engineering.md": "长程 Agent 运行清单",
-        "eval-benchmark.md": "评测检查表",
-        "ai-coding.md": "任务分级与成本记录表",
-        "product-interaction.md": "权限与人工接管分级表",
-        "industry-strategy.md": "AI 项目商业价值检查表",
-        "impact-safety.md": "责任与额外人工成本清单",
-    }
     ARTICLE_TITLES = {
-        "model-training.md": "模型能力是怎样训练出来的",
-        "architecture-engineering.md": "长程 Agent 如何运行：Context、状态、权限与恢复",
+        "model-training.md": "训练与推理怎样提高模型能力",
+        "architecture-engineering.md": "长程 Agent 如何保存进度、处理失败和恢复运行",
         "eval-benchmark.md": "如何判断一个 Agent 评测是否可信",
-        "ai-coding.md": "AI Coding 如何改变软件开发的成本",
-        "product-interaction.md": "AI 产品如何展示状态、管理权限和支持人工接管",
+        "ai-coding.md": "AI Coding 如何改变软件开发的成本和机会",
+        "product-interaction.md": "AI 产品怎样让用户把事情做完",
         "industry-strategy.md": "模型降价之后，AI 企业靠什么赚钱",
         "impact-safety.md": "AI 如何改变人的判断、工作和责任",
     }
@@ -165,7 +156,7 @@ class ReviewContractTests(unittest.TestCase):
         "architecture-engineering.md": {388, 403, 414, 415, 417},
         "eval-benchmark.md": {395, 399, 410, 419, 423},
         "ai-coding.md": {396, 413, 415},
-        "product-interaction.md": {390, 396, 403, 410, 413},
+        "product-interaction.md": {369, 390, 396, 397, 410, 413},
         "industry-strategy.md": {389, 397, 406, 421, 424},
         "impact-safety.md": {396, 403, 420},
     }
@@ -190,19 +181,46 @@ class ReviewContractTests(unittest.TestCase):
             heading_sequences.append(headings)
         self.assertEqual(7, len(set(heading_sequences)))
 
-    def test_every_review_has_boundaries_specific_instrument_and_falsifiers(self):
+    def test_every_review_has_substantive_sections_and_traceable_evidence(self):
         for name, text in self.review_text.items():
-            self.assertIn("核心判断", text, name)
-            self.assertIn("边界", text, name)
-            self.assertIn(self.INSTRUMENTS[name], text, name)
-            self.assertRegex(text, r"## .*(证伪|修正|改变)", name)
-            falsifier_section = re.split(
-                r"^## .*(?:证伪|修正|改变).*$", text, flags=re.MULTILINE
-            )
-            self.assertGreaterEqual(len(falsifier_section), 2, name)
-            numbered_conditions = re.findall(r"^\d+\. ", falsifier_section[-1], flags=re.MULTILINE)
-            self.assertGreaterEqual(len(numbered_conditions), 2, name)
-            self.assertLessEqual(len(numbered_conditions), 3, name)
+            headings = re.findall(r"^## .+$", text, flags=re.MULTILINE)
+            refs = set(re.findall(r"#(\d+)", text))
+            self.assertGreaterEqual(len(headings), 4, name)
+            self.assertGreaterEqual(len(refs), 5, name)
+
+    def test_article_titles_dates_and_bundled_text_match_sources(self):
+        topics = load_json(TOPICS)
+        bundled = {topic["review_file"]: topic for topic in load_json(DATA)["topics"]}
+        for topic in topics:
+            name = topic["review_file"]
+            text = self.review_text[name]
+            self.assertEqual(f"# {topic['article_title']}", text.splitlines()[0])
+            self.assertIn(f"复核于 {topic['review_updated_at']}", text)
+            self.assertEqual(text, bundled[name]["review"], name)
+            for field in ("article_title", "description", "thesis", "question", "review_updated_at"):
+                self.assertEqual(topic[field], bundled[name][field], f"{name}: {field}")
+            refs = list(dict.fromkeys(int(value) for value in re.findall(r"#(\d+)", text)))
+            self.assertEqual(refs, bundled[name]["review_note_ids"], name)
+
+    def test_known_mismatched_references_are_not_reintroduced(self):
+        product = set(re.findall(r"#(\d+)", self.review_text["product-interaction.md"]))
+        strategy = set(re.findall(r"#(\d+)", self.review_text["industry-strategy.md"]))
+        self.assertNotIn("21", product)
+        self.assertFalse({"76", "97"} & strategy)
+
+    def test_coding_efficiency_claim_includes_historical_and_followup_dates(self):
+        text = self.review_text["ai-coding.md"]
+        self.assertIn("2025 年初", text)
+        self.assertIn("2026 年 2 月", text)
+        self.assertIn("https://metr.org/blog/2026-02-24-uplift-update/", text)
+
+    def test_repeated_runs_are_not_presented_as_longitudinal_reliability(self):
+        text = self.review_text["eval-benchmark.md"]
+        self.assertIn("同题重复运行", text)
+        self.assertIn("不等于一个系统在真实工作中连续五天没有事故", text)
+
+    def test_recovery_story_is_labelled_as_hypothetical(self):
+        self.assertIn("假设示例，并非真实事故记录", self.review_text["architecture-engineering.md"])
 
     def test_new_evidence_is_integrated_and_all_references_resolve(self):
         note_ids = {int(note["id"]) for note in load_jsonl(NOTES_INDEX)}
@@ -359,6 +377,36 @@ class SitePageContractTests(unittest.TestCase):
             encoding="utf-8",
             errors="replace",
             check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
+
+    def test_rendered_review_keeps_intro_before_first_subheading(self):
+        script = r"""
+const fs = require('fs');
+const vm = require('vm');
+const assert = require('assert/strict');
+const source = fs.readFileSync(process.argv[1], 'utf8');
+const start = source.indexOf('  let markdown = topic.review;');
+const end = source.indexOf("  $('reviewContent').innerHTML", start);
+assert(start >= 0 && end > start, 'review rendering transform must be present');
+const transform = source.slice(start, end) + '\nmarkdown;';
+const renderBody = review => vm.runInNewContext(transform, {topic: {review}});
+const header = '# 标题\n\n**讨论文章主题 · 复核于 2026-09-05**\n\n';
+const body = '这是应当显示的导语。\n\n## 章节\n\n正文 #369。';
+assert.equal(renderBody(header + body), body, 'intro must not be discarded');
+assert.equal(renderBody((header + body).replace(/\n/g, '\r\n')).replace(/\r\n/g, '\n'), body);
+assert.equal(renderBody(header + '---\n\n' + body), body);
+assert.equal(renderBody('# 标题\n\n**重要观点**\n\n正文'), '**重要观点**\n\n正文');
+assert.equal(renderBody('没有小标题的正文'), '没有小标题的正文');
+for (const file of fs.readdirSync(process.argv[2]).filter(name => name.endsWith('.md'))) {
+  const review = fs.readFileSync(process.argv[2] + '/' + file, 'utf8').replace(/\r\n/g, '\n');
+  const expected = review.split('\n').slice(4).join('\n').trimStart();
+  assert.equal(renderBody(review), expected, file + ': full article body must be shown');
+}
+"""
+        result = subprocess.run(
+            ["node", "-e", script, str(APP_JS), str(REVIEWS)],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", check=False,
         )
         self.assertEqual(0, result.returncode, result.stderr)
 

@@ -153,8 +153,12 @@ function showTopic(name) {
   $('reviewSub').textContent = '正文引用 ' + topic.review_note_ids.length + ' 条证据';
 
   let markdown = topic.review;
-  const firstH2 = markdown.indexOf('\n## ');
-  if (firstH2 > 0) markdown = markdown.substring(firstH2);
+  // The page already shows the title and date; keep any prose before the first section.
+  markdown = markdown
+    .replace(/^\uFEFF?#[ \t]+[^\r\n]*(?:\r?\n|$)/, '')
+    .replace(/^\s*\*\*讨论[^\r\n]*\*\*[ \t]*(?:\r?\n|$)/, '')
+    .replace(/^\s*---[ \t]*(?:\r?\n|$)/, '')
+    .trimStart();
   $('reviewContent').innerHTML = linkRefs(mdParse(markdown));
 
   buildToc();

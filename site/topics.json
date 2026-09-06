@@ -4,83 +4,83 @@
     "icon": "🧠",
     "chapter": "01",
     "role": "模型能力",
-    "question": "模型能力是怎样训练和推理出来的，哪些提升能用于真实任务？",
-    "thesis": "比较模型能力时，需要同时说明数据、训练方法、解码设置、推理预算和测试环境。",
-    "article_title": "模型能力是怎样训练出来的",
-    "description": "讨论 Scaling、RL、生成顺序、长时间任务和内部机制研究分别能说明什么。",
+    "question": "训练、推理和工具分别能改善什么，下一笔计算投入应该花在哪里？",
+    "thesis": "预训练、后训练和推理投入需要一起考虑，最合适的组合取决于任务、调用量与反馈条件。",
+    "article_title": "训练与推理怎样提高模型能力",
+    "description": "讨论训练资源分配、后训练、推理预算、注意力机制和自动化研究。",
     "review_file": "model-training.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "架构与工程",
     "icon": "🏗️",
     "chapter": "02",
     "role": "Agent 运行机制",
-    "question": "Context、Harness、工具、状态和恢复机制如何共同支持长时间任务？",
-    "thesis": "同一个模型接入不同的 Context、工具、权限、验证和恢复机制后，完成任务的效果可能明显不同。",
-    "article_title": "长程 Agent 如何运行：Context、状态、权限与恢复",
-    "description": "讨论长时间任务如何保存状态、调用工具、控制权限、检查结果和处理失败。",
+    "question": "Agent 中断后怎样继续，如何避免重复操作和沿用过期信息？",
+    "thesis": "长程任务需要可靠的进度、操作记录与恢复机制；模型升级后，旧流程约束也应重新测试。",
+    "article_title": "长程 Agent 如何保存进度、处理失败和恢复运行",
+    "description": "从中断示例解释任务状态、动态信息、外部动作、权限与恢复。",
     "review_file": "architecture-engineering.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "评测与基准",
     "icon": "📊",
     "chapter": "03",
     "role": "评测方法",
-    "question": "怎样检查任务、测试环境和评分方法，避免把评测问题误当成模型问题？",
-    "thesis": "看 Agent 分数之前，应先检查任务是否合理、环境能否运行、评分方法是否覆盖真实要求。",
+    "question": "评测中的差异是否可信，是否足以支持更换模型或产品？",
+    "thesis": "先明确比较目的，再核对任务、评分、配置和不确定性，最后判断收益是否超过采用成本。",
     "article_title": "如何判断一个 Agent 评测是否可信",
-    "description": "讨论 benchmark 题目质量、Harness 差异、Verifier 漏洞和连续成功率。",
+    "description": "讨论研究与采购的区别、评分校准、失败诊断、重复成功与选择成本。",
     "review_file": "eval-benchmark.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "AI Coding",
     "icon": "💻",
     "chapter": "04",
     "role": "代码开发案例",
-    "question": "AI Coding 为什么发展较快，它怎样改变软件开发的成本和分工？",
-    "thesis": "代码生成变便宜后，任务定义、测试、Review、集成和长期维护仍决定最终交付质量。",
-    "article_title": "AI Coding 如何改变软件开发的成本",
-    "description": "讨论代码生成提速、模型选择、Harness、测试和人工审核之间的关系。",
+    "question": "AI 怎样改变原有开发任务，又让哪些过去不值得做的软件成为可能？",
+    "thesis": "AI Coding 的价值包括交付提速、质量改善与新增任务，需要分别核算成本和实际使用效果。",
+    "article_title": "AI Coding 如何改变软件开发的成本和机会",
+    "description": "讨论效率实验、新增开发机会、模型配置、风险审核与多 Agent 协作。",
     "review_file": "ai-coding.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "AI 产品与交互",
     "icon": "🎯",
     "chapter": "05",
     "role": "产品设计",
-    "question": "AI 产品怎样展示运行状态、管理权限，并让用户在需要时接手？",
-    "thesis": "AI 产品需要让用户看见任务进度、资料来源、待执行操作、权限范围和人工接管入口。",
-    "article_title": "AI 产品如何展示状态、管理权限和支持人工接管",
-    "description": "讨论实时语音、任务状态、分级权限、长期记忆和人工接管。",
+    "question": "用户怎样表达需求、修改成果，并在任务中断或方向变化后继续？",
+    "thesis": "AI 产品应减少重复解释和管理负担，让成果容易修改、任务容易继续、关键选择可以控制。",
+    "article_title": "AI 产品怎样让用户把事情做完",
+    "description": "讨论需求澄清、局部修改、任务进度、记忆纠错与有用的授权。",
     "review_file": "product-interaction.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "行业格局与企业战略",
     "icon": "🌐",
     "chapter": "06",
     "role": "市场与商业模式",
-    "question": "模型价格下降后，企业还会为什么付费，哪些能力更难被替换？",
-    "thesis": "企业最终购买的是可以验收的任务结果，模型价格只是总成本中的一部分。",
+    "question": "模型继续变强、变便宜之后，客户为什么还愿意为这家公司付费？",
+    "thesis": "有用的功能不一定构成长久的生意，还要看成本、续费理由、数据使用权与交付经验能否复用。",
     "article_title": "模型降价之后，AI 企业靠什么赚钱",
-    "description": "讨论模型毛利、任务成本、工作流入口、客户反馈、FDE 和算力投入。",
+    "description": "讨论推理服务、路由、开闭源分工、数据与驻场交付的经营差异。",
     "review_file": "industry-strategy.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   },
   {
     "name": "AI 安全与影响",
     "icon": "⚖️",
     "chapter": "07",
     "role": "风险与社会影响",
-    "question": "AI 进入工作和生活后，谁有决定权，谁承担额外工作和最终责任？",
-    "thesis": "评估 AI 的影响，既要看模型能做什么，也要看用户能否纠错、撤回授权，以及出错后谁负责。",
+    "question": "AI 带来的帮助与负担如何分配，人是否仍能判断、学习和纠错？",
+    "thesis": "任务完成率之外，还要看额外劳动、学习机会、收益分配，以及人有没有实际的选择权。",
     "article_title": "AI 如何改变人的判断、工作和责任",
-    "description": "讨论模型意识、业务规则、用户信任、认知依赖、就业变化和责任分配。",
+    "description": "讨论审核责任、独立判断、新人成长、收益分配和纠错退出。",
     "review_file": "impact-safety.md",
-    "review_updated_at": "2026-08-02"
+    "review_updated_at": "2026-09-05"
   }
 ]
