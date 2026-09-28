@@ -75,6 +75,33 @@ class SiteDataContractTests(unittest.TestCase):
         for note_id in expected:
             self.assertTrue(self.assignments[note_id], note_id)
 
+    def test_new_notes_425_to_447_are_classified_and_bundled(self):
+        expected = {str(note_id) for note_id in range(425, 448)}
+        self.assertTrue(expected <= set(self.assignments))
+        bundled = {str(note["id"]): note for note in self.bundle["notes"]}
+        self.assertTrue(expected <= set(bundled))
+        for note_id in expected:
+            self.assertEqual(self.assignments[note_id], bundled[note_id]["topics"])
+
+    def test_bundle_preserves_all_authored_note_fields(self):
+        bundled = {int(note["id"]): note for note in self.bundle["notes"]}
+        defaults = {"title": "", "type": "", "url": "", "keywords": [], "why": ""}
+        for source in self.notes:
+            note_id = int(source["id"])
+            self.assertTrue(note_id in bundled, f"missing bundled note {note_id}")
+            self.assertEqual(source.get("date"), bundled[note_id]["date"], note_id)
+            for field, default in defaults.items():
+                self.assertEqual(
+                    source.get(field) or default,
+                    bundled[note_id][field],
+                    f"{note_id}: {field}",
+                )
+
+    def test_topic_totals_match_the_bundled_notes(self):
+        for topic in self.bundle["topics"]:
+            count = sum(topic["name"] in note["topics"] for note in self.bundle["notes"])
+            self.assertEqual(count, topic["count"], topic["name"])
+
     def test_generated_bundle_contains_all_notes_and_preserves_authored_why(self):
         self.assertEqual(len(self.notes), self.bundle["meta"]["total_notes"])
         self.assertEqual(len(self.notes), len(self.bundle["notes"]))
