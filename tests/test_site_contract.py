@@ -83,6 +83,14 @@ class SiteDataContractTests(unittest.TestCase):
         for note_id in expected:
             self.assertEqual(self.assignments[note_id], bundled[note_id]["topics"])
 
+    def test_new_notes_448_to_455_are_classified_and_bundled(self):
+        expected = {str(note_id) for note_id in range(448, 456)}
+        self.assertTrue(expected <= set(self.assignments))
+        bundled = {str(note["id"]): note for note in self.bundle["notes"]}
+        self.assertTrue(expected <= set(bundled))
+        for note_id in expected:
+            self.assertEqual(self.assignments[note_id], bundled[note_id]["topics"])
+
     def test_bundle_preserves_all_authored_note_fields(self):
         bundled = {int(note["id"]): note for note in self.bundle["notes"]}
         defaults = {"title": "", "type": "", "url": "", "keywords": [], "why": ""}
@@ -96,6 +104,14 @@ class SiteDataContractTests(unittest.TestCase):
                     bundled[note_id][field],
                     f"{note_id}: {field}",
                 )
+
+    def test_new_notes_456_to_469_are_classified_and_bundled(self):
+        expected = {str(note_id) for note_id in range(456, 470)}
+        self.assertTrue(expected <= set(self.assignments))
+        bundled = {str(note["id"]): note for note in self.bundle["notes"]}
+        self.assertTrue(expected <= set(bundled))
+        for note_id in expected:
+            self.assertEqual(self.assignments[note_id], bundled[note_id]["topics"])
 
     def test_topic_totals_match_the_bundled_notes(self):
         for topic in self.bundle["topics"]:
@@ -179,13 +195,13 @@ class ReviewContractTests(unittest.TestCase):
         "impact-safety.md": "AI 如何改变人的判断、工作和责任",
     }
     NEW_EVIDENCE = {
-        "model-training.md": {407, 416, 418},
-        "architecture-engineering.md": {388, 403, 414, 415, 417},
-        "eval-benchmark.md": {395, 399, 410, 419, 423},
-        "ai-coding.md": {396, 413, 415},
-        "product-interaction.md": {369, 390, 396, 397, 410, 413},
-        "industry-strategy.md": {389, 397, 406, 421, 424},
-        "impact-safety.md": {396, 403, 420},
+        "model-training.md": {407, 416, 418, 456, 458, 460},
+        "architecture-engineering.md": {388, 403, 414, 415, 417, 458},
+        "eval-benchmark.md": {395, 399, 410, 419, 423, 461, 468, 469},
+        "ai-coding.md": {396, 413, 415, 468},
+        "product-interaction.md": {369, 390, 396, 397, 410, 413, 458, 465},
+        "industry-strategy.md": {389, 397, 406, 421, 424, 459, 462, 467},
+        "impact-safety.md": {396, 403, 420, 467},
     }
 
     @classmethod

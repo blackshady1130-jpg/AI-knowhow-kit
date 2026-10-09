@@ -5,11 +5,11 @@
     "chapter": "01",
     "role": "模型能力",
     "question": "训练、推理和工具分别能改善什么，下一笔计算投入应该花在哪里？",
-    "thesis": "预训练、后训练和推理投入需要一起考虑，最合适的组合取决于任务、调用量与反馈条件。",
+    "thesis": "计算投入要同时检验单次成功、搜索覆盖与重复可靠性，训练信号和推理反馈决定收益能否持续。",
     "article_title": "训练与推理怎样提高模型能力",
-    "description": "讨论训练资源分配、后训练、推理预算、注意力机制和自动化研究。",
+    "description": "比较采样温度与预算、部分进展奖励、可学习上下文及架构计算的收益边界。",
     "review_file": "model-training.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "架构与工程",
@@ -17,11 +17,11 @@
     "chapter": "02",
     "role": "Agent 运行机制",
     "question": "Agent 中断后怎样继续，如何避免重复操作和沿用过期信息？",
-    "thesis": "长程任务需要可靠的进度、操作记录与恢复机制；模型升级后，旧流程约束也应重新测试。",
+    "thesis": "工作上下文可以主动编辑，但原始证据、授权和已发生动作须独立保留，恢复先核对未知结果。",
     "article_title": "长程 Agent 如何保存进度、处理失败和恢复运行",
-    "description": "从中断示例解释任务状态、动态信息、外部动作、权限与恢复。",
+    "description": "解释可编辑上下文、缓存残留、任务状态与中断恢复，区分工作材料和事实历史。",
     "review_file": "architecture-engineering.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "评测与基准",
@@ -31,9 +31,9 @@
     "question": "评测中的差异是否可信，是否足以支持更换模型或产品？",
     "thesis": "先明确比较目的，再核对任务、评分、配置和不确定性，最后判断收益是否超过采用成本。",
     "article_title": "如何判断一个 Agent 评测是否可信",
-    "description": "讨论研究与采购的区别、评分校准、失败诊断、重复成功与选择成本。",
+    "description": "从评分误判、科研重跑、视觉证据与偏好分歧，判断分数能否支持模型选择。",
     "review_file": "eval-benchmark.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "AI Coding",
@@ -43,21 +43,21 @@
     "question": "AI 怎样改变原有开发任务，又让哪些过去不值得做的软件成为可能？",
     "thesis": "AI Coding 的价值包括交付提速、质量改善与新增任务，需要分别核算成本和实际使用效果。",
     "article_title": "AI Coding 如何改变软件开发的成本和机会",
-    "description": "讨论效率实验、新增开发机会、模型配置、风险审核与多 Agent 协作。",
+    "description": "区分交付提速与新增软件机会，把依赖、输入和测试证据绑定最终版本。",
     "review_file": "ai-coding.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "AI 产品与交互",
     "icon": "🎯",
     "chapter": "05",
     "role": "产品设计",
-    "question": "用户怎样表达需求、修改成果，并在任务中断或方向变化后继续？",
+    "question": "用户怎样修改成果、纠正记忆，并知道暂停或删除实际改变了什么？",
     "thesis": "AI 产品应减少重复解释和管理负担，让成果容易修改、任务容易继续、关键选择可以控制。",
     "article_title": "AI 产品怎样让用户把事情做完",
-    "description": "讨论需求澄清、局部修改、任务进度、记忆纠错与有用的授权。",
+    "description": "围绕局部修改、反馈分类、记忆删除与任务交接，减少用户的管理负担。",
     "review_file": "product-interaction.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "行业格局与企业战略",
@@ -65,11 +65,11 @@
     "chapter": "06",
     "role": "市场与商业模式",
     "question": "模型继续变强、变便宜之后，客户为什么还愿意为这家公司付费？",
-    "thesis": "有用的功能不一定构成长久的生意，还要看成本、续费理由、数据使用权与交付经验能否复用。",
+    "thesis": "模型使用增长未必增加开发者的收入；客户是否持续付费，要看运行总成本、任务适配和交付效率。",
     "article_title": "模型降价之后，AI 企业靠什么赚钱",
-    "description": "讨论推理服务、路由、开闭源分工、数据与驻场交付的经营差异。",
+    "description": "拆开开放模型收入分配、缓存路由和数据供给波动，核算成本与续费理由。",
     "review_file": "industry-strategy.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   },
   {
     "name": "AI 安全与影响",
@@ -79,8 +79,8 @@
     "question": "AI 带来的帮助与负担如何分配，人是否仍能判断、学习和纠错？",
     "thesis": "任务完成率之外，还要看额外劳动、学习机会、收益分配，以及人有没有实际的选择权。",
     "article_title": "AI 如何改变人的判断、工作和责任",
-    "description": "讨论审核责任、独立判断、新人成长、收益分配和纠错退出。",
+    "description": "关注独立监督、新人学习、任务碎片化与收入波动，以及人的纠错和选择权。",
     "review_file": "impact-safety.md",
-    "review_updated_at": "2026-09-05"
+    "review_updated_at": "2026-10-08"
   }
 ]
