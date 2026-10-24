@@ -1,130 +1,59 @@
-# AI Knowhow Kit
+# AI 行业扫描 Notes
 
-一套面向 AI 工具和 AI Agent 的个人知识、工作偏好、行业判断与任务模板库。
+这里保存我阅读 AI 论文、产品文档和行业文章时留下的笔记与评论。
 
-网页版阅读：[AI 行业扫描 Notes](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#home)
+我把相关材料整理成七篇持续修订的主题文章，讨论模型能力、Agent 工程、产品使用和商业问题。文章中的引用可以展开查看笔记，也可以继续访问原始来源。
 
-这个仓库的目标不是做一个普通资料夹，而是把稳定的个人画像、协作规则、行业知识库和可复用工作流整理成结构化上下文，让 Cursor、Claude Code、Codex、ChatGPT、Gemini、Manus 等工具能更快理解：
+**[进入网站，阅读七个主题 →](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#home)**
 
-- 你是谁，正在做什么；
-- 你偏好怎样的协作方式和输出格式；
-- 你如何判断 AI 行业信息、产品、模型和商业机会；
-- 哪些 notes、bookmarks、skills 可以在任务中被检索和复用。
+## 从感兴趣的主题开始
 
-## 当前状态
+| 主题 | 讨论什么 |
+| --- | --- |
+| [模型推理与训练](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AE%AD%E7%BB%83) | 训练与推理计算如何改善能力，收益和成本怎样比较。 |
+| [架构与工程](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%B7%A5%E7%A8%8B) | 上下文、任务状态、权限和失败恢复。 |
+| [评测与基准](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/%E8%AF%84%E6%B5%8B%E4%B8%8E%E5%9F%BA%E5%87%86) | 题目、环境和评分方法是否可信，榜单结果能说明什么。 |
+| [AI Coding](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/AI%20Coding) | 代码生成的实际收益，以及审核、测试和交付成本。 |
+| [AI 产品与交互](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/AI%20%E4%BA%A7%E5%93%81%E4%B8%8E%E4%BA%A4%E4%BA%92) | 需求表达、局部修改、记忆管理和人工接管。 |
+| [行业格局与企业战略](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/%E8%A1%8C%E4%B8%9A%E6%A0%BC%E5%B1%80%E4%B8%8E%E4%BC%81%E4%B8%9A%E6%88%98%E7%95%A5) | 推理服务、开放模型、数据和企业交付如何获得收入。 |
+| [AI 安全与影响](https://blackshady1130-jpg.github.io/AI-knowhow-kit/#topic/AI%20%E5%AE%89%E5%85%A8%E4%B8%8E%E5%BD%B1%E5%93%8D) | AI 对人的判断、学习、工作和责任的影响。 |
 
-当前公开索引（更新至 2026-08）：
+## 文章、笔记和收藏
 
-| 模块 | 内容 | 规模 |
-|---|---|---:|
-| `notes/` | AI 行业扫描，偏高信号判断和深度笔记 | 424 条 |
-| `bookmarks/` | AI 相关收藏资料，偏广覆盖和原文归档 | 861 条 |
-| `skills/` | 可复用任务工作流与生成模板 | 6 个 |
+- **主题文章**：将不同时间的材料放在一起比较，说明目前的判断、依据和仍不确定的地方。适合先了解一个方向。
+- **[阅读笔记 notes](notes/)**：保存文章索引、原文或整理稿，以及我的评论。适合追查观点的出处，也能看到当时为什么关注它。
+- **[资料收藏 bookmarks](bookmarks/)**：范围更广的阅读资料，供查找背景和补充来源。收录不代表赞同其中的全部观点。
 
-## 目录结构
+最新源资料以仓库索引为准：[Notes 索引](notes/AI行业扫描_keywords.jsonl) · [Bookmarks 索引](bookmarks/bookmarks_keywords.jsonl)。网站按批次同步，可能暂时少于仓库中的收录；文章复核日期和笔记同步日期分别标注。
 
-```text
-AI_knowhow_kit/
-├─ PROFILE_CORE.md              # 个人定位、长期目标、能力边界
-├─ WORKING_PREFERENCES.md       # 协作偏好、输出标准、交付习惯
-├─ DOMAIN_KNOWHOW.md            # AI 行业判断框架、主题地图、研究方法
-├─ STYLE_GUIDE.md               # 写作风格、表达规则、改写标准
-├─ AGENTS.md                    # 通用 Agent 入口
-├─ CLAUDE.md                    # Claude Code 入口
-├─ CURSOR.md                    # Cursor 入口
-├─ AI_SCAN_RETRIEVAL.md         # notes 检索协议
-├─ BOOKMARKS_RETRIEVAL.md       # bookmarks 检索协议
-├─ USAGE_SOP.md                 # 使用和维护 SOP
-├─ notes/                       # AI 行业扫描索引和 markdown 原文
-├─ bookmarks/                   # 书签索引和 markdown 原文
-├─ skills/                      # 任务型 skill 模板
-├─ docs/                        # 维护、质量、证据和网页端提示词文档
-└─ site/                        # GitHub Pages / 站点相关内容
-```
+## 让 Agent 使用这些资料
 
-## 核心文件
+这个仓库也保留了我的研究、写作偏好和任务模板，供检索资料或复用工作方法。仓库名仍为 AI Knowhow Kit。
 
-| 文件 | 作用 |
-|---|---|
-| `PROFILE_CORE.md` | 定义个人背景、能力边界、正在做的事情和长期方向。 |
-| `WORKING_PREFERENCES.md` | 定义协作方式、交付标准、任务推进方式和质量偏好。 |
-| `DOMAIN_KNOWHOW.md` | 定义 AI 行业分析框架、主题判断、检索关键词和研究边界。 |
-| `STYLE_GUIDE.md` | 定义写作风格、表达禁忌、改写规则和公开输出标准。 |
+个人背景和协作偏好是按我的情况写的。复用时，请先改成你自己的信息和要求。
 
-入口文件如 `AGENTS.md`、`CLAUDE.md`、`CURSOR.md` 应保持轻量，主要负责指向核心文件，而不是复制大量内容。
+<details>
+<summary>查看使用入口与检索方式</summary>
 
-## 知识库机制
+- 通用 Agent 从 [AGENTS.md](AGENTS.md) 开始；其他入口见 [CLAUDE.md](CLAUDE.md) 和 [CURSOR.md](CURSOR.md)。
+- [使用说明](USAGE_SOP.md) 介绍文件之间的关系；[网页版提示词](docs/WEB_PROMPT_SNIPPETS.md) 供对话工具使用。
+- 个人设置分别放在 [个人背景](PROFILE_CORE.md)、[协作偏好](WORKING_PREFERENCES.md)、[行业研究方法](DOMAIN_KNOWHOW.md) 和 [写作风格](STYLE_GUIDE.md) 中。
+- [Skills](skills/) 包含行业情报整理、评测结论、汇报文案和演示文稿等任务模板。使用前阅读对应的 SKILL.md。
 
-`notes/` 和 `bookmarks/` 都采用“索引 + 原文”的结构：
+检索时先查索引，再按需要阅读相关原文，不必一次加载整个资料库。具体规则见 [Notes 检索说明](AI_SCAN_RETRIEVAL.md) 和 [Bookmarks 检索说明](BOOKMARKS_RETRIEVAL.md)。
 
-- `*_keywords.jsonl` 是 Agent 的检索入口，包含标题、来源、关键词、摘要、质量判断和 markdown 路径。
-- `*_md/` 保存对应 markdown 原文或整理稿，用于需要证据、引用和上下文时再读取。
+</details>
 
-推荐检索顺序：
+## 更新与来源
 
-1. 先读 `AI_SCAN_RETRIEVAL.md` 和 `BOOKMARKS_RETRIEVAL.md`。
-2. 先查 JSONL 索引，按关键词、主题、质量和时间筛选候选。
-3. 再打开少量相关 markdown 原文取证。
-4. 不要默认全量读取整个知识库。
+新材料可能补充或改变已有判断。主题文章会据此修订，原始笔记保留当时的评论；阅读旧条目时，请结合材料日期查看原文。
 
-## Skills
+个人评论、访谈观点和研究结果各有适用范围。引用具体数字或结论时，建议回到原始来源核对实验设置、时间和统计口径。
 
-当前 `skills/` 下包含 6 个可复用工作流：
+仓库许可见 [CC BY-SA 4.0](LICENSE)。收录材料请同时查看原始来源及其使用说明。
 
-| Skill | 用途 |
-|---|---|
-| `ai-industry-intel` | 从 notes、bookmarks 和公开源生成 AI 行业情报摘要、来源地图和推荐清单。 |
-| `ppt-html-style` | 生成 16:9、浏览器可播放的策略报告风格 HTML slide deck。 |
-| `xhs-wechat-ai-note` | 生成小红书/公众号风格的 AI 行业判断笔记封面与文案。 |
-| `ppt-onepager-writer` | 生成汇报型一页纸文案。 |
-| `eval-conclusion-builder` | 生成评测结论、对比分析和边界判断。 |
-| `model-collab-kickoff` | 生成业务和模型合作的启动方案。 |
+## 关于作者
 
-使用 skill 前应先阅读对应目录下的 `SKILL.md`，再按其中的脚本、参考资料和交付要求执行。
+Yantao Wang / SHADY。关注 AI 如何用于真实工作，以及实际效果如何。
 
-## 快速使用
-
-### Cursor
-
-在目标项目中创建 `.cursorrules` 或等价入口，指向本仓库核心文件：
-
-```text
-Read and follow:
-1. AI_knowhow_kit/CURSOR.md
-2. AI_knowhow_kit/PROFILE_CORE.md
-3. AI_knowhow_kit/WORKING_PREFERENCES.md
-4. AI_knowhow_kit/DOMAIN_KNOWHOW.md
-5. AI_knowhow_kit/STYLE_GUIDE.md
-```
-
-### Claude Code
-
-在项目根目录放置或引用 `CLAUDE.md`，并让它加载本仓库的核心画像和协作偏好文件。
-
-### Codex / 通用 Agent
-
-优先读取 `AGENTS.md`，再按任务需要加载核心文件、检索协议或具体 skill。
-
-### ChatGPT / Gemini 网页版
-
-使用 `docs/WEB_PROMPT_SNIPPETS.md` 中的短版提示词，把核心偏好和任务约束粘贴到新对话。
-
-## 维护规则
-
-- 核心画像文件按季度或重大认知变化更新。
-- `notes/` 和 `bookmarks/` 更新时，必须保证 JSONL 索引和 markdown 路径一致。
-- 更新关键词时，优先保证稳定概念可检索，例如 `Agent Infra`、`harness`、`verifier`、`FDE`、`token economics`、`RLVR`、`OPD`。
-- `.tmp/`、运营底表、源抓取缓存、本地密钥和大体积中间产物不进入公开仓库。
-- 公开提交前至少检查：无缺失 `md_path`、无 `Content fetch failed` 占位、无签名 URL 或 secret。
-
-## 设计原则
-
-- 结论先行，但保留证据和边界。
-- 区分事实、判断和推断。
-- 优先沉淀可复用框架，而不是一次性信息搬运。
-- 入口轻量，知识集中，按需检索。
-- 用结构降低重复沟通成本，让 Agent 更快进入有效协作。
-
-## License
-
-[CC BY-SA 4.0](LICENSE)
+讨论、纠错或交流：[blackshady1130@gmail.com](mailto:blackshady1130@gmail.com)。

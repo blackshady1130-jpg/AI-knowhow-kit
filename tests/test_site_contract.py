@@ -2,6 +2,7 @@ import json
 import re
 import subprocess
 import unittest
+from urllib.parse import quote, unquote
 from pathlib import Path
 
 
@@ -35,13 +36,16 @@ class SiteRepositoryStatusContractTests(unittest.TestCase):
     def setUpClass(cls):
         cls.readme = README.read_text(encoding="utf-8-sig")
 
-    def test_readme_reports_the_current_public_index(self):
-        self.assertIn("当前公开索引（更新至 2026-08）：", self.readme)
+    def test_readme_provides_reading_and_reuse_entries(self):
         self.assertIn("https://blackshady1130-jpg.github.io/AI-knowhow-kit/#home", self.readme)
-        self.assertRegex(self.readme, r"\| `notes/` \|[^\n]+\| 424 条 \|")
-        self.assertRegex(self.readme, r"\| `bookmarks/` \|[^\n]+\| 861 条 \|")
-        self.assertRegex(self.readme, r"\| `skills/` \|[^\n]+\| 6 个 \|")
-        self.assertNotIn("截至 2026-08-02", self.readme)
+        for topic in load_json(TOPICS):
+            self.assertIn("#topic/" + quote(topic["name"], safe=""), self.readme)
+        for path in ("notes/", "bookmarks/", "AGENTS.md", "USAGE_SOP.md", "skills/", "LICENSE"):
+            self.assertIn(f"]({path})", self.readme)
+        for target in re.findall(r"\]\(([^)]+)\)", self.readme):
+            if not target.startswith(("https://", "http://", "mailto:", "#")):
+                self.assertTrue((ROOT / unquote(target)).exists(), target)
+        self.assertNotRegex(self.readme, r"更新至\s*20\d{2}-\d{2}|\d+\s*条")
 
 
 class SiteDataContractTests(unittest.TestCase):
